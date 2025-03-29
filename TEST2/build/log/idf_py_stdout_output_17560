@@ -1,0 +1,1875 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2729ch (160412) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372c4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b204 vaddr=40080000 size=04e14h ( 19988) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3460h (668768) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3488 vaddr=40084e14 size=135d4h ( 79316) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (467) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  3bffebd5b...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (789) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (789) wifi:enable tsf
+I (809) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (809) wifi:state: init -> auth (0xb0)
+I (849) wifi:state: auth -> assoc (0x0)
+I (889) wifi:state: assoc -> run (0x10)
+I (1009) wifi:connected with VNPT_Hanh, aid = 6, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (1009) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (1019) wifi:pm start, type: 1
+
+I (1019) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1039) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1789) mqtts_example: [APP] Free memory: 229924 bytes[0m
+[0;32mI (1789) mqtts_example: Other event id:7[0m
+[0;32mI (1789) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1789) main_task: Returned from app_main()[0m
+[0;32mI (1989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1989) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (2029) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2029) WiFi: Got IP: 192.168.1.6[0m
+I (2789) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:4, winSize:64
+I (2989) wifi:<ba-add>idx:1 (ifx:0, 4c:12:e8:76:17:60), tid:4, ssn:0, winSize:64
+[0;32mI (3599) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3599) mqtts_example: sent subscribe successful, msg_id=38017[0m
+[0;32mI (3909) mqtts_example: Other event id:3[0m
+[0;32mI (4219) mqtts_example: Other event id:5[0m
+[0;32mI (8799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8799) mqtts_example: GPS Data: 
+[0m
+[0;32mI (8799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (9139) mqtts_example: Other event id:5[0m
+[0;32mI (14009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (14009) mqtts_example: GPS Data: 
+[0m
+[0;32mI (14009) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (14359) mqtts_example: Other event id:5[0m
+[0;32mI (19219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (19219) mqtts_example: GPS Data: 
+[0m
+[0;32mI (19219) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (19589) mqtts_example: Other event id:5[0m
+[0;32mI (24429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (24429) mqtts_example: GPS Data: 
+[0m
+[0;32mI (24429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (24809) mqtts_example: Other event id:5[0m
+[0;32mI (29639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (29639) mqtts_example: GPS Data: 
+[0m
+[0;32mI (29639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (29929) mqtts_example: Other event id:5[0m
+[0;32mI (34849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (34849) mqtts_example: GPS Data: 
+[0m
+[0;32mI (34849) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (35149) mqtts_example: Other event id:5[0m
+[0;32mI (40059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (40059) mqtts_example: GPS Data: 
+[0m
+[0;32mI (40059) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (40369) mqtts_example: Other event id:5[0m
+[0;32mI (45269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (45269) mqtts_example: GPS Data: 
+[0m
+[0;32mI (45269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (45599) mqtts_example: Other event id:5[0m
+[0;32mI (50479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (50479) mqtts_example: GPS Data: 
+[0m
+[0;32mI (50479) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (50809) mqtts_example: Other event id:5[0m
+[0;32mI (55689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (55689) mqtts_example: GPS Data: 
+[0m
+[0;32mI (55689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (56039) mqtts_example: Other event id:5[0m
+[0;32mI (60899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (60899) mqtts_example: GPS Data: 
+[0m
+[0;32mI (60899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (61259) mqtts_example: Other event id:5[0m
+[0;32mI (66109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (66109) mqtts_example: GPS Data: 
+[0m
+[0;32mI (66109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (66479) mqtts_example: Other event id:5[0m
+[0;32mI (71319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (71319) mqtts_example: GPS Data: 
+[0m
+[0;32mI (71319) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (71599) mqtts_example: Other event id:5[0m
+[0;32mI (76529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (76529) mqtts_example: GPS Data: 
+[0m
+[0;32mI (76529) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (76829) mqtts_example: Other event id:5[0m
+[0;32mI (81739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (81739) mqtts_example: GPS Data: 
+[0m
+[0;32mI (81739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (82049) mqtts_example: Other event id:5[0m
+[0;32mI (86949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (86949) mqtts_example: GPS Data: 
+[0m
+[0;32mI (86949) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (87269) mqtts_example: Other event id:5[0m
+����������������������������������������������������������������lat is 0.000000 and long is 0.000000[0m
+[0;32mI (92159) mqtts_example: GPS Data: 
+[0m
+[0;32mI (92159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (92489) mqtts_example: Other event id:5[0m
+[0;32mI (97369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (97369) mqtts_example: GPS Data: 
+[0m
+[0;32mI (97369) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (97719) mqtts_example: Other event id:5[0m
+[0;32mI (102579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (102579) mqtts_example: GPS Data: 
+[0m
+[0;32mI (102579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (102939) mqtts_example: Other event id:5[0m
+[0;32mI (107789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (107789) mqtts_example: GPS Data: 
+[0m
+[0;32mI (107789) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (108159) mqtts_example: Other event id:5[0m
+[0;32mI (112999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (112999) mqtts_example: GPS Data: 
+[0m
+[0;32mI (112999) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (113379) mqtts_example: Other event id:5[0m
+���������������������������������������������������������������� lat is 0.000000 and long is 0.000000[0m
+[0;32mI (118209) mqtts_example: GPS Data: 
+[0m
+[0;32mI (118209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (118499) mqtts_example: Other event id:5[0m
+[0;32mI (123419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (123419) mqtts_example: GPS Data: 
+[0m
+[0;32mI (123419) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (123729) mqtts_example: Other event id:5[0m
+[0;32mI (128629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (128629) mqtts_example: GPS Data: 
+[0m
+[0;32mI (128629) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (128949) mqtts_example: Other event id:5[0m
+[0;32mI (133839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (133839) mqtts_example: GPS Data: 
+[0m
+[0;32mI (133839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (134169) mqtts_example: Other event id:5[0m
+[0;32mI (139049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (139049) mqtts_example: GPS Data: 
+[0m
+[0;32mI (139049) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (139389) mqtts_example: Other event id:5[0m
+[0;32mI (144259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (144259) mqtts_example: GPS Data: 
+[0m
+[0;32mI (144259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (144619) mqtts_example: Other event id:5[0m
+[0;32mI (149469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (149469) mqtts_example: GPS Data: 
+[0m
+[0;32mI (149469) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (149839) mqtts_example: Other event id:5[0m
+[0;32mI (154679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (154679) mqtts_example: GPS Data: 
+[0m
+[0;32mI (154679) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (155059) mqtts_example: Other event id:5[0m
+[0;32mI (159889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (159889) mqtts_example: GPS Data: 
+[0m
+[0;32mI (159889) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (160179) mqtts_example: Other event id:5[0m
+[0;32mI (165099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (165099) mqtts_example: GPS Data: 
+[0m
+[0;32mI (165099) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (165399) mqtts_example: Other event id:5[0m
+[0;32mI (170309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (170309) mqtts_example: GPS Data: 
+[0m
+[0;32mI (170309) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (170619) mqtts_example: Other event id:5[0m
+[0;32mI (175519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (175519) mqtts_example: GPS Data: 
+[0m
+[0;32mI (175519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (175849) mqtts_example: Other event id:5[0m
+[0;32mI (180729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (180729) mqtts_example: GPS Data: 
+[0m
+[0;32mI (180729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (181069) mqtts_example: Other event id:5[0m
+[0;32mI (185939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (185939) mqtts_example: GPS Data: 
+[0m
+[0;32mI (185939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (186289) mqtts_example: Other event id:5[0m
+[0;32mI (191149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (191149) mqtts_example: GPS Data: 
+[0m
+[0;32mI (191149) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (191519) mqtts_example: Other event id:5[0m
+[0;32mI (196359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (196359) mqtts_example: GPS Data: 
+[0m
+[0;32mI (196359) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (196739) mqtts_example: Other event id:5[0m
+[0;32mI (201569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (201569) mqtts_example: GPS Data: 
+[0m
+[0;32mI (201569) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (201859) mqtts_example: Other event id:5[0m
+[0;32mI (206779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (206779) mqtts_example: GPS Data: 
+[0m
+[0;32mI (206779) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (207079) mqtts_example: Other event id:5[0m
+[0;32mI (211989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (211989) mqtts_example: GPS Data: 
+[0m
+[0;32mI (211989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (212299) mqtts_example: Other event id:5[0m
+[0;32mI (217199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (217199) mqtts_example: GPS Data: 
+[0m
+[0;32mI (217199) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (217529) mqtts_example: Other event id:5[0m
+[0;32mI (222409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (222409) mqtts_example: GPS Data: 
+[0m
+[0;32mI (222409) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (222739) mqtts_example: Other event id:5[0m
+[0;32mI (227619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (227619) mqtts_example: GPS Data: 
+[0m
+[0;32mI (227619) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (227969) mqtts_example: Other event id:5[0m
+[0;32mI (232829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (232829) mqtts_example: GPS Data: 
+[0m
+[0;32mI (232829) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (233189) mqtts_example: Other event id:5[0m
+[0;32mI (238039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (238039) mqtts_example: GPS Data: 
+[0m
+[0;32mI (238039) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (238409) mqtts_example: Other event id:5[0m
+[0;32mI (243249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (243249) mqtts_example: GPS Data: 
+[0m
+[0;32mI (243249) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (243539) mqtts_example: Other event id:5[0m
+[0;32mI (248459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (248459) mqtts_example: GPS Data: 
+[0m
+[0;32mI (248459) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (248749) mqtts_example: Other event id:5[0m
+[0;32mI (253669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (253669) mqtts_example: GPS Data: 
+[0m
+[0;32mI (253669) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (253979) mqtts_example: Other event id:5[0m
+[0;32mI (258879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (258879) mqtts_example: GPS Data: 
+[0m
+[0;32mI (258879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (259199) mqtts_example: Other event id:5[0m
+[0;32mI (264089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (264089) mqtts_example: GPS Data: 
+[0m
+[0;32mI (264089) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (264419) mqtts_example: Other event id:5[0m
+[0;32mI (269299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (269299) mqtts_example: GPS Data: 
+[0m
+[0;32mI (269299) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (269639) mqtts_example: Other event id:5[0m
+[0;32mI (274509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (274509) mqtts_example: GPS Data: 
+[0m
+[0;32mI (274509) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (274859) mqtts_example: Other event id:5[0m
+[0;32mI (279719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (279719) mqtts_example: GPS Data: 
+[0m
+[0;32mI (279719) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (280089) mqtts_example: Other event id:5[0m
+[0;32mI (284929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (284929) mqtts_example: GPS Data: 
+[0m
+[0;32mI (284929) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (285209) mqtts_example: Other event id:5[0m
+[0;32mI (290139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (290139) mqtts_example: GPS Data: 
+[0m
+[0;32mI (290139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (290439) mqtts_example: Other event id:5[0m
+[0;32mI (295349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (295349) mqtts_example: GPS Data: 
+[0m
+[0;32mI (295349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (295659) mqtts_example: Other event id:5[0m
+���������������������������������������������������������������� lat is 0.000000 and long is 0.000000[0m
+[0;32mI (300559) mqtts_example: GPS Data: 
+[0m
+[0;32mI (300559) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (300809) mqtts_example: Other event id:5[0m
+[0;32mI (305769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (305769) mqtts_example: GPS Data: 
+[0m
+[0;32mI (305769) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (306099) mqtts_example: Other event id:5[0m
+[0;32mI (310979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (310979) mqtts_example: GPS Data: 
+[0m
+[0;32mI (310979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (311319) mqtts_example: Other event id:5[0m
+[0;32mI (316189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (316189) mqtts_example: GPS Data: 
+[0m
+[0;32mI (316189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (316539) mqtts_example: Other event id:5[0m
+[0;32mI (321399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (321399) mqtts_example: GPS Data: 
+[0m
+[0;32mI (321399) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (321769) mqtts_example: Other event id:5[0m
+���������������������������������������������������������������� lat is 0.000000 and long is 0.000000[0m
+[0;32mI (326609) mqtts_example: GPS Data: 
+[0m
+[0;32mI (326609) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (326989) mqtts_example: Other event id:5[0m
+[0;32mI (331819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (331819) mqtts_example: GPS Data: 
+[0m
+[0;32mI (331819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (332109) mqtts_example: Other event id:5[0m
+[0;32mI (337029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (337029) mqtts_example: GPS Data: 
+[0m
+[0;32mI (337029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (337329) mqtts_example: Other event id:5[0m
+[0;32mI (342239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (342239) mqtts_example: GPS Data: 
+[0m
+[0;32mI (342239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (342559) mqtts_example: Other event id:5[0m
+[0;32mI (347449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (347449) mqtts_example: GPS Data: 
+[0m
+[0;32mI (347449) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (347779) mqtts_example: Other event id:5[0m
+[0;32mI (352659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (352659) mqtts_example: GPS Data: 
+[0m
+[0;32mI (352659) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (353009) mqtts_example: Other event id:5[0m
+[0;32mI (357869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (357869) mqtts_example: GPS Data: 
+[0m
+[0;32mI (357869) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (358219) mqtts_example: Other event id:5[0m
+[0;32mI (363079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (363079) mqtts_example: GPS Data: 
+[0m
+[0;32mI (363079) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (363439) mqtts_example: Other event id:5[0m
+[0;32mI (368289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (368289) mqtts_example: GPS Data: 
+[0m
+[0;32mI (368289) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (368669) mqtts_example: Other event id:5[0m
+[0;32mI (373499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (373499) mqtts_example: GPS Data: 
+[0m
+[0;32mI (373499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (373779) mqtts_example: Other event id:5[0m
+[0;32mI (378709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (378709) mqtts_example: GPS Data: 
+[0m
+[0;32mI (378709) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (379009) mqtts_example: Other event id:5[0m
+[0;32mI (383919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (383919) mqtts_example: GPS Data: 
+[0m
+[0;32mI (383919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (384229) mqtts_example: Other event id:5[0m
+[0;32mI (389129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (389129) mqtts_example: GPS Data: 
+[0m
+[0;32mI (389129) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (389449) mqtts_example: Other event id:5[0m
+[0;32mI (394339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (394339) mqtts_example: GPS Data: 
+[0m
+[0;32mI (394339) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (394679) mqtts_example: Other event id:5[0m
+[0;32mI (399549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (399549) mqtts_example: GPS Data: 
+[0m
+[0;32mI (399549) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (399899) mqtts_example: Other event id:5[0m
+[0;32mI (404759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (404759) mqtts_example: GPS Data: 
+[0m
+[0;32mI (404759) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (405119) mqtts_example: Other event id:5[0m
+[0;32mI (409969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (409969) mqtts_example: GPS Data: 
+[0m
+[0;32mI (409969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (410339) mqtts_example: Other event id:5[0m
+[0;32mI (415179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (415179) mqtts_example: GPS Data: 
+[0m
+[0;32mI (415179) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (415569) mqtts_example: Other event id:5[0m
+[0;32mI (420389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (420389) mqtts_example: GPS Data: 
+[0m
+[0;32mI (420389) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (420689) mqtts_example: Other event id:5[0m
+[0;32mI (425599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (425599) mqtts_example: GPS Data: 
+[0m
+[0;32mI (425599) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (425919) mqtts_example: Other event id:5[0m
+[0;32mI (430809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (430809) mqtts_example: GPS Data: 
+[0m
+[0;32mI (430809) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (431129) mqtts_example: Other event id:5[0m
+[0;32mI (436019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (436019) mqtts_example: GPS Data: 
+[0m
+[0;32mI (436019) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (436349) mqtts_example: Other event id:5[0m
+[0;32mI (441229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (441229) mqtts_example: GPS Data: 
+[0m
+[0;32mI (441229) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (441569) mqtts_example: Other event id:5[0m
+[0;32mI (446439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (446439) mqtts_example: GPS Data: 
+[0m
+[0;32mI (446439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (446799) mqtts_example: Other event id:5[0m
+[0;32mI (451649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (451649) mqtts_example: GPS Data: 
+[0m
+[0;32mI (451649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (452019) mqtts_example: Other event id:5[0m
+[0;32mI (456859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (456859) mqtts_example: GPS Data: 
+[0m
+[0;32mI (456859) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (457239) mqtts_example: Other event id:5[0m
+[0;32mI (462069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (462069) mqtts_example: GPS Data: 
+[0m
+[0;32mI (462069) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (462369) mqtts_example: Other event id:5[0m
+[0;32mI (467279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (467279) mqtts_example: GPS Data: 
+[0m
+[0;32mI (467279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (467589) mqtts_example: Other event id:5[0m
+[0;32mI (472489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (472489) mqtts_example: GPS Data: 
+[0m
+[0;32mI (472489) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (472809) mqtts_example: Other event id:5[0m
+[0;32mI (477699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (477699) mqtts_example: GPS Data: 
+[0m
+[0;32mI (477699) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (478029) mqtts_example: Other event id:5[0m
+[0;32mI (482909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (482909) mqtts_example: GPS Data: 
+[0m
+[0;32mI (482909) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (483249) mqtts_example: Other event id:5[0m
+[0;32mI (488119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (488119) mqtts_example: GPS Data: 
+[0m
+[0;32mI (488119) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (488469) mqtts_example: Other event id:5[0m
+[0;32mI (493329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (493329) mqtts_example: GPS Data: 
+[0m
+[0;32mI (493329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (493699) mqtts_example: Other event id:5[0m
+[0;32mI (498539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (498539) mqtts_example: GPS Data: 
+[0m
+[0;32mI (498539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (498919) mqtts_example: Other event id:5[0m
+[0;32mI (503749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (503749) mqtts_example: GPS Data: 
+[0m
+[0;32mI (503749) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (504039) mqtts_example: Other event id:5[0m
+[0;32mI (508959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (508959) mqtts_example: GPS Data: 
+[0m
+[0;32mI (508959) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (509269) mqtts_example: Other event id:5[0m
+[0;32mI (514169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (514169) mqtts_example: GPS Data: 
+[0m
+[0;32mI (514169) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (514479) mqtts_example: Other event id:5[0m
+[0;32mI (519379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (519379) mqtts_example: GPS Data: 
+[0m
+[0;32mI (519379) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (519709) mqtts_example: Other event id:5[0m
+[0;32mI (524589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (524589) mqtts_example: GPS Data: 
+[0m
+[0;32mI (524589) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (524929) mqtts_example: Other event id:5[0m
+[0;32mI (529799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (529799) mqtts_example: GPS Data: 
+[0m
+[0;32mI (529799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (530149) mqtts_example: Other event id:5[0m
+[0;32mI (535009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (535009) mqtts_example: GPS Data: 
+[0m
+[0;32mI (535009) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (535469) mqtts_example: Other event id:5[0m
+[0;32mI (540219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (540219) mqtts_example: GPS Data: 
+[0m
+[0;32mI (540219) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (540599) mqtts_example: Other event id:5[0m
+[0;32mI (545429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (545429) mqtts_example: GPS Data: 
+[0m
+[0;32mI (545429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (545719) mqtts_example: Other event id:5[0m
+[0;32mI (550639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (550639) mqtts_example: GPS Data: 
+[0m
+[0;32mI (550639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (550939) mqtts_example: Other event id:5[0m
+[0;32mI (555849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (555849) mqtts_example: GPS Data: 
+[0m
+[0;32mI (555849) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (556159) mqtts_example: Other event id:5[0m
+[0;32mI (561059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (561059) mqtts_example: GPS Data: 
+[0m
+[0;32mI (561059) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (561379) mqtts_example: Other event id:5[0m
+[0;32mI (566269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (566269) mqtts_example: GPS Data: 
+[0m
+[0;32mI (566269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (566609) mqtts_example: Other event id:5[0m
+[0;32mI (571479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (571479) mqtts_example: GPS Data: 
+[0m
+[0;32mI (571479) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (571829) mqtts_example: Other event id:5[0m
+[0;32mI (576689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (576689) mqtts_example: GPS Data: 
+[0m
+[0;32mI (576689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (577049) mqtts_example: Other event id:5[0m
+[0;32mI (581899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (581899) mqtts_example: GPS Data: 
+[0m
+[0;32mI (581899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (582269) mqtts_example: Other event id:5[0m
+[0;32mI (587109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (587109) mqtts_example: GPS Data: 
+[0m
+[0;32mI (587109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (587489) mqtts_example: Other event id:5[0m
+[0;32mI (592319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (592319) mqtts_example: GPS Data: 
+[0m
+[0;32mI (592319) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (592619) mqtts_example: Other event id:5[0m
+[0;32mI (597529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (597529) mqtts_example: GPS Data: 
+[0m
+[0;32mI (597529) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (597839) mqtts_example: Other event id:5[0m
+[0;32mI (602739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (602739) mqtts_example: GPS Data: 
+[0m
+[0;32mI (602739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (603069) mqtts_example: Other event id:5[0m
+[0;32mI (607949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (607949) mqtts_example: GPS Data: 
+[0m
+[0;32mI (607949) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (608279) mqtts_example: Other event id:5[0m
+[0;32mI (613159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (613159) mqtts_example: GPS Data: 
+[0m
+[0;32mI (613159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (613509) mqtts_example: Other event id:5[0m
+[0;32mI (618369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (618369) mqtts_example: GPS Data: 
+[0m
+[0;32mI (618369) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (618729) mqtts_example: Other event id:5[0m
+[0;32mI (623579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (623579) mqtts_example: GPS Data: 
+[0m
+[0;32mI (623579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (623949) mqtts_example: Other event id:5[0m
+[0;32mI (628789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (628789) mqtts_example: GPS Data: 
+[0m
+[0;32mI (628789) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (629069) mqtts_example: Other event id:5[0m
+[0;32mI (633999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (633999) mqtts_example: GPS Data: 
+[0m
+[0;32mI (633999) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (634289) mqtts_example: Other event id:5[0m
+[0;32mI (639209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (639209) mqtts_example: GPS Data: 
+[0m
+[0;32mI (639209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (639509) mqtts_example: Other event id:5[0m
+[0;32mI (644419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (644419) mqtts_example: GPS Data: 
+[0m
+[0;32mI (644419) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (644739) mqtts_example: Other event id:5[0m
+[0;32mI (649629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (649629) mqtts_example: GPS Data: 
+[0m
+[0;32mI (649629) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (649959) mqtts_example: Other event id:5[0m
+[0;32mI (654839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (654839) mqtts_example: GPS Data: 
+[0m
+[0;32mI (654839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (655179) mqtts_example: Other event id:5[0m
+[0;32mI (660049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (660049) mqtts_example: GPS Data: 
+[0m
+[0;32mI (660049) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (660399) mqtts_example: Other event id:5[0m
+[0;32mI (665259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (665259) mqtts_example: GPS Data: 
+[0m
+[0;32mI (665259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (665629) mqtts_example: Other event id:5[0m
+[0;32mI (670469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (670469) mqtts_example: GPS Data: 
+[0m
+[0;32mI (670469) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (670849) mqtts_example: Other event id:5[0m
+[0;32mI (675679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (675679) mqtts_example: GPS Data: 
+[0m
+[0;32mI (675679) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (675969) mqtts_example: Other event id:5[0m
+[0;32mI (680889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (680889) mqtts_example: GPS Data: 
+[0m
+[0;32mI (680889) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (681189) mqtts_example: Other event id:5[0m
+[0;32mI (686099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (686099) mqtts_example: GPS Data: 
+[0m
+[0;32mI (686099) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (686409) mqtts_example: Other event id:5[0m
+[0;32mI (691309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (691309) mqtts_example: GPS Data: 
+[0m
+[0;32mI (691309) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (691639) mqtts_example: Other event id:5[0m
+[0;32mI (696519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (696519) mqtts_example: GPS Data: 
+[0m
+[0;32mI (696519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (696859) mqtts_example: Other event id:5[0m
+[0;32mI (701729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (701729) mqtts_example: GPS Data: 
+[0m
+[0;32mI (701729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (702079) mqtts_example: Other event id:5[0m
+[0;32mI (706939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (706939) mqtts_example: GPS Data: 
+[0m
+[0;32mI (706939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (707299) mqtts_example: Other event id:5[0m
+[0;32mI (712149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (712149) mqtts_example: GPS Data: 
+[0m
+[0;32mI (712149) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (712529) mqtts_example: Other event id:5[0m
+[0;32mI (717359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (717359) mqtts_example: GPS Data: 
+[0m
+[0;32mI (717359) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (717639) mqtts_example: Other event id:5[0m
+[0;32mI (722569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (722569) mqtts_example: GPS Data: 
+[0m
+[0;32mI (722569) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (722869) mqtts_example: Other event id:5[0m
+[0;32mI (727779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (727779) mqtts_example: GPS Data: 
+[0m
+[0;32mI (727779) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (728089) mqtts_example: Other event id:5[0m
+[0;32mI (732989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (732989) mqtts_example: GPS Data: 
+[0m
+[0;32mI (732989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (733419) mqtts_example: Other event id:5[0m
+[0;32mI (738199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (738199) mqtts_example: GPS Data: 
+[0m
+[0;32mI (738199) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (738539) mqtts_example: Other event id:5[0m
+[0;32mI (743409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (743409) mqtts_example: GPS Data: 
+[0m
+[0;32mI (743409) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (743759) mqtts_example: Other event id:5[0m
+[0;32mI (748619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (748619) mqtts_example: GPS Data: 
+[0m
+[0;32mI (748619) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (748979) mqtts_example: Other event id:5[0m
+[0;32mI (753829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (753829) mqtts_example: GPS Data: 
+[0m
+[0;32mI (753829) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (754209) mqtts_example: Other event id:5[0m
+[0;32mI (759039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (759039) mqtts_example: GPS Data: 
+[0m
+[0;32mI (759039) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (759319) mqtts_example: Other event id:5[0m
+���������������������������������������������������������������� lat is 0.000000 and long is 0.000000[0m
+[0;32mI (764249) mqtts_example: GPS Data: 
+[0m
+[0;32mI (764249) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (764539) mqtts_example: Other event id:5[0m
+[0;32mI (769459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (769459) mqtts_example: GPS Data: 
+[0m
+[0;32mI (769459) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (769769) mqtts_example: Other event id:5[0m
+[0;32mI (774669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (774669) mqtts_example: GPS Data: 
+[0m
+[0;32mI (774669) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (774989) mqtts_example: Other event id:5[0m
+[0;32mI (779879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (779879) mqtts_example: GPS Data: 
+[0m
+[0;32mI (779879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (780209) mqtts_example: Other event id:5[0m
+[0;32mI (785089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (785089) mqtts_example: GPS Data: 
+[0m
+[0;32mI (785089) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (785429) mqtts_example: Other event id:5[0m
+[0;32mI (790299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (790299) mqtts_example: GPS Data: 
+[0m
+[0;32mI (790299) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (790659) mqtts_example: Other event id:5[0m
+[0;32mI (795509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (795509) mqtts_example: GPS Data: 
+[0m
+[0;32mI (795509) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (795879) mqtts_example: Other event id:5[0m
+[0;32mI (800719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (800719) mqtts_example: GPS Data: 
+[0m
+[0;32mI (800719) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (801099) mqtts_example: Other event id:5[0m
+[0;32mI (805929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (805929) mqtts_example: GPS Data: 
+[0m
+[0;32mI (805929) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (806219) mqtts_example: Other event id:5[0m
+[0;32mI (811139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (811139) mqtts_example: GPS Data: 
+[0m
+[0;32mI (811139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (811439) mqtts_example: Other event id:5[0m
+[0;32mI (816349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (816349) mqtts_example: GPS Data: 
+[0m
+[0;32mI (816349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (816669) mqtts_example: Other event id:5[0m
+[0;32mI (821559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (821559) mqtts_example: GPS Data: 
+[0m
+[0;32mI (821559) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (821889) mqtts_example: Other event id:5[0m
+[0;32mI (826769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (826769) mqtts_example: GPS Data: 
+[0m
+[0;32mI (826769) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (827109) mqtts_example: Other event id:5[0m
+[0;32mI (831979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (831979) mqtts_example: GPS Data: 
+[0m
+[0;32mI (831979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (832339) mqtts_example: Other event id:5[0m
+[0;32mI (837189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (837189) mqtts_example: GPS Data: 
+[0m
+[0;32mI (837189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (837559) mqtts_example: Other event id:5[0m
+[0;32mI (842399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (842399) mqtts_example: GPS Data: 
+[0m
+[0;32mI (842399) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (842779) mqtts_example: Other event id:5[0m
+[0;32mI (847609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (847609) mqtts_example: GPS Data: 
+[0m
+[0;32mI (847609) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (847899) mqtts_example: Other event id:5[0m
+[0;32mI (852819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (852819) mqtts_example: GPS Data: 
+[0m
+[0;32mI (852819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (853119) mqtts_example: Other event id:5[0m
+[0;32mI (858029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (858029) mqtts_example: GPS Data: 
+[0m
+[0;32mI (858029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (858349) mqtts_example: Other event id:5[0m
+[0;32mI (863239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (863239) mqtts_example: GPS Data: 
+[0m
+[0;32mI (863239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (863569) mqtts_example: Other event id:5[0m
+[0;32mI (868449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (868449) mqtts_example: GPS Data: 
+[0m
+[0;32mI (868449) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (868799) mqtts_example: Other event id:5[0m
+[0;32mI (873659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (873659) mqtts_example: GPS Data: 
+[0m
+[0;32mI (873659) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (874009) mqtts_example: Other event id:5[0m
+[0;32mI (878869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (878869) mqtts_example: GPS Data: 
+[0m
+[0;32mI (878869) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (879229) mqtts_example: Other event id:5[0m
+[0;32mI (884079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (884079) mqtts_example: GPS Data: 
+[0m
+[0;32mI (884079) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (884449) mqtts_example: Other event id:5[0m
+[0;32mI (889289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (889289) mqtts_example: GPS Data: 
+[0m
+[0;32mI (889289) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (889679) mqtts_example: Other event id:5[0m
+[0;32mI (894499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (894499) mqtts_example: GPS Data: 
+[0m
+[0;32mI (894499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (894799) mqtts_example: Other event id:5[0m
+[0;32mI (899709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (899709) mqtts_example: GPS Data: 
+[0m
+[0;32mI (899709) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (900019) mqtts_example: Other event id:5[0m
+[0;32mI (904919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (904919) mqtts_example: GPS Data: 
+[0m
+[0;32mI (904919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (905239) mqtts_example: Other event id:5[0m
+[0;32mI (910129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (910129) mqtts_example: GPS Data: 
+[0m
+[0;32mI (910129) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (910469) mqtts_example: Other event id:5[0m
+[0;32mI (915339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (915339) mqtts_example: GPS Data: 
+[0m
+[0;32mI (915339) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (915689) mqtts_example: Other event id:5[0m
+[0;32mI (920549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (920549) mqtts_example: GPS Data: 
+[0m
+[0;32mI (920549) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (920909) mqtts_example: Other event id:5[0m
+[0;32mI (925759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (925759) mqtts_example: GPS Data: 
+[0m
+[0;32mI (925759) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (926139) mqtts_example: Other event id:5[0m
+[0;32mI (930969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (930969) mqtts_example: GPS Data: 
+[0m
+[0;32mI (930969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (931249) mqtts_example: Other event id:5[0m
+[0;32mI (936179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (936179) mqtts_example: GPS Data: 
+[0m
+[0;32mI (936179) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+���������������������������������������������������������������� Other event id:5[0m
+[0;32mI (941389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (941389) mqtts_example: GPS Data: 
+[0m
+[0;32mI (941389) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (941699) mqtts_example: Other event id:5[0m
+[0;32mI (946599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (946599) mqtts_example: GPS Data: 
+[0m
+[0;32mI (946599) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (946919) mqtts_example: Other event id:5[0m
+[0;32mI (951809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (951809) mqtts_example: GPS Data: 
+[0m
+[0;32mI (951809) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (952149) mqtts_example: Other event id:5[0m
+[0;32mI (957019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (957019) mqtts_example: GPS Data: 
+[0m
+[0;32mI (957019) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (957379) mqtts_example: Other event id:5[0m
+[0;32mI (962229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (962229) mqtts_example: GPS Data: 
+[0m
+[0;32mI (962229) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (962589) mqtts_example: Other event id:5[0m
+[0;32mI (967439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (967439) mqtts_example: GPS Data: 
+[0m
+[0;32mI (967439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (967809) mqtts_example: Other event id:5[0m
+[0;32mI (972649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (972649) mqtts_example: GPS Data: 
+[0m
+[0;32mI (972649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (973029) mqtts_example: Other event id:5[0m
+[0;32mI (977859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (977859) mqtts_example: GPS Data: 
+[0m
+[0;32mI (977859) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (978149) mqtts_example: Other event id:5[0m
+[0;32mI (983069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (983069) mqtts_example: GPS Data: 
+[0m
+[0;32mI (983069) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (983369) mqtts_example: Other event id:5[0m
+[0;32mI (988279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (988279) mqtts_example: GPS Data: 
+[0m
+[0;32mI (988279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (988599) mqtts_example: Other event id:5[0m
+[0;32mI (993489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (993489) mqtts_example: GPS Data: 
+[0m
+[0;32mI (993489) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (993819) mqtts_example: Other event id:5[0m
+[0;32mI (998699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (998699) mqtts_example: GPS Data: 
+[0m
+[0;32mI (998699) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (999049) mqtts_example: Other event id:5[0m
+[0;32mI (1003909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1003909) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1003909) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1004259) mqtts_example: Other event id:5[0m
+[0;32mI (1009119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1009119) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1009119) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1009489) mqtts_example: Other event id:5[0m
+[0;32mI (1014329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1014329) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1014329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1014709) mqtts_example: Other event id:5[0m
+[0;32mI (1019539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1019539) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1019539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1019829) mqtts_example: Other event id:5[0m
+[0;32mI (1024749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1024749) mqtts_example: GPS Data: 
+[0m
+[0;32mI (1024749) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1025059) mqtts_example: Other event id:5[0m

@@ -1,0 +1,403 @@
+ets Ju�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 17:35:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aec4h ( 44740) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001aeec vaddr=3ffb0000 size=02364h (  9060) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d258 vaddr=40080000 size=02dc0h ( 11712) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17fa8h ( 98216) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00037fd0 vaddr=40082dc0 size=0acc8h ( 44232) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     TEST2[0m
+[0;32mI (221) app_init: App version:      1[0m
+[0;32mI (225) app_init: Compile time:     Dec 11 2024 17:35:03[0m
+[0;32mI (231) app_init: ELF file SHA256:  4b84ecb43...[0m
+[0;32mI (236) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (241) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (246) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (251) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008DA88 len 00012578 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) UART SIMSOM: [APP] Startup..[0m
+[0;32mI (314) UART SIMSOM: [APP] Free memory: 305000 bytes[0m
+[0;32mI (314) UART SIMSOM: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (324) UART SIMSOM: Enable GPS.[0m
+[0;32mI (324) UART SIMSOM: GPS location.[0m
+[0;32mI (534) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3034) UART SIMSOM: GPS location.[0m
+[0;32mI (3134) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5734) UART SIMSOM: GPS location.[0m
+[0;32mI (5834) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8434) UART SIMSOM: GPS location.[0m
+[0;32mI (8534) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11134) UART SIMSOM: GPS location.[0m
+[0;32mI (11234) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13834) UART SIMSOM: GPS location.[0m
+[0;32mI (13934) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (16534) UART SIMSOM: GPS location.[0m
+[0;32mI (16634) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (19234) UART SIMSOM: GPS location.[0m
+[0;32mI (19334) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (21934) UART SIMSOM: GPS location.[0m
+[0;32mI (22034) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (24634) UART SIMSOM: GPS location.[0m
+[0;32mI (24734) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (27334) UART SIMSOM: GPS location.[0m
+[0;32mI (27434) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (30034) UART SIMSOM: GPS location.[0m
+[0;32mI (30134) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (32734) UART SIMSOM: GPS location.[0m
+[0;32mI (32844) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+����������������������������������������������������������������S location.[0m
+[0;32mI (35554) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (38154) UART SIMSOM: GPS location.[0m
+[0;32mI (38264) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (40864) UART SIMSOM: GPS location.[0m
+[0;32mI (40974) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (43574) UART SIMSOM: GPS location.[0m
+[0;32mI (43684) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (46284) UART SIMSOM: GPS location.[0m
+[0;32mI (46394) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (48994) UART SIMSOM: GPS location.[0m
+[0;32mI (49104) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (51704) UART SIMSOM: GPS location.[0m
+[0;32mI (51814) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (54414) UART SIMSOM: GPS location.[0m
+[0;32mI (54524) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (57124) UART SIMSOM: GPS location.[0m
+[0;32mI (57234) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (59834) UART SIMSOM: GPS location.[0m
+[0;32mI (59944) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (62544) UART SIMSOM: GPS location.[0m
+[0;32mI (62654) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (65254) UART SIMSOM: GPS location.[0m
+[0;32mI (65364) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (67964) UART SIMSOM: GPS location.[0m
+[0;32mI (68074) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (70674) UART SIMSOM: GPS location.[0m
+[0;32mI (70784) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (73384) UART SIMSOM: GPS location.[0m
+[0;32mI (73494) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (76094) UART SIMSOM: GPS location.[0m
+[0;32mI (76204) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (78804) UART SIMSOM: GPS location.[0m
+[0;32mI (78914) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (81514) UART SIMSOM: GPS location.[0m
+[0;32mI (81624) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (84224) UART SIMSOM: GPS location.[0m
+[0;32mI (84334) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (86934) UART SIMSOM: GPS location.[0m
+[0;32mI (87044) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (89644) UART SIMSOM: GPS location.[0m
+[0;32mI (89754) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (92354) UART SIMSOM: GPS location.[0m
+[0;32mI (92464) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (95064) UART SIMSOM: GPS location.[0m
+[0;32mI (95174) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (97774) UART SIMSOM: GPS location.[0m
+[0;32mI (97884) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (100484) UART SIMSOM: GPS location.[0m
+[0;32mI (100594) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (103194) UART SIMSOM: GPS location.[0m
+[0;32mI (103304) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (105904) UART SIMSOM: GPS location.[0m
+[0;32mI (106014) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (108614) UART SIMSOM: GPS location.[0m
+[0;32mI (108724) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (111324) UART SIMSOM: GPS location.[0m
+[0;32mI (111434) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (114034) UART SIMSOM: GPS location.[0m
+[0;32mI (114144) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (116744) UART SIMSOM: GPS location.[0m
+[0;32mI (116854) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (119454) UART SIMSOM: GPS location.[0m
+[0;32mI (119564) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (122164) UART SIMSOM: GPS location.[0m
+[0;32mI (122274) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (124874) UART SIMSOM: GPS location.[0m
+[0;32mI (124984) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (127584) UART SIMSOM: GPS location.[0m
+[0;32mI (127694) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (130294) UART SIMSOM: GPS location.[0m
+[0;32mI (130404) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (133004) UART SIMSOM: GPS location.[0m
+[0;32mI (133114) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (135714) UART SIMSOM: GPS location.[0m
+[0;32mI (135824) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (138424) UART SIMSOM: GPS location.[0m
+[0;32mI (138534) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (141134) UART SIMSOM: GPS location.[0m
+[0;32mI (141244) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (143844) UART SIMSOM: GPS location.[0m
+[0;32mI (143954) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (146554) UART SIMSOM: GPS location.[0m
+[0;32mI (146664) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (149264) UART SIMSOM: GPS location.[0m
+[0;32mI (149374) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (151974) UART SIMSOM: GPS location.[0m
+[0;32mI (152084) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (154684) UART SIMSOM: GPS location.[0m
+[0;32mI (154794) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (157394) UART SIMSOM: GPS location.[0m
+[0;32mI (157504) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (160104) UART SIMSOM: GPS location.[0m
+[0;32mI (160214) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (162814) UART SIMSOM: GPS location.[0m
+[0;32mI (162924) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (165524) UART SIMSOM: GPS location.[0m
+[0;32mI (165634) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (168234) UART SIMSOM: GPS location.[0m
+[0;32mI (168344) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (170944) UART SIMSOM: GPS location.[0m
+[0;32mI (171054) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (173654) UART SIMSOM: GPS location.[0m
+[0;32mI (173764) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (176364) UART SIMSOM: GPS location.[0m
+[0;32mI (176474) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (179074) UART SIMSOM: GPS location.[0m
+[0;32mI (179184) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (181784) UART SIMSOM: GPS location.[0m
+[0;32mI (181894) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (184494) UART SIMSOM: GPS location.[0m
+[0;32mI (184604) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (187204) UART SIMSOM: GPS location.[0m
+[0;32mI (187314) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (189914) UART SIMSOM: GPS location.[0m
+[0;32mI (190024) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (192624) UART SIMSOM: GPS location.[0m
+[0;32mI (192734) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (195334) UART SIMSOM: GPS location.[0m
+[0;32mI (195444) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (198044) UART SIMSOM: GPS location.[0m
+[0;32mI (198154) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (200754) UART SIMSOM: GPS location.[0m
+[0;32mI (200864) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (203464) UART SIMSOM: GPS location.[0m
+[0;32mI (203574) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (206174) UART SIMSOM: GPS location.[0m
+[0;32mI (206284) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (208884) UART SIMSOM: GPS location.[0m
+[0;32mI (208994) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (211594) UART SIMSOM: GPS location.[0m
+[0;32mI (211704) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (214304) UART SIMSOM: GPS location.[0m
+[0;32mI (214414) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (217014) UART SIMSOM: GPS location.[0m
+[0;32mI (217124) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (219724) UART SIMSOM: GPS location.[0m
+[0;32mI (219834) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (222434) UART SIMSOM: GPS location.[0m
+[0;32mI (222544) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (225144) UART SIMSOM: GPS location.[0m
+[0;32mI (225254) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (227854) UART SIMSOM: GPS location.[0m
+[0;32mI (227964) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (230564) UART SIMSOM: GPS location.[0m
+[0;32mI (230674) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (233274) UART SIMSOM: GPS location.[0m
+[0;32mI (233384) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (235984) UART SIMSOM: GPS location.[0m
+[0;32mI (236094) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (238694) UART SIMSOM: GPS location.[0m
+[0;32mI (238804) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (241404) UART SIMSOM: GPS location.[0m
+[0;32mI (241514) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (244114) UART SIMSOM: GPS location.[0m
+[0;32mI (244224) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (246824) UART SIMSOM: GPS location.[0m
+[0;32mI (246934) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (249534) UART SIMSOM: GPS location.[0m
+[0;32mI (249644) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (252244) UART SIMSOM: GPS location.[0m
+[0;32mI (252354) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (254954) UART SIMSOM: GPS location.[0m
+[0;32mI (255064) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (257664) UART SIMSOM: GPS location.[0m
+[0;32mI (257774) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (260374) UART SIMSOM: GPS location.[0m
+[0;32mI (260484) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (263084) UART SIMSOM: GPS location.[0m
+[0;32mI (263194) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (265794) UART SIMSOM: GPS location.[0m
+[0;32mI (265904) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (268504) UART SIMSOM: GPS location.[0m
+[0;32mI (268614) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (271214) UART SIMSOM: GPS location.[0m
+[0;32mI (271324) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (273924) UART SIMSOM: GPS location.[0m
+[0;32mI (274034) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (276634) UART SIMSOM: GPS location.[0m
+[0;32mI (276744) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (279344) UART SIMSOM: GPS location.[0m
+[0;32mI (279454) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (282054) UART SIMSOM: GPS location.[0m
+[0;32mI (282164) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (284764) UART SIMSOM: GPS location.[0m
+[0;32mI (284874) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (287474) UART SIMSOM: GPS location.[0m
+[0;32mI (287584) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (290184) UART SIMSOM: GPS location.[0m
+[0;32mI (290294) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (292894) UART SIMSOM: GPS location.[0m
+[0;32mI (293004) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (295604) UART SIMSOM: GPS location.[0m
+[0;32mI (295714) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (298314) UART SIMSOM: GPS location.[0m
+[0;32mI (298424) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (301024) UART SIMSOM: GPS location.[0m
+[0;32mI (301134) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (303734) UART SIMSOM: GPS location.[0m
+[0;32mI (303844) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (306444) UART SIMSOM: GPS location.[0m
+[0;32mI (306554) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (309154) UART SIMSOM: GPS location.[0m
+[0;32mI (309264) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (311864) UART SIMSOM: GPS location.[0m
+[0;32mI (311974) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (314574) UART SIMSOM: GPS location.[0m
+[0;32mI (314684) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (317284) UART SIMSOM: GPS location.[0m
+[0;32mI (317394) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (319994) UART SIMSOM: GPS location.[0m
+[0;32mI (320104) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (322704) UART SIMSOM: GPS location.[0m
+[0;32mI (322814) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (325414) UART SIMSOM: GPS location.[0m
+[0;32mI (325524) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (328124) UART SIMSOM: GPS location.[0m
+[0;32mI (328234) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (330834) UART SIMSOM: GPS location.[0m
+[0;32mI (330944) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (333544) UART SIMSOM: GPS location.[0m
+[0;32mI (333654) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (336254) UART SIMSOM: GPS location.[0m
+[0;32mI (336364) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (338964) UART SIMSOM: GPS location.[0m
+[0;32mI (339074) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (341674) UART SIMSOM: GPS location.[0m
+[0;32mI (341784) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (344384) UART SIMSOM: GPS location.[0m
+[0;32mI (344494) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (347094) UART SIMSOM: GPS location.[0m
+[0;32mI (347204) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (349804) UART SIMSOM: GPS location.[0m
+[0;32mI (349914) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (352514) UART SIMSOM: GPS location.[0m
+[0;32mI (352624) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (355224) UART SIMSOM: GPS location.[0m
+[0;32mI (355334) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (357934) UART SIMSOM: GPS location.[0m
+[0;32mI (358044) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (360644) UART SIMSOM: GPS location.[0m
+[0;32mI (360754) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (363354) UART SIMSOM: GPS location.[0m
+[0;32mI (363464) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (366064) UART SIMSOM: GPS location.[0m
+[0;32mI (366174) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (368774) UART SIMSOM: GPS location.[0m
+[0;32mI (368884) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (371484) UART SIMSOM: GPS location.[0m
+[0;32mI (371594) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (374194) UART SIMSOM: GPS location.[0m
+[0;32mI (374304) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (376904) UART SIMSOM: GPS location.[0m
+[0;32mI (377014) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (379614) UART SIMSOM: GPS location.[0m
+[0;32mI (379724) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (382324) UART SIMSOM: GPS location.[0m
+[0;32mI (382434) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (385034) UART SIMSOM: GPS location.[0m
+[0;32mI (385144) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (387744) UART SIMSOM: GPS location.[0m
+[0;32mI (387854) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (390454) UART SIMSOM: GPS location.[0m
+[0;32mI (390564) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (393164) UART SIMSOM: GPS location.[0m
+[0;32mI (393274) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (395874) UART SIMSOM: GPS location.[0m
+[0;32mI (395984) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (398584) UART SIMSOM: GPS location.[0m
+[0;32mI (398694) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (401294) UART SIMSOM: GPS location.[0m
+[0;32mI (401404) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (404004) UART SIMSOM: GPS location.[0m
+[0;32mI (404114) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (406714) UART SIMSOM: GPS location.[0m
+[0;32mI (406824) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (409424) UART SIMSOM: GPS location.[0m
+[0;32mI (409534) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (412134) UART SIMSOM: GPS location.[0m
+[0;32mI (412244) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (414844) UART SIMSOM: GPS location.[0m
+[0;32mI (414954) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (417554) UART SIMSOM: GPS location.[0m
+[0;32mI (417664) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (420264) UART SIMSOM: GPS location.[0m
+[0;32mI (420374) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (422974) UART SIMSOM: GPS location.[0m
+[0;32mI (423084) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (425684) UART SIMSOM: GPS location.[0m
+[0;32mI (425794) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (428394) UART SIMSOM: GPS location.[0m
+[0;32mI (428504) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (431104) UART SIMSOM: GPS location.[0m
+[0;32mI (431214) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (433814) UART SIMSOM: GPS location.[0m
+[0;32mI (433924) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (436524) UART SIMSOM: GPS location.[0m
+[0;32mI (436634) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (439234) UART SIMSOM: GPS location.[0m
+[0;32mI (439344) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (441944) UART SIMSOM: GPS location.[0m
+[0;32mI (442054) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (444654) UART SIMSOM: GPS location.[0m
+[0;32mI (444764) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (447364) UART SIMSOM: GPS location.[0m
+[0;32mI (447474) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (450074) UART SIMSOM: GPS location.[0m
+[0;32mI (450184) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (452784) UART SIMSOM: GPS location.[0m
+[0;32mI (452894) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (455494) UART SIMSOM: GPS location.[0m
+[0;32mI (455604) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (458204) UART SIMSOM: GPS location.[0m
+[0;32mI (458314) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (460914) UART SIMSOM: GPS location.[0m
+[0;32mI (461024) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (463624) UART SIMSOM: GPS location.[0m
+[0;32mI (463734) UART SIMSOM: lat i

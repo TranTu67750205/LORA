@@ -1,0 +1,265 @@
+ets Jul 29 201�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2737ch (160636) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000373a4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2e4 vaddr=40080000 size=04d34h ( 19764) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34d4h (668884) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34fc vaddr=40084d34 size=136b4h ( 79540) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (480) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (486) app_init: ELF file SHA256:  4a09d4190...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8848 len 000277B8 (157 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc07d4, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (829) wifi:state: auth -> assoc (0x0)
+I (869) wifi:state: assoc -> run (0x10)
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) mqtts_example: [APP] Free memory: 226992 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;31mE (1779) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1789) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1799) mqtt_client: Error transport connect[0m
+[0;32mI (1799) mqtts_example: Other event id:0[0m
+[0;32mI (1809) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1929) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (1929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1929) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 164322.00,1052.6089N,10648.5265E,1.48,34.2,3,,0.027,0.015,191224,21
+
+OK
+�,*\�/U�=m)k)4�Z%�s����?R&����r����W���Kf�V��Z��� ������p�h�m�DF�C;��F��v�m��}%�Q�)U���/���B��q�j�*Ա:�aΌ+Y��,�"���}�#�6�:DD��E��:t�#�>��<!��/λ�cC@�3����f|^'}xϼ��1��k�teI$~�jF�T�Q��p��y��"S��腡6t����ЕT�.��_����Ct С��|Su��[0m
+[0;32mI (1959) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2569) main_task: Returned from app_main()[0m
+I (10869) wifi:state: run -> init (0xcc00)
+I (10889) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (10889) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (13309) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (15719) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (16809) mqtts_example: Other event id:7[0m
+[0;31mE (16809) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16809) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16819) mqtt_client: Error transport connect[0m
+[0;32mI (16819) mqtts_example: Other event id:0[0m
+[0;32mI (16829) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (18139) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (20549) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (22969) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (25379) WiFi: Disconnected. Reconnecting...[0m
+I (25479) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (25489) wifi:state: init -> auth (0xb0)
+I (25529) wifi:state: auth -> assoc (0x0)
+I (26529) wifi:state: assoc -> init (0x2700)
+I (26549) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (26549) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (28959) WiFi: Disconnected. Reconnecting...[0m
+I (29069) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (29069) wifi:state: init -> auth (0xb0)
+I (29089) wifi:state: auth -> init (0x8a0)
+I (29109) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (29109) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (31519) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (31829) mqtts_example: Other event id:7[0m
+[0;31mE (31829) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31829) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31839) mqtt_client: Error transport connect[0m
+[0;32mI (31839) mqtts_example: Other event id:0[0m
+[0;32mI (31849) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (33939) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (36359) WiFi: Disconnected. Reconnecting...[0m
+I (36439) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (36439) wifi:state: init -> auth (0xb0)
+I (37449) wifi:state: auth -> init (0x200)
+I (37459) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (37459) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (39869) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (42289) WiFi: Disconnected. Reconnecting...[0m
+I (42309) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (42309) wifi:state: init -> auth (0xb0)
+I (42339) wifi:state: auth -> assoc (0x0)
+I (42369) wifi:state: assoc -> run (0x10)
+[0;32mI (46849) mqtts_example: Other event id:7[0m
+[0;31mE (46849) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46849) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46859) mqtt_client: Error transport connect[0m
+[0;32mI (46859) mqtts_example: Other event id:0[0m
+[0;32mI (46869) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (52369) wifi:state: run -> init (0xcc00)
+I (52379) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (52379) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (54799) WiFi: Disconnected. Reconnecting...[0m
+I (54869) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (54869) wifi:state: init -> auth (0xb0)
+I (54899) wifi:state: auth -> assoc (0x0)
+I (54929) wifi:state: assoc -> run (0x10)
+[0;32mI (61869) mqtts_example: Other event id:7[0m
+[0;31mE (61869) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (61869) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (61879) mqtt_client: Error transport connect[0m
+[0;32mI (61879) mqtts_example: Other event id:0[0m
+[0;32mI (61889) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (64929) wifi:state: run -> init (0xcc00)
+I (64939) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (64939) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (67359) WiFi: Disconnected. Reconnecting...[0m
+I (67369) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (67369) wifi:state: init -> auth (0xb0)
+I (67389) wifi:state: auth -> assoc (0x0)
+I (67419) wifi:state: assoc -> run (0x10)
+[0;32mI (76889) mqtts_example: Other event id:7[0m
+[0;31mE (76889) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (76889) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (76899) mqtt_client: Error transport connect[0m
+[0;32mI (76899) mqtts_example: Other event id:0[0m
+[0;32mI (76909) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (77419) wifi:state: run -> init (0xcc00)
+I (77429) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (77429) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (79849) WiFi: Disconnected. Reconnecting...[0m
+I (79869) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (79869) wifi:state: init -> auth (0xb0)
+I (79879) wifi:state: auth -> assoc (0x0)
+I (79909) wifi:state: assoc -> run (0x10)
+I (89919) wifi:state: run -> init (0xcc00)
+I (89929) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (89929) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (91909) mqtts_example: Other event id:7[0m
+[0;31mE (91909) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (91909) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (91919) mqtt_client: Error transport connect[0m
+[0;32mI (91919) mqtts_example: Other event id:0[0m
+[0;32mI (91929) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (92349) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (94759) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (97179) WiFi: Disconnected. Reconnecting...[0m
+I (97269) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (97269) wifi:state: init -> auth (0xb0)
+I (98279) wifi:state: auth -> init (0x200)
+I (98289) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (98289) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (100699) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (103119) WiFi: Disconnected. Reconnecting...[0m
+I (103139) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (103139) wifi:state: init -> auth (0xb0)
+I (103149) wifi:state: auth -> assoc (0x0)
+I (103179) wifi:state: assoc -> run (0x10)
+[0;32mI (106929) mqtts_example: Other event id:7[0m
+[0;31mE (106929) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (106929) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (106939) mqtt_client: Error transport connect[0m
+[0;32mI (106939) mqtts_example: Other event id:0[0m
+[0;32mI (106949) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (113179) wifi:state: run -> init (0xcc00)
+I (113189) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (113189) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (115609) WiFi: Disconnected. Reconnecting...[0m
+I (115699) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (115699) wifi:state: init -> auth (0xb0)
+I (115729) wifi:state: auth -> init (0x8a0)
+I (115739) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (115739) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (118149) WiFi: Disconnected. Reconnecting...[0m
+I (118259) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (118259) wifi:state: init -> auth (0xb0)
+I (118279) wifi:state: auth -> assoc (0x0)
+I (118329) wifi:state: assoc -> run (0x10)
+[0;32mI (121949) mqtts_example: Other event id:7[0m
+[0;31mE (121949) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (121949) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (121959) mqtt_client: Error transport connect[0m
+[0;32mI (121959) mqtts_example: Other event id:0[0m
+[0;32mI (121969) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (128329) wifi:state: run -> init (0xcc00)
+I (128339) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (128339) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (130749) WiFi: Disconnected. Reconnecting...[0m
+I (130769) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (130769) wifi:state: init -> auth (0xb0)
+I (130799) wifi:state: auth -> assoc (0x0)
+I (130839) wifi:state: assoc -> run (0x10)
+[0;32mI (136969) mqtts_example: Other event id:7[0m
+[0;31mE (136969) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (136969) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (136979) mqtt_client: Error transport connect[0m
+[0;32mI (136979) mqtts_example: Other event id:0[0m
+[0;32mI (136989) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (140839) wifi:state: run -> init (0xcc00)
+I (140849) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (140849) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (143269) WiFi: Disconnected. Reconnecting...[0m
+I (143349) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (143349) wifi:state: init -> auth (0xb0)
+I (143389) wifi:state: auth -> assoc (0x0)
+I (143419) wifi:state: assoc -> run (0x10)

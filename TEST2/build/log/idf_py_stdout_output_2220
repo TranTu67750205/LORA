@@ -1,0 +1,1116 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2727ch (160380) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372a4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b1e4 vaddr=40080000 size=04e34h ( 20020) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3440h (668736) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e3468 vaddr=40084e34 size=135b4h ( 79284) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (467) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  6918da2b1...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (719) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (799) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (799) wifi:enable tsf
+[0;32mI (1809) mqtts_example: [APP] Free memory: 230720 bytes[0m
+[0;32mI (1809) mqtts_example: Other event id:7[0m
+[0;31mE (1809) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1819) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1819) mqtt_client: Error transport connect[0m
+[0;32mI (1829) mqtts_example: Other event id:0[0m
+[0;32mI (1829) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1839) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1839) main_task: Returned from app_main()[0m
+[0;32mI (2059) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (2059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2059) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (2149) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (3219) WiFi: Disconnected. Reconnecting...[0m
+I (3249) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (3249) wifi:state: init -> auth (0xb0)
+I (3289) wifi:state: auth -> assoc (0x0)
+I (3329) wifi:state: assoc -> run (0x10)
+[0;32mI (7349) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (7349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7349) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (7439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (11839) mqtts_example: Other event id:7[0m
+[0;31mE (11839) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11839) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11849) mqtt_client: Error transport connect[0m
+[0;32mI (11849) mqtts_example: Other event id:0[0m
+[0;32mI (11859) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (12639) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (12639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12639) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (12729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (13329) wifi:state: run -> init (0xcc00)
+I (13349) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (13349) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (15759) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (17929) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (17929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (17929) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (18019) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (18179) WiFi: Disconnected. Reconnecting...[0m
+I (18289) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (18289) wifi:state: init -> auth (0xb0)
+I (19309) wifi:state: auth -> init (0x200)
+I (19319) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (19319) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (21729) WiFi: Disconnected. Reconnecting...[0m
+I (21749) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (21749) wifi:state: init -> auth (0xb0)
+I (21759) wifi:state: auth -> assoc (0x0)
+I (21799) wifi:state: assoc -> run (0x10)
+[0;32mI (23229) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (23229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (23229) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (23319) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (26859) mqtts_example: Other event id:7[0m
+[0;31mE (26859) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26859) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26869) mqtt_client: Error transport connect[0m
+[0;32mI (26869) mqtts_example: Other event id:0[0m
+[0;32mI (26879) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (28529) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (28529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (28529) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (28619) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (31799) wifi:state: run -> init (0xcc00)
+I (31809) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (31809) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (33819) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (33819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (33819) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (33909) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (34229) WiFi: Disconnected. Reconnecting...[0m
+I (34269) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (34269) wifi:state: init -> auth (0xb0)
+I (34299) wifi:state: auth -> assoc (0x0)
+I (34329) wifi:state: assoc -> run (0x10)
+[0;32mI (39119) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (39119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (39119) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (39209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (41879) mqtts_example: Other event id:7[0m
+[0;31mE (41879) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41879) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41889) mqtt_client: Error transport connect[0m
+[0;32mI (41889) mqtts_example: Other event id:0[0m
+[0;32mI (41899) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (44329) wifi:state: run -> init (0xcc00)
+I (44339) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (44339) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (44419) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (44419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (44419) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (44509) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (46759) WiFi: Disconnected. Reconnecting...[0m
+I (46769) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (46769) wifi:state: init -> auth (0xb0)
+I (46789) wifi:state: auth -> assoc (0x0)
+I (46819) wifi:state: assoc -> run (0x10)
+[0;32mI (49719) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (49719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (49719) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (49809) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (55019) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (55019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (55019) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (55109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (56829) wifi:state: run -> init (0xcc00)
+I (56839) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (56839) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (56899) mqtts_example: Other event id:7[0m
+[0;31mE (56899) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (56899) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (56909) mqtt_client: Error transport connect[0m
+[0;32mI (56909) mqtts_example: Other event id:0[0m
+[0;32mI (56919) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (59249) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (60309) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (60309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (60309) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (60399) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (61669) WiFi: Disconnected. Reconnecting...[0m
+I (61709) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (61709) wifi:state: init -> auth (0xb0)
+I (61719) wifi:state: auth -> init (0x8a0)
+I (61729) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (61729) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (64149) WiFi: Disconnected. Reconnecting...[0m
+I (64169) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (64169) wifi:state: init -> auth (0xb0)
+I (64189) wifi:state: auth -> assoc (0x0)
+I (64219) wifi:state: assoc -> run (0x10)
+[0;32mI (65599) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (65599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (65599) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (65689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (70899) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (70899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (70899) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (70989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (71919) mqtts_example: Other event id:7[0m
+[0;31mE (71919) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (71919) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (71929) mqtt_client: Error transport connect[0m
+[0;32mI (71929) mqtts_example: Other event id:0[0m
+[0;32mI (71939) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (74219) wifi:state: run -> init (0xcc00)
+I (74229) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (74229) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (76189) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (76189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (76189) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (76279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (76649) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (79059) WiFi: Disconnected. Reconnecting...[0m
+I (79079) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (79079) wifi:state: init -> auth (0xb0)
+I (79099) wifi:state: auth -> assoc (0x0)
+I (79139) wifi:state: assoc -> run (0x10)
+[0;32mI (81489) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (81489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (81489) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (81579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (86789) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (86789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (86789) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (86879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (86939) mqtts_example: Other event id:7[0m
+[0;31mE (86939) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (86939) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (86949) mqtt_client: Error transport connect[0m
+[0;32mI (86949) mqtts_example: Other event id:0[0m
+[0;32mI (86959) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (89139) wifi:state: run -> init (0xcc00)
+I (89149) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (89149) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (91559) WiFi: Disconnected. Reconnecting...[0m
+I (91609) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (91609) wifi:state: init -> auth (0xb0)
+I (91639) wifi:state: auth -> assoc (0x0)
+I (91679) wifi:state: assoc -> run (0x10)
+I (91749) wifi:connected with 9999, aid = 2, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (91749) wifi:security: WPA2-PSK, phy: bgn, rssi: -91
+I (91759) wifi:pm start, type: 1
+
+I (91759) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (91789) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+I (92019) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (92079) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (92079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (92079) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (92169) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (94259) esp_netif_handlers: sta ip: 192.168.1.179, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (94259) WiFi: Got IP: 192.168.1.179[0m
+[0;32mI (97379) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (97379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (97379) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (97469) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (98989) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:6, ssn:2, winSize:64
+[0;32mI (101959) mqtts_example: Other event id:7[0m
+I (102009) wifi:<ba-del>idx:1, tid:6
+I (102069) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:0, ssn:0, winSize:64
+I (102669) wifi:<ba-del>idx:1, tid:0
+[0;32mI (102679) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (102679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (102679) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+I (102699) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:0, ssn:0, winSize:64
+[0;32mI (102769) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (103849) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (103849) mqtts_example: sent subscribe successful, msg_id=56894[0m
+[0;32mI (104229) mqtts_example: Other event id:3[0m
+[0;32mI (104729) mqtts_example: Other event id:5[0m
+[0;32mI (105149) mqtts_example: Other event id:5[0m
+[0;32mI (105679) mqtts_example: Other event id:5[0m
+[0;32mI (106059) mqtts_example: Other event id:5[0m
+[0;32mI (106369) mqtts_example: Other event id:5[0m
+[0;32mI (106679) mqtts_example: Other event id:5[0m
+[0;32mI (109049) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (109049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (109049) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (109139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (109439) mqtts_example: Other event id:5[0m
+[0;32mI (114349) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (114349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (114349) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (114439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (117219) mqtts_example: Other event id:5[0m
+[0;32mI (119649) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (119649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (119649) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (119739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (120139) mqtts_example: Other event id:5[0m
+[0;32mI (124949) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (124949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (124949) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (125039) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (126419) mqtts_example: Other event id:5[0m
+[0;32mI (130249) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (130249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (130249) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (130339) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (133459) mqtts_example: Other event id:5[0m
+I (133469) wifi:state: run -> init (0x22c0)
+I (133479) wifi:pm stop, total sleep time: 11249873 us / 41717594 us
+
+I (133479) wifi:<ba-del>idx:1, tid:0
+I (133479) wifi:<ba-del>idx:0, tid:7
+I (133479) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (133489) WiFi: Disconnected. Reconnecting...[0m
+[0;31mE (133489) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+E (133499) wifi:[0;31mE (133499) mqtt_client: Poll read error: 119, aborting connection[0m
+addba response cb: sta bss deleted
+[0;32mI (133509) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (135549) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (135549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (135549) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (135639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (135909) WiFi: Disconnected. Reconnecting...[0m
+I (135929) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (135929) wifi:state: init -> auth (0xb0)
+I (135939) wifi:state: auth -> assoc (0x0)
+I (136019) wifi:state: assoc -> run (0x10)
+I (136099) wifi:connected with 9999, aid = 2, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (136099) wifi:security: WPA2-PSK, phy: bgn, rssi: -87
+I (136109) wifi:pm start, type: 1
+
+I (136139) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+I (136259) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (139109) esp_netif_handlers: sta ip: 192.168.1.179, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (139109) WiFi: Got IP: 192.168.1.179[0m
+I (140379) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:0, winSize:64
+[0;32mI (140849) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (140849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (140849) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (140939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (143519) mqtts_example: Other event id:7[0m
+I (144039) wifi:<ba-del>idx:1, tid:4
+I (144049) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:1, winSize:64
+I (144479) wifi:<ba-del>idx:1, tid:4
+I (144509) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:2, winSize:64
+[0;32mI (144809) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (144819) mqtts_example: sent subscribe successful, msg_id=821[0m
+I (145789) wifi:<ba-del>idx:1, tid:4
+[0;32mI (145799) mqtts_example: Other event id:3[0m
+I (145829) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:4, winSize:64
+[0;32mI (146149) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (146149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (146149) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (146239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (146549) wifi:<ba-del>idx:1, tid:4
+[0;32mI (146569) mqtts_example: Other event id:5[0m
+I (146589) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:5, winSize:64
+[0;32mI (147429) mqtts_example: Other event id:5[0m
+I (147829) wifi:<ba-del>idx:1, tid:4
+I (147839) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:4, ssn:7, winSize:64
+[0;32mI (147849) mqtts_example: Other event id:5[0m
+I (147849) wifi:state: run -> init (0x22c0)
+I (147859) wifi:pm stop, total sleep time: 3040810 us / 11748560 us
+
+I (147859) wifi:<ba-del>idx:1, tid:4
+I (147859) wifi:<ba-del>idx:0, tid:7
+I (147859) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (147869) WiFi: Disconnected. Reconnecting...[0m
+[0;31mE (147869) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (147879) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (147889) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (150289) WiFi: Disconnected. Reconnecting...[0m
+I (150299) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (150299) wifi:state: init -> auth (0xb0)
+I (150319) wifi:state: auth -> assoc (0x0)
+I (150349) wifi:state: assoc -> run (0x10)
+[0;32mI (151449) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (151449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (151449) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (151539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (156749) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (156749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (156749) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (156839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (160349) wifi:state: run -> init (0xcc00)
+I (160359) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (160359) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (162049) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (162049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (162049) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (162139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (162779) WiFi: Disconnected. Reconnecting...[0m
+I (162789) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (162789) wifi:state: init -> auth (0xb0)
+I (162809) wifi:state: auth -> assoc (0x0)
+I (162839) wifi:state: assoc -> run (0x10)
+[0;32mI (162889) mqtts_example: Other event id:7[0m
+[0;31mE (162889) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (162889) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (162889) mqtt_client: Error transport connect[0m
+[0;32mI (162899) mqtts_example: Other event id:0[0m
+[0;32mI (162899) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (167349) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (167349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (167349) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (167439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (172649) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (172649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (172649) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (172739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (172839) wifi:state: run -> init (0xcc00)
+I (172849) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (172849) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (172909) mqtts_example: Other event id:7[0m
+[0;31mE (172909) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (172909) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (172909) mqtt_client: Error transport connect[0m
+[0;32mI (172919) mqtts_example: Other event id:0[0m
+[0;32mI (172919) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (175269) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (177679) WiFi: Disconnected. Reconnecting...[0m
+I (177729) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (177729) wifi:state: init -> auth (0xb0)
+I (177739) wifi:state: auth -> init (0x8a0)
+I (177749) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (177749) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (177939) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (177939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (177939) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (178029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (180169) WiFi: Disconnected. Reconnecting...[0m
+I (180289) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (180289) wifi:state: init -> auth (0xb0)
+I (181299) wifi:state: auth -> init (0x200)
+I (181309) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (181309) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (182929) mqtts_example: Other event id:7[0m
+[0;31mE (182929) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (182929) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (182929) mqtt_client: Error transport connect[0m
+[0;32mI (182939) mqtts_example: Other event id:0[0m
+[0;32mI (182939) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (183239) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (183239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (183239) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (183329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (183729) WiFi: Disconnected. Reconnecting...[0m
+I (183749) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (183749) wifi:state: init -> auth (0xb0)
+I (183779) wifi:state: auth -> assoc (0x0)
+I (183809) wifi:state: assoc -> run (0x10)
+[0;32mI (188539) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (188539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (188539) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (188629) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (192949) mqtts_example: Other event id:7[0m
+[0;31mE (192949) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (192949) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (192949) mqtt_client: Error transport connect[0m
+[0;32mI (192959) mqtts_example: Other event id:0[0m
+[0;32mI (192959) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+I (193809) wifi:state: run -> init (0xcc00)
+I (193819) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (193819) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (193839) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (193839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (193839) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (193929) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (196239) WiFi: Disconnected. Reconnecting...[0m
+I (196269) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (196269) wifi:state: init -> auth (0xb0)
+I (196289) wifi:state: auth -> assoc (0x0)
+I (196339) wifi:state: assoc -> run (0x10)
+[0;32mI (199139) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (199139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (199139) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (199229) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (202969) mqtts_example: Other event id:7[0m
+[0;31mE (202969) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (202969) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (202969) mqtt_client: Error transport connect[0m
+[0;32mI (202979) mqtts_example: Other event id:0[0m
+[0;32mI (202979) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (204439) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (204439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (204439) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (204529) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (206339) wifi:state: run -> init (0xcc00)
+I (206349) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (206349) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (208769) WiFi: Disconnected. Reconnecting...[0m
+I (208779) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (208779) wifi:state: init -> auth (0xb0)
+I (208829) wifi:state: auth -> assoc (0x0)
+[0;32mI (209739) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (209739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (209739) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (209829) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (209829) wifi:state: assoc -> init (0x2700)
+I (209849) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (209849) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (212269) WiFi: Disconnected. Reconnecting...[0m
+I (212339) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (212339) wifi:state: init -> auth (0xb0)
+I (212349) wifi:state: auth -> assoc (0x0)
+I (212379) wifi:state: assoc -> run (0x10)
+[0;32mI (212989) mqtts_example: Other event id:7[0m
+[0;31mE (212989) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (212989) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (212989) mqtt_client: Error transport connect[0m
+[0;32mI (212999) mqtts_example: Other event id:0[0m
+[0;32mI (212999) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (215039) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (215039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (215039) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (215129) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (220339) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (220339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (220339) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (220429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (222379) wifi:state: run -> init (0xcc00)
+I (222389) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (222389) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (223009) mqtts_example: Other event id:7[0m
+[0;31mE (223009) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (223009) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (223009) mqtt_client: Error transport connect[0m
+[0;32mI (223019) mqtts_example: Other event id:0[0m
+[0;32mI (223019) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (224809) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (225639) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (225639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (225639) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (225729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (227219) WiFi: Disconnected. Reconnecting...[0m
+I (227249) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (227249) wifi:state: init -> auth (0xb0)
+I (227269) wifi:state: auth -> assoc (0x0)
+I (227289) wifi:state: assoc -> run (0x10)
+[0;32mI (230939) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (230939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (230939) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (231029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (233029) mqtts_example: Other event id:7[0m
+[0;31mE (233029) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (233029) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (233029) mqtt_client: Error transport connect[0m
+[0;32mI (233039) mqtts_example: Other event id:0[0m
+[0;32mI (233039) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (236239) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (236239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (236239) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 153204.00,1052.6032N,10648.5264E,1.37,21.9,3,,0.126,0.069,291224,23
+
+OK
+���s9x�^�|�( W��Tț��7O��y���`�˴H��Ft��D���i�t�]�i?�.��h�\t��WWY��GV �����?̍A]�s� ���5JT6h.|��o�۪Z�>,�n�R�_�-�ON��*�4���Xi��hj�����Dt�;�	�A-NA�^!��"r�,Y�T%J��ǀ��[E���~q���YvX��-��A�3V6�t��Vq0�	m8g:���c������`�7{s_�e��s���LBT�q�*7�,�fR�J�I~LFY��v͞(7�6C�
+7��'����3*�BhI(c���ag[�%�hR�)�j�Y����X_pn>*��I���HF����^Y��<PTm�vϻ��]ã���2�W�>�n�DkL�*�/�$�p�{�u�N������T�V����^�����׍���L5�!eȔ��>���ġ���w6P�EY]��ݦ��W��gM�AGg�:��dgl�CO�f)�MNq��e���6��#S�p�G�h�Ț�v@7˛��;,��7���P�Cq��&ĥV��쥷�^$4Z{o��0o��>cKg+��b���q����Y	č���m�����+������9��%�2)?��w�<x{Uy�5�b.�L9DR�i}�WV�;.�.�/�gL���so�MD�H�S�����A~�^�b�O��� -�v�oX�W�H��#h;���Uĕ����Rl��W�⋟��8�ǰ|@��Hծl�9V)�73eE�d�S	�^z��*����.�nr��-Z�Ƈ�Z�9;��Di��b��˰#%��cL�Dq�
+[0;32mI (236329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (237299) wifi:state: run -> init (0xcc00)
+I (237309) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (237309) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (239729) WiFi: Disconnected. Reconnecting...[0m
+I (239779) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (239789) wifi:state: init -> auth (0xb0)
+I (239829) wifi:state: auth -> assoc (0x0)
+I (239859) wifi:state: assoc -> run (0x10)

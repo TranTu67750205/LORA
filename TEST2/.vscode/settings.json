@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "wifi_config.h": "c",
+        "uart.h": "c",
+        "mqtt.h": "c",
+        "esp_system.h": "c",
+        "sub_mqtt.h": "c",
+        "esp_ota_ops.h": "c",
+        "esp_tls.h": "c",
+        "string.h": "c",
+        "*.inc": "c",
+        "freertos.h": "c",
+        "uart_sub.h": "c"
+    },
+    "idf.adapterTargetName": "esp32"
+}

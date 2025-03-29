@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "task.h": "c",
+        "gpio.h": "c",
+        "esp_log.h": "c",
+        "freertos.h": "c",
+        "uart.h": "c"
+    },
+    "idf.adapterTargetName": "esp32"
+}

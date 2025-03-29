@@ -1,0 +1,106 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/TEST2/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TEST2.c.obj
+C:/ESP IDF/project_esp/TEST2/main/TEST2.c: In function 'app_main':
+C:/ESP IDF/project_esp/TEST2/main/TEST2.c:145:17: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |     xTaskCreate(gps_mqtt, "gps_mqtt", 4096, NULL, 5, NULL);
+      |                 ^~~~~~~~
+      |                 |
+      |                 void (*)(void)
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from C:/ESP IDF/project_esp/TEST2/main/TEST2.c:3:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+In file included from C:/ESP IDF/project_esp/TEST2/main/TEST2.c:31:
+C:/ESP IDF/project_esp/TEST2/Components/uart_sub/include/uart_sub.h: At top level:
+C:/ESP IDF/project_esp/TEST2/Components/uart_sub/include/uart_sub.h:22:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   22 | static const char *TAG = "UART SIMSOM";
+      |                    ^~~
+In file included from C:/ESP IDF/project_esp/TEST2/main/TEST2.c:30:
+C:/ESP IDF/project_esp/TEST2/Components/wifi_config/include/wifi_config.h:38:20: warning: 'TAG_wifi' defined but not used [-Wunused-variable]
+   38 | static const char *TAG_wifi = "WiFi";
+      |                    ^~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable TEST2.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/TEST2/build/TEST2.bin
+[7/8] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/TEST2/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/TEST2/build/TEST2.bin""
+TEST2.bin binary size 0xe6bb0 bytes. Smallest app partition is 0x100000 bytes. 0x19450 bytes (10%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/ESP IDF/project_esp/TEST2/build" -P C:/Espesptool.py --chip esp32 -p COM7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 TEST2.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM7
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: f0:24:f9:59:9a:40
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16360...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.7 seconds (effective 290.9 kbit/s)...
+Hash of data verified.
+Compressed 945072 bytes to 593839...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e6dc... (5 %)
+Writing at 0x00027d46... (8 %)
+Writing at 0x0002cba9... (10 %)
+Writing at 0x00034b4f... (13 %)
+Writing at 0x0003e2ef... (16 %)
+Writing at 0x00044042... (18 %)
+Writing at 0x00049db2... (21 %)
+Writing at 0x0004fdc4... (24 %)
+Writing at 0x00055e03... (27 %)
+Writing at 0x0005bc16... (29 %)
+Writing at 0x00061735... (32 %)
+Writing at 0x00067640... (35 %)
+Writing at 0x0006db4c... (37 %)
+Writing at 0x00073875... (40 %)
+Writing at 0x00079464... (43 %)
+Writing at 0x0007e755... (45 %)
+Writing at 0x00083b38... (48 %)
+Writing at 0x000890ed... (51 %)
+Writing at 0x0008e4b2... (54 %)
+Writing at 0x00093b06... (56 %)
+Writing at 0x00099349... (59 %)
+Writing at 0x0009f157... (62 %)
+Writing at 0x000a4bc7... (64 %)
+Writing at 0x000aa6c2... (67 %)
+Writing at 0x000b0296... (70 %)
+Writing at 0x000b5e82... (72 %)
+Writing at 0x000bb7f6... (75 %)
+Writing at 0x000c1609... (78 %)
+Writing at 0x000c718d... (81 %)
+Writing at 0x000cc751... (83 %)
+Writing at 0x000d6454... (86 %)
+Writing at 0x000de4ea... (89 %)
+Writing at 0x000e4321... (91 %)
+Writing at 0x000e9e6d... (94 %)
+Writing at 0x000effe3... (97 %)
+Writing at 0x000f5233... (100 %)
+Wrote 945072 bytes (593839 compressed) at 0x00010000 in 13.5 seconds (effective 559.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 501.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

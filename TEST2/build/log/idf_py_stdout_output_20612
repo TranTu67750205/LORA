@@ -1,0 +1,694 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=272ach (160428) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372d4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b214 vaddr=40080000 size=04e04h ( 19972) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3470h (668784) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3498 vaddr=40084e04 size=135e4h ( 79332) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  913d2ac43...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (609) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (619) wifi:wifi firmware version: ccaebfa
+I (619) wifi:wifi certification version: v7.0
+I (619) wifi:config NVS flash: enabled
+I (619) wifi:config nano formating: disabled
+I (629) wifi:Init data frame dynamic rx buffer num: 32
+I (629) wifi:Init static rx mgmt buffer num: 5
+I (639) wifi:Init management short buffer num: 32
+I (639) wifi:Init dynamic tx buffer num: 32
+I (639) wifi:Init static rx buffer size: 1600
+I (649) wifi:Init static rx buffer num: 10
+I (649) wifi:Init dynamic rx buffer num: 32
+[0;32mI (659) wifi_init: rx ba win: 6[0m
+[0;32mI (659) wifi_init: accept mbox: 6[0m
+[0;32mI (659) wifi_init: tcpip mbox: 32[0m
+[0;32mI (669) wifi_init: udp mbox: 6[0m
+[0;32mI (669) wifi_init: tcp mbox: 6[0m
+[0;32mI (679) wifi_init: tcp tx win: 5760[0m
+[0;32mI (679) wifi_init: tcp rx win: 5760[0m
+[0;32mI (679) wifi_init: tcp mss: 1440[0m
+[0;32mI (689) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (689) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (699) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (f0:24:f9:59:9a:40)
+I (779) wifi:enable tsf
+I (789) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (799) wifi:state: init -> auth (0xb0)
+I (849) wifi:state: auth -> assoc (0x0)
+I (869) wifi:state: assoc -> run (0x10)
+I (919) wifi:connected with 9999, aid = 2, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (919) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (919) wifi:pm start, type: 1
+
+I (919) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (939) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+I (959) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1779) mqtts_example: [APP] Free memory: 229856 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1929) esp_netif_handlers: sta ip: 192.168.1.180, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1929) WiFi: Got IP: 192.168.1.180[0m
+I (2789) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:6, ssn:2, winSize:64
+I (2799) wifi:<ba-del>idx:1, tid:6
+I (2809) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:0, ssn:0, winSize:64
+[0;32mI (3599) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3599) mqtts_example: sent subscribe successful, msg_id=13117[0m
+[0;32mI (3879) mqtts_example: Bytes received: 100[0m
+[0;32mI (3879) UART SIMSOM: lat is 5. and long is 6,0[0m
+[0;32mI (3879) mqtts_example: lat is 5.100000 and long is 6.000417[0m
+[0;32mI (3879) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103552.00,1052.6030N,10648.5294E,1.01,15.6,3,,0.046,0.025,010125,29
+
+OK
+[0m
+[0;32mI (3889) mqtts_example: GPS json: 
+{"latitude": "5.100000", "longtitude": "6.000417"} 
+ 
+ 
+[0m
+[0;32mI (3929) mqtts_example: Other event id:3[0m
+[0;32mI (4009) mqtts_example: Bytes received: 0[0m
+[0;32mI (4109) mqtts_example: Bytes received: 0[0m
+[0;32mI (4209) mqtts_example: Bytes received: 0[0m
+[0;32mI (4309) mqtts_example: Bytes received: 0[0m
+[0;32mI (4339) mqtts_example: Other event id:5[0m
+[0;32mI (4409) mqtts_example: Bytes received: 0[0m
+[0;32mI (4509) mqtts_example: Bytes received: 0[0m
+[0;32mI (4609) mqtts_example: Bytes received: 0[0m
+[0;32mI (4709) mqtts_example: Bytes received: 0[0m
+[0;32mI (4809) mqtts_example: Bytes received: 0[0m
+[0;32mI (4909) mqtts_example: Bytes received: 0[0m
+[0;32mI (5009) mqtts_example: Bytes received: 0[0m
+[0;32mI (5109) mqtts_example: Bytes received: 0[0m
+[0;32mI (5209) mqtts_example: Bytes received: 0[0m
+[0;32mI (5309) mqtts_example: Bytes received: 0[0m
+[0;32mI (5409) mqtts_example: Bytes received: 0[0m
+[0;32mI (5509) mqtts_example: Bytes received: 0[0m
+[0;32mI (5609) mqtts_example: Bytes received: 0[0m
+[0;32mI (5709) mqtts_example: Bytes received: 0[0m
+[0;32mI (5809) mqtts_example: Bytes received: 0[0m
+[0;32mI (5909) mqtts_example: Bytes received: 0[0m
+[0;32mI (6009) mqtts_example: Bytes received: 0[0m
+[0;32mI (13109) mqtts_example: Bytes received: 100[0m
+[0;32mI (13109) UART SIMSOM: lat is 5. and long is 8,0[0m
+[0;32mI (13109) mqtts_example: lat is 5.083333 and long is 8.000800[0m
+[0;32mI (13109) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103602.00,1052.6030N,10648.5295E,1.04,15.5,3,,0.088,0.048,010125,28
+
+OK
+[0m
+[0;32mI (13119) mqtts_example: GPS json: 
+{"latitude": "5.083333", "longtitude": "8.000800"} 
+ 
+ 
+[0m
+[0;32mI (13239) mqtts_example: Bytes received: 0[0m
+[0;32mI (13339) mqtts_example: Bytes received: 0[0m
+[0;32mI (13439) mqtts_example: Bytes received: 0[0m
+[0;32mI (13539) mqtts_example: Bytes received: 0[0m
+[0;32mI (13559) mqtts_example: Other event id:5[0m
+[0;32mI (13639) mqtts_example: Bytes received: 0[0m
+[0;32mI (13739) mqtts_example: Bytes received: 0[0m
+[0;32mI (13839) mqtts_example: Bytes received: 0[0m
+[0;32mI (13939) mqtts_example: Bytes received: 0[0m
+[0;32mI (14039) mqtts_example: Bytes received: 0[0m
+[0;32mI (14139) mqtts_example: Bytes received: 0[0m
+[0;32mI (14239) mqtts_example: Bytes received: 0[0m
+[0;32mI (14339) mqtts_example: Bytes received: 0[0m
+[0;32mI (14439) mqtts_example: Bytes received: 0[0m
+[0;32mI (14539) mqtts_example: Bytes received: 0[0m
+[0;32mI (14639) mqtts_example: Bytes received: 0[0m
+[0;32mI (14739) mqtts_example: Bytes received: 0[0m
+[0;32mI (14839) mqtts_example: Bytes received: 0[0m
+[0;32mI (14939) mqtts_example: Bytes received: 0[0m
+[0;32mI (15039) mqtts_example: Bytes received: 0[0m
+[0;32mI (15139) mqtts_example: Bytes received: 0[0m
+[0;32mI (15239) mqtts_example: Bytes received: 0[0m
+[0;32mI (22339) mqtts_example: Bytes received: 100[0m
+[0;32mI (22339) UART SIMSOM: lat is 5. and long is 3,0[0m
+[0;32mI (22339) mqtts_example: lat is 5.066667 and long is 3.001217[0m
+[0;32mI (22339) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103611.00,1052.6030N,10648.5295E,1.07,15.4,3,,0.133,0.073,010125,29
+
+OK
+[0m
+[0;32mI (22349) mqtts_example: GPS json: 
+{"latitude": "5.066667", "longtitude": "3.001217"} 
+ 
+ 
+[0m
+[0;32mI (22469) mqtts_example: Bytes received: 0[0m
+[0;32mI (22569) mqtts_example: Bytes received: 0[0m
+[0;32mI (22669) mqtts_example: Bytes received: 0[0m
+[0;32mI (22769) mqtts_example: Bytes received: 0[0m
+[0;32mI (22869) mqtts_example: Bytes received: 0[0m
+[0;32mI (22969) mqtts_example: Bytes received: 0[0m
+[0;32mI (23069) mqtts_example: Bytes received: 0[0m
+[0;32mI (23169) mqtts_example: Bytes received: 0[0m
+[0;32mI (23269) mqtts_example: Bytes received: 0[0m
+[0;32mI (23369) mqtts_example: Bytes received: 0[0m
+[0;32mI (23469) mqtts_example: Bytes received: 0[0m
+[0;32mI (23569) mqtts_example: Bytes received: 0[0m
+[0;32mI (23669) mqtts_example: Bytes received: 0[0m
+[0;32mI (23769) mqtts_example: Bytes received: 0[0m
+[0;32mI (23869) mqtts_example: Bytes received: 0[0m
+[0;32mI (23969) mqtts_example: Bytes received: 0[0m
+[0;32mI (24069) mqtts_example: Bytes received: 0[0m
+[0;32mI (24169) mqtts_example: Bytes received: 0[0m
+[0;32mI (24269) mqtts_example: Bytes received: 0[0m
+[0;32mI (24369) mqtts_example: Bytes received: 0[0m
+[0;32mI (24469) mqtts_example: Bytes received: 0[0m
+[0;32mI (31569) mqtts_example: Bytes received: 100[0m
+[0;32mI (31569) UART SIMSOM: lat is 5. and long is 3,0[0m
+[0;32mI (31569) mqtts_example: lat is 5.066667 and long is 3.000300[0m
+[0;32mI (31569) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103620.00,1052.6030N,10648.5295E,1.01,15.4,3,,0.033,0.018,010125,29
+
+OK
+[0m
+[0;32mI (31589) mqtts_example: GPS json: 
+{"latitude": "5.066667", "longtitude": "3.000300"} 
+ 
+ 
+[0m
+[0;32mI (31699) mqtts_example: Bytes received: 0[0m
+[0;32mI (31799) mqtts_example: Bytes received: 0[0m
+[0;32mI (31899) mqtts_example: Bytes received: 0[0m
+[0;32mI (31999) mqtts_example: Bytes received: 0[0m
+[0;32mI (32099) mqtts_example: Bytes received: 0[0m
+[0;32mI (32199) mqtts_example: Bytes received: 0[0m
+[0;32mI (32299) mqtts_example: Bytes received: 0[0m
+[0;32mI (32399) mqtts_example: Bytes received: 0[0m
+[0;32mI (32499) mqtts_example: Bytes received: 0[0m
+[0;32mI (32599) mqtts_example: Bytes received: 0[0m
+[0;32mI (32699) mqtts_example: Bytes received: 0[0m
+[0;32mI (32799) mqtts_example: Bytes received: 0[0m
+[0;32mI (32899) mqtts_example: Bytes received: 0[0m
+[0;32mI (32999) mqtts_example: Bytes received: 0[0m
+[0;32mI (33019) mqtts_example: Other event id:5[0m
+[0;32mI (33099) mqtts_example: Bytes received: 0[0m
+[0;32mI (33199) mqtts_example: Bytes received: 0[0m
+[0;32mI (33299) mqtts_example: Bytes received: 0[0m
+[0;32mI (33399) mqtts_example: Bytes received: 0[0m
+[0;32mI (33499) mqtts_example: Bytes received: 0[0m
+[0;32mI (33599) mqtts_example: Bytes received: 0[0m
+[0;32mI (33699) mqtts_example: Bytes received: 0[0m
+[0;32mI (35059) mqtts_example: Other event id:5[0m
+[0;32mI (40799) mqtts_example: Bytes received: 100[0m
+[0;32mI (40799) UART SIMSOM: lat is 5. and long is 0,0[0m
+[0;32mI (40799) mqtts_example: lat is 5.066667 and long is 0.000000[0m
+[0;32mI (40799) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103629.00,1052.6030N,10648.5296E,1.07,15.4,3,,0.000,0.000,010125,29
+
+OK
+[0m
+[0;32mI (40809) mqtts_example: GPS json: 
+{"latitude": "5.066667", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (40929) mqtts_example: Bytes received: 0[0m
+[0;32mI (41029) mqtts_example: Bytes received: 0[0m
+[0;32mI (41129) mqtts_example: Bytes received: 0[0m
+[0;32mI (41219) mqtts_example: Other event id:5[0m
+[0;32mI (41229) mqtts_example: Bytes received: 0[0m
+[0;32mI (41329) mqtts_example: Bytes received: 0[0m
+[0;32mI (41429) mqtts_example: Bytes received: 0[0m
+[0;32mI (41529) mqtts_example: Bytes received: 0[0m
+[0;32mI (41629) mqtts_example: Bytes received: 0[0m
+[0;32mI (41729) mqtts_example: Bytes received: 0[0m
+[0;32mI (41829) mqtts_example: Bytes received: 0[0m
+[0;32mI (41929) mqtts_example: Bytes received: 0[0m
+[0;32mI (42029) mqtts_example: Bytes received: 0[0m
+[0;32mI (42129) mqtts_example: Bytes received: 0[0m
+[0;32mI (42229) mqtts_example: Bytes received: 0[0m
+[0;32mI (42329) mqtts_example: Bytes received: 0[0m
+[0;32mI (42429) mqtts_example: Bytes received: 0[0m
+[0;32mI (42529) mqtts_example: Bytes received: 0[0m
+[0;32mI (42629) mqtts_example: Bytes received: 0[0m
+[0;32mI (42729) mqtts_example: Bytes received: 0[0m
+[0;32mI (42829) mqtts_example: Bytes received: 0[0m
+[0;32mI (42929) mqtts_example: Bytes received: 0[0m
+[0;32mI (50029) mqtts_example: Bytes received: 100[0m
+[0;32mI (50029) UART SIMSOM: lat is 5. and long is 2,0[0m
+[0;32mI (50029) mqtts_example: lat is 5.033333 and long is 2.000933[0m
+[0;32mI (50029) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103639.00,1052.6030N,10648.5295E,1.01,15.2,3,,0.102,0.056,010125,30
+
+OK
+[0m
+[0;32mI (50039) mqtts_example: GPS json: 
+{"latitude": "5.033333", "longtitude": "2.000933"} 
+ 
+ 
+[0m
+[0;32mI (50159) mqtts_example: Bytes received: 0[0m
+[0;32mI (50259) mqtts_example: Bytes received: 0[0m
+[0;32mI (50359) mqtts_example: Bytes received: 0[0m
+[0;32mI (50419) mqtts_example: Other event id:5[0m
+[0;32mI (50459) mqtts_example: Bytes received: 0[0m
+[0;32mI (50559) mqtts_example: Bytes received: 0[0m
+[0;32mI (50659) mqtts_example: Bytes received: 0[0m
+[0;32mI (50759) mqtts_example: Bytes received: 0[0m
+[0;32mI (50859) mqtts_example: Bytes received: 0[0m
+[0;32mI (50959) mqtts_example: Bytes received: 0[0m
+[0;32mI (51059) mqtts_example: Bytes received: 0[0m
+[0;32mI (51159) mqtts_example: Bytes received: 0[0m
+[0;32mI (51259) mqtts_example: Bytes received: 0[0m
+[0;32mI (51359) mqtts_example: Bytes received: 0[0m
+[0;32mI (51459) mqtts_example: Bytes received: 0[0m
+[0;32mI (51559) mqtts_example: Bytes received: 0[0m
+[0;32mI (51659) mqtts_example: Bytes received: 0[0m
+[0;32mI (51759) mqtts_example: Bytes received: 0[0m
+[0;32mI (51859) mqtts_example: Bytes received: 0[0m
+[0;32mI (51959) mqtts_example: Bytes received: 0[0m
+[0;32mI (52059) mqtts_example: Bytes received: 0[0m
+[0;32mI (52159) mqtts_example: Bytes received: 0[0m
+[0;32mI (59259) mqtts_example: Bytes received: 100[0m
+[0;32mI (59259) UART SIMSOM: lat is 4. and long is 4,0[0m
+[0;32mI (59259) mqtts_example: lat is 4.133333 and long is 4.000767[0m
+[0;32mI (59259) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103648.00,1052.6030N,10648.5295E,1.01,14.8,3,,0.084,0.046,010125,30
+
+OK
+[0m
+[0;32mI (59269) mqtts_example: GPS json: 
+{"latitude": "4.133333", "longtitude": "4.000767"} 
+ 
+ 
+[0m
+[0;32mI (59389) mqtts_example: Bytes received: 0[0m
+[0;32mI (59489) mqtts_example: Bytes received: 0[0m
+[0;32mI (59589) mqtts_example: Bytes received: 0[0m
+[0;32mI (59689) mqtts_example: Bytes received: 0[0m
+[0;32mI (59739) mqtts_example: Other event id:5[0m
+[0;32mI (59789) mqtts_example: Bytes received: 0[0m
+[0;32mI (59889) mqtts_example: Bytes received: 0[0m
+[0;32mI (59989) mqtts_example: Bytes received: 0[0m
+[0;32mI (60089) mqtts_example: Bytes received: 0[0m
+[0;32mI (60189) mqtts_example: Bytes received: 0[0m
+[0;32mI (60289) mqtts_example: Bytes received: 0[0m
+[0;32mI (60389) mqtts_example: Bytes received: 0[0m
+[0;32mI (60489) mqtts_example: Bytes received: 0[0m
+[0;32mI (60589) mqtts_example: Bytes received: 0[0m
+[0;32mI (60689) mqtts_example: Bytes received: 0[0m
+[0;32mI (60789) mqtts_example: Bytes received: 0[0m
+[0;32mI (60889) mqtts_example: Bytes received: 0[0m
+[0;32mI (60989) mqtts_example: Bytes received: 0[0m
+[0;32mI (61089) mqtts_example: Bytes received: 0[0m
+[0;32mI (61189) mqtts_example: Bytes received: 0[0m
+[0;32mI (61289) mqtts_example: Bytes received: 0[0m
+[0;32mI (61389) mqtts_example: Bytes received: 0[0m
+[0;32mI (68489) mqtts_example: Bytes received: 100[0m
+[0;32mI (68489) UART SIMSOM: lat is 4. and long is 9,0[0m
+[0;32mI (68489) mqtts_example: lat is 4.116667 and long is 9.000450[0m
+[0;32mI (68489) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103657.00,1052.6029N,10648.5294E,1.01,14.7,3,,0.049,0.027,010125,30
+
+OK
+[0m
+[0;32mI (68499) mqtts_example: GPS json: 
+{"latitude": "4.116667", "longtitude": "9.000450"} 
+ 
+ 
+[0m
+[0;32mI (68619) mqtts_example: Bytes received: 0[0m
+[0;32mI (68719) mqtts_example: Bytes received: 0[0m
+[0;32mI (68819) mqtts_example: Bytes received: 0[0m
+[0;32mI (68859) mqtts_example: Other event id:5[0m
+[0;32mI (68919) mqtts_example: Bytes received: 0[0m
+[0;32mI (69019) mqtts_example: Bytes received: 0[0m
+[0;32mI (69119) mqtts_example: Bytes received: 0[0m
+[0;32mI (69219) mqtts_example: Bytes received: 0[0m
+[0;32mI (69319) mqtts_example: Bytes received: 0[0m
+[0;32mI (69419) mqtts_example: Bytes received: 0[0m
+[0;32mI (69519) mqtts_example: Bytes received: 0[0m
+[0;32mI (69619) mqtts_example: Bytes received: 0[0m
+[0;32mI (69719) mqtts_example: Bytes received: 0[0m
+[0;32mI (69819) mqtts_example: Bytes received: 0[0m
+[0;32mI (69919) mqtts_example: Bytes received: 0[0m
+[0;32mI (70019) mqtts_example: Bytes received: 0[0m
+[0;32mI (70119) mqtts_example: Bytes received: 0[0m
+[0;32mI (70219) mqtts_example: Bytes received: 0[0m
+[0;32mI (70319) mqtts_example: Bytes received: 0[0m
+[0;32mI (70419) mqtts_example: Bytes received: 0[0m
+[0;32mI (70519) mqtts_example: Bytes received: 0[0m
+[0;32mI (70619) mqtts_example: Bytes received: 0[0m
+[0;32mI (77719) mqtts_example: Bytes received: 100[0m
+[0;32mI (77719) UART SIMSOM: lat is 4. and long is 5,0[0m
+[0;32mI (77719) mqtts_example: lat is 4.116667 and long is 5.000050[0m
+[0;32mI (77719) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103706.00,1052.6029N,10648.5294E,1.01,14.7,3,,0.005,0.003,010125,30
+
+OK
+[0m
+[0;32mI (77729) mqtts_example: GPS json: 
+{"latitude": "4.116667", "longtitude": "5.000050"} 
+ 
+ 
+[0m
+[0;32mI (77849) mqtts_example: Bytes received: 0[0m
+[0;32mI (77949) mqtts_example: Bytes received: 0[0m
+[0;32mI (78049) mqtts_example: Bytes received: 0[0m
+[0;32mI (78149) mqtts_example: Bytes received: 0[0m
+[0;32mI (78169) mqtts_example: Other event id:5[0m
+[0;32mI (78249) mqtts_example: Bytes received: 0[0m
+[0;32mI (78349) mqtts_example: Bytes received: 0[0m
+[0;32mI (78449) mqtts_example: Bytes received: 0[0m
+[0;32mI (78549) mqtts_example: Bytes received: 0[0m
+[0;32mI (78649) mqtts_example: Bytes received: 0[0m
+[0;32mI (78749) mqtts_example: Bytes received: 0[0m
+[0;32mI (78849) mqtts_example: Bytes received: 0[0m
+[0;32mI (78949) mqtts_example: Bytes received: 0[0m
+[0;32mI (79049) mqtts_example: Bytes received: 0[0m
+[0;32mI (79149) mqtts_example: Bytes received: 0[0m
+[0;32mI (79249) mqtts_example: Bytes received: 0[0m
+[0;32mI (79349) mqtts_example: Bytes received: 0[0m
+[0;32mI (79449) mqtts_example: Bytes received: 0[0m
+[0;32mI (79549) mqtts_example: Bytes received: 0[0m
+[0;32mI (79649) mqtts_example: Bytes received: 0[0m
+[0;32mI (79749) mqtts_example: Bytes received: 0[0m
+[0;32mI (79849) mqtts_example: Bytes received: 0[0m
+[0;32mI (86949) mqtts_example: Bytes received: 0[0m
+[0;32mI (87049) mqtts_example: Bytes received: 0[0m
+[0;32mI (87149) mqtts_example: Bytes received: 0[0m
+[0;32mI (87249) mqtts_example: Bytes received: 0[0m
+[0;32mI (87349) mqtts_example: Bytes received: 0[0m
+[0;32mI (87449) mqtts_example: Bytes received: 0[0m
+[0;32mI (87549) mqtts_example: Bytes received: 0[0m
+[0;32mI (87649) mqtts_example: Bytes received: 0[0m
+[0;32mI (87749) mqtts_example: Bytes received: 0[0m
+[0;32mI (87849) mqtts_example: Bytes received: 0[0m
+[0;32mI (87949) mqtts_example: Bytes received: 0[0m
+[0;32mI (88049) mqtts_example: Bytes received: 0[0m
+[0;32mI (88149) mqtts_example: Bytes received: 0[0m
+[0;32mI (88249) mqtts_example: Bytes received: 0[0m
+[0;32mI (88349) mqtts_example: Bytes received: 0[0m
+[0;32mI (88449) mqtts_example: Bytes received: 0[0m
+[0;32mI (88549) mqtts_example: Bytes received: 0[0m
+[0;32mI (88649) mqtts_example: Bytes received: 0[0m
+[0;32mI (88749) mqtts_example: Bytes received: 0[0m
+[0;32mI (88849) mqtts_example: Bytes received: 0[0m
+[0;32mI (88949) mqtts_example: Bytes received: 0[0m
+[0;32mI (96049) mqtts_example: Bytes received: 100[0m
+[0;32mI (96049) UART SIMSOM: lat is 4. and long is 1,0[0m
+[0;32mI (96049) mqtts_example: lat is 4.100000 and long is 1.001383[0m
+[0;32mI (96049) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103725.00,1052.6029N,10648.5294E,1.01,14.6,3,,0.151,0.083,010125,30
+
+OK
+[0m
+[0;32mI (96059) mqtts_example: GPS json: 
+{"latitude": "4.100000", "longtitude": "1.001383"} 
+ 
+ 
+[0m
+[0;32mI (96179) mqtts_example: Bytes received: 0[0m
+[0;32mI (96279) mqtts_example: Bytes received: 0[0m
+[0;32mI (96379) mqtts_example: Bytes received: 0[0m
+[0;32mI (96399) mqtts_example: Other event id:5[0m
+[0;32mI (96479) mqtts_example: Bytes received: 0[0m
+[0;32mI (96579) mqtts_example: Bytes received: 0[0m
+[0;32mI (96679) mqtts_example: Bytes received: 0[0m
+[0;32mI (96779) mqtts_example: Bytes received: 0[0m
+[0;32mI (96879) mqtts_example: Bytes received: 0[0m
+[0;32mI (96979) mqtts_example: Bytes received: 0[0m
+[0;32mI (97079) mqtts_example: Bytes received: 0[0m
+[0;32mI (97179) mqtts_example: Bytes received: 0[0m
+[0;32mI (97279) mqtts_example: Bytes received: 0[0m
+[0;32mI (97379) mqtts_example: Bytes received: 0[0m
+[0;32mI (97479) mqtts_example: Bytes received: 0[0m
+[0;32mI (97579) mqtts_example: Bytes received: 0[0m
+[0;32mI (97679) mqtts_example: Bytes received: 0[0m
+[0;32mI (97779) mqtts_example: Bytes received: 0[0m
+[0;32mI (97879) mqtts_example: Bytes received: 0[0m
+[0;32mI (97979) mqtts_example: Bytes received: 0[0m
+[0;32mI (98079) mqtts_example: Bytes received: 0[0m
+[0;32mI (98179) mqtts_example: Bytes received: 0[0m
+[0;32mI (105279) mqtts_example: Bytes received: 100[0m
+[0;32mI (105279) UART SIMSOM: lat is 4. and long is 0,0[0m
+[0;32mI (105279) mqtts_example: lat is 4.083333 and long is 0.000733[0m
+[0;32mI (105279) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103734.00,1052.6029N,10648.5294E,1.02,14.5,3,,0.080,0.044,010125,30
+
+OK
+[0m
+[0;32mI (105299) mqtts_example: GPS json: 
+{"latitude": "4.083333", "longtitude": "0.000733"} 
+ 
+ 
+[0m
+[0;32mI (105409) mqtts_example: Bytes received: 0[0m
+[0;32mI (105509) mqtts_example: Bytes received: 0[0m
+[0;32mI (105609) mqtts_example: Bytes received: 0[0m
+[0;32mI (105709) mqtts_example: Bytes received: 0[0m
+[0;32mI (105809) mqtts_example: Bytes received: 0[0m
+[0;32mI (105909) mqtts_example: Bytes received: 0[0m
+[0;32mI (106009) mqtts_example: Bytes received: 0[0m
+[0;32mI (106109) mqtts_example: Bytes received: 0[0m
+[0;32mI (106209) mqtts_example: Bytes received: 0[0m
+[0;32mI (106309) mqtts_example: Bytes received: 0[0m
+[0;32mI (106409) mqtts_example: Bytes received: 0[0m
+[0;32mI (106509) mqtts_example: Bytes received: 0[0m
+[0;32mI (106609) mqtts_example: Bytes received: 0[0m
+[0;32mI (106709) mqtts_example: Bytes received: 0[0m
+[0;32mI (106809) mqtts_example: Bytes received: 0[0m
+[0;32mI (106909) mqtts_example: Bytes received: 0[0m
+[0;32mI (107009) mqtts_example: Bytes received: 0[0m
+[0;32mI (107109) mqtts_example: Bytes received: 0[0m
+[0;32mI (107209) mqtts_example: Bytes received: 0[0m
+[0;32mI (107309) mqtts_example: Bytes received: 0[0m
+[0;32mI (107409) mqtts_example: Bytes received: 0[0m
+[0;32mI (107469) mqtts_example: Other event id:5[0m
+[0;32mI (114509) mqtts_example: Bytes received: 100[0m
+[0;32mI (114509) UART SIMSOM: lat is 4. and long is 4,0[0m
+[0;32mI (114509) mqtts_example: lat is 4.083333 and long is 4.001867[0m
+[0;32mI (114509) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103743.00,1052.6029N,10648.5294E,1.02,14.5,3,,0.204,0.112,010125,30
+
+OK
+[0m
+[0;32mI (114529) mqtts_example: GPS json: 
+{"latitude": "4.083333", "longtitude": "4.001867"} 
+ 
+ 
+[0m
+[0;32mI (114639) mqtts_example: Bytes received: 0[0m
+[0;32mI (114739) mqtts_example: Bytes received: 0[0m
+[0;32mI (114839) mqtts_example: Bytes received: 0[0m
+[0;32mI (114939) mqtts_example: Other event id:5[0m
+[0;32mI (114939) mqtts_example: Bytes received: 0[0m
+[0;32mI (115039) mqtts_example: Bytes received: 0[0m
+[0;32mI (115139) mqtts_example: Bytes received: 0[0m
+[0;32mI (115239) mqtts_example: Bytes received: 0[0m
+[0;32mI (115339) mqtts_example: Bytes received: 0[0m
+[0;32mI (115439) mqtts_example: Bytes received: 0[0m
+[0;32mI (115539) mqtts_example: Bytes received: 0[0m
+[0;32mI (115639) mqtts_example: Bytes received: 0[0m
+[0;32mI (115739) mqtts_example: Bytes received: 0[0m
+[0;32mI (115839) mqtts_example: Bytes received: 0[0m
+[0;32mI (115939) mqtts_example: Bytes received: 0[0m
+[0;32mI (116039) mqtts_example: Bytes received: 0[0m
+[0;32mI (116139) mqtts_example: Bytes received: 0[0m
+[0;32mI (116239) mqtts_example: Bytes received: 0[0m
+[0;32mI (116339) mqtts_example: Bytes received: 0[0m
+[0;32mI (116439) mqtts_example: Bytes received: 0[0m
+[0;32mI (116539) mqtts_example: Bytes received: 0[0m
+[0;32mI (116639) mqtts_example: Bytes received: 0[0m
+[0;32mI (123739) mqtts_example: Bytes received: 100[0m
+[0;32mI (123739) UART SIMSOM: lat is 4. and long is 9,0[0m
+[0;32mI (123739) mqtts_example: lat is 4.066667 and long is 9.000450[0m
+[0;32mI (123739) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103752.00,1052.6030N,10648.5294E,1.02,14.4,3,,0.049,0.027,010125,29
+
+OK
+[0m
+[0;32mI (123759) mqtts_example: GPS json: 
+{"latitude": "4.066667", "longtitude": "9.000450"} 
+ 
+ 
+[0m
+[0;32mI (123869) mqtts_example: Bytes received: 0[0m
+[0;32mI (123969) mqtts_example: Bytes received: 0[0m
+[0;32mI (124069) mqtts_example: Bytes received: 0[0m
+[0;32mI (124159) mqtts_example: Other event id:5[0m
+[0;32mI (124169) mqtts_example: Bytes received: 0[0m
+[0;32mI (124269) mqtts_example: Bytes received: 0[0m
+[0;32mI (124369) mqtts_example: Bytes received: 0[0m
+[0;32mI (124469) mqtts_example: Bytes received: 0[0m
+[0;32mI (124569) mqtts_example: Bytes received: 0[0m
+[0;32mI (124669) mqtts_example: Bytes received: 0[0m
+[0;32mI (124769) mqtts_example: Bytes received: 0[0m
+[0;32mI (124869) mqtts_example: Bytes received: 0[0m
+[0;32mI (124969) mqtts_example: Bytes received: 0[0m
+[0;32mI (125069) mqtts_example: Bytes received: 0[0m
+[0;32mI (125169) mqtts_example: Bytes received: 0[0m
+[0;32mI (125269) mqtts_example: Bytes received: 0[0m
+[0;32mI (125369) mqtts_example: Bytes received: 0[0m
+[0;32mI (125469) mqtts_example: Bytes received: 0[0m
+[0;32mI (125569) mqtts_example: Bytes received: 0[0m
+[0;32mI (125669) mqtts_example: Bytes received: 0[0m
+[0;32mI (125769) mqtts_example: Bytes received: 0[0m
+[0;32mI (125869) mqtts_example: Bytes received: 0[0m
+[0;32mI (132969) mqtts_example: Bytes received: 100[0m
+[0;32mI (132969) UART SIMSOM: lat is 4. and long is 4,0[0m
+[0;32mI (132969) mqtts_example: lat is 4.066667 and long is 4.000216[0m
+[0;32mI (132969) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103802.00,1052.6030N,10648.5294E,1.04,14.4,3,,0.024,0.013,010125,29
+
+OK
+[0m
+[0;32mI (132989) mqtts_example: GPS json: 
+{"latitude": "4.066667", "longtitude": "4.000216"} 
+ 
+ 
+[0m
+[0;32mI (133099) mqtts_example: Bytes received: 0[0m
+[0;32mI (133199) mqtts_example: Bytes received: 0[0m
+[0;32mI (133299) mqtts_example: Bytes received: 0[0m
+[0;32mI (133399) mqtts_example: Bytes received: 0[0m
+[0;32mI (133469) mqtts_example: Other event id:5[0m
+[0;32mI (133499) mqtts_example: Bytes received: 0[0m
+[0;32mI (133599) mqtts_example: Bytes received: 0[0m
+[0;32mI (133699) mqtts_example: Bytes received: 0[0m
+[0;32mI (133799) mqtts_example: Bytes received: 0[0m
+[0;32mI (133899) mqtts_example: Bytes received: 0[0m
+[0;32mI (133999) mqtts_example: Bytes received: 0[0m
+[0;32mI (134099) mqtts_example: Bytes received: 0[0m
+[0;32mI (134199) mqtts_example: Bytes received: 0[0m
+[0;32mI (134299) mqtts_example: Bytes received: 0[0m
+[0;32mI (134399) mqtts_example: Bytes received: 0[0m
+[0;32mI (134499) mqtts_example: Bytes received: 0[0m
+[0;32mI (134599) mqtts_example: Bytes received: 0[0m
+[0;32mI (134699) mqtts_example: Bytes received: 0[0m
+[0;32mI (134799) mqtts_example: Bytes received: 0[0m
+[0;32mI (134899) mqtts_example: Bytes received: 0[0m
+[0;32mI (134999) mqtts_example: Bytes received: 0[0m
+[0;32mI (135099) mqtts_example: Bytes received: 0[0m
+[0;32mI (142199) mqtts_example: Bytes received: 100[0m
+[0;32mI (142199) UART SIMSOM: lat is 4. and long is 8,0[0m
+[0;32mI (142199) mqtts_example: lat is 4.066667 and long is 8.000167[0m
+[0;32mI (142199) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103811.00,1052.6030N,10648.5294E,0.96,14.4,3,,0.018,0.010,010125,29
+
+OK
+[0m
+[0;32mI (142219) mqtts_example: GPS json: 
+{"latitude": "4.066667", "longtitude": "8.000167"} 
+ 
+ 
+[0m
+[0;32mI (142329) mqtts_example: Bytes received: 0[0m
+[0;32mI (142429) mqtts_example: Bytes received: 0[0m
+[0;32mI (142529) mqtts_example: Bytes received: 0[0m
+[0;32mI (142589) mqtts_example: Other event id:5[0m
+[0;32mI (142629) mqtts_example: Bytes received: 0[0m
+[0;32mI (142729) mqtts_example: Bytes received: 0[0m
+[0;32mI (142829) mqtts_example: Bytes received: 0[0m
+[0;32mI (142929) mqtts_example: Bytes received: 0[0m
+[0;32mI (143029) mqtts_example: Bytes received: 0[0m
+[0;32mI (143129) mqtts_example: Bytes received: 0[0m
+[0;32mI (143229) mqtts_example: Bytes received: 0[0m
+[0;32mI (143329) mqtts_example: Bytes received: 0[0m
+[0;32mI (143429) mqtts_example: Bytes received: 0[0m
+[0;32mI (143529) mqtts_example: Bytes received: 0[0m
+[0;32mI (143629) mqtts_example: Bytes received: 0[0m
+[0;32mI (143729) mqtts_example: Bytes received: 0[0m
+[0;32mI (143829) mqtts_example: Bytes received: 0[0m
+[0;32mI (143929) mqtts_example: Bytes received: 0[0m
+[0;32mI (144029) mqtts_example: Bytes received: 0[0m
+[0;32mI (144129) mqtts_example: Bytes received: 0[0m
+[0;32mI (144229) mqtts_example: Bytes received: 0[0m
+[0;32mI (144329) mqtts_example: Bytes received: 0[0m
+[0;32mI (151429) mqtts_example: Bytes received: 100[0m
+[0;32mI (151429) UART SIMSOM: lat is 4. and long is 1,0[0m
+[0;32mI (151429) mqtts_example: lat is 4.066667 and long is 1.000650[0m
+[0;32mI (151429) mqtts_example: GPS data_gps: 
+AT+QGPSLOC=0
++QGPSLOC: 103820.00,1052.6030N,10648.5294E,1.11,14.4,3,,0.071,0.039,010125,28
+
+OK
+[0m
+[0;32mI (151449) mqtts_example: GPS json: 
+{"latitude": "4.066667", "longtitude": "1.000650"} 
+ 
+ 
+[0m
+[0;32mI (151559) mqtts_example: Bytes received: 0[0m
+[0;32mI (151659) mqtts_example: Bytes received: 0[0m
+[0;32mI (151759) mqtts_example: Bytes received: 0[0m
+[0;32mI (151799) mqtts_example: Other event id:5[0m
+[0;32mI (151859) mqtts_example: Bytes received: 0[0m
+[0;32mI (151959) mqtts_example: Bytes received: 0[0m
+[0;32mI (152059) mqtts_example: Bytes received: 0[0m
+[0;32mI (152159) mqtts_example: Bytes received: 0[0m
+[0;32mI (152259) mqtts_example: Bytes received: 0[0m
+[0;32mI (152359) mqtts_example: Bytes received: 0[0m
+[0;32mI (152459) mqtts_example: Bytes received: 0[0m
+[0;32mI (152559) mqtts_example: Bytes received: 0[0m
+[0;32mI (152659) mqtts_example: Bytes received: 0[0m
+[0;32mI (152759) mqtts_example: Bytes received: 0[0m
+[0;32mI (152859) mqtts_example: Bytes received: 0[0m
+[0;32mI (152959) mqtts_example: Bytes received: 0[0m
+[0;32mI (153059) mqtts_example: Bytes received: 0[0m

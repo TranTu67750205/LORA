@@ -1,0 +1,421 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=273ech (160748) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037414 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b354 vaddr=40080000 size=04cc4h ( 19652) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a359ch (669084) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e35c4 vaddr=40084cc4 size=13724h ( 79652) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (471) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (480) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (486) app_init: ELF file SHA256:  33499d808...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (799) wifi:state: auth -> init (0x1c0)
+I (809) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (809) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (1779) mqtts_example: [APP] Free memory: 230668 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;31mE (1779) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1789) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1789) mqtt_client: Error transport connect[0m
+[0;32mI (1799) mqtts_example: Other event id:0[0m
+[0;32mI (1799) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1809) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1809) UART SIMSOM: GPS location.[0m
+[0;32mI (1819) main_task: Returned from app_main()[0m
+[0;32mI (2829) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+AT+QGPSLOC=0
++CME ERROR: 516
+[�;'	�L�*Cf��0�؏&[0m
+[0;32mI (2829) UART SIMSOM: Bytes received 1: 93[0m
+[0;32mI (2829) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2839) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+AT+QGPSLOC=0
++CME ERROR: 516
+[�;'	�L�*Cf��0�؏&[0m
+[0;32mI (3229) WiFi: Disconnected. Reconnecting...[0m
+I (3229) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (3239) wifi:state: init -> auth (0xb0)
+I (3249) wifi:state: auth -> assoc (0x0)
+I (3259) wifi:state: assoc -> run (0x10)
+I (3299) wifi:connected with Galaxy A05s 6247, aid = 5, channel 11, BW20, bssid = 2e:94:d7:57:2c:81
+I (3299) wifi:security: WPA2-PSK, phy: bgn, rssi: -30
+I (3309) wifi:pm start, type: 1
+
+I (3309) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3359) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3359) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3849) mqtts_example: Bytes received: 0[0m
+[0;32mI (3849) mqtts_example: No data received from UART[0m
+[0;32mI (3849) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (4319) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (4319) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (8849) UART SIMSOM: GPS location.[0m
+[0;32mI (9849) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (9849) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (9849) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9849) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (10859) mqtts_example: Bytes received: 0[0m
+[0;32mI (10859) mqtts_example: No data received from UART[0m
+[0;32mI (10859) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (11809) mqtts_example: Other event id:7[0m
+I (11969) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (12999) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12999) mqtts_example: sent subscribe successful, msg_id=25161[0m
+[0;32mI (13399) mqtts_example: Other event id:3[0m
+[0;32mI (15859) UART SIMSOM: GPS location.[0m
+[0;32mI (16859) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (16859) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (16859) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (16859) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (17869) mqtts_example: Bytes received: 0[0m
+[0;32mI (17869) mqtts_example: No data received from UART[0m
+[0;32mI (17869) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (22869) UART SIMSOM: GPS location.[0m
+[0;32mI (23869) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+'$Y~�q��Y�z���������|$HhȕF��aCE�,��~8���*§�:%�+��ot�ܒohi�6�v�>\J~�?��C���:#���W�mPA)����4v�8!۟����P{��xwR�����1(|�v����z���n_�'[�x�N�s�7����O����d��l��u;�7(X>����>�����p\e#c�%�o�]㈼;bi9݊[�7`�v�QdDȹ����x����m1��������~j� #&����?��c]	j�dh.!�χGf�.\��5_���ƵdTnިh[���IcQ��κ����1|X�A��u5Q��m�|�7cv(��8�-��(hi��"J�J6E]��}�����0��/G0A��'��qT�~{N�T�R���f8h��n�̑ IMwgsE�X$B�\Ƴ����r��x�cR����&Pˢ9.ȥ�M������o%�%�i#�_"�j�(��#�-���<������S>�0v�~T�P�q������a��^�:��6r+E���\Q��6�K�/���e���5�1��N�q8+Z�w��$��Sw3ejr�a���'Vɯi7?sx�]�ڥ�ʥ[�h�Y�1I�a���:�Τ��%��GwP
+�Fjj��`��2I��5E��@�-u��r��a�i��0��a3�-��XŖs11֌��V��lI˽��S	�������OH)Ri6c�D۫t��k�0fz��B�ֶ�a�q��o�q�$2$�'a1 _/P�W����;���2��q���q"�ѢY�Y,b�~x���P���)��[0m
+[0;32mI (23929) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (23939) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (23939) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+'$Y~�q��Y�z���������|$HhȕF��aCE�,��~8���*§�:%�+��ot�ܒohi�6�v�>\J~�?��C���:#���W�mPA)����4v�8!۟����P{��xwR�����1(|�v����z���n_�'[�x�N�s�7����O����d��l��u;�7(X>����>�����p\e#c�%�o�]㈼;bi9݊[�7`�v�QdDȹ����x����m1��������~j� #&����?��c]	j�dh.!�χGf�.\��5_���ƵdTnިh[���IcQ��κ����1|X�A��u5Q��m�|�7cv(��8�-��(hi��"J�J6E]��}�����0��/G0A��'��qT�~{N�T�R���f8h��n�̑ IMwgsE�X$B�\Ƴ����r��x�cR����&Pˢ9.ȥ�M������o%�%�i#�_"�j�(��#�-���<������S>�0v�~T�P�q������a��^�:��6r+E���\Q��6�K�/���e���5�1��N�q8+Z�w��$��Sw3ejr�a���'Vɯi7?sx�]�ڥ�ʥ[�h�Y�1I�a���:�Τ��%��GwP
+�Fjj��`��2I��5E��@�-u��r��a�i��0��a3�-��XŖs11֌��V��lI˽��S	�������OH)Ri6c�D۫t��k�0fz��B�ֶ�a�q��o�q�$2$�'a1 _/P�W����;���2��q���q"�ѢY�Y,b�~x���P���)��[0m
+[0;32mI (25019) mqtts_example: Bytes received: 0[0m
+[0;32mI (25019) mqtts_example: No data received from UART[0m
+[0;32mI (25019) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (30019) UART SIMSOM: GPS location.[0m
+[0;32mI (31019) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (31019) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (31019) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (31019) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (32029) mqtts_example: Bytes received: 0[0m
+[0;32mI (32029) mqtts_example: No data received from UART[0m
+[0;32mI (32029) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (37029) UART SIMSOM: GPS location.[0m
+[0;32mI (38029) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+W/���H����2�[T*�����^X�5
+/��}�4���W�[0m
+[0;32mI (38029) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (38029) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (38039) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+W/���H����2�[T*�����^X�5
+/��}�4���W�[0m
+[0;32mI (39049) mqtts_example: Bytes received: 0[0m
+[0;32mI (39049) mqtts_example: No data received from UART[0m
+[0;32mI (39049) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (44049) UART SIMSOM: GPS location.[0m
+[0;32mI (45049) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�R�@��Y�)�>�fM$_�
+[0;32mI (45049) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (45049) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (45049) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�R�@��Y�)�>�fM$_�
+[0;32mI (46059) mqtts_example: Bytes received: 0[0m
+[0;32mI (46059) mqtts_example: No data received from UART[0m
+[0;32mI (46059) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (51059) UART SIMSOM: GPS location.[0m
+[0;32mI (52059) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (52059) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (52059) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (52059) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (53069) mqtts_example: Bytes received: 0[0m
+[0;32mI (53069) mqtts_example: No data received from UART[0m
+[0;32mI (53069) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (58069) UART SIMSOM: GPS location.[0m
+[0;32mI (59069) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+���^���*`d���v�vŖ��?QuΊ�]�z�~�:7�\4��������~��A������{=�8P)��b�YO_�>C�H���s�Z��Z�^�	N��9 QM�]r�>�-��HI��Xu�HL6V#bl~4Kڊ3}�@ � Ћ�)E<`��DbGL�*��º��1���9�����*q��o���B�${]"�[^�heD�y�[��H~�jG���/�oAG���~�p���;7�; �-�-��}�������tatV�޹l[�Spȳ�nn����E�7��T$Є;V�S�);���ڭ��#e�>�����v��->5M=4?��RD��عv��M�B������謰����=<�2���
+[0;32mI (59099) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (59099) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (59109) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+���^���*`d���v�vŖ��?QuΊ�]�z�~�:7�\4��������~��A������{=�8P)��b�YO_�>C�H���s�Z��Z�^�	N��9 QM�]r�>�-��HI��Xu�HL6V#bl~4Kڊ3}�@ � Ћ�)E<`��DbGL�*��º��1���9�����*q��o���B�${]"�[^�heD�y�[��H~�jG���/�oAG���~�p���;7�; �-�-��}�������tatV�޹l[�Spȳ�nn����E�7��T$Є;V�S�);���ڭ��#e�>�����v��->5M=4?��RD��عv��M�B������謰����=<�2���
+[0;32mI (60149) mqtts_example: Bytes received: 0[0m
+[0;32mI (60149) mqtts_example: No data received from UART[0m
+[0;32mI (60149) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (65149) UART SIMSOM: GPS location.[0m
+[0;32mI (66149) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (66149) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (66149) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (66149) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (67159) mqtts_example: Bytes received: 0[0m
+[0;32mI (67159) mqtts_example: No data received from UART[0m
+[0;32mI (67159) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (72159) UART SIMSOM: GPS location.[0m
+[0;32mI (73159) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+I��6����S�q:�|�5�kk]q�p�1������q*o��,m:����O����)�����t���b-B��{�.+33�K�e2b����s�f߀��Kb[0m
+[0;32mI (73159) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (73169) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (73169) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+I��6����S�q:�|�5�kk]q�p�1������q*o��,m:����O����)�����t���b-B��{�.+33�K�e2b����s�f߀��Kb[0m
+[0;32mI (74189) mqtts_example: Bytes received: 0[0m
+[0;32mI (74189) mqtts_example: No data received from UART[0m
+[0;32mI (74189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (79189) UART SIMSOM: GPS location.[0m
+[0;32mI (80189) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�Y�`v.��W,��{\'�T[0m
+[0;32mI (80189) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (80189) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (80189) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�Y�`v.��W,��{\'�T[0m
+[0;32mI (81199) mqtts_example: Bytes received: 0[0m
+[0;32mI (81199) mqtts_example: No data received from UART[0m
+[0;32mI (81199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (86199) UART SIMSOM: GPS location.[0m
+[0;32mI (87199) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+���L������g~�	�q������R�g�=�e��80~�u)�����TmP��_��'D����ɼ�Y�7��7���W�-�oӵΊ������l��'��3�)�q�'(��f+-��M��=Ea߳�	t(&�h�"�fm
+d"Ht�g��y���7���E*�Pv:��l��ũ��E�C@���e��8�S��j@(��njlC�ݲ��d�-�Ú�_J�L,��D'�oxH�S����l^���"��[G��ɠ��\��n�b��2�D�~��W�BYZ�[0m
+[0;32mI (87219) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (87219) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (87229) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+���L������g~�	�q������R�g�=�e��80~�u)�����TmP��_��'D����ɼ�Y�7��7���W�-�oӵΊ������l��'��3�)�q�'(��f+-��M��=Ea߳�	t(&�h�"�fm
+d"Ht�g��y���7���E*�Pv:��l��ũ��E�C@���e��8�S��j@(��njlC�ݲ��d�-�Ú�_J�L,��D'�oxH�S����l^���"��[G��ɠ��\��n�b��2�D�~��W�BYZ�[0m
+[0;32mI (88259) mqtts_example: Bytes received: 0[0m
+[0;32mI (88259) mqtts_example: No data received from UART[0m
+[0;32mI (88259) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (93259) UART SIMSOM: GPS location.[0m
+[0;32mI (94259) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+Z��a���Տ�{��5+����H">q���2���[0m
+[0;32mI (94259) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (94259) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (94269) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+Z��a���Տ�{��5+����H">q���2���[0m
+[0;32mI (95279) mqtts_example: Bytes received: 0[0m
+[0;32mI (95279) mqtts_example: No data received from UART[0m
+[0;32mI (95279) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (100279) UART SIMSOM: GPS location.[0m
+[0;32mI (101279) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+����dN�b*!��>�][p@Pqlt�'#t'a:~!P�rAl%+f�i��]�RX�hv-�z�p�S�SK�@�4j6���;���QBt�H	���[0m
+[0;32mI (101279) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (101289) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (101289) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+����dN�b*!��>�][p@Pqlt�'#t'a:~!P�rAl%+f�i��]�RX�hv-�z�p�S�SK�@�4j6���;���QBt�H	���[0m
+[0;32mI (102309) mqtts_example: Bytes received: 0[0m
+[0;32mI (102309) mqtts_example: No data received from UART[0m
+[0;32mI (102309) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (107309) UART SIMSOM: GPS location.[0m
+[0;32mI (108309) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+H5Z$~��Rq�&VR���*|��A�+dNN�8�8�U<���^�	�'�����Q~È��no� L2��6�0��c�LH'�vZg-R$N^��8eC��j����^]��p�*�Q*�1:����2z�6�i	R��6�E�Q�u��][\-�GK��lfO�:�Np��F�,(z����|�����(.�H�����lF�VP׳\/���w.B�_:�!��v)��(֐�������w���L9Mj�,�#b-�lP�<f�N�_egD:�K
+�x�]�!V�d-����Y�cS���2�2[0m
+[0;32mI (108329) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (108329) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (108339) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+H5Z$~��Rq�&VR���*|��A�+dNN�8�8�U<���^�	�'�����Q~È��no� L2��6�0��c�LH'�vZg-R$N^��8eC��j����^]��p�*�Q*�1:����2z�6�i	R��6�E�Q�u��][\-�GK��lfO�:�Np��F�,(z����|�����(.�H�����lF�VP׳\/���w.B�_:�!��v)��(֐�������w���L9Mj�,�#b-�lP�<f�N�_egD:�K
+�x�]�!V�d-����Y�cS���2�2[0m
+[0;32mI (109369) mqtts_example: Bytes received: 0[0m
+[0;32mI (109369) mqtts_example: No data received from UART[0m
+[0;32mI (109369) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (114369) UART SIMSOM: GPS location.[0m
+[0;32mI (115369) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+v���2���"�)����_7�
+A��ĝ�B�M�ƈ�[0m
+[0;32mI (115369) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (115369) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (115379) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+v���2���"�)����_7�
+A��ĝ�B�M�ƈ�[0m
+[0;32mI (116389) mqtts_example: Bytes received: 0[0m
+[0;32mI (116389) mqtts_example: No data received from UART[0m
+[0;32mI (116389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (121389) UART SIMSOM: GPS location.[0m
+[0;32mI (122389) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�|�N(���2���e�&�@��k��|�#��D��B��
+���V�C�*(�[0m
+[0;32mI (122389) UART SIMSOM: Bytes received 1: 32[0m
+[0;32mI (122389) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (122399) UART SIMSOM: GPS Data1: 
+AT+QGPSLOC=0
++CME ERROR: 516
+�|�N(���2���e�&�@��k��|�#��D��B��
+���V�C�*(�[0m
+[0;32mI (123409) mqtts_example: Bytes received: 0[0m
+[0;32mI (123409) mqtts_example: No data received from UART[0m
+[0;32mI (123409) mqtts_example: GPS Data: 
+
+[0m

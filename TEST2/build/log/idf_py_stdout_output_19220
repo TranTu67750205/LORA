@@ -1,0 +1,1279 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2738ch (160652) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000373b4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2f4 vaddr=40080000 size=04d24h ( 19748) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34e8h (668904) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3510 vaddr=40084d24 size=136c4h ( 79556) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (480) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (486) app_init: ELF file SHA256:  8ce99a701...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (799) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (799) wifi:enable tsf
+I (809) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (819) wifi:state: init -> auth (0xb0)
+I (819) wifi:state: auth -> init (0x1c0)
+I (839) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (839) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (1799) mqtts_example: [APP] Free memory: 230796 bytes[0m
+[0;32mI (1799) mqtts_example: Other event id:7[0m
+[0;31mE (1799) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1809) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1809) mqtt_client: Error transport connect[0m
+[0;32mI (1819) mqtts_example: Other event id:0[0m
+[0;32mI (1819) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1829) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1829) main_task: Returned from app_main()[0m
+[0;32mI (2849) mqtts_example: Bytes received: 129[0m
+[0;32mI (2849) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+���lc=�m0.��<���Rc�-?�����>�eM����͢4j��|834��j�Q�4����$�����h�����;y�N?|�*hW��Tț��vO��}���`�˥H���6��T���ibxpG_�#?t.��(�\4���SY˯�GV ��R��?̍a]���$���5J6h.~�R�o�[�^�>,�n���-�BON�˪�4����i���n�����D�{�	�q-JA�^!��bR�Y�V'K��ƀ��[E���~q�4�YvX��m��A�3�4�t��Vq �	m8g:���"������`��zs_�eփ�S���LBT�q�*'�,��ҖJx�IwLFY��v͞(6�6S*7��'�ߓ�3:�@hIc���a3�;�mR�)�j�y����X_tn>���]�ҸHF�M��Y,�<�T}�vߛw�]ˢ���r�G�:�n�Do\�*�#�%�p�{�u�N������T�V����^������L��Lu�!eH�m봗��ĩ���w6P�DY}��ݦ��W��gM��Gg�:��dol�CO�f)MmN!��a���6��#S�q�G�(�Ț�v@7K���;$��6���P�Cq���5恃쥷�~$4X_o��0���>�[�g#���b���Q���S[0m
+[0;32mI (2909) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (2919) mqtts_example: lat is 10.876895 and long is 106.809013[0m
+[0;32mI (2929) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (2939) mqtts_example: GPS json: 
+{"latitude": "10.876895", "longtitude": "106.809013"} 
+ 
+ 
+[0m
+[0;32mI (3259) WiFi: Disconnected. Reconnecting...[0m
+I (3269) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (3269) wifi:state: init -> auth (0xb0)
+I (3279) wifi:state: auth -> assoc (0x0)
+I (3299) wifi:state: assoc -> run (0x10)
+I (3319) wifi:connected with Galaxy A05s 6247, aid = 7, channel 6, BW20, bssid = 2e:94:d7:57:2c:81
+I (3319) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (3319) wifi:pm start, type: 1
+
+I (3319) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3339) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3339) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4329) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (4329) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (8949) mqtts_example: Bytes received: 0[0m
+[0;32mI (8949) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (8949) mqtts_example: No data received from UART[0m
+[0;32mI (8959) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (11829) mqtts_example: Other event id:7[0m
+I (11899) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (12879) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12879) mqtts_example: sent subscribe successful, msg_id=2733[0m
+[0;32mI (13279) mqtts_example: Other event id:3[0m
+[0;32mI (13689) mqtts_example: Other event id:5[0m
+[0;32mI (14979) mqtts_example: Bytes received: 0[0m
+[0;32mI (14979) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (14989) mqtts_example: No data received from UART[0m
+[0;32mI (14989) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (21009) mqtts_example: Bytes received: 0[0m
+[0;32mI (21009) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (21009) mqtts_example: No data received from UART[0m
+[0;32mI (21019) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (27039) mqtts_example: Bytes received: 0[0m
+[0;32mI (27039) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (27039) mqtts_example: No data received from UART[0m
+[0;32mI (27049) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (33069) mqtts_example: Bytes received: 0[0m
+[0;32mI (33069) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (33069) mqtts_example: No data received from UART[0m
+[0;32mI (33079) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (39099) mqtts_example: Bytes received: 0[0m
+[0;32mI (39099) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (39099) mqtts_example: No data received from UART[0m
+[0;32mI (39109) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (45129) mqtts_example: Bytes received: 0[0m
+[0;32mI (45129) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (45129) mqtts_example: No data received from UART[0m
+[0;32mI (45139) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (51159) mqtts_example: Bytes received: 0[0m
+[0;32mI (51159) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (51169) mqtts_example: No data received from UART[0m
+[0;32mI (51169) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (57189) mqtts_example: Bytes received: 0[0m
+[0;32mI (57189) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (57189) mqtts_example: No data received from UART[0m
+[0;32mI (57199) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (63219) mqtts_example: Bytes received: 0[0m
+[0;32mI (63219) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (63229) mqtts_example: No data received from UART[0m
+[0;32mI (63229) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (69249) mqtts_example: Bytes received: 0[0m
+[0;32mI (69249) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (69249) mqtts_example: No data received from UART[0m
+[0;32mI (69259) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (75279) mqtts_example: Bytes received: 0[0m
+[0;32mI (75279) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (75289) mqtts_example: No data received from UART[0m
+[0;32mI (75289) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (81309) mqtts_example: Bytes received: 0[0m
+[0;32mI (81309) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (81309) mqtts_example: No data received from UART[0m
+[0;32mI (81319) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (87339) mqtts_example: Bytes received: 0[0m
+[0;32mI (87339) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (87339) mqtts_example: No data received from UART[0m
+[0;32mI (87349) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (93369) mqtts_example: Bytes received: 0[0m
+[0;32mI (93369) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (93369) mqtts_example: No data received from UART[0m
+[0;32mI (93379) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (99399) mqtts_example: Bytes received: 0[0m
+[0;32mI (99399) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (99399) mqtts_example: No data received from UART[0m
+[0;32mI (99409) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (105429) mqtts_example: Bytes received: 0[0m
+[0;32mI (105429) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (105439) mqtts_example: No data received from UART[0m
+[0;32mI (105439) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (111459) mqtts_example: Bytes received: 0[0m
+[0;32mI (111459) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (111469) mqtts_example: No data received from UART[0m
+[0;32mI (111469) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (117489) mqtts_example: Bytes received: 0[0m
+[0;32mI (117489) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (117499) mqtts_example: No data received from UART[0m
+[0;32mI (117499) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (123519) mqtts_example: Bytes received: 0[0m
+[0;32mI (123519) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (123529) mqtts_example: No data received from UART[0m
+[0;32mI (123529) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (129549) mqtts_example: Bytes received: 0[0m
+[0;32mI (129549) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (129559) mqtts_example: No data received from UART[0m
+[0;32mI (129559) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (135579) mqtts_example: Bytes received: 0[0m
+[0;32mI (135579) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (135589) mqtts_example: No data received from UART[0m
+[0;32mI (135589) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (141609) mqtts_example: Bytes received: 0[0m
+[0;32mI (141609) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (141619) mqtts_example: No data received from UART[0m
+[0;32mI (141619) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (147639) mqtts_example: Bytes received: 0[0m
+[0;32mI (147639) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (147649) mqtts_example: No data received from UART[0m
+[0;32mI (147649) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (153669) mqtts_example: Bytes received: 0[0m
+[0;32mI (153669) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (153679) mqtts_example: No data received from UART[0m
+[0;32mI (153679) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (159699) mqtts_example: Bytes received: 0[0m
+[0;32mI (159699) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (159709) mqtts_example: No data received from UART[0m
+[0;32mI (159709) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (165729) mqtts_example: Bytes received: 0[0m
+[0;32mI (165729) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (165739) mqtts_example: No data received from UART[0m
+[0;32mI (165739) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (171759) mqtts_example: Bytes received: 0[0m
+[0;32mI (171759) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (171769) mqtts_example: No data received from UART[0m
+[0;32mI (171769) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (177789) mqtts_example: Bytes received: 0[0m
+[0;32mI (177789) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (177799) mqtts_example: No data received from UART[0m
+[0;32mI (177799) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (183819) mqtts_example: Bytes received: 0[0m
+[0;32mI (183819) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (183829) mqtts_example: No data received from UART[0m
+[0;32mI (183829) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (189849) mqtts_example: Bytes received: 0[0m
+[0;32mI (189849) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (189859) mqtts_example: No data received from UART[0m
+[0;32mI (189859) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (195879) mqtts_example: Bytes received: 0[0m
+[0;32mI (195879) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (195889) mqtts_example: No data received from UART[0m
+[0;32mI (195889) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (201909) mqtts_example: Bytes received: 0[0m
+[0;32mI (201909) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (201919) mqtts_example: No data received from UART[0m
+[0;32mI (201919) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (207939) mqtts_example: Bytes received: 0[0m
+[0;32mI (207939) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (207949) mqtts_example: No data received from UART[0m
+[0;32mI (207949) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (213969) mqtts_example: Bytes received: 0[0m
+[0;32mI (213969) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (213979) mqtts_example: No data received from UART[0m
+[0;32mI (213979) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (219999) mqtts_example: Bytes received: 0[0m
+[0;32mI (219999) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (220009) mqtts_example: No data received from UART[0m
+[0;32mI (220009) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (226029) mqtts_example: Bytes received: 0[0m
+[0;32mI (226029) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (226039) mqtts_example: No data received from UART[0m
+[0;32mI (226039) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (232059) mqtts_example: Bytes received: 0[0m
+[0;32mI (232059) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (232069) mqtts_example: No data received from UART[0m
+[0;32mI (232069) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (238089) mqtts_example: Bytes received: 0[0m
+[0;32mI (238089) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (238099) mqtts_example: No data received from UART[0m
+[0;32mI (238099) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (244119) mqtts_example: Bytes received: 0[0m
+[0;32mI (244119) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (244129) mqtts_example: No data received from UART[0m
+[0;32mI (244129) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (250149) mqtts_example: Bytes received: 0[0m
+[0;32mI (250149) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (250159) mqtts_example: No data received from UART[0m
+[0;32mI (250159) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (256179) mqtts_example: Bytes received: 0[0m
+[0;32mI (256179) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (256189) mqtts_example: No data received from UART[0m
+[0;32mI (256189) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (262209) mqtts_example: Bytes received: 0[0m
+[0;32mI (262209) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (262219) mqtts_example: No data received from UART[0m
+[0;32mI (262219) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (268239) mqtts_example: Bytes received: 0[0m
+[0;32mI (268239) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (268249) mqtts_example: No data received from UART[0m
+[0;32mI (268249) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (274269) mqtts_example: Bytes received: 0[0m
+[0;32mI (274269) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (274279) mqtts_example: No data received from UART[0m
+[0;32mI (274279) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (280299) mqtts_example: Bytes received: 0[0m
+[0;32mI (280299) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (280309) mqtts_example: No data received from UART[0m
+[0;32mI (280309) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (286329) mqtts_example: Bytes received: 0[0m
+[0;32mI (286329) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (286339) mqtts_example: No data received from UART[0m
+[0;32mI (286339) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (292359) mqtts_example: Bytes received: 0[0m
+[0;32mI (292359) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (292369) mqtts_example: No data received from UART[0m
+[0;32mI (292369) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (298389) mqtts_example: Bytes received: 0[0m
+[0;32mI (298389) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (298399) mqtts_example: No data received from UART[0m
+[0;32mI (298399) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (304419) mqtts_example: Bytes received: 0[0m
+[0;32mI (304419) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (304429) mqtts_example: No data received from UART[0m
+[0;32mI (304429) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (310449) mqtts_example: Bytes received: 0[0m
+[0;32mI (310449) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (310459) mqtts_example: No data received from UART[0m
+[0;32mI (310459) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (316479) mqtts_example: Bytes received: 0[0m
+[0;32mI (316479) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (316489) mqtts_example: No data received from UART[0m
+[0;32mI (316489) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (322509) mqtts_example: Bytes received: 0[0m
+[0;32mI (322509) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (322519) mqtts_example: No data received from UART[0m
+[0;32mI (322519) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (328539) mqtts_example: Bytes received: 0[0m
+[0;32mI (328539) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (328549) mqtts_example: No data received from UART[0m
+[0;32mI (328549) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (334569) mqtts_example: Bytes received: 0[0m
+[0;32mI (334569) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (334579) mqtts_example: No data received from UART[0m
+[0;32mI (334579) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (340599) mqtts_example: Bytes received: 0[0m
+[0;32mI (340599) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (340609) mqtts_example: No data received from UART[0m
+[0;32mI (340609) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (346629) mqtts_example: Bytes received: 0[0m
+[0;32mI (346629) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (346639) mqtts_example: No data received from UART[0m
+[0;32mI (346639) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (352659) mqtts_example: Bytes received: 0[0m
+[0;32mI (352659) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (352669) mqtts_example: No data received from UART[0m
+[0;32mI (352669) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (358689) mqtts_example: Bytes received: 0[0m
+[0;32mI (358689) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (358699) mqtts_example: No data received from UART[0m
+[0;32mI (358699) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m
+[0;32mI (364719) mqtts_example: Bytes received: 0[0m
+[0;32mI (364719) mqtts_example: Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+[0m
+[0;32mI (364729) mqtts_example: No data received from UART[0m
+[0;32mI (364729) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 080532.00,1052.6137N,10648.5407E,1.17,32.3,3,,0.082,0.045,301224,25
+
+OK
+
+[0m

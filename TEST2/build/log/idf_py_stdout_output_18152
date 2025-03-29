@@ -1,0 +1,376 @@
+e�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=273bch (160700) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000373e4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b324 vaddr=40080000 size=04cf4h ( 19700) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a35a4h (669092) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e35cc vaddr=40084cf4 size=136f4h ( 79604) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (471) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (480) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (486) app_init: ELF file SHA256:  d3d1272a4...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8848 len 000277B8 (157 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc07d4, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (799) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (799) wifi:state: init -> auth (0xb0)
+I (849) wifi:state: auth -> assoc (0x0)
+I (899) wifi:state: assoc -> run (0x10)
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) mqtts_example: [APP] Free memory: 226992 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;31mE (1779) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1789) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1799) mqtt_client: Error transport connect[0m
+[0;32mI (1799) mqtts_example: Other event id:0[0m
+[0;32mI (1809) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1909) mqtts_example: GPS Data: 
+AT+QGPS=1[0m
+[0;32mI (1909) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1909) UART SIMSOM: GPS location.[0m
+[0;32mI (2389) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2389) UART SIMSOM: GPS Data: 
+
+OK
+AT+QGPSLOC=0
++CME ERROR: 516
+AT+QGPSLOC=0
++CME ERROR: 516
+��{�����P��DUbAgf.��eJ6�i�nar�q��.�@����uO�� %�+o����e�*�@���QU�=�*Zˠc*r�M������o?��v����V����8�*�p��/-N�A�����Ɖ���'��V��;h�V��m/��nvo����߁�iQm�`9���r�^S��z�y���0�uFqB�~yo�IxV�K�!��Ro��jJ���:U�cY�(m��U�>
+�"NB�u�U�$�j��Xw?H�-H��>���f4PT�������W�B��KF�c���{#d7�]>=���V{NgeӗJ͂=��ۉ�>�O�ݳ�mQZ�[���~ی·B��(���GA�5��e��X�!3MrC�P��]�؄���u���*G_��_�����^��KCr�!gG�)j/7M�B�fo�
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (4729) UART SIMSOM: GPS location.[0m
+[0;32mI (4829) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4829) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+D���/)�[�Tb\D��1ZKg��(# �R�;g�
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (7429) UART SIMSOM: GPS location.[0m
+[0;32mI (7529) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7529) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+`[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (10129) UART SIMSOM: GPS location.[0m
+[0;32mI (10229) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10229) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+I (10899) wifi:state: run -> init (0xcc00)
+I (10909) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (10909) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (12829) UART SIMSOM: GPS location.[0m
+[0;32mI (12929) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12929) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (13329) WiFi: Disconnected. Reconnecting...[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (15529) UART SIMSOM: GPS location.[0m
+[0;32mI (15629) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (15629) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (15739) WiFi: Disconnected. Reconnecting...[0m
+I (15759) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (15759) wifi:state: init -> auth (0xb0)
+I (15779) wifi:state: auth -> assoc (0x0)
+I (15809) wifi:state: assoc -> run (0x10)
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (16809) mqtts_example: Other event id:7[0m
+[0;31mE (16809) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16809) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16819) mqtt_client: Error transport connect[0m
+[0;32mI (16819) mqtts_example: Other event id:0[0m
+[0;32mI (16829) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (18229) UART SIMSOM: GPS location.[0m
+[0;32mI (18329) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (18329) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (20929) UART SIMSOM: GPS location.[0m
+[0;32mI (21029) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (21029) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+W�
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (23629) UART SIMSOM: GPS location.[0m
+[0;32mI (23729) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (23729) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+I (25819) wifi:state: run -> init (0xcc00)
+I (25829) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (25829) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (26329) UART SIMSOM: GPS location.[0m
+[0;32mI (26429) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (26429) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (28249) WiFi: Disconnected. Reconnecting...[0m
+I (28289) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (28289) wifi:state: init -> auth (0xb0)
+I (28309) wifi:state: auth -> assoc (0x0)
+I (28329) wifi:state: assoc -> run (0x10)
+[0;32mI (29029) UART SIMSOM: GPS location.[0m
+[0;32mI (29139) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (29139) UART SIMSOM: lat is 10.876667 and long is 106.808723[0m
+[0;32mI (29139) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155149.00,1052.6000N,10648.5236E,3.66,6.2,3,,0.356,0.195,191224,13
+
+OK
+~�!�{\'�T[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (31749) UART SIMSOM: GPS location.[0m
+[0;32mI (31829) mqtts_example: Other event id:7[0m
+[0;31mE (31829) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31829) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31839) mqtt_client: Error transport connect[0m
+[0;32mI (31839) mqtts_example: Other event id:0[0m
+[0;32mI (31849) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (31859) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (31859) UART SIMSOM: lat is 10.876677 and long is 106.808731[0m
+[0;32mI (31859) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155152.00,1052.6006N,10648.5240E,1.93,10.8,3,,0.597,0.327,191224,19
+
+OK
+�N!@�s��Ќ���`�����=��o�譹�g�In� �7�<���H&�b%��D�H�����Y��}�7��%����"{��{U��kb�[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (34479) UART SIMSOM: GPS location.[0m
+[0;32mI (34589) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (34589) UART SIMSOM: lat is 10.876677 and long is 106.808739[0m
+[0;32mI (34589) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155155.00,1052.6006N,10648.5243E,1.29,11.1,3,,0.170,0.093,191224,23
+
+OK
+�f�R��Z���m��Nj��S6�+?|�L��s�����TN�w�`��7��N!-ۂy�~*���AO��{Ȁc��m1��c�&�=��<�Q]Y�R�#������*
+U���:�Z�����r<�����ĩ-���&�v�Q`j�/���z�P6��
+�
+Zi�4�������<���J5-�
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (37209) UART SIMSOM: GPS location.[0m
+[0;32mI (37319) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (37319) UART SIMSOM: lat is 10.876678 and long is 106.808739[0m
+[0;32mI (37319) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155157.00,1052.6007N,10648.5243E,1.29,11.3,3,,0.250,0.137,191224,23
+
+OK
+�1�o̪�Y76a{�:O�\��;�}��ۂ�bxx��L���e��F_5}�)�x��1�Rr�Ҥ��AD��������-��<�.�����>��s�)��C����?���,~����c�b�\�.:�S���YYc�i�4Yj���ҧf���7�@h؄��B�����{���[Џ�̌6b
+��Yu�s*P��8�d+�SZk�)m��u��~�n��H��Thm�}���_J��;U*m:I80t����T�i�u`@��Y���#6���D�U%�t��B�i8��[�8�]�b�����1�0T�O�f����e�y��P@{��R{A�y�Í���<��yY��"bs���1X:���/���GÌb��E���fK>C#�0��u�x���'|��a�\�U�~�|)LWw��L5G;4@"9k7��|k�@
+�;�	+�V�1�,��9���3�r�d߲Γo-/��W�o"��Tv���r�^���ɥ��m�q|�5<�T>h�(F��`f��#�`$0V=e�.�ܢ<���&-�2��q���1x���|�%��E��`���R����=Tي���Ɠ9��c���G��f9b$����z-��j����Z�(��af06}��{6�n)��@6q�� �**`q����<\�`�(��dN���Ow�&@WG�È��ɝ�P��+�AA6�t*�N��uQz�ݔQs�9�h���lF���!����Kٔ�.t�M?���6�n=Z��u��A�n����L�C��Ɋ!gv	�q�������P�g�=�e��(0v�u)܄���Tm@��_��'DBʧ�ɼ�ɡՉ�7���G�m�-S�Ί������l|�'��3�)^q�'8��f
+-��E��6�yEa߳S�	T[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+I (38339) wifi:state: run -> init (0xcc00)
+I (38349) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (38349) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (40009) UART SIMSOM: GPS location.[0m
+[0;32mI (40119) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (40119) UART SIMSOM: lat is 10.876680 and long is 106.808739[0m
+[0;32mI (40119) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155200.00,1052.6008N,10648.5244E,1.16,11.5,3,,0.215,0.118,191224,24
+
+OK
+���{\'�T�������[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (40769) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (42729) UART SIMSOM: GPS location.[0m
+[0;32mI (42839) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (42839) UART SIMSOM: lat is 10.876681 and long is 106.808739[0m
+[0;32mI (42839) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155203.00,1052.6009N,10648.5245E,1.16,11.3,3,,0.246,0.135,191224,24
+
+OK
+���{\'�T�������[0m
+[0;32mI (43179) WiFi: Disconnected. Reconnecting...[0m
+I (43199) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (43199) wifi:state: init -> auth (0xb0)
+I (43219) wifi:state: auth -> assoc (0x0)
+I (43309) wifi:state: assoc -> run (0x10)
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (45449) UART SIMSOM: GPS location.[0m
+[0;32mI (45559) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (45559) UART SIMSOM: lat is 10.876681 and long is 106.808746[0m
+[0;32mI (45559) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155206.00,1052.6009N,10648.5246E,1.16,11.2,3,,0.141,0.077,191224,25
+
+OK
+�!�{\'�T[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (46849) mqtts_example: Other event id:7[0m
+[0;31mE (46849) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (46849) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (46859) mqtt_client: Error transport connect[0m
+[0;32mI (46859) mqtts_example: Other event id:0[0m
+[0;32mI (46869) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (48169) UART SIMSOM: GPS location.[0m
+[0;32mI (48279) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (48279) UART SIMSOM: lat is 10.876683 and long is 106.808746[0m
+[0;32mI (48279) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155208.00,1052.6010N,10648.5246E,1.20,11.3,3,,0.057,0.031,191224,25
+
+OK
+����i������b�b���,G�r����vѸ�:0�,�>�x����?u��7ؐ�Qߜa¨T%��t?�/���Y4_ϻ`��O�6�4
+8���N��OY�U�}�$�y���A{�\W�������+h<��k]����~��
+@��Uo�
+���-�,��1k�}����(��M>�h�dY�6���ޯ�XΰD#ֳ��Z8�~;[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (50909) UART SIMSOM: GPS location.[0m
+[0;32mI (51019) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (51019) UART SIMSOM: lat is 10.876685 and long is 106.808746[0m
+[0;32mI (51019) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155211.00,1052.6011N,10648.5247E,1.20,11.5,3,,0.089,0.049,191224,24
+
+OK
+@[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+I (53309) wifi:state: run -> init (0xcc00)
+I (53319) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (53319) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (53629) UART SIMSOM: GPS location.[0m
+[0;32mI (53739) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (53739) UART SIMSOM: lat is 10.876685 and long is 106.808746[0m
+[0;32mI (53739) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155214.00,1052.6011N,10648.5248E,1.11,11.7,3,,0.128,0.070,191224,25
+
+OK
+���{\'�T�������[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (55739) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (56349) UART SIMSOM: GPS location.[0m
+[0;32mI (56459) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (56459) UART SIMSOM: lat is 10.876688 and long is 106.808746[0m
+[0;32mI (56459) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155217.00,1052.6013N,10648.5248E,1.11,11.9,3,,0.161,0.088,191224,24
+
+OK
+M[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1
+[0;32mI (58149) WiFi: Disconnected. Reconnecting...[0m
+I (58169) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (58169) wifi:state: init -> auth (0xb0)
+I (58189) wifi:state: auth -> assoc (0x0)
+I (58219) wifi:state: assoc -> run (0x10)
+[0;32mI (59069) UART SIMSOM: GPS location.[0m
+[0;32mI (59179) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (59179) UART SIMSOM: lat is 10.876690 and long is 106.808746[0m
+[0;32mI (59179) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 155219.00,1052.6014N,10648.5249E,1.09,12.1,3,,0.106,0.058,191224,25
+
+OK
+�!�{\'�T[0m
+GPS json: {"latitude": "0.000000", "longtitude": "0.000000"}
+GPS Data: AT+QGPS=1

@@ -1,0 +1,203 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST1\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/TEST1/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/9] Building C object esp-idf/UART_GPS/CMakeFiles/__idf_UART_GPS.dir/connect_wifi.c.obj
+FAILED: esp-idf/UART_GPS/CMakeFiles/__idf_UART_GPS.dir/connect_wifi.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"C:/ESP IDF/project_esp/TEST1/build/config" -I"C:/ESP IDF/project_esp/TEST1/UART_GPS/include" -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/sys -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap "-fmacro-prefix-map=C:/ESP IDF/project_esp/TEST1=." -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.3.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/UART_GPS/CMakeFiles/__idf_UART_GPS.dir/connect_wifi.c.obj -MF esp-idf\UART_GPS\CMakeFiles\__idf_UART_GPS.dir\connect_wifi.c.obj.d -o esp-idf/UART_GPS/CMakeFiles/__idf_UART_GPS.dir/connect_wifi.c.obj -c "C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c"
+In file included from C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:1:
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:49:8: error: unknown type name 'EventGroupHandle_t'
+   49 | extern EventGroupHandle_t s_wifi_event_group;
+      |        ^~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:55:31: error: unknown type name 'esp_event_base_t'
+   55 | void event_handler(void* arg, esp_event_base_t event_base,
+      |                               ^~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:56:33: error: unknown type name 'int32_t'
+   56 |                                 int32_t event_id, void* event_data);
+      |                                 ^~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:1:1: note: 'int32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | /*#include <string.h>
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:3:1: error: unknown type name 'EventGroupHandle_t'
+    3 | EventGroupHandle_t s_wifi_event_group;
+      | ^~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:7:26: error: unknown type name 'esp_event_base_t'
+    7 | event_handler(void* arg, esp_event_base_t event_base,
+      |                          ^~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:8:33: error: unknown type name 'int32_t'
+    8 |                                 int32_t event_id, void* event_data)
+      |                                 ^~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:2:1: note: 'int32_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+    1 | #include "connect_wifi.h"
+  +++ |+#include <stdint.h>
+    2 | 
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c: In function 'wifi_init_sta':
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:31:26: error: implicit declaration of function 'xEventGroupCreate' [-Werror=implicit-function-declaration]
+   31 |     s_wifi_event_group = xEventGroupCreate();
+      |                          ^~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:33:5: error: implicit declaration of function 'ESP_ERROR_CHECK' [-Werror=implicit-function-declaration]
+   33 |     ESP_ERROR_CHECK(esp_netif_init());
+      |     ^~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:33:21: error: implicit declaration of function 'esp_netif_init' [-Werror=implicit-function-declaration]
+   33 |     ESP_ERROR_CHECK(esp_netif_init());
+      |                     ^~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:35:21: error: implicit declaration of function 'esp_event_loop_create_default' [-Werror=implicit-function-declaration]
+   35 |     ESP_ERROR_CHECK(esp_event_loop_create_default());
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:36:5: error: implicit declaration of function 'esp_netif_create_default_wifi_sta' [-Werror=implicit-function-declaration]
+   36 |     esp_netif_create_default_wifi_sta();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:38:5: error: unknown type name 'wifi_init_config_t'
+   38 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |     ^~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:38:30: error: implicit declaration of function 'WIFI_INIT_CONFIG_DEFAULT' [-Werror=implicit-function-declaration]
+   38 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:39:21: error: implicit declaration of function 'esp_wifi_init' [-Werror=implicit-function-declaration]
+   39 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |                     ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:41:5: error: unknown type name 'esp_event_handler_instance_t'
+   41 |     esp_event_handler_instance_t instance_any_id;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:42:5: error: unknown type name 'esp_event_handler_instance_t'
+   42 |     esp_event_handler_instance_t instance_got_ip;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:43:21: error: implicit declaration of function 'esp_event_handler_instance_register' [-Werror=implicit-function-declaration]
+   43 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:43:57: error: 'WIFI_EVENT' undeclared (first use in this function)
+   43 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |                                                         ^~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:43:57: note: each undeclared identifier is reported only once for each function it appears in
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:44:57: error: 'ESP_EVENT_ANY_ID' undeclared (first use in this function)
+   44 |                                                         ESP_EVENT_ANY_ID,
+      |                                                         ^~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:45:58: error: 'event_handler' undeclared (first use in this function)
+   45 |                                                         &event_handler,
+      |                                                          ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:46:57: error: 'NULL' undeclared (first use in this function)
+   46 |                                                         NULL,
+      |                                                         ^~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:2:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+    1 | #include "connect_wifi.h"
+  +++ |+#include <stddef.h>
+    2 | 
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:48:57: error: 'IP_EVENT' undeclared (first use in this function)
+   48 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+      |                                                         ^~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:49:57: error: 'IP_EVENT_STA_GOT_IP' undeclared (first use in this function)
+   49 |                                                         IP_EVENT_STA_GOT_IP,
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:54:5: error: unknown type name 'wifi_config_t'
+   54 |     wifi_config_t wifi_config = {
+      |     ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:55:9: error: field name not in record or union initializer
+   55 |         .sta = {
+      |         ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:55:9: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:55:9: warning: braces around scalar initializer
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:55:9: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:56:13: error: field name not in record or union initializer
+   56 |             .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |             ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:56:13: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:16:36: error: 'CONFIG_ESP_WIFI_SSID' undeclared (first use in this function); did you mean 'EXAMPLE_ESP_WIFI_SSID'?
+   16 | #define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
+      |                                    ^~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:56:21: note: in expansion of macro 'EXAMPLE_ESP_WIFI_SSID'
+   56 |             .ssid = EXAMPLE_ESP_WIFI_SSID,
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:57:13: error: field name not in record or union initializer
+   57 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |             ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:57:13: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:17:36: error: 'CONFIG_ESP_WIFI_PASSWORD' undeclared (first use in this function)
+   17 | #define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:57:25: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+   57 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:17:36: warning: excess elements in scalar initializer
+   17 | #define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:57:25: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+   57 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:17:36: note: (near initialization for 'wifi_config')
+   17 | #define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:57:25: note: in expansion of macro 'EXAMPLE_ESP_WIFI_PASS'
+   57 |             .password = EXAMPLE_ESP_WIFI_PASS,
+      |                         ^~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:63:13: error: field name not in record or union initializer
+   63 |             .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
+      |             ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:63:13: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:63:35: error: 'ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD' undeclared (first use in this function)
+   63 |             .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:63:35: warning: excess elements in scalar initializer
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:63:35: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:64:13: error: field name not in record or union initializer
+   64 |             .sae_pwe_h2e = ESP_WIFI_SAE_MODE,
+      |             ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:64:13: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:64:28: error: 'ESP_WIFI_SAE_MODE' undeclared (first use in this function)
+   64 |             .sae_pwe_h2e = ESP_WIFI_SAE_MODE,
+      |                            ^~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:64:28: warning: excess elements in scalar initializer
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:64:28: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:65:13: error: field name not in record or union initializer
+   65 |             .sae_h2e_identifier = EXAMPLE_H2E_IDENTIFIER,
+      |             ^
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:65:13: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:65:35: error: 'EXAMPLE_H2E_IDENTIFIER' undeclared (first use in this function)
+   65 |             .sae_h2e_identifier = EXAMPLE_H2E_IDENTIFIER,
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:65:35: warning: excess elements in scalar initializer
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:65:35: note: (near initialization for 'wifi_config')
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:68:21: error: implicit declaration of function 'esp_wifi_set_mode' [-Werror=implicit-function-declaration]
+   68 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
+      |                     ^~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:68:39: error: 'WIFI_MODE_STA' undeclared (first use in this function)
+   68 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
+      |                                       ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:69:21: error: implicit declaration of function 'esp_wifi_set_config' [-Werror=implicit-function-declaration]
+   69 |     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+      |                     ^~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:69:41: error: 'WIFI_IF_STA' undeclared (first use in this function)
+   69 |     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
+      |                                         ^~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:70:21: error: implicit declaration of function 'esp_wifi_start' [-Werror=implicit-function-declaration]
+   70 |     ESP_ERROR_CHECK(esp_wifi_start() );
+      |                     ^~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:72:5: error: implicit declaration of function 'ESP_LOGI' [-Werror=implicit-function-declaration]
+   72 |     ESP_LOGI(TAG_wifi, "wifi_init_sta finished.");
+      |     ^~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:76:5: error: unknown type name 'EventBits_t'
+   76 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |     ^~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:76:24: error: implicit declaration of function 'xEventGroupWaitBits' [-Werror=implicit-function-declaration]
+   76 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |                        ^~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:77:13: error: 'WIFI_CONNECTED_BIT' undeclared (first use in this function)
+   77 |             WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+      |             ^~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:77:34: error: 'WIFI_FAIL_BIT' undeclared (first use in this function)
+   77 |             WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+      |                                  ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:78:13: error: 'pdFALSE' undeclared (first use in this function)
+   78 |             pdFALSE,
+      |             ^~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:80:13: error: 'portMAX_DELAY' undeclared (first use in this function)
+   80 |             portMAX_DELAY);
+      |             ^~~~~~~~~~~~~
+C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi.c:91:9: error: implicit declaration of function 'ESP_LOGE' [-Werror=implicit-function-declaration]
+   91 |         ESP_LOGE(TAG_wifi, "UNEXPECTED EVENT");
+      |         ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TEST1.c.obj
+In file included from C:/ESP IDF/project_esp/TEST1/main/TEST1.c:27:
+C:/ESP IDF/project_esp/TEST1/UART_GPS/include/connect_wifi.h:51:20: warning: 'TAG_wifi' defined but not used [-Wunused-variable]
+   51 | static const char *TAG_wifi = "wifi station";
+      |                    ^~~~~~~~
+ninja: build stopped: subcommand failed.

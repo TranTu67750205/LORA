@@ -1,0 +1,2160 @@
+ets Jul 29�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=272cch (160460) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372f4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b234 vaddr=40080000 size=04de4h ( 19940) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34fch (668924) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3524 vaddr=40084de4 size=13604h ( 79364) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  481c7419e...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (789) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (789) wifi:enable tsf
+I (809) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (809) wifi:state: init -> auth (0xb0)
+I (829) wifi:state: auth -> assoc (0x0)
+I (889) wifi:state: assoc -> run (0x10)
+I (999) wifi:connected with VNPT_Hanh, aid = 5, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (999) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (999) wifi:pm start, type: 1
+
+I (999) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1019) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1789) mqtts_example: [APP] Free memory: 229924 bytes[0m
+[0;32mI (1789) mqtts_example: Other event id:7[0m
+[0;32mI (1789) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1789) main_task: Returned from app_main()[0m
+[0;32mI (1989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1989) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (1989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (2009) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2009) WiFi: Got IP: 192.168.1.6[0m
+I (2799) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:5, winSize:64
+I (2839) wifi:<ba-add>idx:1 (ifx:0, 4c:12:e8:76:17:60), tid:4, ssn:1, winSize:64
+[0;32mI (3489) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3499) mqtts_example: sent subscribe successful, msg_id=52159[0m
+[0;32mI (3499) UART SIMSOM: GPS location.[0m
+[0;32mI (3799) mqtts_example: Other event id:3[0m
+[0;32mI (4099) mqtts_example: Other event id:5[0m
+[0;32mI (9299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9299) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (9299) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (9309) UART SIMSOM: GPS location.[0m
+[0;32mI (9639) mqtts_example: Other event id:5[0m
+[0;32mI (15109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (15109) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (15109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (15119) UART SIMSOM: GPS location.[0m
+[0;32mI (15469) mqtts_example: Other event id:5[0m
+[0;32mI (20919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (20919) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (20919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (20929) UART SIMSOM: GPS location.[0m
+[0;32mI (21309) mqtts_example: Other event id:5[0m
+[0;32mI (26729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (26729) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (26729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (26739) UART SIMSOM: GPS location.[0m
+[0;32mI (27039) mqtts_example: Other event id:5[0m
+[0;32mI (32539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (32539) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (32539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (32549) UART SIMSOM: GPS location.[0m
+[0;32mI (32889) mqtts_example: Other event id:5[0m
+[0;32mI (38349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (38349) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (38349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (38359) UART SIMSOM: GPS location.[0m
+[0;32mI (38719) mqtts_example: Other event id:5[0m
+[0;32mI (44159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (44159) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (44159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (44169) UART SIMSOM: GPS location.[0m
+[0;32mI (44549) mqtts_example: Other event id:5[0m
+[0;32mI (49969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (49969) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (49969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (49979) UART SIMSOM: GPS location.[0m
+[0;32mI (50289) mqtts_example: Other event id:5[0m
+[0;32mI (55779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (55779) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (55779) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (55789) UART SIMSOM: GPS location.[0m
+[0;32mI (56119) mqtts_example: Other event id:5[0m
+[0;32mI (61589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (61589) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (61589) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (61599) UART SIMSOM: GPS location.[0m
+[0;32mI (61959) mqtts_example: Other event id:5[0m
+[0;32mI (67399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (67399) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (67399) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (67409) UART SIMSOM: GPS location.[0m
+[0;32mI (67799) mqtts_example: Other event id:5[0m
+[0;32mI (73209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (73209) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (73209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (73219) UART SIMSOM: GPS location.[0m
+[0;32mI (73539) mqtts_example: Other event id:5[0m
+[0;32mI (79029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (79029) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (79029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (79039) UART SIMSOM: GPS location.[0m
+[0;32mI (79369) mqtts_example: Other event id:5[0m
+[0;32mI (84839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (84839) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (84839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (84849) UART SIMSOM: GPS location.[0m
+[0;32mI (85209) mqtts_example: Other event id:5[0m
+[0;32mI (90649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (90649) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (90649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (90659) UART SIMSOM: GPS location.[0m
+[0;32mI (91049) mqtts_example: Other event id:5[0m
+[0;32mI (96459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (96459) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (96459) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (96469) UART SIMSOM: GPS location.[0m
+[0;32mI (96779) mqtts_example: Other event id:5[0m
+[0;32mI (102269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (102269) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (102269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (102279) UART SIMSOM: GPS location.[0m
+[0;32mI (102609) mqtts_example: Other event id:5[0m
+[0;32mI (108079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (108079) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (108079) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (108089) UART SIMSOM: GPS location.[0m
+[0;32mI (108449) mqtts_example: Other event id:5[0m
+[0;32mI (113899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (113899) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (113899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (113909) UART SIMSOM: GPS location.[0m
+[0;32mI (114289) mqtts_example: Other event id:5[0m
+[0;32mI (119719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (119719) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (119719) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (119729) UART SIMSOM: GPS location.[0m
+[0;32mI (120129) mqtts_example: Other event id:5[0m
+[0;32mI (125529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (125529) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (125529) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (125539) UART SIMSOM: GPS location.[0m
+[0;32mI (125859) mqtts_example: Other event id:5[0m
+[0;32mI (131349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (131349) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (131349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (131359) UART SIMSOM: GPS location.[0m
+[0;32mI (131699) mqtts_example: Other event id:5[0m
+[0;32mI (137159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (137159) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (137159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (137169) UART SIMSOM: GPS location.[0m
+[0;32mI (137539) mqtts_example: Other event id:5[0m
+[0;32mI (142979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (142979) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (142979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (142989) UART SIMSOM: GPS location.[0m
+[0;32mI (143369) mqtts_example: Other event id:5[0m
+[0;32mI (148789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (148789) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (148789) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (148799) UART SIMSOM: GPS location.[0m
+[0;32mI (149099) mqtts_example: Other event id:5[0m
+[0;32mI (154609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (154609) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (154609) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (154619) UART SIMSOM: GPS location.[0m
+[0;32mI (154939) mqtts_example: Other event id:5[0m
+[0;32mI (160429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (160429) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (160429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (160439) UART SIMSOM: GPS location.[0m
+[0;32mI (160779) mqtts_example: Other event id:5[0m
+[0;32mI (166249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (166249) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (166249) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (166259) UART SIMSOM: GPS location.[0m
+[0;32mI (166619) mqtts_example: Other event id:5[0m
+[0;32mI (172059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (172059) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (172059) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (172069) UART SIMSOM: GPS location.[0m
+[0;32mI (172449) mqtts_example: Other event id:5[0m
+[0;32mI (177879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (177879) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (177879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (177889) UART SIMSOM: GPS location.[0m
+[0;32mI (178289) mqtts_example: Other event id:5[0m
+[0;32mI (183699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (183699) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (183699) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (183709) UART SIMSOM: GPS location.[0m
+[0;32mI (184019) mqtts_example: Other event id:5[0m
+[0;32mI (189519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (189519) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (189519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (189529) UART SIMSOM: GPS location.[0m
+[0;32mI (189859) mqtts_example: Other event id:5[0m
+[0;32mI (195339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (195339) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (195339) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (195349) UART SIMSOM: GPS location.[0m
+[0;32mI (195699) mqtts_example: Other event id:5[0m
+[0;32mI (201159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (201159) mqtts_example: GPS Data: 
+d��?d��?�np��-J�Ƈ�Z�9;��Di'�b����"%��cL�@q��B[0m
+[0;32mI (201159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (201169) UART SIMSOM: GPS location.[0m
+[0;32mI (201529) mqtts_example: Other event id:5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=272cch (160460) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372f4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b234 vaddr=40080000 size=04de4h ( 19940) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34fch (668924) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3524 vaddr=40084de4 size=13604h ( 79364) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  481c7419e...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (869) wifi:state: auth -> assoc (0x0)
+I (939) wifi:state: assoc -> run (0x10)
+I (1039) wifi:connected with VNPT_Hanh, aid = 5, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (1039) wifi:security: WPA2-PSK, phy: bgn, rssi: -73
+I (1049) wifi:pm start, type: 1
+
+I (1049) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1129) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1779) mqtts_example: [APP] Free memory: 229924 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+[0;32mI (1979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1979) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (1979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (2059) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2059) WiFi: Got IP: 192.168.1.6[0m
+I (2789) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:5, winSize:64
+I (2799) wifi:<ba-add>idx:1 (ifx:0, 4c:12:e8:76:17:60), tid:4, ssn:1, winSize:64
+[0;32mI (3489) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3499) mqtts_example: sent subscribe successful, msg_id=28165[0m
+[0;32mI (3499) UART SIMSOM: GPS location.[0m
+[0;32mI (3799) mqtts_example: Other event id:3[0m
+[0;32mI (4109) mqtts_example: Other event id:5[0m
+[0;32mI (9299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9299) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (9299) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (9309) UART SIMSOM: GPS location.[0m
+[0;32mI (9639) mqtts_example: Other event id:5[0m
+[0;32mI (15109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (15109) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (15109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (15119) UART SIMSOM: GPS location.[0m
+[0;32mI (15479) mqtts_example: Other event id:5[0m
+[0;32mI (20919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (20919) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (20919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (20929) UART SIMSOM: GPS location.[0m
+[0;32mI (21309) mqtts_example: Other event id:5[0m
+[0;32mI (26729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (26729) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (26729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (26739) UART SIMSOM: GPS location.[0m
+[0;32mI (27049) mqtts_example: Other event id:5[0m
+[0;32mI (32539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (32539) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (32539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (32549) UART SIMSOM: GPS location.[0m
+[0;32mI (32879) mqtts_example: Other event id:5[0m
+[0;32mI (38349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (38349) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (38349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (38359) UART SIMSOM: GPS location.[0m
+[0;32mI (38719) mqtts_example: Other event id:5[0m
+[0;32mI (44159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (44159) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (44159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (44169) UART SIMSOM: GPS location.[0m
+[0;32mI (44559) mqtts_example: Other event id:5[0m
+[0;32mI (49969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (49969) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (49969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (49979) UART SIMSOM: GPS location.[0m
+[0;32mI (50289) mqtts_example: Other event id:5[0m
+[0;32mI (55779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (55779) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (55779) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (55789) UART SIMSOM: GPS location.[0m
+[0;32mI (56129) mqtts_example: Other event id:5[0m
+[0;32mI (61589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (61589) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (61589) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (61599) UART SIMSOM: GPS location.[0m
+[0;32mI (61969) mqtts_example: Other event id:5[0m
+[0;32mI (67399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (67399) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (67399) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (67409) UART SIMSOM: GPS location.[0m
+[0;32mI (67799) mqtts_example: Other event id:5[0m
+[0;32mI (73209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (73209) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (73209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (73219) UART SIMSOM: GPS location.[0m
+[0;32mI (73539) mqtts_example: Other event id:5[0m
+[0;32mI (79029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (79029) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (79029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (79039) UART SIMSOM: GPS location.[0m
+[0;32mI (79369) mqtts_example: Other event id:5[0m
+[0;32mI (84839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (84839) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (84839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (84849) UART SIMSOM: GPS location.[0m
+[0;32mI (85209) mqtts_example: Other event id:5[0m
+[0;32mI (90649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (90649) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (90649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (90659) UART SIMSOM: GPS location.[0m
+[0;32mI (91049) mqtts_example: Other event id:5[0m
+[0;32mI (96459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (96459) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (96459) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (96469) UART SIMSOM: GPS location.[0m
+[0;32mI (96779) mqtts_example: Other event id:5[0m
+[0;32mI (102269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (102269) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (102269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (102279) UART SIMSOM: GPS location.[0m
+[0;32mI (102609) mqtts_example: Other event id:5[0m
+[0;32mI (108079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (108079) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (108079) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (108089) UART SIMSOM: GPS location.[0m
+[0;32mI (108449) mqtts_example: Other event id:5[0m
+[0;32mI (113889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (113889) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (113889) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (113899) UART SIMSOM: GPS location.[0m
+[0;32mI (114289) mqtts_example: Other event id:5[0m
+[0;32mI (119699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (119699) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (119699) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (119709) UART SIMSOM: GPS location.[0m
+[0;32mI (120019) mqtts_example: Other event id:5[0m
+[0;32mI (125519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (125519) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (125519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (125529) UART SIMSOM: GPS location.[0m
+[0;32mI (125859) mqtts_example: Other event id:5[0m
+[0;32mI (131329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (131329) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (131329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (131339) UART SIMSOM: GPS location.[0m
+[0;32mI (131699) mqtts_example: Other event id:5[0m
+[0;32mI (137139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (137139) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (137139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (137149) UART SIMSOM: GPS location.[0m
+[0;32mI (137529) mqtts_example: Other event id:5[0m
+[0;32mI (142949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (142949) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (142949) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (142959) UART SIMSOM: GPS location.[0m
+[0;32mI (143269) mqtts_example: Other event id:5[0m
+[0;32mI (148759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (148759) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (148759) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (148769) UART SIMSOM: GPS location.[0m
+[0;32mI (149109) mqtts_example: Other event id:5[0m
+[0;32mI (154569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (154569) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (154569) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (154579) UART SIMSOM: GPS location.[0m
+[0;32mI (154939) mqtts_example: Other event id:5[0m
+[0;32mI (160379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (160379) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (160379) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (160389) UART SIMSOM: GPS location.[0m
+[0;32mI (160779) mqtts_example: Other event id:5[0m
+[0;32mI (166189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (166189) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (166189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (166209) UART SIMSOM: GPS location.[0m
+[0;32mI (166619) mqtts_example: Other event id:5[0m
+[0;32mI (172009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (172009) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (172009) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (172019) UART SIMSOM: GPS location.[0m
+[0;32mI (172349) mqtts_example: Other event id:5[0m
+[0;32mI (177819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (177819) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (177819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (177829) UART SIMSOM: GPS location.[0m
+[0;32mI (178189) mqtts_example: Other event id:5[0m
+[0;32mI (183629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (183629) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (183629) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (183639) UART SIMSOM: GPS location.[0m
+[0;32mI (184019) mqtts_example: Other event id:5[0m
+[0;32mI (189439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (189439) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (189439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (189449) UART SIMSOM: GPS location.[0m
+[0;32mI (189769) mqtts_example: Other event id:5[0m
+[0;32mI (195249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (195249) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (195249) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (195259) UART SIMSOM: GPS location.[0m
+[0;32mI (195599) mqtts_example: Other event id:5[0m
+[0;32mI (201059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (201059) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (201059) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (201069) UART SIMSOM: GPS location.[0m
+[0;32mI (201429) mqtts_example: Other event id:5[0m
+[0;32mI (206869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (206869) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (206869) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (206879) UART SIMSOM: GPS location.[0m
+[0;32mI (207269) mqtts_example: Other event id:5[0m
+[0;32mI (212679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (212679) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (212679) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (212689) UART SIMSOM: GPS location.[0m
+[0;32mI (212999) mqtts_example: Other event id:5[0m
+[0;32mI (218499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (218499) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (218499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (218509) UART SIMSOM: GPS location.[0m
+[0;32mI (218839) mqtts_example: Other event id:5[0m
+[0;32mI (224309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (224309) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (224309) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (224319) UART SIMSOM: GPS location.[0m
+[0;32mI (224679) mqtts_example: Other event id:5[0m
+[0;32mI (230119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (230119) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (230119) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (230129) UART SIMSOM: GPS location.[0m
+[0;32mI (230509) mqtts_example: Other event id:5[0m
+[0;32mI (235929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (235929) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (235929) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (235939) UART SIMSOM: GPS location.[0m
+[0;32mI (236249) mqtts_example: Other event id:5[0m
+[0;32mI (241739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (241739) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (241739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (241749) UART SIMSOM: GPS location.[0m
+[0;32mI (242089) mqtts_example: Other event id:5[0m
+[0;32mI (247549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (247549) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (247549) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (247559) UART SIMSOM: GPS location.[0m
+[0;32mI (247919) mqtts_example: Other event id:5[0m
+[0;32mI (253359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (253359) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (253359) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (253369) UART SIMSOM: GPS location.[0m
+[0;32mI (253759) mqtts_example: Other event id:5[0m
+[0;32mI (259169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (259169) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (259169) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (259179) UART SIMSOM: GPS location.[0m
+[0;32mI (259489) mqtts_example: Other event id:5[0m
+[0;32mI (264979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (264979) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (264979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (264989) UART SIMSOM: GPS location.[0m
+[0;32mI (265329) mqtts_example: Other event id:5[0m
+[0;32mI (270789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (270789) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (270789) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (270799) UART SIMSOM: GPS location.[0m
+[0;32mI (271169) mqtts_example: Other event id:5[0m
+[0;32mI (276599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (276599) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (276599) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (276609) UART SIMSOM: GPS location.[0m
+[0;32mI (276999) mqtts_example: Other event id:5[0m
+[0;32mI (282409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (282409) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (282409) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (282419) UART SIMSOM: GPS location.[0m
+[0;32mI (282739) mqtts_example: Other event id:5[0m
+[0;32mI (288219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (288219) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (288219) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (288229) UART SIMSOM: GPS location.[0m
+[0;32mI (288569) mqtts_example: Other event id:5[0m
+[0;32mI (294029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (294029) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (294029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (294039) UART SIMSOM: GPS location.[0m
+[0;32mI (294419) mqtts_example: Other event id:5[0m
+[0;32mI (299839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (299839) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (299839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (299849) UART SIMSOM: GPS location.[0m
+[0;32mI (300149) mqtts_example: Other event id:5[0m
+[0;32mI (305649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (305649) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (305649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (305659) UART SIMSOM: GPS location.[0m
+[0;32mI (305979) mqtts_example: Other event id:5[0m
+[0;32mI (311469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (311469) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (311469) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (311479) UART SIMSOM: GPS location.[0m
+[0;32mI (311839) mqtts_example: Other event id:5[0m
+[0;32mI (317279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (317279) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (317279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (317289) UART SIMSOM: GPS location.[0m
+[0;32mI (317659) mqtts_example: Other event id:5[0m
+[0;32mI (323089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (323089) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (323089) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (323099) UART SIMSOM: GPS location.[0m
+[0;32mI (323489) mqtts_example: Other event id:5[0m
+[0;32mI (328899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (328899) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (328899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (328909) UART SIMSOM: GPS location.[0m
+[0;32mI (329229) mqtts_example: Other event id:5[0m
+[0;32mI (334709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (334709) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (334709) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (334719) UART SIMSOM: GPS location.[0m
+[0;32mI (335059) mqtts_example: Other event id:5[0m
+[0;32mI (340519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (340519) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (340519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (340529) UART SIMSOM: GPS location.[0m
+[0;32mI (340899) mqtts_example: Other event id:5[0m
+[0;32mI (346329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (346329) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (346329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (346339) UART SIMSOM: GPS location.[0m
+[0;32mI (346639) mqtts_example: Other event id:5[0m
+[0;32mI (352139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (352139) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (352139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (352149) UART SIMSOM: GPS location.[0m
+[0;32mI (352469) mqtts_example: Other event id:5[0m
+[0;32mI (357959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (357959) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (357959) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (357969) UART SIMSOM: GPS location.[0m
+[0;32mI (358309) mqtts_example: Other event id:5[0m
+[0;32mI (363769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (363769) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (363769) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (363779) UART SIMSOM: GPS location.[0m
+[0;32mI (364149) mqtts_example: Other event id:5[0m
+[0;32mI (369579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (369579) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (369579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (369589) UART SIMSOM: GPS location.[0m
+[0;32mI (369979) mqtts_example: Other event id:5[0m
+[0;32mI (375389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (375389) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (375389) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (375399) UART SIMSOM: GPS location.[0m
+[0;32mI (375719) mqtts_example: Other event id:5[0m
+[0;32mI (381199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (381199) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (381199) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (381209) UART SIMSOM: GPS location.[0m
+[0;32mI (381549) mqtts_example: Other event id:5[0m
+[0;32mI (387009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (387009) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (387009) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (387019) UART SIMSOM: GPS location.[0m
+[0;32mI (387389) mqtts_example: Other event id:5[0m
+[0;32mI (392819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (392819) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (392819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (392829) UART SIMSOM: GPS location.[0m
+[0;32mI (393229) mqtts_example: Other event id:5[0m
+[0;32mI (398629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (398629) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (398629) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (398639) UART SIMSOM: GPS location.[0m
+[0;32mI (398959) mqtts_example: Other event id:5[0m
+[0;32mI (404449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (404449) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (404449) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (404459) UART SIMSOM: GPS location.[0m
+[0;32mI (404799) mqtts_example: Other event id:5[0m
+[0;32mI (410259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (410259) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (410259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (410269) UART SIMSOM: GPS location.[0m
+[0;32mI (410639) mqtts_example: Other event id:5[0m
+[0;32mI (416069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (416069) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (416069) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (416079) UART SIMSOM: GPS location.[0m
+[0;32mI (416469) mqtts_example: Other event id:5[0m
+[0;32mI (421879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (421879) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (421879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (421889) UART SIMSOM: GPS location.[0m
+[0;32mI (422209) mqtts_example: Other event id:5[0m
+[0;32mI (427689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (427689) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (427689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (427699) UART SIMSOM: GPS location.[0m
+[0;32mI (428049) mqtts_example: Other event id:5[0m
+[0;32mI (433499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (433499) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (433499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (433509) UART SIMSOM: GPS location.[0m
+[0;32mI (433879) mqtts_example: Other event id:5[0m
+[0;32mI (439309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (439309) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (439309) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (439319) UART SIMSOM: GPS location.[0m
+[0;32mI (439719) mqtts_example: Other event id:5[0m
+[0;32mI (445119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (445119) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (445119) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (445129) UART SIMSOM: GPS location.[0m
+[0;32mI (445449) mqtts_example: Other event id:5[0m
+[0;32mI (450939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (450939) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (450939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (450949) UART SIMSOM: GPS location.[0m
+[0;32mI (451289) mqtts_example: Other event id:5[0m
+[0;32mI (456749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (456749) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (456749) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (456759) UART SIMSOM: GPS location.[0m
+[0;32mI (457129) mqtts_example: Other event id:5[0m
+[0;32mI (462559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (462559) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (462559) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (462569) UART SIMSOM: GPS location.[0m
+[0;32mI (462959) mqtts_example: Other event id:5[0m
+[0;32mI (468369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (468369) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (468369) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (468379) UART SIMSOM: GPS location.[0m
+[0;32mI (468699) mqtts_example: Other event id:5[0m
+[0;32mI (474179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (474179) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (474179) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (474189) UART SIMSOM: GPS location.[0m
+[0;32mI (474529) mqtts_example: Other event id:5[0m
+[0;32mI (479989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (479989) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (479989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (479999) UART SIMSOM: GPS location.[0m
+[0;32mI (480369) mqtts_example: Other event id:5[0m
+[0;32mI (485799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (485799) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (485799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (485809) UART SIMSOM: GPS location.[0m
+[0;32mI (486209) mqtts_example: Other event id:5[0m
+[0;32mI (491619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (491619) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (491619) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (491629) UART SIMSOM: GPS location.[0m
+[0;32mI (491949) mqtts_example: Other event id:5[0m
+���������������������������������������������������������������� lat is 0.000000 and long is 0.000000[0m
+[0;32mI (497429) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (497429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (497439) UART SIMSOM: GPS location.[0m
+[0;32mI (497779) mqtts_example: Other event id:5[0m
+[0;32mI (503239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (503239) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (503239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (503249) UART SIMSOM: GPS location.[0m
+[0;32mI (503619) mqtts_example: Other event id:5[0m
+[0;32mI (509049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (509049) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (509049) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (509059) UART SIMSOM: GPS location.[0m
+[0;32mI (509459) mqtts_example: Other event id:5[0m
+[0;32mI (514859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (514859) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (514859) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (514869) UART SIMSOM: GPS location.[0m
+[0;32mI (515189) mqtts_example: Other event id:5[0m
+[0;32mI (520669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (520669) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (520669) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (520679) UART SIMSOM: GPS location.[0m
+[0;32mI (521029) mqtts_example: Other event id:5[0m
+[0;32mI (526479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (526479) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (526479) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (526489) UART SIMSOM: GPS location.[0m
+[0;32mI (526859) mqtts_example: Other event id:5[0m
+[0;32mI (532289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (532289) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (532289) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (532299) UART SIMSOM: GPS location.[0m
+[0;32mI (532699) mqtts_example: Other event id:5[0m
+[0;32mI (538099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (538099) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (538099) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (538109) UART SIMSOM: GPS location.[0m
+[0;32mI (538429) mqtts_example: Other event id:5[0m
+[0;32mI (543919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (543919) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (543919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (543929) UART SIMSOM: GPS location.[0m
+[0;32mI (544269) mqtts_example: Other event id:5[0m
+[0;32mI (549729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (549729) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (549729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (549739) UART SIMSOM: GPS location.[0m
+[0;32mI (550109) mqtts_example: Other event id:5[0m
+[0;32mI (555539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (555539) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (555539) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (555549) UART SIMSOM: GPS location.[0m
+[0;32mI (555939) mqtts_example: Other event id:5[0m
+[0;32mI (561349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (561349) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (561349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (561359) UART SIMSOM: GPS location.[0m
+[0;32mI (561679) mqtts_example: Other event id:5[0m
+[0;32mI (567159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (567159) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (567159) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (567169) UART SIMSOM: GPS location.[0m
+[0;32mI (567519) mqtts_example: Other event id:5[0m
+[0;32mI (572969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (572969) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (572969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (572979) UART SIMSOM: GPS location.[0m
+[0;32mI (573349) mqtts_example: Other event id:5[0m
+[0;32mI (578779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (578779) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (578779) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (578789) UART SIMSOM: GPS location.[0m
+[0;32mI (579189) mqtts_example: Other event id:5[0m
+[0;32mI (584589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (584589) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (584589) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (584599) UART SIMSOM: GPS location.[0m
+[0;32mI (584919) mqtts_example: Other event id:5[0m
+[0;32mI (590409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (590409) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (590409) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (590419) UART SIMSOM: GPS location.[0m
+[0;32mI (590759) mqtts_example: Other event id:5[0m
+[0;32mI (596219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (596219) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (596219) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (596229) UART SIMSOM: GPS location.[0m
+[0;32mI (596589) mqtts_example: Other event id:5[0m
+[0;32mI (602029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (602029) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (602029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (602039) UART SIMSOM: GPS location.[0m
+[0;32mI (602429) mqtts_example: Other event id:5[0m
+[0;32mI (607839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (607839) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (607839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (607849) UART SIMSOM: GPS location.[0m
+[0;32mI (608169) mqtts_example: Other event id:5[0m
+[0;32mI (613649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (613649) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (613649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (613659) UART SIMSOM: GPS location.[0m
+[0;32mI (613999) mqtts_example: Other event id:5[0m
+[0;32mI (619469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (619469) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (619469) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (619479) UART SIMSOM: GPS location.[0m
+[0;32mI (619839) mqtts_example: Other event id:5[0m
+[0;32mI (625279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (625279) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (625279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (625289) UART SIMSOM: GPS location.[0m
+[0;32mI (625679) mqtts_example: Other event id:5[0m
+[0;32mI (631089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (631089) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (631089) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (631099) UART SIMSOM: GPS location.[0m
+[0;32mI (631409) mqtts_example: Other event id:5[0m
+[0;32mI (636899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (636899) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (636899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (636909) UART SIMSOM: GPS location.[0m
+[0;32mI (637249) mqtts_example: Other event id:5[0m
+[0;32mI (642709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (642709) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (642709) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (642719) UART SIMSOM: GPS location.[0m
+[0;32mI (643089) mqtts_example: Other event id:5[0m
+[0;32mI (648519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (648519) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (648519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (648529) UART SIMSOM: GPS location.[0m
+[0;32mI (648919) mqtts_example: Other event id:5[0m
+[0;32mI (654329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (654329) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (654329) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (654339) UART SIMSOM: GPS location.[0m
+[0;32mI (654659) mqtts_example: Other event id:5[0m
+[0;32mI (660139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (660139) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (660139) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (660149) UART SIMSOM: GPS location.[0m
+[0;32mI (660489) mqtts_example: Other event id:5[0m
+[0;32mI (665949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (665949) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (665949) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (665959) UART SIMSOM: GPS location.[0m
+[0;32mI (666329) mqtts_example: Other event id:5[0m
+[0;32mI (671759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (671759) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (671759) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (671769) UART SIMSOM: GPS location.[0m
+[0;32mI (672169) mqtts_example: Other event id:5[0m
+[0;32mI (677579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (677579) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (677579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (677589) UART SIMSOM: GPS location.[0m
+[0;32mI (677899) mqtts_example: Other event id:5[0m
+[0;32mI (683389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (683389) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (683389) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (683399) UART SIMSOM: GPS location.[0m
+[0;32mI (683739) mqtts_example: Other event id:5[0m
+[0;32mI (689199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (689199) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (689199) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (689209) UART SIMSOM: GPS location.[0m
+[0;32mI (689579) mqtts_example: Other event id:5[0m
+[0;32mI (695009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (695009) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (695009) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (695019) UART SIMSOM: GPS location.[0m
+[0;32mI (695409) mqtts_example: Other event id:5[0m
+[0;32mI (700819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (700819) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (700819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (700839) UART SIMSOM: GPS location.[0m
+[0;32mI (701149) mqtts_example: Other event id:5[0m
+[0;32mI (706639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (706639) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (706639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (706649) UART SIMSOM: GPS location.[0m
+[0;32mI (706979) mqtts_example: Other event id:5[0m
+[0;32mI (712449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (712449) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (712449) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (712459) UART SIMSOM: GPS location.[0m
+[0;32mI (712819) mqtts_example: Other event id:5[0m
+[0;32mI (718259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (718259) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (718259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (718269) UART SIMSOM: GPS location.[0m
+[0;32mI (718659) mqtts_example: Other event id:5[0m
+[0;32mI (724069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (724069) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (724069) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (724079) UART SIMSOM: GPS location.[0m
+[0;32mI (724389) mqtts_example: Other event id:5[0m
+[0;32mI (729879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (729879) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (729879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (729889) UART SIMSOM: GPS location.[0m
+[0;32mI (730229) mqtts_example: Other event id:5[0m
+[0;32mI (735689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (735689) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (735689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (735699) UART SIMSOM: GPS location.[0m
+[0;32mI (736069) mqtts_example: Other event id:5[0m
+[0;32mI (741499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (741499) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (741499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (741509) UART SIMSOM: GPS location.[0m
+[0;32mI (741899) mqtts_example: Other event id:5[0m
+[0;32mI (747309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (747309) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (747309) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (747329) UART SIMSOM: GPS location.[0m
+[0;32mI (747629) mqtts_example: Other event id:5[0m
+[0;32mI (753129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (753129) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (753129) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (753139) UART SIMSOM: GPS location.[0m
+[0;32mI (753469) mqtts_example: Other event id:5[0m
+[0;32mI (758939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (758939) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (758939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (758949) UART SIMSOM: GPS location.[0m
+[0;32mI (759309) mqtts_example: Other event id:5[0m
+[0;32mI (764749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (764749) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (764749) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (764759) UART SIMSOM: GPS location.[0m
+[0;32mI (765149) mqtts_example: Other event id:5[0m
+[0;32mI (770559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (770559) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (770559) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (770569) UART SIMSOM: GPS location.[0m
+[0;32mI (770879) mqtts_example: Other event id:5[0m
+[0;32mI (776369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (776369) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (776369) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (776379) UART SIMSOM: GPS location.[0m
+[0;32mI (776719) mqtts_example: Other event id:5[0m
+[0;32mI (782179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (782179) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (782179) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (782189) UART SIMSOM: GPS location.[0m
+[0;32mI (782559) mqtts_example: Other event id:5[0m
+[0;32mI (787989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (787989) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (787989) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (787999) UART SIMSOM: GPS location.[0m
+[0;32mI (788389) mqtts_example: Other event id:5[0m
+[0;32mI (793799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (793799) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (793799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (793819) UART SIMSOM: GPS location.[0m
+[0;32mI (794129) mqtts_example: Other event id:5[0m
+[0;32mI (799619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (799619) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (799619) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (799629) UART SIMSOM: GPS location.[0m
+[0;32mI (799959) mqtts_example: Other event id:5[0m
+[0;32mI (805429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (805429) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (805429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (805439) UART SIMSOM: GPS location.[0m
+[0;32mI (805799) mqtts_example: Other event id:5[0m
+[0;32mI (811239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (811239) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (811239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (811249) UART SIMSOM: GPS location.[0m
+[0;32mI (811639) mqtts_example: Other event id:5[0m
+[0;32mI (817049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (817049) mqtts_example: GPS Data: 
+d��?d��?�np��%J�Ƈ�^�9;��Di��r��˰"%��cL�DQ�
+[0;32mI (817049) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (817059) UART SIMSOM: GPS location.[0m
+[0;32mI (817369) mqtts_example: Other event id:5[0m
+[0;32mI (822859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (822859) mqtts_example: GPS Data: 
+[0m
+[0;32mI (822859) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (822869) UART SIMSOM: GPS location.[0m
+[0;32mI (823209) mqtts_example: Other event id:5[0m
+[0;32mI (828669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (828669) mqtts_example: GPS Data: 
+[0m
+[0;32mI (828669) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (828679) UART SIMSOM: GPS location.[0m
+[0;32mI (829039) mqtts_example: Other event id:5[0m
+[0;32mI (834479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (834479) mqtts_example: GPS Data: 
+[0m
+[0;32mI (834479) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (834489) UART SIMSOM: GPS location.[0m
+[0;32mI (834979) mqtts_example: Other event id:5[0m
+[0;32mI (840289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (840289) mqtts_example: GPS Data: 
+[0m
+[0;32mI (840289) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (840299) UART SIMSOM: GPS location.[0m
+[0;32mI (840419) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (840419) UART SIMSOM: GPS Data: 
+(�)uAM1=��?[0m
+[0;32mI (840619) mqtts_example: Other event id:5[0m
+[0;32mI (846219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (846219) mqtts_example: GPS Data: 
+�
+[0;32mI (846219) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (846229) UART SIMSOM: GPS location.[0m
+[0;32mI (846549) mqtts_example: Other event id:5[0m
+[0;32mI (852029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (852029) mqtts_example: GPS Data: 
+�
+[0;32mI (852029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (852039) UART SIMSOM: GPS location.[0m
+[0;32mI (852409) mqtts_example: Other event id:5[0m
+[0;32mI (857839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (857839) mqtts_example: GPS Data: 
+�
+[0;32mI (857839) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (857849) UART SIMSOM: GPS location.[0m
+[0;32mI (858229) mqtts_example: Other event id:5[0m
+[0;32mI (863649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (863649) mqtts_example: GPS Data: 
+�
+[0;32mI (863649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (863659) UART SIMSOM: GPS location.[0m
+[0;32mI (863959) mqtts_example: Other event id:5[0m
+[0;32mI (869459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (869459) mqtts_example: GPS Data: 
+�
+[0;32mI (869459) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (869469) UART SIMSOM: GPS location.[0m
+[0;32mI (869799) mqtts_example: Other event id:5[0m
+[0;32mI (875269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (875269) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (875269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (875279) UART SIMSOM: GPS location.[0m
+[0;32mI (875409) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (875409) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
+[0m
+[0;32mI (875639) mqtts_example: Other event id:5[0m
+[0;32mI (881209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (881209) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (881209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (881219) UART SIMSOM: GPS location.[0m
+[0;32mI (881579) mqtts_example: Other event id:5[0m
+[0;32mI (887019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (887019) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (887019) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (887029) UART SIMSOM: GPS location.[0m
+[0;32mI (887409) mqtts_example: Other event id:5[0m
+[0;32mI (892829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (892829) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (892829) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (892839) UART SIMSOM: GPS location.[0m
+[0;32mI (893149) mqtts_example: Other event id:5[0m
+[0;32mI (898639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (898639) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (898639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (898649) UART SIMSOM: GPS location.[0m
+[0;32mI (898979) mqtts_example: Other event id:5[0m
+[0;32mI (904449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (904449) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (904449) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (904459) UART SIMSOM: GPS location.[0m
+[0;32mI (904819) mqtts_example: Other event id:5[0m
+[0;32mI (910259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (910259) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (910259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (910269) UART SIMSOM: GPS location.[0m
+[0;32mI (910659) mqtts_example: Other event id:5[0m
+[0;32mI (916069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (916069) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (916069) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (916079) UART SIMSOM: GPS location.[0m
+[0;32mI (916389) mqtts_example: Other event id:5[0m
+[0;32mI (921879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (921879) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (921879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (921889) UART SIMSOM: GPS location.[0m
+[0;32mI (922229) mqtts_example: Other event id:5[0m
+[0;32mI (927689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (927689) mqtts_example: GPS Data: 
+���m[0m
+[0;32mI (927689) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (927699) UART SIMSOM: GPS location.[0m
+[0;32mI (928069) mqtts_example: Other event id:5[0m

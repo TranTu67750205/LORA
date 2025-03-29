@@ -1,0 +1,15 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Dependencies lock doesn't exist, solving dependencies.
+Using component placed at C:\Espressif\frameworks\esp-idf-v5.3.1\examples\common_components\protocol_examples_common for dependency "protocol_examples_common", specified in C:\ESP IDF\project_esp\TEST2\main\idf_component.yml
+.NOTICE: Updating lock file at C:\ESP IDF\project_esp\TEST2\dependencies.lock
+Processing 2 dependencies:
+[1/2] protocol_examples_common (*) (C:\Espressif\frameworks\esp-idf-v5.3.1\examples\common_components\protocol_examples_common)
+[2/2] idf (5.3.1)
+-- Configuring incomplete, errors occurred!
+See also "C:/ESP IDF/project_esp/TEST2/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -S"C:\ESP IDF\project_esp\TEST2" -B"C:\ESP IDF\project_esp\TEST2\build"

@@ -1,0 +1,171 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2733ch (160572) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037364 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2a4 vaddr=40080000 size=04d74h ( 19828) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34ach (668844) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34d4 vaddr=40084d74 size=13674h ( 79476) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  9ad41beb9...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8850 len 000277B0 (157 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc07dc, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (809) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (809) wifi:enable tsf
+I (829) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (829) wifi:state: init -> auth (0xb0)
+I (869) wifi:state: auth -> assoc (0x0)
+I (909) wifi:state: assoc -> run (0x10)
+I (949) wifi:connected with 9999, aid = 1, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (949) wifi:security: WPA2-PSK, phy: bgn, rssi: -53
+I (959) wifi:pm start, type: 1
+
+I (959) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (979) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+I (999) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1809) UART SIMSOM: Enable GPS.[0m
+[0;31mE (1809) uart: uart_write_bytes(1455): uart driver error[0m
+[0;31mE (1809) UART SIMSOM: Send data critical failure.[0m
+[0;32mI (1809) mqtts_example: [APP] Free memory: 226180 bytes[0m
+[0;32mI (1819) mqtts_example: Other event id:7[0m
+[0;32mI (1969) esp_netif_handlers: sta ip: 192.168.1.179, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1969) WiFi: Got IP: 192.168.1.179[0m
+I (2829) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:6, ssn:2, winSize:64
+I (2839) wifi:<ba-del>idx:1, tid:6
+I (2839) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:0, ssn:0, winSize:64
+[0;32mI (3569) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3569) mqtts_example: sent subscribe successful, msg_id=6624[0m
+[0;32mI (3879) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=6624[0m
+[0;32mI (3879) mqtts_example: sent publish successful, msg_id=49728[0m
+[0;31mE (4179) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4179) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (4189) mqtts_example: Other event id:0[0m
+[0;31mE (4189) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (4199) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (19199) mqtts_example: Other event id:7[0m
+[0;32mI (19849) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (19859) mqtts_example: sent subscribe successful, msg_id=59823[0m
+[0;32mI (20159) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=59823[0m
+[0;32mI (20159) mqtts_example: sent publish successful, msg_id=52054[0m
+[0;31mE (20459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (20459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (20469) mqtts_example: Other event id:0[0m
+[0;31mE (20469) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (20479) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (35489) mqtts_example: Other event id:7[0m
+[0;32mI (36129) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (36129) mqtts_example: sent subscribe successful, msg_id=65525[0m
+[0;32mI (36439) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=65525[0m
+[0;32mI (36439) mqtts_example: sent publish successful, msg_id=23478[0m
+[0;31mE (36749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (36749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (36749) mqtts_example: Other event id:0[0m
+[0;31mE (36759) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (36769) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (51769) mqtts_example: Other event id:7[0m
+[0;32mI (52409) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (52419) mqtts_example: sent subscribe successful, msg_id=48189[0m
+[0;32mI (52719) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=48189[0m
+[0;32mI (52719) mqtts_example: sent publish successful, msg_id=64433[0m
+[0;31mE (53019) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (53029) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (53029) mqtts_example: Other event id:0[0m
+[0;31mE (53039) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (53049) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (68049) mqtts_example: Other event id:7[0m
+[0;32mI (68799) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (68809) mqtts_example: sent subscribe successful, msg_id=33159[0m
+[0;32mI (69209) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=33159[0m
+[0;32mI (69209) mqtts_example: sent publish successful, msg_id=38354[0m
+[0;31mE (69509) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (69509) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (69519) mqtts_example: Other event id:0[0m
+[0;31mE (69519) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (69529) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (79539) mqtts_example: Other event id:7[0m
+[0;32mI (80169) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (80169) mqtts_example: sent subscribe successful, msg_id=47436[0m
+[0;32mI (80469) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=47436[0m
+[0;32mI (80479) mqtts_example: sent publish successful, msg_id=45296[0m
+[0;31mE (80779) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (80779) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (80779) mqtts_example: Other event id:0[0m
+[0;31mE (80789) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (80799) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (95799) mqtts_example: Other event id:7[0m
+[0;32mI (96439) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (96449) mqtts_example: sent subscribe successful, msg_id=27862[0m
+[0;32mI (96749) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=27862[0m
+[0;32mI (96759) mqtts_example: sent publish successful, msg_id=9634[0m
+[0;31mE (97059) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (97059) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (97059) mqtts_example: Other event id:0[0m
+[0;31mE (97069) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (97079) mqtts_example: MQTT_EVENT_DISCONNECTED[0m

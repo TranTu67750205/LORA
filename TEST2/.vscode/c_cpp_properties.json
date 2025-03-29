@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Espressif/frameworks/esp-idf-v5.3.1/**",
+                "${workspaceFolder}/Components/uart_sub/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compileCommands": "C:/Espressif/frameworks/esp-idf-v5.3.1/examples/get-started/hello_world/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

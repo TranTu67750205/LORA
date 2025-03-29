@@ -1,0 +1,175 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081b52: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008a349: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400921bd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008faf2: remove_free_block at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:330 (discriminator 1)
+ (inlined by) block_locate_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:567 (discriminator 1)
+ (inlined by) tlsf_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1015 (discriminator 1)
+0x4008f4a1: multi_heap_malloc_impl at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/multi_heap.c:211
+0x400822fd: aligned_or_unaligned_alloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:77
+0x40082409: heap_caps_aligned_alloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:150
+0x40082439: heap_caps_malloc_base at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_base.c:170
+0x400820f8: heap_caps_malloc at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps.c:84
+0x40085d79: esp_coex_common_malloc_internal_wrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex/esp32/esp_coex_adapter.c:125
+0x4016d965: esf_buf_alloc_dynamic at ??:?
+0x40095381: esf_buf_alloc at ??:?
+0x40124bc5: ic_ebuf_alloc at ??:?
+0x40124669: ieee80211_getmgtframe at ??:?
+0x401187c2: ieee80211_encap_null_data at ??:?
+0x4011889c: ieee80211_pm_tx_null_process at ??:?
+0x401261fe: pm_send_nullfunc at ??:?
+0x4012678f: pm_go_to_sleep at ??:?
+0x40127323: pm_active_timeout_process at ??:?
+0x40128915: dbg_lmac_ps_statis_reset at ??:?
+0x4016f085: pp_timer_do_process at ??:?
+0x40093cde: ppTask at ??:?
+0x4008af11: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

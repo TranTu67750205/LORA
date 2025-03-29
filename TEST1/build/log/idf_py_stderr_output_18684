@@ -1,0 +1,1 @@
+ninja: error: 'C:/ESP IDF/project_esp/TEST1/UART_GPS/connect_wifi/connect_wifi.c', needed by 'esp-idf/UART_GPS/CMakeFiles/__idf_UART_GPS.dir/connect_wifi/connect_wifi.c.obj', missing and no known rule to make it

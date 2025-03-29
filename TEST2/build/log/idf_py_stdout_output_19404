@@ -1,0 +1,2350 @@
+ets Jul 29 �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2733ch (160572) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037364 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2a4 vaddr=40080000 size=04d74h ( 19828) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34c0h (668864) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34e8 vaddr=40084d74 size=13674h ( 79476) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  87c01cb25...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8850 len 000277B0 (157 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0860, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) mqtts_example: [APP] Free memory: 227048 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;31mE (1779) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1789) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1799) mqtt_client: Error transport connect[0m
+[0;32mI (1799) mqtts_example: Other event id:0[0m
+[0;32mI (1809) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1919) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1949) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1979) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (1999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2209) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2239) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2269) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2299) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2329) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2439) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2469) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2499) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2529) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2559) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2589) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2619) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2649) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2679) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2709) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2739) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2769) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2799) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2829) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2859) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2889) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2919) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2949) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2979) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (2999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3189) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (3199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3209) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+I (3229) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (3239) wifi:state: init -> auth (0xb0)
+[0;32mI (3239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+I (3289) wifi:state: auth -> assoc (0x0)
+[0;32mI (3309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+I (3339) wifi:state: assoc -> run (0x10)
+[0;32mI (3339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3939) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3969) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (3989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3999) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4029) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4059) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4089) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4119) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4149) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4179) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4209) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4239) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4269) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4299) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4329) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4939) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4969) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (4989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (4999) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5029) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5059) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5089) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5119) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5149) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5179) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5209) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5239) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5269) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5299) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5329) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5939) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5969) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (5989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5999) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6029) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6059) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6089) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6119) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6149) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6179) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6209) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6239) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6269) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6299) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6329) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32m[0;31mE (6909) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6909) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (6909) task_wdt: Tasks currently running:[0m
+[0;31mE (6909) task_wdt: CPU 0: main[0m
+[0;31mE (6909) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (6909) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400E2017:0x3FFB1F00 0x400E23DC:0x3FFB1F20 0x4008341D:0x3FFB1F50 0x400D60F1:0x3FFBA560 0x400D68BF:0x3FFBA590 0x400D9335:0x3FFBA5B0 0x4000BD83:0x3FFBA5D0 0x4000182A:0x3FFBA5F0 0x400D8C6D:0x3FFBA610 0x400D9335:0x3FFBA630 0x4000BD83:0x3FFBA650 0x4000117D:0x3FFBA670 0x400592FE:0x3FFBA690 0x4005937A:0x3FFBA6B0 0x4015B0E1:0x3FFBA6D0 0x40163AE7:0x3FFBA700 0x401634C5:0x3FFBA720 0x4015B4AD:0x3FFBAA40 0x40171E5D:0x3FFBAA70 0x400909E1:0x3FFBAAA0 0x400DA394:0x3FFBAAF0 0x400D9F04:0x3FFBAB30 0x4017139B:0x3FFBAB50 0x4008AF11:0x3FFBAB80
+
+I (6909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (6989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (6999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7439) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7469) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7499) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7529) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7559) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7589) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7619) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7649) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7679) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7709) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7739) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7769) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7799) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7829) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7859) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7889) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7919) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7949) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7979) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (7999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8439) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8469) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8499) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8529) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8559) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8589) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8619) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8649) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8679) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8709) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8739) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8769) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8799) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8829) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8859) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8889) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8919) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8949) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8979) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (8999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9279) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9309) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9369) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9429) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9439) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9459) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9469) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9499) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9519) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9529) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9559) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9589) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9619) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9649) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9679) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9709) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9739) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9769) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9799) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9829) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9859) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9889) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9919) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9949) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9979) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9989) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (9989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (9999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10359) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10389) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10419) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10609) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10939) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10969) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (10999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (10999) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11029) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11439) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11469) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11499) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11529) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11559) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11589) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11619) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11649) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11679) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11689) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11709) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11739) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11749) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11769) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11839) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (118[0;31mE (11909) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11909) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (11909) task_wdt: Tasks currently running:[0m
+[0;31mE (11909) task_wdt: CPU 0: main[0m
+[0;31mE (11909) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (11909) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400E2017:0x3FFB1F00 0x400E23DC:0x3FFB1F20 0x4008341D:0x3FFB1F50 0x400D60D9:0x3FFBA560 0x400D68BF:0x3FFBA590 0x400D9335:0x3FFBA5B0 0x4000BD83:0x3FFBA5D0 0x4000182A:0x3FFBA5F0 0x400D8C6D:0x3FFBA610 0x400D9335:0x3FFBA630 0x4000BD83:0x3FFBA650 0x4000117D:0x3FFBA670 0x400592FE:0x3FFBA690 0x4005937A:0x3FFBA6B0 0x4015B0E1:0x3FFBA6D0 0x40163AE7:0x3FFBA700 0x401634C5:0x3FFBA720 0x4015B4AD:0x3FFBAA40 0x40171E5D:0x3FFBAA70 0x400909E1:0x3FFBAAA0 0x400DA394:0x3FFBAAF0 0x400D9F04:0x3FFBAB30 0x4017139B:0x3FFBAB50 0x4008AF11:0x3FFBAB80
+
+99) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (11999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12009) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12039) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12049) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12069) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12099) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12129) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12139) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12159) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12199) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12229) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12249) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12259) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12279) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12289) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12289) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12299) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12309) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12319) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12339) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12349) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12369) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12379) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12379) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12399) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12409) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12429) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12439) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12449) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12449) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12459) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12479) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12489) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12509) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12509) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12519) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12539) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12539) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12549) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12569) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12579) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12589) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12599) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12599) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12609) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12629) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12639) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12659) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12669) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12669) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12679) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12689) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12699) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12719) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12729) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12739) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12749) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12759) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12759) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12769) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12779) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12789) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12809) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12819) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12819) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12829) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12839) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12849) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12869) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12879) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12889) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12899) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12909) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12909) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12929) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12939) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12959) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12969) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12969) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12979) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12989) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (12999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12999) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13019) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13029) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13049) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13059) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13069) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13079) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13089) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13109) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13119) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13119) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13129) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13139) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13149) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13149) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13169) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13189) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13199) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13209) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13219) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13229) mqtts_example: GPS Data: 
+{"latitude": "0.000000", "longtitude": "0.000000"}[0m
+[0;32mI (13239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13249) mqtts_example: GPS Data: 

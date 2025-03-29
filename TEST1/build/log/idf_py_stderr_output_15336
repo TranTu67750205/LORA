@@ -1,0 +1,9 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:314 (message):
+  Include directory 'C:/ESP IDF/project_esp/TEST1/UART_GPS/REQUIRE' is not a
+  directory.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:482 (__component_add_include_dirs)
+  UART_GPS/CMakeLists.txt:1 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

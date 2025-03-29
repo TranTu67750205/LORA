@@ -1,0 +1,85 @@
+[1/10] Building C object esp-idf/wifi_config/CMakeFiles/__idf_wifi_config.dir/wifi_config.c.obj
+[2/10] Linking C static library esp-idf\wifi_config\libwifi_config.a
+[3/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/TEST2/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable TEST2.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/TEST2/build/TEST2.bin
+[7/8] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/TEST2/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/TEST2/build/TEST2.bin""
+TEST2.bin binary size 0xe6a40 bytes. Smallest app partition is 0x100000 bytes. 0x195c0 bytes (10%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressesptool.py --chip esp32 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 TEST2.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM9
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:27:b1:54
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16360...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.6 seconds (effective 388.4 kbit/s)...
+Hash of data verified.
+Compressed 944704 bytes to 593631...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e690... (5 %)
+Writing at 0x00027c90... (8 %)
+Writing at 0x0002caf9... (10 %)
+Writing at 0x00034b21... (13 %)
+Writing at 0x0003e245... (16 %)
+Writing at 0x00043fd4... (18 %)
+Writing at 0x00049ca3... (21 %)
+Writing at 0x0004fd4e... (24 %)
+Writing at 0x00055d81... (27 %)
+Writing at 0x0005bb93... (29 %)
+Writing at 0x000616a8... (32 %)
+Writing at 0x000675b3... (35 %)
+Writing at 0x0006dabb... (37 %)
+Writing at 0x000737ed... (40 %)
+Writing at 0x000793eb... (43 %)
+Writing at 0x0007e6db... (45 %)
+Writing at 0x00083abe... (48 %)
+Writing at 0x00089074... (51 %)
+Writing at 0x0008e435... (54 %)
+Writing at 0x00093aa1... (56 %)
+Writing at 0x000992e4... (59 %)
+Writing at 0x0009f11c... (62 %)
+Writing at 0x000a4b7b... (64 %)
+Writing at 0x000aa68d... (67 %)
+Writing at 0x000b0241... (70 %)
+Writing at 0x000b5e28... (72 %)
+Writing at 0x000bb7bc... (75 %)
+Writing at 0x000c15b4... (78 %)
+Writing at 0x000c7142... (81 %)
+Writing at 0x000cc6ff... (83 %)
+Writing at 0x000d6417... (86 %)
+Writing at 0x000de498... (89 %)
+Writing at 0x000e42ff... (91 %)
+Writing at 0x000e9e0b... (94 %)
+Writing at 0x000eff83... (97 %)
+Writing at 0x000f51ca... (100 %)
+Wrote 944704 bytes (593631 compressed) at 0x00010000 in 14.4 seconds (effective 523.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1170.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+if/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/ESP IDF/project_esp/TEST2/build" -P C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

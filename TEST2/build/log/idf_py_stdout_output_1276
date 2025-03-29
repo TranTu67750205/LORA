@@ -1,0 +1,1024 @@
+e�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2733ch (160572) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037364 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2a4 vaddr=40080000 size=04d74h ( 19828) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34bch (668860) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34e4 vaddr=40084d74 size=13674h ( 79476) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  d0f37bd2f...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc06dc, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (799) wifi:state: auth -> assoc (0x0)
+I (829) wifi:state: assoc -> run (0x10)
+I (849) wifi:connected with Galaxy A05s 6247, aid = 4, channel 6, BW20, bssid = 2e:94:d7:57:2c:81
+I (849) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (849) wifi:pm start, type: 1
+
+I (849) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (909) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (909) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1779) mqtts_example: [APP] Free memory: 230056 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+[0;32mI (1859) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (1859) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (1999) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (1999) mqtts_example: lat is 10.876655 and long is 106.808769[0m
+[0;32mI (1999) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 071334.00,1052.5993N,10648.5260E,2.00,4.1,3,,0.069,0.038,301224,20
+
+OK
+[0m
+[0;32mI (2009) mqtts_example: GPS json: 
+{"latitude": "10.876655", "longtitude": "106.808769"} 
+ 
+ 
+[0m
+I (2789) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (3779) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3779) mqtts_example: sent subscribe successful, msg_id=45571[0m
+[0;32mI (4189) mqtts_example: Other event id:3[0m
+[0;32mI (4809) mqtts_example: Other event id:5[0m
+[0;32mI (8989) mqtts_example: No data received from UART[0m
+[0;32mI (8989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (14189) mqtts_example: No data received from UART[0m
+[0;32mI (14189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (19389) mqtts_example: No data received from UART[0m
+[0;32mI (19389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (24589) mqtts_example: No data received from UART[0m
+[0;32mI (24589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (29789) mqtts_example: No data received from UART[0m
+[0;32mI (29789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (34989) mqtts_example: No data received from UART[0m
+[0;32mI (34989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (40189) mqtts_example: No data received from UART[0m
+[0;32mI (40189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (45389) mqtts_example: No data received from UART[0m
+[0;32mI (45389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (50589) mqtts_example: No data received from UART[0m
+[0;32mI (50589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (55789) mqtts_example: No data received from UART[0m
+[0;32mI (55789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (60989) mqtts_example: No data received from UART[0m
+[0;32mI (60989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (66189) mqtts_example: No data received from UART[0m
+[0;32mI (66189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (71389) mqtts_example: No data received from UART[0m
+[0;32mI (71389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (76589) mqtts_example: No data received from UART[0m
+[0;32mI (76589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (81789) mqtts_example: No data received from UART[0m
+[0;32mI (81789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (86989) mqtts_example: No data received from UART[0m
+[0;32mI (86989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (92189) mqtts_example: No data received from UART[0m
+[0;32mI (92189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (97389) mqtts_example: No data received from UART[0m
+[0;32mI (97389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (102589) mqtts_example: No data received from UART[0m
+[0;32mI (102589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (107789) mqtts_example: No data received from UART[0m
+[0;32mI (107789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (112989) mqtts_example: No data received from UART[0m
+[0;32mI (112989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (118189) mqtts_example: No data received from UART[0m
+[0;32mI (118189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (123389) mqtts_example: No data received from UART[0m
+[0;32mI (123389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (128589) mqtts_example: No data received from UART[0m
+[0;32mI (128589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (133789) mqtts_example: No data received from UART[0m
+[0;32mI (133789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (138989) mqtts_example: No data received from UART[0m
+[0;32mI (138989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (144189) mqtts_example: No data received from UART[0m
+[0;32mI (144189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (149389) mqtts_example: No data received from UART[0m
+[0;32mI (149389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (154589) mqtts_example: No data received from UART[0m
+[0;32mI (154589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (159789) mqtts_example: No data received from UART[0m
+[0;32mI (159789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (164989) mqtts_example: No data received from UART[0m
+[0;32mI (164989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (170189) mqtts_example: No data received from UART[0m
+[0;32mI (170189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (175389) mqtts_example: No data received from UART[0m
+[0;32mI (175389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (180589) mqtts_example: No data received from UART[0m
+[0;32mI (180589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (185789) mqtts_example: No data received from UART[0m
+[0;32mI (185789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (190989) mqtts_example: No data received from UART[0m
+[0;32mI (190989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (196189) mqtts_example: No data received from UART[0m
+[0;32mI (196189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (201389) mqtts_example: No data received from UART[0m
+[0;32mI (201389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (206589) mqtts_example: No data received from UART[0m
+[0;32mI (206589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (211789) mqtts_example: No data received from UART[0m
+[0;32mI (211789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (216989) mqtts_example: No data received from UART[0m
+[0;32mI (216989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (222189) mqtts_example: No data received from UART[0m
+[0;32mI (222189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (227389) mqtts_example: No data received from UART[0m
+[0;32mI (227389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (232589) mqtts_example: No data received from UART[0m
+[0;32mI (232589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (237789) mqtts_example: No data received from UART[0m
+[0;32mI (237789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (242989) mqtts_example: No data received from UART[0m
+[0;32mI (242989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (248189) mqtts_example: No data received from UART[0m
+[0;32mI (248189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (253389) mqtts_example: No data received from UART[0m
+[0;32mI (253389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (258589) mqtts_example: No data received from UART[0m
+[0;32mI (258589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (263789) mqtts_example: No data received from UART[0m
+[0;32mI (263789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (268989) mqtts_example: No data received from UART[0m
+[0;32mI (268989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (274189) mqtts_example: No data received from UART[0m
+[0;32mI (274189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (279389) mqtts_example: No data received from UART[0m
+[0;32mI (279389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (284589) mqtts_example: No data received from UART[0m
+[0;32mI (284589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (289789) mqtts_example: No data received from UART[0m
+[0;32mI (289789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (294989) mqtts_example: No data received from UART[0m
+[0;32mI (294989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (300189) mqtts_example: No data received from UART[0m
+[0;32mI (300189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (305389) mqtts_example: No data received from UART[0m
+[0;32mI (305389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (310589) mqtts_example: No data received from UART[0m
+[0;32mI (310589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (315789) mqtts_example: No data received from UART[0m
+[0;32mI (315789) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (320989) mqtts_example: No data received from UART[0m
+[0;32mI (320989) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (326189) mqtts_example: No data received from UART[0m
+[0;32mI (326189) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (331389) mqtts_example: No data received from UART[0m
+[0;32mI (331389) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (336589) mqtts_example: No data received from UART[0m
+[0;32mI (336589) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (341789) mqtts_example: No data received from UART[0m
+[0;32mI (341789) mqtts_example: GPS Data: 
+
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2733ch (160572) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037364 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2a4 vaddr=40080000 size=04d74h ( 19828) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34bch (668860) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34e4 vaddr=40084d74 size=13674h ( 79476) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  d0f37bd2f...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc06dc, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (799) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (799) wifi:enable tsf
+I (809) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (809) wifi:state: init -> auth (0xb0)
+I (829) wifi:state: auth -> assoc (0x0)
+I (839) wifi:state: assoc -> run (0x10)
+I (859) wifi:connected with Galaxy A05s 6247, aid = 5, channel 6, BW20, bssid = 2e:94:d7:57:2c:81
+I (859) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (859) wifi:pm start, type: 1
+
+I (859) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (919) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (919) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1799) mqtts_example: [APP] Free memory: 229920 bytes[0m
+[0;32mI (1799) mqtts_example: Other event id:7[0m
+[0;32mI (1799) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1799) main_task: Returned from app_main()[0m
+[0;32mI (1869) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (1869) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (2019) UART SIMSOM: lat is 10 and long is 106[0m
+[0;32mI (2019) mqtts_example: lat is 10.876687 and long is 106.808769[0m
+[0;32mI (2019) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 071920.00,1052.6012N,10648.5260E,1.66,8.4,3,,0.179,0.098,301224,22
+
+OK
+[0m
+[0;32mI (2029) mqtts_example: GPS json: 
+{"latitude": "10.876687", "longtitude": "106.808769"} 
+ 
+ 
+[0m
+I (2979) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (3789) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3799) mqtts_example: sent subscribe successful, msg_id=58703[0m
+[0;32mI (4209) mqtts_example: Other event id:3[0m
+[0;32mI (4589) mqtts_example: Other event id:5[0m
+[0;32mI (8999) mqtts_example: No data received from UART[0m
+[0;32mI (8999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (14199) mqtts_example: No data received from UART[0m
+[0;32mI (14199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (19399) mqtts_example: No data received from UART[0m
+[0;32mI (19399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (24599) mqtts_example: No data received from UART[0m
+[0;32mI (24599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (29799) mqtts_example: No data received from UART[0m
+[0;32mI (29799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (34999) mqtts_example: No data received from UART[0m
+[0;32mI (34999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (40199) mqtts_example: No data received from UART[0m
+[0;32mI (40199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (45399) mqtts_example: No data received from UART[0m
+[0;32mI (45399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (50599) mqtts_example: No data received from UART[0m
+[0;32mI (50599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (55799) mqtts_example: No data received from UART[0m
+[0;32mI (55799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (60999) mqtts_example: No data received from UART[0m
+[0;32mI (60999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (66199) mqtts_example: No data received from UART[0m
+[0;32mI (66199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (71399) mqtts_example: No data received from UART[0m
+[0;32mI (71399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (76599) mqtts_example: No data received from UART[0m
+[0;32mI (76599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (81799) mqtts_example: No data received from UART[0m
+[0;32mI (81799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (86999) mqtts_example: No data received from UART[0m
+[0;32mI (86999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (92199) mqtts_example: No data received from UART[0m
+[0;32mI (92199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (97399) mqtts_example: No data received from UART[0m
+[0;32mI (97399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (102599) mqtts_example: No data received from UART[0m
+[0;32mI (102599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (107799) mqtts_example: No data received from UART[0m
+[0;32mI (107799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (112999) mqtts_example: No data received from UART[0m
+[0;32mI (112999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (118199) mqtts_example: No data received from UART[0m
+[0;32mI (118199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (123399) mqtts_example: No data received from UART[0m
+[0;32mI (123399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (128599) mqtts_example: No data received from UART[0m
+[0;32mI (128599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (133799) mqtts_example: No data received from UART[0m
+[0;32mI (133799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (138999) mqtts_example: No data received from UART[0m
+[0;32mI (138999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (144199) mqtts_example: No data received from UART[0m
+[0;32mI (144199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (149399) mqtts_example: No data received from UART[0m
+[0;32mI (149399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (154599) mqtts_example: No data received from UART[0m
+[0;32mI (154599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (159799) mqtts_example: No data received from UART[0m
+[0;32mI (159799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (164999) mqtts_example: No data received from UART[0m
+[0;32mI (164999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (170199) mqtts_example: No data received from UART[0m
+[0;32mI (170199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (175399) mqtts_example: No data received from UART[0m
+[0;32mI (175399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (180599) mqtts_example: No data received from UART[0m
+[0;32mI (180599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (185799) mqtts_example: No data received from UART[0m
+[0;32mI (185799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (190999) mqtts_example: No data received from UART[0m
+[0;32mI (190999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (196199) mqtts_example: No data received from UART[0m
+[0;32mI (196199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (201399) mqtts_example: No data received from UART[0m
+[0;32mI (201399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (206599) mqtts_example: No data received from UART[0m
+[0;32mI (206599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (211799) mqtts_example: No data received from UART[0m
+[0;32mI (211799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (216999) mqtts_example: No data received from UART[0m
+[0;32mI (216999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (222199) mqtts_example: No data received from UART[0m
+[0;32mI (222199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (227399) mqtts_example: No data received from UART[0m
+[0;32mI (227399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (232599) mqtts_example: No data received from UART[0m
+[0;32mI (232599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (237799) mqtts_example: No data received from UART[0m
+[0;32mI (237799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (242999) mqtts_example: No data received from UART[0m
+[0;32mI (242999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (248199) mqtts_example: No data received from UART[0m
+[0;32mI (248199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (253399) mqtts_example: No data received from UART[0m
+[0;32mI (253399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (258599) mqtts_example: No data received from UART[0m
+[0;32mI (258599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (263799) mqtts_example: No data received from UART[0m
+[0;32mI (263799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (268999) mqtts_example: No data received from UART[0m
+[0;32mI (268999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (274199) mqtts_example: No data received from UART[0m
+[0;32mI (274199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (279399) mqtts_example: No data received from UART[0m
+[0;32mI (279399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (284599) mqtts_example: No data received from UART[0m
+[0;32mI (284599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (289799) mqtts_example: No data received from UART[0m
+[0;32mI (289799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (294999) mqtts_example: No data received from UART[0m
+[0;32mI (294999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (300199) mqtts_example: No data received from UART[0m
+[0;32mI (300199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (305399) mqtts_example: No data received from UART[0m
+[0;32mI (305399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (310599) mqtts_example: No data received from UART[0m
+[0;32mI (310599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (315799) mqtts_example: No data received from UART[0m
+[0;32mI (315799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (320999) mqtts_example: No data received from UART[0m
+[0;32mI (320999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (326199) mqtts_example: No data received from UART[0m
+[0;32mI (326199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (331399) mqtts_example: No data received from UART[0m
+[0;32mI (331399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (336599) mqtts_example: No data received from UART[0m
+[0;32mI (336599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (341799) mqtts_example: No data received from UART[0m
+[0;32mI (341799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (346999) mqtts_example: No data received from UART[0m
+[0;32mI (346999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (352199) mqtts_example: No data received from UART[0m
+[0;32mI (352199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (357399) mqtts_example: No data received from UART[0m
+[0;32mI (357399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (362599) mqtts_example: No data received from UART[0m
+[0;32mI (362599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (367799) mqtts_example: No data received from UART[0m
+[0;32mI (367799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (372999) mqtts_example: No data received from UART[0m
+[0;32mI (372999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (378199) mqtts_example: No data received from UART[0m
+[0;32mI (378199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (383399) mqtts_example: No data received from UART[0m
+[0;32mI (383399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (388599) mqtts_example: No data received from UART[0m
+[0;32mI (388599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (393799) mqtts_example: No data received from UART[0m
+[0;32mI (393799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (398999) mqtts_example: No data received from UART[0m
+[0;32mI (398999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (404199) mqtts_example: No data received from UART[0m
+[0;32mI (404199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (409399) mqtts_example: No data received from UART[0m
+[0;32mI (409399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (414599) mqtts_example: No data received from UART[0m
+[0;32mI (414599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (419799) mqtts_example: No data received from UART[0m
+[0;32mI (419799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (424999) mqtts_example: No data received from UART[0m
+[0;32mI (424999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (430199) mqtts_example: No data received from UART[0m
+[0;32mI (430199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (435399) mqtts_example: No data received from UART[0m
+[0;32mI (435399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (440599) mqtts_example: No data received from UART[0m
+[0;32mI (440599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (445799) mqtts_example: No data received from UART[0m
+[0;32mI (445799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (450999) mqtts_example: No data received from UART[0m
+[0;32mI (450999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (456199) mqtts_example: No data received from UART[0m
+[0;32mI (456199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (461399) mqtts_example: No data received from UART[0m
+[0;32mI (461399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (466599) mqtts_example: No data received from UART[0m
+[0;32mI (466599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (471799) mqtts_example: No data received from UART[0m
+[0;32mI (471799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (476999) mqtts_example: No data received from UART[0m
+[0;32mI (476999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (482199) mqtts_example: No data received from UART[0m
+[0;32mI (482199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (487399) mqtts_example: No data received from UART[0m
+[0;32mI (487399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (492599) mqtts_example: No data received from UART[0m
+[0;32mI (492599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (497799) mqtts_example: No data received from UART[0m
+[0;32mI (497799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (502999) mqtts_example: No data received from UART[0m
+[0;32mI (502999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (508199) mqtts_example: No data received from UART[0m
+[0;32mI (508199) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (513399) mqtts_example: No data received from UART[0m
+[0;32mI (513399) mqtts_example: GPS Data: 
+
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2733ch (160572) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037364 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b2a4 vaddr=40080000 size=04d74h ( 19828) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a34bch (668860) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e34e4 vaddr=40084d74 size=13674h ( 79476) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  d0f37bd2f...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (789) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (789) wifi:enable tsf
+I (799) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (809) wifi:state: init -> auth (0xb0)
+I (839) wifi:state: auth -> assoc (0x0)
+I (849) wifi:state: assoc -> run (0x10)
+I (879) wifi:connected with Galaxy A05s 6247, aid = 6, channel 6, BW20, bssid = 2e:94:d7:57:2c:81
+I (879) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (889) wifi:pm start, type: 1
+
+I (889) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (929) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (929) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1789) mqtts_example: [APP] Free memory: 229924 bytes[0m
+[0;32mI (1789) mqtts_example: Other event id:7[0m
+[0;32mI (1789) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1789) main_task: Returned from app_main()[0m
+[0;32mI (1899) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (1899) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (1989) mqtts_example: No data received from UART[0m
+[0;32mI (1989) mqtts_example: GPS Data: 
+
+[0m
+I (3089) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (3909) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3919) mqtts_example: sent subscribe successful, msg_id=6928[0m
+[0;32mI (4319) mqtts_example: Other event id:3[0m
+[0;32mI (7189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (7189) mqtts_example: GPS Data: 
+
+RDY
+[0m
+[0;32mI (7189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (7599) mqtts_example: Other event id:5[0m
+[0;32mI (12399) mqtts_example: No data received from UART[0m
+[0;32mI (12399) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (17599) mqtts_example: No data received from UART[0m
+[0;32mI (17599) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (22799) mqtts_example: No data received from UART[0m
+[0;32mI (22799) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (27999) mqtts_example: No data received from UART[0m
+[0;32mI (27999) mqtts_example: GPS Data: 
+
+[0m
+[0;32mI (33199) mqtts_example: No data received from UART[0m
+[0;32mI (33199) mqtts_example: GPS Data: 
+
+[0m

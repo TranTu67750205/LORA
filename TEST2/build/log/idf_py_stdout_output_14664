@@ -1,0 +1,1159 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2729ch (160412) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372c4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b204 vaddr=40080000 size=04e14h ( 19988) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a344ch (668748) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e3474 vaddr=40084e14 size=135d4h ( 79316) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  7cd92bf10...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (659) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (799) wifi:state: auth -> assoc (0x0)
+I (829) wifi:state: assoc -> run (0x10)
+I (849) wifi:connected with Galaxy A05s 6247, aid = 2, channel 1, BW20, bssid = 2e:94:d7:57:2c:81
+I (849) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (859) wifi:pm start, type: 1
+
+I (859) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (949) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (949) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1779) mqtts_example: [APP] Free memory: 229932 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+[0;32mI (1869) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (1869) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (1999) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (1999) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1999) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (2019) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+I (2789) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:4, winSize:64
+[0;31mE (2789) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2799) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2799) mqtt_client: Error transport connect[0m
+[0;32mI (2809) mqtts_example: Other event id:0[0m
+[0;32mI (2809) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (8019) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (8019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8019) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (8039) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (12819) mqtts_example: Other event id:7[0m
+[0;31mE (12829) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (12829) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (12829) mqtt_client: Error transport connect[0m
+[0;32mI (12839) mqtts_example: Other event id:0[0m
+[0;32mI (12839) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (13249) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (13249) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (13249) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (13269) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (18479) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (18479) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (18479) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (18499) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (23709) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (23709) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (23709) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (23729) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (27849) mqtts_example: Other event id:7[0m
+[0;31mE (27849) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27859) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (27859) mqtt_client: Error transport connect[0m
+[0;32mI (27869) mqtts_example: Other event id:0[0m
+[0;32mI (27869) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (28939) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (28939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (28939) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (28959) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (34169) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (34169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (34169) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (34189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (37879) mqtts_example: Other event id:7[0m
+[0;31mE (37889) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (37889) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (37889) mqtt_client: Error transport connect[0m
+[0;32mI (37899) mqtts_example: Other event id:0[0m
+[0;32mI (37899) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (39399) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (39399) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (39399) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (39419) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (44629) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (44629) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (44629) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (44649) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (47909) mqtts_example: Other event id:7[0m
+[0;31mE (47909) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47909) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47919) mqtt_client: Error transport connect[0m
+[0;32mI (47919) mqtts_example: Other event id:0[0m
+[0;32mI (47929) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (49859) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (49859) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (49859) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (49879) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (55089) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (55089) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (55089) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (55109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (60319) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (60319) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (60319) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (60339) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (62929) mqtts_example: Other event id:7[0m
+[0;31mE (62929) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (62939) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62939) mqtt_client: Error transport connect[0m
+[0;32mI (62949) mqtts_example: Other event id:0[0m
+[0;32mI (62949) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (65549) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (65549) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (65549) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (65569) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (70779) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (70779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (70779) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (70799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (72959) mqtts_example: Other event id:7[0m
+[0;31mE (72959) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (72959) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (72969) mqtt_client: Error transport connect[0m
+[0;32mI (72979) mqtts_example: Other event id:0[0m
+[0;32mI (72979) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (76009) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (76009) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (76009) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (76029) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (81239) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (81239) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (81239) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (81259) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (82989) mqtts_example: Other event id:7[0m
+[0;31mE (82989) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (82989) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (82999) mqtt_client: Error transport connect[0m
+[0;32mI (82999) mqtts_example: Other event id:0[0m
+[0;32mI (83009) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (86469) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (86469) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (86469) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (86489) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (91699) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (91699) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (91699) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (91719) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (96929) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (96929) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (96929) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (96949) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (98009) mqtts_example: Other event id:7[0m
+[0;31mE (98029) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (98029) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (98029) mqtt_client: Error transport connect[0m
+[0;32mI (98039) mqtts_example: Other event id:0[0m
+[0;32mI (98039) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (102159) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (102159) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (102159) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (102179) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (107389) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (107389) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (107389) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (107409) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (108049) mqtts_example: Other event id:7[0m
+[0;31mE (108059) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (108059) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (108059) mqtt_client: Error transport connect[0m
+[0;32mI (108069) mqtts_example: Other event id:0[0m
+[0;32mI (108069) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (112619) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (112619) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (112619) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (112639) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (117849) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (117849) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (117849) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (117869) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (123079) mqtts_example: Other event id:7[0m
+[0;32mI (123079) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (123079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (123079) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;31mE (123079) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;32mI (123109) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;31mE (123119) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (123139) mqtt_client: Error transport connect[0m
+[0;32mI (123139) mqtts_example: Other event id:0[0m
+[0;32mI (123149) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (128349) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (128349) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (128349) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (128369) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (133579) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (133579) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (133579) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (133599) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (138149) mqtts_example: Other event id:7[0m
+[0;31mE (138149) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (138149) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (138159) mqtt_client: Error transport connect[0m
+[0;32mI (138169) mqtts_example: Other event id:0[0m
+[0;32mI (138169) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (138809) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (138809) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (138809) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (138829) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (144039) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (144039) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (144039) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (144059) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (148179) mqtts_example: Other event id:7[0m
+[0;31mE (148179) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (148179) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (148189) mqtt_client: Error transport connect[0m
+[0;32mI (148189) mqtts_example: Other event id:0[0m
+[0;32mI (148199) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (149269) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (149269) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (149269) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (149289) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (154499) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (154499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (154499) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (154519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (159729) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (159729) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (159729) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (159749) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (163199) mqtts_example: Other event id:7[0m
+[0;31mE (163199) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (163199) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (163209) mqtt_client: Error transport connect[0m
+[0;32mI (163209) mqtts_example: Other event id:0[0m
+[0;32mI (163219) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (164959) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (164959) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (164959) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (164979) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (170189) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (170189) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (170189) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (170209) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (175419) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (175419) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (175419) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (175439) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (178219) mqtts_example: Other event id:7[0m
+[0;31mE (178229) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (178229) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (178239) mqtt_client: Error transport connect[0m
+[0;32mI (178239) mqtts_example: Other event id:0[0m
+[0;32mI (178249) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (180649) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (180649) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (180649) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (180669) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (185879) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (185879) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (185879) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (185899) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (191109) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (191109) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (191109) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (191129) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (193249) mqtts_example: Other event id:7[0m
+[0;31mE (193259) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (193259) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (193259) mqtt_client: Error transport connect[0m
+[0;32mI (193269) mqtts_example: Other event id:0[0m
+[0;32mI (193269) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (196339) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (196339) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (196339) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (196359) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (201569) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (201569) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (201569) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (201589) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (203279) mqtts_example: Other event id:7[0m
+[0;31mE (203279) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (203279) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (203289) mqtt_client: Error transport connect[0m
+[0;32mI (203299) mqtts_example: Other event id:0[0m
+[0;32mI (203299) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (206799) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (206799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (206799) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (206819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (212029) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (212029) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (212029) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (212049) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (213309) mqtts_example: Other event id:7[0m
+[0;31mE (213319) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (213319) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (213329) mqtt_client: Error transport connect[0m
+[0;32mI (213339) mqtts_example: Other event id:0[0m
+[0;32mI (213339) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (217259) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (217259) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (217259) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (217279) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (222489) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (222489) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (222489) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (222509) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (223349) mqtts_example: Other event id:7[0m
+[0;31mE (223349) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (223349) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (223359) mqtt_client: Error transport connect[0m
+[0;32mI (223369) mqtts_example: Other event id:0[0m
+[0;32mI (223369) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (227719) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (227719) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (227719) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (227739) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (232949) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (232949) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (232949) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (232969) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (233379) mqtts_example: Other event id:7[0m
+[0;31mE (233379) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (233379) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (233389) mqtt_client: Error transport connect[0m
+[0;32mI (233389) mqtts_example: Other event id:0[0m
+[0;32mI (233399) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (238179) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (238179) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (238179) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (238199) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (243409) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (243409) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (243409) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (243429) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (248399) mqtts_example: Other event id:7[0m
+[0;31mE (248399) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (248409) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (248409) mqtt_client: Error transport connect[0m
+[0;32mI (248419) mqtts_example: Other event id:0[0m
+[0;32mI (248419) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (248639) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (248639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (248639) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (248659) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (253869) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (253869) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (253869) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (253889) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (258429) mqtts_example: Other event id:7[0m
+[0;31mE (258429) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (258439) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (258439) mqtt_client: Error transport connect[0m
+[0;32mI (258449) mqtts_example: Other event id:0[0m
+[0;32mI (258449) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (259099) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (259099) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (259099) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (259119) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (264329) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (264329) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (264329) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (264349) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (268459) mqtts_example: Other event id:7[0m
+[0;31mE (268459) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (268459) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (268469) mqtt_client: Error transport connect[0m
+[0;32mI (268469) mqtts_example: Other event id:0[0m
+[0;32mI (268479) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (269559) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (269559) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (269559) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (269579) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (274789) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (274789) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (274789) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (274809) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (280019) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (280019) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (280019) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 152649.00,1052.6014N,10648.5254E,1.48,13.3,3,,0.038,0.021,291224,19
+
+OK
+�:O}��}j�`s���7��&A�R6�am
+AqHk
+�O�U�|1G�W���y�|��Ny��b	�KN4��X�\�M�v��n��Q��1�^��9̨6���]�8!���s��Ղ����v�'[0m
+[0;32mI (280039) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (283479) mqtts_example: Other event id:7[0m
+[0;31mE (283479) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (283479) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (283489) mqtt_client: Error transport connect[0m
+[0;32mI (283499) mqtts_example: Other event id:0[0m
+[0;32mI (283499) mqtts_example: MQTT_EVENT_DISCONNECTED[0m

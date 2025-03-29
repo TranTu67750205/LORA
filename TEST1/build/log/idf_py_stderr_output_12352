@@ -1,0 +1,13 @@
+CMake Error at UART_GPS/CMakeLists.txt:1 (idf_component_register):
+  Syntax error in cmake code at
+
+    C:/ESP IDF/project_esp/TEST1/UART_GPS/CMakeLists.txt:1
+
+  when parsing string
+
+    connect_wifi\connect_wifi.c
+
+  Invalid character escape '\c'.
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

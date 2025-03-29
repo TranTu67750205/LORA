@@ -1,0 +1,13 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.1/CMakeLists.txt:273 (add_subdirectory):
+  The binary directory
+
+    C:/ESP IDF/project_esp/TEST1/build/esp-idf/mqtt
+
+  is already used to build a source directory.  It cannot be used to build
+  source directory
+
+    C:/ESP IDF/project_esp/TEST1/MQTT
+
+  Specify a unique binary directory name.
+
+

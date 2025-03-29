@@ -1,0 +1,108 @@
+ets Jul 29 2ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 17:35:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af14h ( 44820) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001af3c vaddr=3ffb0000 size=02364h (  9060) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d2a8 vaddr=40080000 size=02d70h ( 11632) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17fe0h ( 98272) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00038008 vaddr=40082d70 size=0ad18h ( 44312) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     TEST2[0m
+[0;32mI (221) app_init: App version:      1[0m
+[0;32mI (225) app_init: Compile time:     Dec 11 2024 17:35:03[0m
+[0;32mI (231) app_init: ELF file SHA256:  353714ecf...[0m
+[0;32mI (236) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (242) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (246) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (251) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008DA88 len 00012578 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) UART SIMSOM: [APP] Startup..[0m
+[0;32mI (314) UART SIMSOM: [APP] Free memory: 305000 bytes[0m
+[0;32mI (314) UART SIMSOM: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (324) UART SIMSOM: Enable GPS.[0m
+[0;32mI (324) UART SIMSOM: GPS location.[0m
+[0;32mI (444) UART SIMSOM: lat is SL
+ and long is GPS?�>�?SL
+[0m
+[0;32mI (444) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (444) UART SIMSOM: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 150639.00,1052.6046N,10648.5271E,1.24,32.3,3,,0.142,0.078,121224,22
+
+OK
+cƁRm ��.�顂��������������+M�S~M��sH�1sZ���?)Iv��qO-E��LN�R}o��M���,��`q��~	���]��t�S�S6���G�}�f¼&Kұ�ng[�BU����&��Pr5��t���73ڭ����ra���t�����nZw�0q�%_IGL��j�i�H�>�yf�����t��F)K�ljr�.�C��8#�0���X0ק'\\�.�.ڂit|:Ӛ�J�x���h���js��hc[Q�aN���y�(V��D�@�O�5���D��%
+-Ā�&�] B��v����m�S��0�Z�i{_3s����'��[��<$��F�r_(8f�.����̬�]�tА@k�1���Ǚ��^�u�v]�Yp���{l���F2m�6����ZTB�[H��@����{92qyٮ��2M�y�z(2#�o�x�r����Gdj�1�o�&C[0m
+[0;32mI (3094) UART SIMSOM: GPS location.[0m
+[0;32mI (3204) UART SIMSOM: lat is 10
+ and long is 106?�>�?10
+[0m
+[0;32mI (3204) UART SIMSOM: lat is 10.876743 and long is 106.808784[0m
+[0;32mI (3204) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150642.00,1052.6046N,10648.5272E,1.38,32.3,3,,0.089,0.049,121224,25
+
+OK
+�F����R�7��d`������^O����#�����pg�DUH��3NY#�a�y3���D�����1w�~a���v�z��/RI%n��K:��)_��V�[0m
+[0;32mI (5824) UART SIMSOM: GPS location.[0m
+[0;32mI (5934) UART SIMSOM: lat is 10
+ and long is 106?�>�?10
+[0m
+[0;32mI (5934) UART SIMSOM: lat is 10.876743 and long is 106.808784[0m
+[0;32mI (5934) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150644.00,1052.6046N,10648.5272E,1.25,32.3,3,,0.053,0.029,121224,24
+
+OK
+�&"6GņF]��E%��O��ѫ��h)q�C�_��P��8�	�N�]v5?�:ĥ671�vi�Sb��'�h{�w.v�o4
+��mT;�y��]T��m�=Z��JrN{��B"lƅX/ܡ<Ẑ0$u��o��Q���1:E( �Ȝ��ڂ�KK&u����`m�l�"$���@�l��[`���A��� �s8��ů��#�7?���!�v���9D3;�N�g.��N�4�
+�r�<"��j�\��_��Rm?����~��.�o����B�H�i��|������a��`�����b�!�
+[0;32mI (8574) UART SIMSOM: GPS location.[0m
+[0;32mI (8684) UART SIMSOM: lat is 10
+ and long is 106?�>�?10
+[0m
+[0;32mI (8684) UART SIMSOM: lat is 10.876743 and long is 106.808784[0m
+[0;32mI (8684) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150647.00,1052.6046N,10648.5272E,1.22,32.3,3,,0.060,0.033,121224,26
+
+OK
+���@�S�.�@��jnnM�D�C`���(�EE-��*���4��AGq� �R;f2�"�T7F��]Ӏ1("�,B��@L�|��P*��(�B�$M�����qBa�rөy<zJ����<�[��搠j������Z�w���,\a��Y�.D�����Q��>~U�jBm[0m

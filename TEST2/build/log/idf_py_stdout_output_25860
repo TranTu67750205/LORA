@@ -1,0 +1,92 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/TEST2/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/10] Building C object esp-idf/uart_sub/CMakeFiles/__idf_uart_sub.dir/uart_sub.c.obj
+[3/10] Linking C static library esp-idf\uart_sub\libuart_sub.a
+[4/10] Building C object esp-idf/SUB_MQTT/CMakeFiles/__idf_SUB_MQTT.dir/SUB_MQTT.c.obj
+In file included from C:/ESP IDF/project_esp/TEST2/Components/SUB_MQTT/include/SUB_MQTT.h:13,
+                 from C:/ESP IDF/project_esp/TEST2/Components/SUB_MQTT/SUB_MQTT.c:2:
+C:/ESP IDF/project_esp/TEST2/Components/uart_sub/include/uart_sub.h:22:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   22 | static const char *TAG = "UART SIMSOM";
+      |                    ^~~
+[5/10] Linking C static library esp-idf\SUB_MQTT\libSUB_MQTT.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable TEST2.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/TEST2/build/TEST2.bin
+[9/10] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/TEST2/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/TEST2/build/TEST2.bin""
+TEST2.bin binary size 0xe6be0 bytes. Smallest app partition is 0x100000 bytes. 0x19420 bytes (10%) free.
+[9/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/ESP IDF/project_esp/TEST2/build" -P C:/Espressif/frameworks/eesptool.py --chip esp32 -p COM9 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 TEST2.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM9
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:27:b1:54
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16360...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.6 seconds (effective 387.8 kbit/s)...
+Hash of data verified.
+Compressed 945120 bytes to 593901...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e6e6... (5 %)
+Writing at 0x00027d5e... (8 %)
+Writing at 0x0002cbc4... (10 %)
+Writing at 0x00034af3... (13 %)
+Writing at 0x0003e2fc... (16 %)
+Writing at 0x0004403d... (18 %)
+Writing at 0x00049db2... (21 %)
+Writing at 0x0004fdb4... (24 %)
+Writing at 0x00055dd1... (27 %)
+Writing at 0x0005bbcc... (29 %)
+Writing at 0x000616ff... (32 %)
+Writing at 0x00067613... (35 %)
+Writing at 0x0006db22... (37 %)
+Writing at 0x00073836... (40 %)
+Writing at 0x0007942e... (43 %)
+Writing at 0x0007e72b... (45 %)
+Writing at 0x00083b05... (48 %)
+Writing at 0x000890c5... (51 %)
+Writing at 0x0008e493... (54 %)
+Writing at 0x00093aec... (56 %)
+Writing at 0x0009932e... (59 %)
+Writing at 0x0009f152... (62 %)
+Writing at 0x000a4bb1... (64 %)
+Writing at 0x000aa69f... (67 %)
+Writing at 0x000b025d... (70 %)
+Writing at 0x000b5e79... (72 %)
+Writing at 0x000bb7d7... (75 %)
+Writing at 0x000c15d2... (78 %)
+Writing at 0x000c7125... (81 %)
+Writing at 0x000cc74b... (83 %)
+Writing at 0x000d644c... (86 %)
+Writing at 0x000de4e3... (89 %)
+Writing at 0x000e4316... (91 %)
+Writing at 0x000e9e5e... (94 %)
+Writing at 0x000effdc... (97 %)
+Writing at 0x000f522a... (100 %)
+Wrote 945120 bytes (593901 compressed) at 0x00010000 in 14.5 seconds (effective 523.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1168.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+sp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

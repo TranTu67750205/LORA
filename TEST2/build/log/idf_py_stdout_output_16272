@@ -1,0 +1,275 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f394h (127892) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f3bc vaddr=3ffb0000 size=00c5ch (  3164) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=82cdch (535772) map[0m
+[0;32mI (338) esp_image: segment 3: paddr=000b2d04 vaddr=3ffb0c5c size=03274h ( 12916) load[0m
+[0;32mI (343) esp_image: segment 4: paddr=000b5f80 vaddr=40080000 size=1734ch ( 95052) load[0m
+[0;32mI (392) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (393) boot: Disabling RNG early entropy source...[0m
+[0;32mI (405) cpu_start: Multicore app[0m
+[0;32mI (413) cpu_start: Pro cpu start user code[0m
+[0;32mI (413) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (413) app_init: Application information:[0m
+[0;32mI (416) app_init: Project name:     TEST2[0m
+[0;32mI (421) app_init: App version:      1[0m
+[0;32mI (425) app_init: Compile time:     Dec 14 2024 11:21:55[0m
+[0;32mI (431) app_init: ELF file SHA256:  b2c5728d5...[0m
+[0;32mI (436) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (442) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (446) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (451) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (456) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (463) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (469) heap_init: At 3FFB80F8 len 00027F08 (159 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (482) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (488) heap_init: At 4009734C len 00008CB4 (35 KiB): IRAM[0m
+[0;32mI (496) spi_flash: detected chip: generic[0m
+[0;32mI (499) spi_flash: flash io: dio[0m
+[0;32mI (504) main_task: Started on CPU0[0m
+[0;32mI (514) main_task: Calling app_main()[0m
+I (544) wifi:wifi driver task: 3ffc0084, prio:23, stack:6656, core=0
+I (554) wifi:wifi firmware version: ccaebfa
+I (554) wifi:wifi certification version: v7.0
+I (554) wifi:config NVS flash: enabled
+I (554) wifi:config nano formating: disabled
+I (554) wifi:Init data frame dynamic rx buffer num: 32
+I (564) wifi:Init static rx mgmt buffer num: 5
+I (564) wifi:Init management short buffer num: 32
+I (574) wifi:Init dynamic tx buffer num: 32
+I (574) wifi:Init static rx buffer size: 1600
+I (584) wifi:Init static rx buffer num: 10
+I (584) wifi:Init dynamic rx buffer num: 32
+[0;32mI (584) wifi_init: rx ba win: 6[0m
+[0;32mI (594) wifi_init: accept mbox: 6[0m
+[0;32mI (594) wifi_init: tcpip mbox: 32[0m
+[0;32mI (594) wifi_init: udp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp mbox: 6[0m
+[0;32mI (604) wifi_init: tcp tx win: 5760[0m
+[0;32mI (614) wifi_init: tcp rx win: 5760[0m
+[0;32mI (614) wifi_init: tcp mss: 1440[0m
+[0;32mI (614) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (624) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (634) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (714) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (734) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (734) wifi:enable tsf
+[0;32mI (1734) main_task: Returned from app_main()[0m
+[0;32mI (3154) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (5564) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (7984) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (10394) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (12814) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (15224) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (17634) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (20054) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (22464) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (24884) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (27294) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (29714) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (32124) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (34534) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (36954) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (39364) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (41784) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (44194) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (46614) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (49024) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (51434) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (53854) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (56264) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (58684) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (61094) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (63514) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (65924) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (68344) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (70754) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (73164) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (75584) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (77994) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (80414) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (82824) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (85244) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (87654) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (90064) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (92484) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (94894) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (97314) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (99724) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (102144) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (104554) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (106974) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (109384) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (111794) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (114214) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (116624) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (119044) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (121454) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (123874) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (126284) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (128704) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (131114) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (133524) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (135944) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (138354) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (140774) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (143184) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (145604) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (148014) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (150434) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (152844) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (155254) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (157674) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (160084) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (162504) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (164914) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (167334) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (169744) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (172154) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (174574) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (176984) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (179404) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (181814) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (184234) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (186644) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (189064) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (191474) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (193884) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (196304) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (198714) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (201134) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (203544) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (205954) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (208374) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (210784) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (213204) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (215614) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (218024) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (220444) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (222854) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (225274) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (227684) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (230104) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (232514) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (234924) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (237344) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (239754) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (242174) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (244584) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (246994) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (249414) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (251824) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (254244) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (256654) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (259064) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (261484) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (263894) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (266314) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (268724) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (271144) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (273554) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (275964) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (278384) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (280794) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (283214) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (285624) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (288034) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (290454) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (292864) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (295284) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (297694) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (300114) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (302524) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (304944) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (307354) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (309764) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (312184) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (314594) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (317014) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (319424) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (321834) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (324254) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (326664) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (329084) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (331494) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (333914) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (336324) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (338734) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (341154) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (343564) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (345984) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (348394) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (350804) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (353224) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (355634) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (358054) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (360464) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (362884) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (365294) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (367704) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (370124) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (372534) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (374954) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (377364) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (379784) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (382194) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (384604) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (387024) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (389434) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (391854) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (394264) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (396684) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (399094) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (401504) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (403924) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (406334) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (408754) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (411164) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (413584) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (415994) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (418404) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (420824) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (423234) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (425654) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (428064) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (430484) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (432894) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (435314) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (437724) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (440144) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (442554) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (444964) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (447384) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (449794) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (452214) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (454624) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (457044) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (459454) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (461864) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (464284) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (466694) WiFi: Disconnected. Reconnecting...[0m

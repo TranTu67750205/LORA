@@ -1,0 +1,164 @@
+ets Jul ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 17:35:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af14h ( 44820) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001af3c vaddr=3ffb0000 size=02364h (  9060) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d2a8 vaddr=40080000 size=02d70h ( 11632) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17fe0h ( 98272) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00038008 vaddr=40082d70 size=0ad18h ( 44312) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     TEST2[0m
+[0;32mI (221) app_init: App version:      1[0m
+[0;32mI (225) app_init: Compile time:     Dec 11 2024 17:35:03[0m
+[0;32mI (231) app_init: ELF file SHA256:  3f899717c...[0m
+[0;32mI (236) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (242) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (246) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (251) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008DA88 len 00012578 (73 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) UART SIMSOM: [APP] Startup..[0m
+[0;32mI (314) UART SIMSOM: [APP] Free memory: 305000 bytes[0m
+[0;32mI (314) UART SIMSOM: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (324) UART SIMSOM: Enable GPS.[0m
+[0;32mI (324) UART SIMSOM: GPS location.[0m
+[0;32mI (444) UART SIMSOM: lat is OR
+ and long is +QG?�>�?OR
+[0m
+[0;32mI (444) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (444) UART SIMSOM: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 150030.00,1052.6048N,10648.5269E,1.15,32.4,3,,0.113,0.062,121224,26
+
+OK
+bƃRo[0m
+[0;32mI (3054) UART SIMSOM: GPS location.[0m
+[0;32mI (3164) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (3164) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (3164) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150033.00,1052.6048N,10648.5269E,1.15,32.4,3,,0.035,0.019,121224,28
+
+OK
+�B����R�7��d`������^�ώ��#�0���`f�DTH��3N]#���y����T����1v��a���v�z�oT�BI!.��k:��)_���V�[0m
+[0;32mI (5784) UART SIMSOM: GPS location.[0m
+[0;32mI (5894) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (5894) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (5894) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150036.00,1052.6048N,10648.5269E,1.11,32.4,3,,0.057,0.031,121224,28
+
+OK
+&2�Ш�gl�a��.	C���Y8�(i�e�VrG&�z��Ս�Y�R71)���l����/Eƒ0{����f�q�w�<7v��v������V���b�نj�R<���/X�fii�����~�P[0m
+[0;32mI (8514) UART SIMSOM: GPS location.[0m
+[0;32mI (8624) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (8624) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (8624) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150038.00,1052.6048N,10648.5269E,1.11,32.4,3,,0.091,0.050,121224,27
+
+OK
+�Q���2��P)�F�(g�9�:�XgK0��|�EI_������cd3Ž��e�n��u�,���O�ڿ �����U3��G�p��V�B�����>��V�)�BŢ��oE�t�f�\�$%L6W��c-C}�l^�"��\��|���fxI
+����Z��Ű�L�I�issڪ*�f���U�Z�nH/�����[0m
+[0;32mI (11254) UART SIMSOM: GPS location.[0m
+[0;32mI (11364) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (11364) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (11364) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150041.00,1052.6048N,10648.5269E,1.14,32.4,3,,0.109,0.060,121224,27
+
+OK
+����$�)��+�/�Z)}�T�#�#bTLz�w�x��K��1�1T�9h�Tw�S���f��P�j���b`��PL��*t�������/�*�"�p���yݕL	ɻ�e�DF)�>
+��5�Z�~ק.��$e��.dl�.�i4	f�Z{0�#-@����\d�M{	:��w���ǡ��a纁jl
+}�Ya���Q��`���N���OqA��������CQ�C(j{UPT�����ν��3C���T��HYv�h�OM'Ҭ}����m4�4dVl���7��cpE*/x�������K�SK����/�=��n؟r���#H��qr�*��w�}�M̨x<}X��Tm���N�W���=��u��� xQz?W��)��#ѯIx�o�({�1�?��'{��؜�N�����gG��*�UƂ����3QY/^.كTy��n���u!�mܙ��E���l��=��8!�Q��@�%ywzjc0v>���	]4�ĉ��m���[0m
+[0;32mI (14014) UART SIMSOM: GPS location.[0m
+[0;32mI (14124) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (14124) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (14124) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150044.00,1052.6048N,10648.5269E,1.19,32.4,3,,0.078,0.043,121224,27
+
+OK
+NDz�|�A�ur]v2��"���w�s��^���G����.�?���� �_���Ó������Q�,6	a�%��L���~�3g'��m����{�D>y��u:~��\P~�`���{@���"��	���z���r}t�L�Hg��+ž�C�.!B_f@Jc��z��~��,7�<�6%牍^fP:��`p��S�K��|>�g��?%T��[�6d9>V��$��m�l��:����8U;��^�>���b/!cۀ�zb�C�����[0m
+[0;32mI (16754) UART SIMSOM: GPS location.[0m
+[0;32mI (16864) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (16864) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (16864) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150047.00,1052.6048N,10648.5269E,1.10,32.4,3,,0.082,0.045,121224,27
+
+OK
+�T�E���M���x���H��`��n(3��w�4���5I/ejh�q}�����}����sj��IH"(���(����q���p�t>�JdL��ݶ�J�`M���S���d�ت=������rW��lI�J����X�_EC��>0q�~�,$�Y���N���v��Z��\(g�wJ#_�w�p��ܜ���ipV=B�*yn\"#�s�u����t�^�3�,d�ތ��0�L)9=g������MF�ص�$�ĥ<��V3m�*�u��	_Z����m��z׳A�bs'k��ά������j�����f�M�yфQ��sT����V��[uHp��'�=o.v��ƹ�Q����佥��o��Wo��v�:!	#�O�R.ȓi˴ɸ��ÿ�IQ����>��	�;��A(}��#��J*��I��砖�4�s
+�];XH h���'��gW<c�(��<�y�.ǀ/3��р���gM7Wa�I귬(�=������C���X�_F�9[0m
+[0;32mI (19524) UART SIMSOM: GPS location.[0m
+[0;32mI (19634) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (19634) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (19634) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150049.00,1052.6048N,10648.5269E,1.19,32.4,3,,0.077,0.042,121224,27
+
+OK
+�WA��u.���o�h�dR����8���4��6�m�'���V�ơ!��}�oZ��e�_�'�kx�2���`%:@�hd\YV��b��)��;X��Z��osE1+��D�8G������azM�.	����\���&e��,��w�z쾉#߾M�ƫ/�����i�ۋ����И�80���nӨ=���$PEi����<N��©���B��I��&wgچ\�3�18�n�-��u���+� D{�����[0m
+[0;32mI (22264) UART SIMSOM: GPS location.[0m
+[0;32mI (22374) UART SIMSOM: lat is LO
+ and long is .00?�>�?LO
+[0m
+[0;32mI (22374) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (22374) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 150052.00,1052.6048N,10648.5269E,1.19,32.4,3,,0.053,0.029,121224,27
+
+OK
+@�[�2#Hk�1�H5��^��M��,D��L���$�[G��q�I�N����a?Jy��6��>�2�|����lW���0���܇�>b�^��jr����.kE����'l� [0m

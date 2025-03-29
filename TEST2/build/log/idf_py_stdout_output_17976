@@ -1,0 +1,337 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 11 2024 17:35:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adc4h ( 44484) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001adec vaddr=3ffb0000 size=02364h (  9060) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d158 vaddr=40080000 size=02ec0h ( 11968) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1686ch ( 92268) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=00036894 vaddr=40082ec0 size=0abc8h ( 43976) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) app_init: Application information:[0m
+[0;32mI (214) app_init: Project name:     TEST2[0m
+[0;32mI (218) app_init: App version:      1[0m
+[0;32mI (223) app_init: Compile time:     Dec 11 2024 17:35:03[0m
+[0;32mI (229) app_init: ELF file SHA256:  4bc13a7b9...[0m
+[0;32mI (234) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (239) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (244) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (249) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (254) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 4008DA88 len 00012578 (73 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (297) spi_flash: flash io: dio[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (312) main_task: Calling app_main()[0m
+[0;32mI (312) UART SIMSOM: [APP] Startup..[0m
+[0;32mI (312) UART SIMSOM: [APP] Free memory: 305000 bytes[0m
+[0;32mI (312) UART SIMSOM: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (322) UART SIMSOM: Enable GPS.[0m
+[0;32mI (322) UART SIMSOM: GPS location.[0m
+[0;32mI (432) UART SIMSOM: GPS Data: AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+B�����6`�G��C�i�K���zJ���i���=�9ҟ+4�����L+ů$��|�E�a��6��bƃRm ɫ+�m������˦��֋0��+M
+SIܦsH�1sZ���<H���qOmE��MN�Rmg��́J�i��`q��~	j��]��t+�s�S2���G�}�fIұ��gZ�BU����&��Pr5��t�y��7ڽ����sac��t���L^���nZw�q�%_)EL��j�i�H|�>�if�����T�4�)K�njz�.�B��8�'�4���]0�&'\\:.P�*��a4|;ӈ�J�x���h���js��`c{Q�aN���y� V��D�@�o�����L��%
+�Ā�&� B��v�C��i�S��00�z��i{_3s�W�5��[��<&��F��_()�����D�̬�M/tа@k]�1>��Ǚ��^�u�6]l�p��$�lڝ��:i�6����ZH�[H���@���ޔ{96Qy٬��3]3y�z 0#�Oʽx�c����G�j���o�$C[0m
+[0;32mI (3072) UART SIMSOM: GPS location.[0m
+[0;32mI (3172) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+f�hQu�P؃�^�%������/�"��LY���Ճ��~�l��G1���E0�V�u��v9/��CB�����=&GQiWu[0m
+[0;32mI (5772) UART SIMSOM: GPS location.[0m
+[0;32mI (5872) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+p,e[�v_�$��m�k�,�9�y�N������%/�A�C��.^=ߨ@��U6Y�u[0m
+[0;32mI (8472) UART SIMSOM: GPS location.[0m
+[0;32mI (8572) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�i�3�롈�ګ����u	�>�7E�P�n�	���2�<�4+���y��0L	�g�ap�=�vN2ݠ�AAV��Q��U0?����a�Y���r��R	�F�(f19�:�Xf�0��|�Ei_������cL1E=�:�m�n��u�,��5N�ھ ������3��C�p���V���������wV�)�BŢ+�oE[0m
+[0;32mI (11182) UART SIMSOM: GPS location.[0m
+[0;32mI (11282) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+9[0m
+[0;32mI (13882) UART SIMSOM: GPS location.[0m
+[0;32mI (13982) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��s�V@�JB�Q��O(�ߔ��M$�˩�%Ό�dn1E,޾�'G��-aN���$/<t)���l���o�
+��N�*g��O�z�~�A�tr]f2��"��[0m
+[0;32mI (16582) UART SIMSOM: GPS location.[0m
+[0;32mI (16682) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+(�W���F�����_V�t,p�MBu0�m8�C����9o�������V��j����k����o5g>䄨(\���*��	���^X�\LE������y��L��`��n.3��w�����7I
++ej(�c}���߰|����sj�mIH" �� ����q���p�t<�JdD�N���J�pm���S���d�Zت?������r���lI8J����JA�EB��>�0y�~�,$�����N�����Z��R\(o�wJ##V�v�0p��ܝ���ipT=B�$}n\""�s'E/u����t�^�@,d�����0�L-;<g9O�����]F��������>��r3}�
+��u��	OZ����m��z߳A�hs#k��άe������j�����f�O�yӄQ��rT����V����uHp��'�<o/v��ƹ�A�����%�
+o��Um��f��$!)��G�R.̓m۴�8��ǟ�IS����>�	�{��a(y���#��Hx��I������4��
+�Y;XH h���&�gW<c�	(��<�{�.ǒ/7�ـ���gM7Wa�I귬8�}a���������Z�_F�9
+*S+�n�HϪ���H��=L�O�e���z �����b��Տ��~�n�*�LY��P�|�cf���͞���^u���?�W����+D�
+t����y�CUb���t;�Y���E��U+�?R^�� 6>��?P�����w�;���7�_�B����� �e7����Pޖ���OHV���/� "�`v���巳�|P篌ȴw����;�֨!? �&�r�UG��i纎��O/��L�"<�+B@/�3��Q=���B?�?�{�,k������+�Q�zY�#�����|���)[0m
+[0;32mI (19352) UART SIMSOM: GPS location.[0m
+[0;32mI (19452) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+)Vv�㒼��6mH�°UU��Wjd�B,�Hm%�s����n�a"�����Z��E�9ʧz�kC�������Cp}�+C&Em��]^��A��u.���o�h�tP��XF(�g�$��4�m�'���S�桡���}�o"[	��$�_�g�ky�:���`%:H�hd\YV�
+[0;32mI (22062) UART SIMSOM: GPS location.[0m
+[0;32mI (22162) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�^F�`��Fj{��+�t�}��]������!���\n�~�stj���e����5�^���2K�ڐ.$���8ƀ����;���� �[�2+h;�1�H5��n��M�,E��l�?��$�[G��qI�N����a?Jy��v��6AM3�|���a�lW���0�_�܇�>]��^�ujR��Y�/E�9`��'h�([0m
+[0;32mI (24772) UART SIMSOM: GPS location.[0m
+[0;32mI (24872) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+cf]D^�cJ�S��{�	�����f�![��7��U&5��je�.f��7f:��|.�hd��n�iJ��6�2}QG�cw�c�
+��u9�bT�g��Y	%���*^^�o;6����Bӷ�1!��R���H��F�`�m���HH��~���2}�ԙ�	l��l{�E�{�n�O핦{?�z9h�2)���X�acU,����l��Q���|�ݓ ���2�R������'+?:����d-�O�`��er����(_����d�A�,�ۿ�~S��+'-1����8�s��5K�����B.�l/5����+5��uʲr�������[0m
+[0;32mI (27492) UART SIMSOM: GPS location.[0m
+[0;32mI (27592) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+`��E�MOMT���FK��39����!��7���s]2�p�����9ѳ�H#'&����[0m
+[0;32mI (30192) UART SIMSOM: GPS location.[0m
+[0;32mI (30292) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��ĄQ$&��i$�e�����r�%+�
+�6����	�R��l���2�l;h��~S�FVwK�(e�OW1G@���2�.��k����(�S�յr*�#K��A
+C�/O�u숩������DX�X�~Rݬ�eN sn/���#
+K���
+3|��׹+�`ӿ(=:��=���9�4T��h�����Zg����v���s`��u��~َ�w!����;�8�7��sD1���?�,���O����+,����Vm:ȳI�$��Po���}4�q����5�^�t4`���3��x��������h�����o/�"����RĀ��Ei��J
+�E��N��o
+ie%�S.���9�=F8{�yAتW���dTV�s)��/g��@�T��W�
+�cu�bE�st��_��x:	f!�(����:{}�PXY�V�EOY"̷r��]3�m����)B'�1���Rh�n�vw�k�6�a��m��"E�umK���U�X�y�U<�d���WP��:�@W��� ��]���LT���L�jNJDϥ��Y(|#����]�z��T�h���$%����;�nA����s	�鯕j�ku�{��g+�x������<�!�Y2?���w����;����}�\[0m
+[0;32mI (32942) UART SIMSOM: GPS location.[0m
+[0;32mI (33042) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��__�=�`�����ѯ��gw^�܆j=�]��0��� T�V�^E���rl�L����s>���l��b�ao���P�^������%1Tܾ���_��_hm�!�2+R�? 8�$��ٺ���Y�iK�GQ�����x�Y�8�i_N���I��[0m
+[0;32mI (35642) UART SIMSOM: GPS location.[0m
+[0;32mI (35742) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�>_����[����	�/�[0m
+[0;32mI (38342) UART SIMSOM: GPS location.[0m
+[0;32mI (38442) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+ގ��)��G�ߖ�à�J� ��ex��g�ɗl�m���d��c���w�xz�j ���Znb4{��W�@�
+F/�&���������a6/�9���u�L�&�\�[?��[0m
+[0;32mI (41042) UART SIMSOM: GPS location.[0m
+[0;32mI (41142) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+����w)&����ؗD�[�W������˛�%D=����98��<���)JZ.��]���ώˡ[�����;�ͼ�]��sK�\2S��'�j�2]��~��(�|��;��<D�઀Z��ʉ��mzk�n~,�#lT��+hI¶j�T��y7ġư���1�)ˈ9e�	����D1�}�V���\�@��/9t����_�ǉ���kO�yl6��З�}>s�1~O1qP�62����q�NQ.�p�/�!/��e�Y������j-lZu(}8�6COe'�Q��_$fU��[0m
+[0;32mI (43762) UART SIMSOM: GPS location.[0m
+[0;32mI (43862) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+Ӏ��1�%s�b���8����e�|�g��$��P���~�_�^:g�b# ������R�HwY�"�̏��z�|-5?����ܟ��o�N[0m
+[0;32mI (46462) UART SIMSOM: GPS location.[0m
+[0;32mI (46562) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��Rc�:Nݠ�Ԉ�R��;��.�4o!K�߇n���#��^����!�[�����FyC�|\h��=�k�������5�of��yzN,h�A�6|?`+��i�B�7���R�lx}'1���}��@��[0m
+[0;32mI (49162) UART SIMSOM: GPS location.[0m
+[0;32mI (49262) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�xs�@S�Siߐ�p�aƂ�=[0m
+[0;32mI (51862) UART SIMSOM: GPS location.[0m
+[0;32mI (51962) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��zZ�8W��Y�w�:+ֆ�P
+�;18p�1�(����T�{�o��P)[0m
+[0;32mI (54562) UART SIMSOM: GPS location.[0m
+[0;32mI (54662) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+Vl|���a�~[9�$�Of�E�����y�SqtN/�xj/U�)�N��rS��6f��MB��N����2�J[0m
+[0;32mI (57262) UART SIMSOM: GPS location.[0m
+[0;32mI (57362) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+#��\$p�\-��"�`Wr�J5M����"��^RZ�QV�i���E����u�{VT?C�V����(�!���F���;�>���#NU��[0m
+[0;32mI (59962) UART SIMSOM: GPS location.[0m
+[0;32mI (60062) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (62662) UART SIMSOM: GPS location.[0m
+[0;32mI (62762) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+���;��Hࡗ^M��x�]�~7���.+I�@[0m
+[0;32mI (65362) UART SIMSOM: GPS location.[0m
+[0;32mI (65462) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+8پ�6���.�4I&R��O��c�+^D�!v�X�~��
+[0;32mI (68062) UART SIMSOM: GPS location.[0m
+[0;32mI (68162) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+|����G�#1��G֔����c屾-0�S������ْ
+0��D�'�ⲃ�5��rC�;�(�6k�sG�}RּFþ��fbd��-���<Ȅ��Ֆt�8c��G�,�I"ܥƧ�Ԍx��򲵃0U,Q���3
+y���%���ħ4��=���I���H��xn�~��K��k k�\�k��;=�"���~�m�-y�;��)nV*��eP���9u���ͣĻ=�%�/p�e6�e/��[0m
+[0;32mI (70772) UART SIMSOM: GPS location.[0m
+[0;32mI (70872) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�0~��9�s.�y������ft^�ښ&���<sI��8��������*��Ŝv��X"����Ɛ�zb�ʛ��E;4g�{���'Q��JIC9�Ҩ���0+.��_�Px@�mے{(���S3��PH��Ym��lް�ɼ]���)���|�D�ӵ?�ۼ<�|��"Z�����4����%��]�#&��E�ؾ 479P�g�+?�ц/��4#�#(�j�X���DK�����u�>����"y[��.T�L6?!���Z��#�����Zɲ7�u����0ܨ����vmW\"�������D���k�;'��٠;���(�|$�8S�:^��9��,�j��^�����(E=�,�He"�����5��@�9��P�qW�!��Y-��|�c1��<2��LZL'G�O%$`�Z�.��?H7nS�O�*��!��>�
+[0;32mI (73502) UART SIMSOM: GPS location.[0m
+[0;32mI (73602) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+%(�w��E���v��Ч�|'kD�����rW[0m
+[0;32mI (76202) UART SIMSOM: GPS location.[0m
+[0;32mI (76302) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+gd�����}�=��iC���v&(�������G��q���[0m
+[0;32mI (78902) UART SIMSOM: GPS location.[0m
+[0;32mI (79002) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+����J��rn����\�k��:���+�g�}���\��W����R���l���(c7r�Qe�?��^yoԍn�w�@���-��cs��i?���6_��=�<�ݓ�_L�H�3�h�jFcr�舆8kc#�6n��m�5O,s�f����.º�ٺ���[���:������g�YoD���Ekk"'�	X2M꫈F�j�90VX�	���FJ
+!��)��s���3�S�@��;��Y~�5}��G��",����S�3��F�h����bm&����c��/c�g����$�{EmQN[0m
+[0;32mI (81622) UART SIMSOM: GPS location.[0m
+[0;32mI (81722) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�beA����q+���9B�58�OG��[0m
+[0;32mI (84322) UART SIMSOM: GPS location.[0m
+[0;32mI (84422) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+bt]��,l�;�~�_��=�*F*7\��^R\�t�c����*��v��:ن@��<%���,E|�t���.��{���j���;�ȉ&F�,��v�8,�gc�V�=O\z;���i�S���~�����v�N/�Xݥ��J�MW`�RI����k�1�2:4�Q8Q�S��h3z���q���hF�Y^H2�jr;�}����;�%B���֌��t,u���/�;�o��u(�|��>�����KJ�1B��OwU�@M���"+��^�g�������������g�ibl1X��Y6n�*�z�z����,R�D��<Ė|4�
+q�M~9'Eklj�늱�x�����A0)�Q��������N��|�O���T�>y{��R��y��������$PT6��&�O�-�|B���Wst^�L������M0"l��cޠ����l���[}��P��,$j���������A�$
+Cޑh���wޚy9�ٌ����@��x�X���Z��L;������?���K$�A��|+���	qG�=��ܟ��p��kJ��x����6�lp��|�b��ò��uW�6%2��I�u�_��	�4��nR��������ՀD0g1Y.iF88��~���aop|��'[0m
+[0;32mI (87072) UART SIMSOM: GPS location.[0m
+[0;32mI (87172) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�Fo=� )�#\@�(�9J`izk�zRI|��W�lHO�d��Jr*�3�Rnn��]��S	��[0m
+[0;32mI (89772) UART SIMSOM: GPS location.[0m
+[0;32mI (89872) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+b�
+W��1v���h��2UZ�г�ѯ�A������t���R��^��ux�gv�{�ܕ��	�apצ�V�xӯ=��k�����l��~�7��k����)P�n*��*O-�]@`f�kA^�}p���ȥ�5< �������,Bb�2��.}�T���z���vW>8�ژ�]Ѥ3�Qݎ��X����J�<i��o,�Lx��4XX���P��[�h�j�H3i�a� �`Lz5%c0�H����K�deդZX�A���V^
+��>�k������@�t�� �-e�-����8�+ר���|��|�#v*7�D�e�G;,�L+�������u�e��tzi�w�X��iXG ���	�q7�E��5���1��O�'��'��#tHϵy��B��5+D���#5�n$��m�=�F𤋮Y���O���]N�₦n��7[0m
+[0;32mI (92502) UART SIMSOM: GPS location.[0m
+[0;32mI (92602) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+q�}�T˂��h�*m"�XI^Qx��Vh]��<�*�h2��!`�N��l�v ��a��k�xQŚ��M�|�����f�b)fW�x�2t�h�\Z�3�a��(t���s��E61�(0UT���������v&�/������c���%��F�v��3��:'��E�e6�&���_��G�X~�&ǌb��.j�GR[0m
+[0;32mI (95212) UART SIMSOM: GPS location.[0m
+[0;32mI (95312) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+*W㩎��.���a��U���������0���BD�����6���V��
+��fR���:f�;���È����(��%m�����VР�:��5~Ӊ1Εmx&~KF�������=>`��ɸ�Xf_�I&�i��2A��MȖ:0���ތ�օ{��[Uu�|�V*Y�8%_�( ���Ͼ��8�u�JKFL���Mv����0�A����u�$ɛ;3��"����&�������%�9?�8U��"���ע��*����ہ�!S��=o@8�jg�ĩT�ŧL%r�uu�v��{�	TO��>Uu۷P���^`V��Nd�n�S�Q��%H���ئ�_�wo���0*���^G
+�}�!���E�p=��"
+;$ˁbm	�����[0m
+[0;32mI (97942) UART SIMSOM: GPS location.[0m
+[0;32mI (98042) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+|�޸��f�ǅ��5E����E����X����Zp�7}k��W��Ӿ�V������<���j,y�AF��he֎��q<g��C�'_	B�����y��)�d/�m�S�>N�1�
+H���M�nl\����S���{̉���b~_�<"��4��q�d[�"{?��d`������AG�L"��I�*�=һ�������k�Wk��J+*�-C����hkk����6�hI�ا@Y_C�.���T�	�I��v�����Y���'���ŉ&WN|�����)b�Sqg�W')3��LȐ�۴��)������}8���Dc?�f��B�%nT6�R��
+Z���	�ӣ��6Lڍ�a�^9�vB�s/RK{)]Kq��dPG������	�;���֚O�I
+[
+�:��%<x�E�A�"Sm�^S������gߠ)�ª�"��c`\������_�������w��ѿ��l�n��^�������a�y�c)�3N*΁���ܧ_��F���;��Z��=��L�=E�WVs��?�X�ݓ�)$��j�$^ǐ�ܝX#��+F��,@'��٨�b�U��H>@���"	�1���V2���mC�[����Q�����?��x�T�<"<�C2�[0m
+[0;32mI (100692) UART SIMSOM: GPS location.[0m
+[0;32mI (100792) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�@ѸI�m`�h'x�p�]1A���V�E#�0.+3�B�?���%Z���^\�;��LNC['o�}�mk��c�=~L]�`')��b�E�S���a}�]X��EC1O%ӿ��X.R��f�_�@���j����H�[0m
+[0;32mI (103392) UART SIMSOM: GPS location.[0m
+[0;32mI (103492) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+[0m
+[0;32mI (106092) UART SIMSOM: GPS location.[0m
+[0;32mI (106192) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�]�L{:$�
+[0;32mI (108792) UART SIMSOM: GPS location.[0m
+[0;32mI (108892) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�&��B��ݑ�%E�u�����r(�v<��=���	�=�'1�\��[��Z�J�Po�_�\�m�f'8�vJA�����s��[0m
+[0;32mI (111492) UART SIMSOM: GPS location.[0m
+[0;32mI (111592) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+n�5�w7A��|��������z�H��C"���]�$t��[����'J�U������X����h�	����3�p�+A�2��3���PS�K�xV�mاI݂�y��D>�b�i�н�~'ʧ;j�B�x��>�Z�
+[0;32mI (114192) UART SIMSOM: GPS location.[0m
+[0;32mI (114292) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+q![����~~\�z�q�@�G��^(����w��t�>����[V�7�u�������\0�˪�y֢��A�t��������KeЖ>���r��\��s~b�5���O����-"4<(H��enA|"��p��[0m
+[0;32mI (116892) UART SIMSOM: GPS location.[0m
+[0;32mI (116992) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�yN4F�J���֒�������)ֹ��� ����5�s��{�g��?0P�{�:BZH����(5:$��%v��b�q��@[0m
+[0;32mI (119592) UART SIMSOM: GPS location.[0m
+[0;32mI (119692) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�u]ԓ�ȭU�|��&5������T�5Rn��=.�@a���> Yֻ�2f|8��.[by��ȘW��[��320�cs$�������u�|�O	�}��U$�"��E``FeL�I��&V��X�l��y�WeD����w�Z� ����,�
+O��;���,K�f�����zc�M�%���;�<ɋ���1��q����R�)Rʄ����O�.�G��ɯ�F�a�����,���@U����� �H��0\gu5y�sH6�W���?3��w ���0��w�!"͛�T6�ς�_�6��hP�䡸���&��e�n/�kCGW)�H�'���0l����[0m
+[0;32mI (122312) UART SIMSOM: GPS location.[0m
+[0;32mI (122412) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+%�����@����1j��)[0m
+[0;32mI (125012) UART SIMSOM: GPS location.[0m
+[0;32mI (125112) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+.*(��T y��5�,�|�Zu�H�R�+�h�0��V,���"LT2����8�1��귕�{��P�����u�#T����Q��H$G������K�U�x�z���;hJ�Mn[Ƒw�<���e�~a)Aʕ(�l6-��Z�q=@[�zL2�u�{`[ �VQ���z#U�D������6 $��|�pJjɥ�H��n&D��9�Q"i�"��!��L���p`v��~�
+��$Mj��L�8'A~E������O���E����g�����2U�biS�!�Y.�8�N����U��f���1���|�]�`����Q��w��ߥ$	[۬���rH�#�/�O����{�v��
+�%���S���:���FF[Пh�����e%�4��I���(O��f��9l#���H�^�2HD	R����*]S�לX�Du�S�[S?ɏ�R�.J�|���$�L����q������ch���l��� /��:Q>
+\��:V����%E��,��]�+.#��8XI�?[0m
+[0;32mI (127752) UART SIMSOM: GPS location.[0m
+[0;32mI (127852) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�4�/��;�9�%��<�$R���*~��nE�_[��ͧ]:�1F9��Ӥ������[x��#K+���������O~~�\`#��W*��$�s$
+_�H4��]0�i*�[0m
+[0;32mI (130452) UART SIMSOM: GPS location.[0m
+[0;32mI (130552) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+f��5*�F��!��Ѭ����A.��5p���j���1����D��i�����<t`R�����Hדu�4p B�g%��������V{	|��_���%��-$Ի�$Br���¤�j�I��e��,����Z;B�_�e����es`��
+D1`�ڐT��g����!�6�v��o�˭�
+��<�d&Z��
+*r��_��$�����"�r�)Y�*j�Iٗ}s��î+]�sE��Eu&�'��V�
+[0;32mI (133162) UART SIMSOM: GPS location.[0m
+[0;32mI (133262) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+�8߫���&"�6�Y^E6�
+[0;32mI (135862) UART SIMSOM: GPS location.[0m
+[0;32mI (135962) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+����~�hZ����(��
+@%��"E���-@)�4Sɷ`���������\���!��P�/~
+Z��='����Z�!��-=#�{y��K���)�P<�W�_�m\܇��o����x�l1JDH�2�\�5���P���}(��.�����q�mT|^��6��!�\�FK$�b.��	�ΑPm�gg�E��R�j2T}��'-gT�	�b�|����y�4,�O��J�[jn���CV�aJezT��g��9���i[W���#F_&^u#DX�IM��f�U=_}mySj���������m�5�Jܱ���9�k6�<ڡ�v�rN��<3�L_���%�rV��	�zM��f������b�0��#�Lg�~��z�����ԕ�5�������D���3�[0m
+[0;32mI (138592) UART SIMSOM: GPS location.[0m
+[0;32mI (138692) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��-B�H �-��Wu$ބ�������ju=��+[xj-`�J�Z���i���~d�o�YR�%�	$�v�=T�~Ǆ^*�'e3���Ga<�.�)B{)R���w��x$;t~,^?�8s�x��un�%��j�HG��>�1���V�A�j/9�W[ 4=�D�L)2w��tU��~][��K�WՅO��[̨w��D;@kT�ڬ�ț<� 8)�	���X�n%�-���d
+�r\N�����F+������������{>N|�s[0m
+[0;32mI (141302) UART SIMSOM: GPS location.[0m
+[0;32mI (141402) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+Rh�fH��5����� Xf��O:�yR�
+_���~���'�u�=����A�������t�I�M�����<�U�(�C�zG�yvX����b��쫡yN,'�]�]wAPO^n3���qB�=�y�[0m
+[0;32mI (144002) UART SIMSOM: GPS location.[0m
+[0;32mI (144102) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+!����|7შ/����5��f�4 5)�'�/B8�ߢ��=�U�{����5���G��z�DXO����������Ρ#�����4<����ὗ̋����[0m
+[0;32mI (146702) UART SIMSOM: GPS location.[0m
+[0;32mI (146802) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+��	q|W�.2�}�T�ځ����Q3��?���������(=�n����%�Z��C&����QU,ǯY!�S6!u���%�ѻ�צ3*\�HbE2u��������.�4���.���O1�҃���q�g�h��F����>�Y�z<�2yM�>~t���PR���AF}��"Du��Qn��vDc��=f�T$h��	������u��z�|(��0�H��ط�����d
+��_�I�,0Gl˸�bCM}NrF���K�F�&��>�ĳH��w�N�����^��QO�Y�T�ɀSJ[0m
+[0;32mI (149422) UART SIMSOM: GPS location.[0m
+[0;32mI (149522) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+;Pw��\��<�^��H�&�*�8�2<+�L��z��_�>�U� !�x�S`7�Qq�[��B�-�������!�A)���f�)��PF$0{V�|l�\� ��0(�)���_1�����`�0�.{��ʵ�d�y��#x��hF��=%��gU�ji��$�Ǌ��0l�K��v�D��T�5�6��z��\�v���2�;;C�^7��a��oE��eV3Q� �$�d=���z=9^A��'��V�P�ԍ:X	�(�(B��
+��T_K�������W4EW�ߋ}�R�`������jǑ�)y*�ʍ��L"�N!�[��HPt�A��c�n����'N��c���4er�����v"O��_����g�T������%&L�s0�aѬ �Y���egߴ�ަ�;�
+'b����.x!��9��i�Q,A^6����u� �������;�����SL�>�HW��I��鯯�u����"��:�P��Bz�Uz�Ω�-�k�f��p^nx��;�S��@���i#;�4B�h� x��֡��2|��Ro_�I����w}y~[0m
+[0;32mI (152162) UART SIMSOM: GPS location.[0m
+[0;32mI (152262) UART SIMSOM: GPS Data: AT+QGPSLOC=0
++CME ERROR: 516
+4=�#�ȅz���tE��Q[���	@��r�����nQ��|07�u �Jy�6D���w?���[0m

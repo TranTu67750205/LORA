@@ -1,0 +1,21 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "files.associations": {
+        "blink.h": "c",
+        "sdkconfig.h": "c",
+        "uart.h": "c",
+        "stdio.h": "c",
+        "*.inc": "cpp",
+        "cstdlib": "cpp",
+        "esp_mac.h": "c",
+        "esp_system.h": "c",
+        "bit": "c",
+        "cmath": "c",
+        "compare": "c",
+        "concepts": "c",
+        "type_traits": "c",
+        "limits": "c",
+        "new": "c",
+        "typeinfo": "c"
+    }
+}

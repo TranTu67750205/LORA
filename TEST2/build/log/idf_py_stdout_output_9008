@@ -1,0 +1,669 @@
+ets Jul�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=273ach (160684) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000373d4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b314 vaddr=40080000 size=04d04h ( 19716) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3500h (668928) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3528 vaddr=40084d04 size=136e4h ( 79588) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (471) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (480) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (486) app_init: ELF file SHA256:  b7876e171...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8748 len 000278B8 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc06d4, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (769) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (799) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (799) wifi:enable tsf
+I (819) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (819) wifi:state: init -> auth (0xb0)
+I (869) wifi:state: auth -> assoc (0x0)
+I (919) wifi:state: assoc -> run (0x10)
+I (969) wifi:connected with 9999, aid = 1, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (969) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (969) wifi:pm start, type: 1
+
+I (969) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (979) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (999) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+[0;32mI (1799) UART SIMSOM: [APP] Startup..[0m
+[0;32mI (1799) UART SIMSOM: [APP] Free memory: 229920 bytes[0m
+[0;32mI (1799) UART SIMSOM: [APP] IDF version: v5.3.1-dirty[0m
+[0;32mI (1799) mqtts_example: [APP] Free memory: 229860 bytes[0m
+[0;32mI (1809) mqtts_example: Other event id:7[0m
+[0;32mI (1809) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1809) UART SIMSOM: GPS location.[0m
+I (1909) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:0, ssn:0, winSize:64
+[0;32mI (1929) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1929) UART SIMSOM: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+����(��eyA���ot�F�5�ܻ���;�B8ۄ�ը� o�c������g�ӑ��'7��]�%�/y��)��*�"�Xi)��!U�����CGQ�;����(��4JF�k""[0m
+[0;32mI (1979) esp_netif_handlers: sta ip: 192.168.1.179, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1979) WiFi: Got IP: 192.168.1.179[0m
+[0;32mI (2539) main_task: Returned from app_main()[0m
+[0;32mI (3549) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3549) mqtts_example: sent subscribe successful, msg_id=46042[0m
+[0;32mI (3859) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=46042[0m
+[0;32mI (3859) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (4159) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4169) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (4169) mqtts_example: Other event id:0[0m
+[0;31mE (4179) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (4189) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (19189) mqtts_example: Other event id:7[0m
+[0;32mI (19859) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (19859) mqtts_example: sent subscribe successful, msg_id=58595[0m
+[0;32mI (20139) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=58595[0m
+[0;32mI (20139) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (20449) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (20449) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (20449) mqtts_example: Other event id:0[0m
+[0;31mE (20459) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (20469) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (35469) mqtts_example: Other event id:7[0m
+[0;32mI (36109) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (36119) mqtts_example: sent subscribe successful, msg_id=51264[0m
+[0;32mI (36419) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=51264[0m
+[0;32mI (36429) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (36729) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (36729) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (36739) mqtts_example: Other event id:0[0m
+[0;31mE (36739) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (36749) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (46759) mqtts_example: Other event id:7[0m
+[0;32mI (47379) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (47379) mqtts_example: sent subscribe successful, msg_id=37872[0m
+[0;32mI (47689) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=37872[0m
+[0;32mI (47689) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (47989) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (47989) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (47999) mqtts_example: Other event id:0[0m
+[0;31mE (47999) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (48009) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (63019) mqtts_example: Other event id:7[0m
+[0;32mI (63659) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (63659) mqtts_example: sent subscribe successful, msg_id=769[0m
+[0;32mI (63969) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=769[0m
+[0;32mI (63969) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (64269) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (64269) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (64279) mqtts_example: Other event id:0[0m
+[0;31mE (64289) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (64289) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (74299) mqtts_example: Other event id:7[0m
+[0;32mI (74919) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (74929) mqtts_example: sent subscribe successful, msg_id=21126[0m
+[0;32mI (75239) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=21126[0m
+[0;32mI (75239) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (75539) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (75539) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (75549) mqtts_example: Other event id:0[0m
+[0;31mE (75549) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (75559) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (90559) mqtts_example: Other event id:7[0m
+[0;32mI (91209) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (91209) mqtts_example: sent subscribe successful, msg_id=20751[0m
+[0;32mI (91519) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=20751[0m
+[0;32mI (91519) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (91819) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (91819) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (91829) mqtts_example: Other event id:0[0m
+[0;31mE (91829) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (91839) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (101849) mqtts_example: Other event id:7[0m
+[0;32mI (102529) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (102529) mqtts_example: sent subscribe successful, msg_id=21752[0m
+[0;32mI (102879) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=21752[0m
+[0;32mI (102879) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (103189) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (103189) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (103189) mqtts_example: Other event id:0[0m
+[0;31mE (103199) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (103209) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (118209) mqtts_example: Other event id:7[0m
+[0;32mI (118859) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (118859) mqtts_example: sent subscribe successful, msg_id=12543[0m
+[0;32mI (119159) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=12543[0m
+[0;32mI (119169) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (119469) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (119469) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (119479) mqtts_example: Other event id:0[0m
+[0;31mE (119479) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (119489) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (134489) mqtts_example: Other event id:7[0m
+[0;32mI (135129) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (135139) mqtts_example: sent subscribe successful, msg_id=52120[0m
+[0;32mI (135439) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=52120[0m
+[0;32mI (135449) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (135749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (135749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (135759) mqtts_example: Other event id:0[0m
+[0;31mE (135759) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (135769) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (150769) mqtts_example: Other event id:7[0m
+[0;32mI (151449) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (151459) mqtts_example: sent subscribe successful, msg_id=61099[0m
+[0;32mI (151719) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=61099[0m
+[0;32mI (151729) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (152029) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (152029) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (152039) mqtts_example: Other event id:0[0m
+[0;31mE (152039) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (152049) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (162059) mqtts_example: Other event id:7[0m
+[0;32mI (162779) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (162789) mqtts_example: sent subscribe successful, msg_id=20263[0m
+[0;32mI (163089) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=20263[0m
+[0;32mI (163099) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (163399) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (163399) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (163399) mqtts_example: Other event id:0[0m
+[0;31mE (163409) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (163419) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (178419) mqtts_example: Other event id:7[0m
+[0;32mI (179069) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (179069) mqtts_example: sent subscribe successful, msg_id=44171[0m
+[0;32mI (179369) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=44171[0m
+[0;32mI (179379) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (179679) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (179679) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (179689) mqtts_example: Other event id:0[0m
+[0;31mE (179689) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (179699) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (189709) mqtts_example: Other event id:7[0m
+[0;32mI (190329) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (190329) mqtts_example: sent subscribe successful, msg_id=25342[0m
+[0;32mI (190639) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=25342[0m
+[0;32mI (190639) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (190939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (190939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (190949) mqtts_example: Other event id:0[0m
+[0;31mE (190959) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (190969) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (200969) mqtts_example: Other event id:7[0m
+[0;32mI (201589) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (201599) mqtts_example: sent subscribe successful, msg_id=37393[0m
+[0;32mI (201899) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=37393[0m
+[0;32mI (201909) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (202209) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (202209) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (202219) mqtts_example: Other event id:0[0m
+[0;31mE (202219) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (202229) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (212239) mqtts_example: Other event id:7[0m
+[0;32mI (212859) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (212859) mqtts_example: sent subscribe successful, msg_id=4875[0m
+[0;32mI (213169) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=4875[0m
+[0;32mI (213169) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (213469) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (213469) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (213479) mqtts_example: Other event id:0[0m
+[0;31mE (213479) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (213489) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (223499) mqtts_example: Other event id:7[0m
+[0;32mI (224129) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (224129) mqtts_example: sent subscribe successful, msg_id=26857[0m
+[0;32mI (224439) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=26857[0m
+[0;32mI (224439) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (224739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (224739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (224749) mqtts_example: Other event id:0[0m
+[0;31mE (224749) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (224759) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (234769) mqtts_example: Other event id:7[0m
+[0;32mI (235389) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (235389) mqtts_example: sent subscribe successful, msg_id=58058[0m
+[0;32mI (235729) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=58058[0m
+[0;32mI (235739) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (236109) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (236109) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (236109) mqtts_example: Other event id:0[0m
+[0;31mE (236119) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (236129) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (251129) mqtts_example: Other event id:7[0m
+[0;32mI (251769) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (251779) mqtts_example: sent subscribe successful, msg_id=51261[0m
+[0;32mI (252079) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=51261[0m
+[0;32mI (252079) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (252439) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (252439) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (252449) mqtts_example: Other event id:0[0m
+[0;31mE (252459) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (252469) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (267469) mqtts_example: Other event id:7[0m
+[0;32mI (268269) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (268269) mqtts_example: sent subscribe successful, msg_id=50455[0m
+[0;32mI (268559) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=50455[0m
+[0;32mI (268569) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (268869) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (268869) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (268879) mqtts_example: Other event id:0[0m
+[0;31mE (268879) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (268889) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (283889) mqtts_example: Other event id:7[0m
+[0;32mI (284539) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (284539) mqtts_example: sent subscribe successful, msg_id=9384[0m
+[0;32mI (284849) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=9384[0m
+[0;32mI (284849) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (285149) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (285149) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (285159) mqtts_example: Other event id:0[0m
+[0;31mE (285159) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (285169) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (295179) mqtts_example: Other event id:7[0m
+[0;32mI (295799) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (295799) mqtts_example: sent subscribe successful, msg_id=36643[0m
+[0;32mI (296109) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=36643[0m
+[0;32mI (296109) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (296409) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (296409) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (296419) mqtts_example: Other event id:0[0m
+[0;31mE (296429) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (296439) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (311439) mqtts_example: Other event id:7[0m
+[0;32mI (312079) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (312089) mqtts_example: sent subscribe successful, msg_id=11683[0m
+[0;32mI (312449) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=11683[0m
+[0;32mI (312449) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (312799) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (312799) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (312809) mqtts_example: Other event id:0[0m
+[0;31mE (312809) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (312819) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (327819) mqtts_example: Other event id:7[0m
+[0;32mI (328469) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (328469) mqtts_example: sent subscribe successful, msg_id=1628[0m
+[0;32mI (328779) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=1628[0m
+[0;32mI (328779) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (329079) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (329079) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (329089) mqtts_example: Other event id:0[0m
+[0;31mE (329089) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (329099) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (339109) mqtts_example: Other event id:7[0m
+[0;32mI (339729) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (339739) mqtts_example: sent subscribe successful, msg_id=42420[0m
+[0;32mI (340059) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=42420[0m
+[0;32mI (340059) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (340339) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (340339) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (340349) mqtts_example: Other event id:0[0m
+[0;31mE (340359) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (340369) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (355369) mqtts_example: Other event id:7[0m
+[0;32mI (356009) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (356019) mqtts_example: sent subscribe successful, msg_id=34496[0m
+[0;32mI (356319) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=34496[0m
+[0;32mI (356319) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (356629) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (356629) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (356629) mqtts_example: Other event id:0[0m
+[0;31mE (356639) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (356649) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (371649) mqtts_example: Other event id:7[0m
+[0;32mI (372349) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (372359) mqtts_example: sent subscribe successful, msg_id=30122[0m
+[0;32mI (372709) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=30122[0m
+[0;32mI (372709) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (373009) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (373009) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (373019) mqtts_example: Other event id:0[0m
+[0;31mE (373019) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (373029) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (383039) mqtts_example: Other event id:7[0m
+[0;32mI (383659) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (383669) mqtts_example: sent subscribe successful, msg_id=32797[0m
+[0;32mI (383969) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=32797[0m
+[0;32mI (383969) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (384269) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (384269) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (384279) mqtts_example: Other event id:0[0m
+[0;31mE (384289) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (384299) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (399299) mqtts_example: Other event id:7[0m
+[0;32mI (399979) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (399979) mqtts_example: sent subscribe successful, msg_id=40629[0m
+[0;32mI (400349) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=40629[0m
+[0;32mI (400359) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (400679) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (400679) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (400689) mqtts_example: Other event id:0[0m
+[0;31mE (400699) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (400709) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (415709) mqtts_example: Other event id:7[0m
+[0;32mI (416329) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (416329) mqtts_example: sent subscribe successful, msg_id=65526[0m
+[0;32mI (416629) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=65526[0m
+[0;32mI (416639) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (416939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (416939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (416949) mqtts_example: Other event id:0[0m
+[0;31mE (416959) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (416959) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (431969) mqtts_example: Other event id:7[0m
+[0;32mI (432709) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (432719) mqtts_example: sent subscribe successful, msg_id=36591[0m
+[0;32mI (433019) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=36591[0m
+[0;32mI (433019) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (433329) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (433329) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (433329) mqtts_example: Other event id:0[0m
+[0;31mE (433339) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (433349) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (448349) mqtts_example: Other event id:7[0m
+[0;32mI (448999) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (449009) mqtts_example: sent subscribe successful, msg_id=47350[0m
+[0;32mI (449299) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=47350[0m
+[0;32mI (449299) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (449609) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (449609) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (449609) mqtts_example: Other event id:0[0m
+[0;31mE (449619) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (449629) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (464629) mqtts_example: Other event id:7[0m
+[0;32mI (465279) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (465279) mqtts_example: sent subscribe successful, msg_id=63493[0m
+[0;32mI (465579) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=63493[0m
+[0;32mI (465589) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (465889) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (465889) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (465889) mqtts_example: Other event id:0[0m
+[0;31mE (465899) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (465909) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (480909) mqtts_example: Other event id:7[0m
+[0;32mI (481579) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (481579) mqtts_example: sent subscribe successful, msg_id=32923[0m
+[0;32mI (481859) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=32923[0m
+[0;32mI (481869) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (482169) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (482169) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (482179) mqtts_example: Other event id:0[0m
+[0;31mE (482189) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (482189) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (497199) mqtts_example: Other event id:7[0m
+[0;32mI (497839) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (497839) mqtts_example: sent subscribe successful, msg_id=39847[0m
+[0;32mI (498259) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=39847[0m
+[0;32mI (498259) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (498549) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (498549) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (498559) mqtts_example: Other event id:0[0m
+[0;31mE (498559) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (498569) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (508579) mqtts_example: Other event id:7[0m
+[0;32mI (509209) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (509209) mqtts_example: sent subscribe successful, msg_id=25077[0m
+[0;32mI (509509) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=25077[0m
+[0;32mI (509519) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (509819) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (509819) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (509829) mqtts_example: Other event id:0[0m
+[0;31mE (509829) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (509839) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (524839) mqtts_example: Other event id:7[0m
+[0;32mI (525899) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (525899) mqtts_example: sent subscribe successful, msg_id=30457[0m
+[0;32mI (526209) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=30457[0m
+[0;32mI (526209) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (526509) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (526509) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (526519) mqtts_example: Other event id:0[0m
+[0;31mE (526519) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (526529) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (541529) mqtts_example: Other event id:7[0m
+[0;32mI (542179) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (542189) mqtts_example: sent subscribe successful, msg_id=39279[0m
+[0;32mI (542479) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=39279[0m
+[0;32mI (542489) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (542789) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (542789) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (542799) mqtts_example: Other event id:0[0m
+[0;31mE (542799) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (542809) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (552819) mqtts_example: Other event id:7[0m
+[0;32mI (553439) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (553449) mqtts_example: sent subscribe successful, msg_id=43327[0m
+[0;32mI (553749) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=43327[0m
+[0;32mI (553749) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (554059) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (554059) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (554059) mqtts_example: Other event id:0[0m
+[0;31mE (554069) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (554079) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (569079) mqtts_example: Other event id:7[0m
+[0;32mI (569739) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (569739) mqtts_example: sent subscribe successful, msg_id=2376[0m
+[0;32mI (570029) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=2376[0m
+[0;32mI (570029) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (570339) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (570339) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (570339) mqtts_example: Other event id:0[0m
+[0;31mE (570349) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (570359) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (585359) mqtts_example: Other event id:7[0m
+[0;32mI (586009) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (586009) mqtts_example: sent subscribe successful, msg_id=27407[0m
+[0;32mI (586309) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=27407[0m
+[0;32mI (586319) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (586619) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (586619) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (586629) mqtts_example: Other event id:0[0m
+[0;31mE (586629) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (586639) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (601639) mqtts_example: Other event id:7[0m
+[0;32mI (602309) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (602309) mqtts_example: sent subscribe successful, msg_id=16638[0m
+[0;32mI (602599) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=16638[0m
+[0;32mI (602599) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (602899) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (602899) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (602909) mqtts_example: Other event id:0[0m
+[0;31mE (602909) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (602919) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (617919) mqtts_example: Other event id:7[0m
+[0;32mI (618569) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (618569) mqtts_example: sent subscribe successful, msg_id=3313[0m
+[0;32mI (618879) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=3313[0m
+[0;32mI (618879) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (619189) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (619189) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (619189) mqtts_example: Other event id:0[0m
+[0;31mE (619199) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (619209) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (634209) mqtts_example: Other event id:7[0m
+[0;32mI (634849) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (634849) mqtts_example: sent subscribe successful, msg_id=43897[0m
+[0;32mI (635159) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=43897[0m
+[0;32mI (635159) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (635459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (635459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (635469) mqtts_example: Other event id:0[0m
+[0;31mE (635469) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (635479) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (645489) mqtts_example: Other event id:7[0m
+[0;32mI (646109) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (646119) mqtts_example: sent subscribe successful, msg_id=14582[0m
+[0;32mI (646419) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=14582[0m
+[0;32mI (646429) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (646729) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (646729) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (646729) mqtts_example: Other event id:0[0m
+[0;31mE (646739) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (646749) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (661749) mqtts_example: Other event id:7[0m
+[0;32mI (662409) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (662409) mqtts_example: sent subscribe successful, msg_id=33388[0m
+[0;32mI (662719) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=33388[0m
+[0;32mI (662729) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (663109) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (663109) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (663119) mqtts_example: Other event id:0[0m
+[0;31mE (663119) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (663129) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (673139) mqtts_example: Other event id:7[0m
+[0;32mI (673759) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (673769) mqtts_example: sent subscribe successful, msg_id=37088[0m
+[0;32mI (674069) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=37088[0m
+[0;32mI (674069) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (674379) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (674379) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (674379) mqtts_example: Other event id:0[0m
+[0;31mE (674389) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (674399) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (689399) mqtts_example: Other event id:7[0m
+[0;32mI (690049) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (690049) mqtts_example: sent subscribe successful, msg_id=51105[0m
+[0;32mI (690349) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=51105[0m
+[0;32mI (690349) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (690659) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (690659) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (690659) mqtts_example: Other event id:0[0m
+[0;31mE (690669) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (690679) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (705679) mqtts_example: Other event id:7[0m
+[0;32mI (706329) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (706329) mqtts_example: sent subscribe successful, msg_id=8497[0m
+[0;32mI (706629) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=8497[0m
+[0;32mI (706639) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (706939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (706939) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (706949) mqtts_example: Other event id:0[0m
+[0;31mE (706949) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (706959) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (721959) mqtts_example: Other event id:7[0m
+[0;32mI (722629) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (722629) mqtts_example: sent subscribe successful, msg_id=61416[0m
+[0;32mI (722909) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=61416[0m
+[0;32mI (722919) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (723219) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (723219) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (723229) mqtts_example: Other event id:0[0m
+[0;31mE (723229) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (723239) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (733249) mqtts_example: Other event id:7[0m
+[0;32mI (733869) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (733869) mqtts_example: sent subscribe successful, msg_id=26464[0m
+[0;32mI (734179) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=26464[0m
+[0;32mI (734179) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (734479) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (734479) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (734489) mqtts_example: Other event id:0[0m
+[0;31mE (734489) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (734499) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (744509) mqtts_example: Other event id:7[0m
+[0;32mI (745139) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (745139) mqtts_example: sent subscribe successful, msg_id=31329[0m
+[0;32mI (745439) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=31329[0m
+[0;32mI (745449) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (745749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (745749) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (745749) mqtts_example: Other event id:0[0m
+[0;31mE (745759) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (745769) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (760769) mqtts_example: Other event id:7[0m
+[0;32mI (761619) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (761619) mqtts_example: sent subscribe successful, msg_id=4025[0m
+[0;32mI (761929) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=4025[0m
+[0;32mI (761929) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (762389) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (762399) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (762399) mqtts_example: Other event id:0[0m
+[0;31mE (762409) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (762419) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+���������������������������������������������������������������� Other event id:7[0m
+[0;32mI (778009) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (778009) mqtts_example: sent subscribe successful, msg_id=19062[0m
+[0;32mI (778309) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=19062[0m
+[0;32mI (778319) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (778619) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (778619) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (778629) mqtts_example: Other event id:0[0m
+[0;31mE (778629) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (778639) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (793639) mqtts_example: Other event id:7[0m
+[0;32mI (794289) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (794289) mqtts_example: sent subscribe successful, msg_id=23491[0m
+[0;32mI (794599) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=23491[0m
+[0;32mI (794599) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (794899) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (794899) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (794909) mqtts_example: Other event id:0[0m
+[0;31mE (794909) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (794919) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (804929) mqtts_example: Other event id:7[0m
+[0;32mI (805549) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (805549) mqtts_example: sent subscribe successful, msg_id=56988[0m
+[0;32mI (805859) mqtts_example: MQTT_EVENT_SUBSCRIBED, msg_id=56988[0m
+[0;32mI (805859) mqtts_example: sent publish successful, msg_id=0[0m
+[0;31mE (806159) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (806159) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (806169) mqtts_example: Other event id:0[0m
+[0;31mE (806179) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (806189) mqtts_example: MQTT_EVENT_DISCONNECTED[0m

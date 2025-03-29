@@ -1,0 +1,28 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/TEST2/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/9] Building C object esp-idf/SUB_MQTT/CMakeFiles/__idf_SUB_MQTT.dir/SUB_MQTT.c.obj
+[3/9] Linking C static library esp-idf\SUB_MQTT\libSUB_MQTT.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TEST2.c.obj
+C:/ESP IDF/project_esp/TEST2/main/TEST2.c:36:33: warning: 'client' defined but not used [-Wunused-variable]
+   36 | static esp_mqtt_client_handle_t client;
+      |                                 ^~~~~~
+In file included from C:/ESP IDF/project_esp/TEST2/main/TEST2.c:31:
+C:/ESP IDF/project_esp/TEST2/Components/uart_sub/include/uart_sub.h:22:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   22 | static const char *TAG = "UART SIMSOM";
+      |                    ^~~
+In file included from C:/ESP IDF/project_esp/TEST2/main/TEST2.c:30:
+C:/ESP IDF/project_esp/TEST2/Components/wifi_config/include/wifi_config.h:38:20: warning: 'TAG_wifi' defined but not used [-Wunused-variable]
+   38 | static const char *TAG_wifi = "WiFi";
+      |                    ^~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable TEST2.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/TEST2/build/TEST2.bin
+[9/9] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\TEST2\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/TEST2/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/TEST2/build/TEST2.bin""
+TEST2.bin binary size 0xe4ea0 bytes. Smallest app partition is 0x100000 bytes. 0x1b160 bytes (11%) free.

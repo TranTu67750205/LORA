@@ -1,0 +1,331 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=270fch (159996) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037124 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b064 vaddr=40080000 size=04fb4h ( 20404) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2b98h (666520) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000e2bc0 vaddr=40084fb4 size=13434h ( 78900) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (466) cpu_start: Pro cpu start user code[0m
+[0;32mI (466) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (466) app_init: Application information:[0m
+[0;32mI (469) app_init: Project name:     TEST2[0m
+[0;32mI (474) app_init: App version:      1[0m
+[0;32mI (478) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (484) app_init: ELF file SHA256:  c82ddc5a8...[0m
+[0;32mI (490) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (495) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (500) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (505) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (517) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+I (598) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (608) wifi:wifi firmware version: ccaebfa
+I (608) wifi:wifi certification version: v7.0
+I (608) wifi:config NVS flash: enabled
+I (608) wifi:config nano formating: disabled
+I (608) wifi:Init data frame dynamic rx buffer num: 32
+I (618) wifi:Init static rx mgmt buffer num: 5
+I (618) wifi:Init management short buffer num: 32
+I (628) wifi:Init dynamic tx buffer num: 32
+I (628) wifi:Init static rx buffer size: 1600
+I (638) wifi:Init static rx buffer num: 10
+I (638) wifi:Init dynamic rx buffer num: 32
+[0;32mI (638) wifi_init: rx ba win: 6[0m
+[0;32mI (648) wifi_init: accept mbox: 6[0m
+[0;32mI (648) wifi_init: tcpip mbox: 32[0m
+[0;32mI (658) wifi_init: udp mbox: 6[0m
+[0;32mI (658) wifi_init: tcp mbox: 6[0m
+[0;32mI (658) wifi_init: tcp tx win: 5760[0m
+[0;32mI (668) wifi_init: tcp rx win: 5760[0m
+[0;32mI (668) wifi_init: tcp mss: 1440[0m
+[0;32mI (668) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (678) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (688) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (768) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (788) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (788) wifi:enable tsf
+I (798) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (798) wifi:state: init -> auth (0xb0)
+I (808) wifi:state: auth -> init (0x1c0)
+I (818) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (818) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (1788) mqtts_example: [APP] Free memory: 230668 bytes[0m
+[0;32mI (1788) mqtts_example: Other event id:7[0m
+[0;31mE (1788) esp-tls: couldn't get hostname for :mqtt.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1798) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1798) mqtt_client: Error transport connect[0m
+[0;32mI (1808) mqtts_example: Other event id:0[0m
+[0;32mI (1808) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1818) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1818) UART SIMSOM: GPS location.[0m
+[0;32mI (2328) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (2338) UART SIMSOM: Bytes received 1: 61[0m
+[0;32mI (2348) UART SIMSOM: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (2348) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (3238) WiFi: Disconnected. Reconnecting...[0m
+I (3248) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (3248) wifi:state: init -> auth (0xb0)
+I (3258) wifi:state: auth -> assoc (0x0)
+I (3278) wifi:state: assoc -> run (0x10)
+I (3298) wifi:connected with Galaxy A05s 6247, aid = 3, channel 11, BW20, bssid = 2e:94:d7:57:2c:81
+I (3298) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (3298) wifi:pm start, type: 1
+
+I (3298) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3388) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3388) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4308) esp_netif_handlers: sta ip: 192.168.51.207, mask: 255.255.255.0, gw: 192.168.51.190[0m
+[0;32mI (4308) WiFi: Got IP: 192.168.51.207[0m
+[0;32mI (4878) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (4888) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (7398) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (7408) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (9918) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (9928) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (11818) mqtts_example: Other event id:7[0m
+I (12098) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:3, winSize:64
+[0;32mI (12438) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (12448) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (12918) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12918) mqtts_example: sent subscribe successful, msg_id=5328[0m
+[0;32mI (13328) mqtts_example: Other event id:3[0m
+[0;32mI (14958) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (14968) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (17478) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (17488) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (19998) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (20008) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (22518) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (22528) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (25038) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (25048) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (27558) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (27568) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (30078) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (30088) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (32598) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (32608) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (35118) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (35128) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (37638) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (37648) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (40158) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (40168) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (42678) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (42688) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (45198) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (45208) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (47718) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (47728) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (50238) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (50248) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (52758) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (52768) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (55278) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (55288) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (57798) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (57808) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (60318) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (60328) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (62838) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (62848) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (65358) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (65368) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (67878) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (67888) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (70398) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (70408) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (72918) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (72928) UART SIMSOM: Bytes received 1: 0[0m
+[0;32mI (75438) UART SIMSOM: GPS Data1: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++CME ERROR: 516
+q�`�b[�4yr�H���O�%"�N"�^���7���.��/_VvkD�$Xf|�NT%�`L����cP���4V"Iќ�y����Ќ����������BA�ͬ����K2t�Te��X.��3x5����S�icD�E�.���^�60]'O��iw�f�[�DF�g��N)N���?�mLݦ_3�������a���d�&����[0m
+[0;32mI (75448) UART SIMSOM: Bytes received 1: 0[0m

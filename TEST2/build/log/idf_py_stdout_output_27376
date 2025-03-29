@@ -1,0 +1,450 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 14 2024 11:22:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=272cch (160460) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000372f4 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b234 vaddr=40080000 size=04de4h ( 19940) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3500h (668928) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000e3528 vaddr=40084de4 size=13604h ( 79364) load[0m
+[0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (459) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     TEST2[0m
+[0;32mI (475) app_init: App version:      1[0m
+[0;32mI (479) app_init: Compile time:     Dec 17 2024 17:16:46[0m
+[0;32mI (485) app_init: ELF file SHA256:  c25a64a2f...[0m
+[0;32mI (491) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (496) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8750 len 000278B0 (158 KiB): DRAM[0m
+[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+I (599) wifi:wifi driver task: 3ffc0760, prio:23, stack:6656, core=0
+I (609) wifi:wifi firmware version: ccaebfa
+I (609) wifi:wifi certification version: v7.0
+I (609) wifi:config NVS flash: enabled
+I (609) wifi:config nano formating: disabled
+I (609) wifi:Init data frame dynamic rx buffer num: 32
+I (619) wifi:Init static rx mgmt buffer num: 5
+I (619) wifi:Init management short buffer num: 32
+I (629) wifi:Init dynamic tx buffer num: 32
+I (629) wifi:Init static rx buffer size: 1600
+I (639) wifi:Init static rx buffer num: 10
+I (639) wifi:Init dynamic rx buffer num: 32
+[0;32mI (639) wifi_init: rx ba win: 6[0m
+[0;32mI (649) wifi_init: accept mbox: 6[0m
+[0;32mI (649) wifi_init: tcpip mbox: 32[0m
+[0;32mI (649) wifi_init: udp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp mbox: 6[0m
+[0;32mI (659) wifi_init: tcp tx win: 5760[0m
+[0;32mI (669) wifi_init: tcp rx win: 5760[0m
+[0;32mI (669) wifi_init: tcp mss: 1440[0m
+[0;32mI (669) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (679) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (689) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (769) wifi:mode : sta (cc:7b:5c:27:b1:54)
+I (769) wifi:enable tsf
+I (789) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (789) wifi:state: init -> auth (0xb0)
+I (819) wifi:state: auth -> assoc (0x0)
+I (869) wifi:state: assoc -> run (0x10)
+I (979) wifi:connected with VNPT_Hanh, aid = 5, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (979) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (979) wifi:pm start, type: 1
+
+I (979) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1009) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1779) mqtts_example: [APP] Free memory: 229924 bytes[0m
+[0;32mI (1779) mqtts_example: Other event id:7[0m
+[0;32mI (1779) UART SIMSOM: Enable GPS.[0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+[0;32mI (1899) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (1899) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (1899) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (1919) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (1989) esp_netif_handlers: sta ip: 192.168.1.6, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1989) WiFi: Got IP: 192.168.1.6[0m
+I (2789) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:5, winSize:64
+I (2809) wifi:<ba-add>idx:1 (ifx:0, 4c:12:e8:76:17:60), tid:4, ssn:1, winSize:64
+[0;32mI (6339) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6349) mqtts_example: sent subscribe successful, msg_id=83[0m
+[0;32mI (6349) UART SIMSOM: GPS location.[0m
+[0;32mI (6459) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (6459) UART SIMSOM: lat is 11.541660 and long is 106.896988[0m
+[0;32mI (6459) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135036.00,1132.4996N,10653.8194E,0.98,96.6,3,,0.073,0.040,221224,29
+
+OK
+���?8[0m
+[0;32mI (7919) mqtts_example: Other event id:3[0m
+[0;32mI (8389) mqtts_example: Other event id:5[0m
+[0;32mI (12169) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (12169) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (12169) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (12189) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (12199) UART SIMSOM: GPS location.[0m
+[0;32mI (12319) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (12319) UART SIMSOM: lat is 11.541658 and long is 106.896988[0m
+[0;32mI (12319) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135042.00,1132.4995N,10653.8194E,0.98,96.7,3,,0.029,0.016,221224,29
+
+OK
+evices/me/telemetry2�{"latitude": "0.000000", "longtitude": "0.000000"}n�I ����-�1'4YM�q��ɲz����������t$ihȍV�,eCE�,��~<���*Ç�:%���o4@��nhI�6�v�>�J~�?��ú��?#�����mSA)����v�()۟���Pz��x��R�����1(|�~����z���nߵH'��x�n�s�+7���RO������d���|��u;�7(XF>����>��FȲ�p^!c�%�o�]3㈼;bh9)��K�'`D�f�SeD�9����Z����e9~ż�������nh� #���η+M	j�dl.)�χGf�,���
+[0;32mI (12599) mqtts_example: Other event id:5[0m
+[0;32mI (18059) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (18059) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (18059) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (18079) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (18099) UART SIMSOM: GPS location.[0m
+[0;32mI (18209) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (18209) UART SIMSOM: lat is 11.541658 and long is 106.896988[0m
+[0;32mI (18209) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135048.00,1132.4995N,10653.8194E,0.98,96.7,3,,0.005,0.003,221224,29
+
+OK
+�
+[0;32mI (18529) mqtts_example: Other event id:5[0m
+[0;32mI (23919) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (23919) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (23919) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (23939) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (23959) UART SIMSOM: GPS location.[0m
+[0;32mI (24069) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (24069) UART SIMSOM: lat is 11.541658 and long is 106.896988[0m
+[0;32mI (24069) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135053.00,1132.4995N,10653.8194E,0.98,96.7,3,,0.016,0.009,221224,29
+
+OK
+�
+[0;32mI (24369) mqtts_example: Other event id:5[0m
+[0;32mI (29779) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (29779) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (29779) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (29799) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (29819) UART SIMSOM: GPS location.[0m
+[0;32mI (29929) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (29929) UART SIMSOM: lat is 11.541658 and long is 106.896988[0m
+[0;32mI (29929) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135059.00,1132.4995N,10653.8194E,0.98,96.7,3,,0.020,0.011,221224,29
+
+OK
+�
+[0;32mI (30199) mqtts_example: Other event id:5[0m
+[0;32mI (35639) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (35639) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (35639) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (35659) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (35679) UART SIMSOM: GPS location.[0m
+[0;32mI (35789) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (35789) UART SIMSOM: lat is 11.541658 and long is 106.896988[0m
+[0;32mI (35789) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135105.00,1132.4995N,10653.8194E,0.98,96.7,3,,0.058,0.032,221224,29
+
+OK
+�
+[0;32mI (36139) mqtts_example: Other event id:5[0m
+[0;32mI (41499) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (41499) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (41499) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (41519) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (41539) UART SIMSOM: GPS location.[0m
+[0;32mI (41649) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (41649) UART SIMSOM: lat is 11.541656 and long is 106.896988[0m
+[0;32mI (41649) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135111.00,1132.4994N,10653.8194E,0.98,96.7,3,,0.040,0.022,221224,29
+
+OK
+�
+[0;32mI (41979) mqtts_example: Other event id:5[0m
+[0;32mI (47359) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (47359) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (47359) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (47379) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (47399) UART SIMSOM: GPS location.[0m
+[0;32mI (47509) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (47509) UART SIMSOM: lat is 11.541656 and long is 106.896988[0m
+[0;32mI (47509) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135117.00,1132.4994N,10653.8194E,0.98,96.7,3,,0.009,0.005,221224,29
+
+OK
+�
+[0;32mI (47829) mqtts_example: Other event id:5[0m
+[0;32mI (53219) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (53219) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (53219) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (53239) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (53259) UART SIMSOM: GPS location.[0m
+[0;32mI (53369) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (53369) UART SIMSOM: lat is 11.541656 and long is 106.896988[0m
+[0;32mI (53369) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135123.00,1132.4994N,10653.8194E,0.98,96.8,3,,0.033,0.018,221224,28
+
+OK
+�
+[0;32mI (56009) mqtts_example: Other event id:5[0m
+[0;32mI (59079) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (59079) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (59079) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (59099) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (59119) UART SIMSOM: GPS location.[0m
+[0;32mI (59229) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (59229) UART SIMSOM: lat is 11.541656 and long is 106.896988[0m
+[0;32mI (59229) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135129.00,1132.4994N,10653.8194E,0.98,96.8,3,,0.018,0.010,221224,29
+
+OK
+�
+[0;32mI (60509) mqtts_example: Other event id:5[0m
+[0;32mI (64939) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (64939) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (64939) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (64959) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (64969) UART SIMSOM: GPS location.[0m
+[0;32mI (65089) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (65089) UART SIMSOM: lat is 11.541655 and long is 106.896988[0m
+[0;32mI (65089) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135134.00,1132.4993N,10653.8194E,0.98,96.8,3,,0.035,0.019,221224,29
+
+OK
+�
+[0;32mI (68499) mqtts_example: Other event id:5[0m
+[0;32mI (70799) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (70799) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (70799) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (70819) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (70839) UART SIMSOM: GPS location.[0m
+[0;32mI (70949) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (70949) UART SIMSOM: lat is 11.541655 and long is 106.896988[0m
+[0;32mI (70949) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135140.00,1132.4993N,10653.8194E,0.98,96.8,3,,0.026,0.014,221224,29
+
+OK
+�I0[0m
+[0;32mI (73929) mqtts_example: Other event id:5[0m
+[0;32mI (76659) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (76659) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (76659) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (76679) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (76699) UART SIMSOM: GPS location.[0m
+[0;32mI (76809) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (76809) UART SIMSOM: lat is 11.541655 and long is 106.896988[0m
+[0;32mI (76809) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135146.00,1132.4993N,10653.8194E,1.01,96.9,3,,0.058,0.032,221224,30
+
+OK
+evices/me/telemetry+^{"latitude": "0.000000", "longtitude": "0.000000"}:M[0m
+[0;32mI (79659) mqtts_example: Other event id:5[0m
+[0;32mI (82529) UART SIMSOM: lat is SL and long is GPS[0m
+[0;32mI (82529) mqtts_example: lat is 0.000000 and long is 0.000000[0m
+[0;32mI (82529) mqtts_example: GPS Data: 
+AT+QGPS=1
++CME ERROR: 504
+AT+QGPSLOC=0
++QGPSLOC: 135031.00,1132.4996N,10653.8193E,0.98,96.6,3,,0.088,0.048,221224,29
+
+OK
+�=��}j�`���7�r�A�R7�am�A�qHj��O�U�|1G�W���y-|��^'x��	�KNt��X�\�M�vD�n��Q��1�_��;L�6���_�0 +��r��݂���v�'[0m
+[0;32mI (82549) mqtts_example: GPS json: 
+{"latitude": "0.000000", "longtitude": "0.000000"} 
+ 
+ 
+[0m
+[0;32mI (82559) UART SIMSOM: GPS location.[0m
+[0;32mI (82679) UART SIMSOM: lat is 11 and long is 106[0m
+[0;32mI (82679) UART SIMSOM: lat is 11.541655 and long is 106.896988[0m
+[0;32mI (82679) UART SIMSOM: GPS Data: 
+AT+QGPSLOC=0
++QGPSLOC: 135152.00,1132.4993N,10653.8193E,0.95,96.8,3,,0.044,0.024,221224,31
+
+OK
+�
