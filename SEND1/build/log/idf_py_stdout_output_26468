@@ -1,0 +1,2553 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b5ech ( 46572) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b614 vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001da94 vaddr=40080000 size=02584h (  9604) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16bb4h ( 93108) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036bdc vaddr=40082584 size=0be6ch ( 48748) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) app_init: Application information:[0m
+[0;32mI (217) app_init: Project name:     SEND1[0m
+[0;32mI (221) app_init: App version:      3afba31-dirty[0m
+[0;32mI (227) app_init: Compile time:     Apr  1 2025 15:33:27[0m
+[0;32mI (233) app_init: ELF file SHA256:  55e8dd159...[0m
+[0;32mI (238) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (248) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (253) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB2D80 len 0002D280 (180 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (298) spi_flash: detected chip: generic[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (1316) DHT11: DHT11 initialized on GPIO 26[0m
+[0;32mI (1316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (1346) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (1356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (1356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (1376) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1376) main_task: Returned from app_main()[0m
+[0;32mI (3366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (3396) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (3406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (3406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (5416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (5446) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (5456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (5456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (7466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (7496) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (7506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (7506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (9516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (9546) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (9556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (9556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (11566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (11596) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (11606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (11606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (13616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (13646) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (13656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (13656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (15666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (15696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (15696) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (15706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (15706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (17716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (17746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (17746) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (17756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (17756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (19766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (19796) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (19806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (19806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (21816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (21846) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (21856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (21856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (23866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (23896) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (23906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (23906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (25916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (25946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (25946) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (25956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (25956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (27966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (27996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (27996) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (28006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (28006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (30016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (30046) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (30056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (30056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (32066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (32096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (32096) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (32106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (32106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (34116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (34146) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (34156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (34156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (36166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (36196) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (36206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (36206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b5ech ( 46572) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b614 vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001da94 vaddr=40080000 size=02584h (  9604) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16bb4h ( 93108) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036bdc vaddr=40082584 size=0be6ch ( 48748) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) app_init: Application information:[0m
+[0;32mI (217) app_init: Project name:     SEND1[0m
+[0;32mI (221) app_init: App version:      3afba31-dirty[0m
+[0;32mI (227) app_init: Compile time:     Apr  1 2025 15:33:27[0m
+[0;32mI (233) app_init: ELF file SHA256:  55e8dd159...[0m
+[0;32mI (238) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (248) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (253) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB2D80 len 0002D280 (180 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (298) spi_flash: detected chip: generic[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (1316) DHT11: DHT11 initialized on GPIO 26[0m
+[0;32mI (1316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (1346) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (1356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (1356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (1376) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1376) main_task: Returned from app_main()[0m
+[0;32mI (3366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (3396) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (3406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (3406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (5416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (5446) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (5456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (5456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (7466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (7496) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (7506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (7506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (9516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (9546) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (9556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (9556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (11566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (11596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (11596) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (11606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (11606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (13616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (13646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (13646) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (13656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (13656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (15666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (15696) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (15706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (15706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (17716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (17746) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (17756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (17756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (19766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (19796) DHT11: Độ dài xung phản hồi: -1 us[0m
+[0;32mI (19806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (19806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (21816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (21846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (21846) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (21856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (21856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (23866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (23896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (23896) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (23906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (23906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (25916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (25946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (25946) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (25956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (25956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (27966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (27996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (27996) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (28006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (28006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (30016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (30046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (30046) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (30056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (30056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (32066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (32096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (32096) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (32106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (32106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (34116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (34146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (34146) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (34156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (34156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (36166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (36196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (36196) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (36206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (36206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (38216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (38246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (38246) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (38256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (38256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (40266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (40296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (40296) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (40306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (40306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (42316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (42346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (42346) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (42356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (42356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b5ech ( 46572) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b614 vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001da94 vaddr=40080000 size=02584h (  9604) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16bb4h ( 93108) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036bdc vaddr=40082584 size=0be6ch ( 48748) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) app_init: Application information:[0m
+[0;32mI (217) app_init: Project name:     SEND1[0m
+[0;32mI (221) app_init: App version:      3afba31-dirty[0m
+[0;32mI (227) app_init: Compile time:     Apr  1 2025 15:33:27[0m
+[0;32mI (233) app_init: ELF file SHA256:  55e8dd159...[0m
+[0;32mI (238) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (248) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (253) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB2D80 len 0002D280 (180 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (298) spi_flash: detected chip: generic[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (1316) DHT11: DHT11 initialized on GPIO 26[0m
+[0;32mI (1316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (1336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (1346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (1346) DHT11: Độ dài xung phản hồi: 12 us[0m
+[0;32mI (1356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (1356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (1376) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1376) main_task: Returned from app_main()[0m
+[0;32mI (3366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (3386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (3396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (3396) DHT11: Độ dài xung phản hồi: 37 us[0m
+[0;32mI (3406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (3406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (5416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (5436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (5446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (5446) DHT11: Độ dài xung phản hồi: 45 us[0m
+[0;32mI (5456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (5456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (7466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (7486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (7496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (7496) DHT11: Độ dài xung phản hồi: 46 us[0m
+[0;32mI (7506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (7506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (9516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (9536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (9546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (9546) DHT11: Độ dài xung phản hồi: 45 us[0m
+[0;32mI (9556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (9556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (11566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (11586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (11596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (11596) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (11606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (11606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (13616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (13636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (13646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (13646) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (13656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (13656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (15666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (15686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (15696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (15696) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (15706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (15706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (17716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (17736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (17746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (17746) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (17756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (17756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (19766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (19786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (19796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (19796) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (19806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (19806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (21816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (21836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (21846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (21846) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (21856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (21856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (23866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (23886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (23896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (23896) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (23906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (23906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (25916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (25936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (25946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (25946) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (25956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (25956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (27966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (27986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (27996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (27996) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (28006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (28006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (30016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (30036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (30046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (30046) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (30056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (30056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (32066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (32086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (32096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (32096) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (32106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (32106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (34116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (34136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (34146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (34146) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (34156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (34156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (36166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (36186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (36196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (36196) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (36206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (36206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (38216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (38236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (38246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (38246) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (38256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (38256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (40266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (40286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (40296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (40296) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (40306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (40306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (42316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (42336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (42346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (42346) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (42356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (42356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (44366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (44386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (44386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (44386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (44396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (44396) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (44406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (44406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (46416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (46436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (46436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (46436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (46446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (46446) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (46456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (46456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (48466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (48486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (48486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (48486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (48496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (48496) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (48506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (48506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (50516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (50536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (50536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (50536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (50546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (50546) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (50556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (50556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (52566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (52586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (52586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (52586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (52596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (52596) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (52606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (52606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (54616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (54636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (54636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (54636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (54646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (54646) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (54656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (54656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (56666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (56686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (56686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (56686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (56696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (56696) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (56706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (56706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (58716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (58736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (58736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (58736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (58746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (58746) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (58756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (58756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (60766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (60786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (60786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (60786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (60796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (60796) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (60806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (60806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (62816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (62836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (62836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (62836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (62846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (62846) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (62856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (62856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (64866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (64886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (64886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (64886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (64896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (64896) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (64906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (64906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (66916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (66936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (66936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (66936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (66946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (66946) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (66956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (66956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (68966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (68986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (68986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (68986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (68996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (68996) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (69006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (69006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (71016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (71036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (71036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (71036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (71046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (71046) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (71056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (71056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (73066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (73086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (73086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (73086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (73096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (73096) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (73106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (73106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (75116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (75136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (75136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (75136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (75146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (75146) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (75156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (75156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (77166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (77186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (77186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (77186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (77196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (77196) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (77206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (77206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (79216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (79236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (79236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (79236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (79246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (79246) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (79256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (79256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (81266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (81286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (81286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (81286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (81296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (81296) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (81306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (81306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (83316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (83336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (83336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (83336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (83346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (83346) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (83356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (83356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (85366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (85386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (85386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (85386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (85396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (85396) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (85406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (85406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (87416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (87436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (87436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (87436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (87446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (87446) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (87456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (87456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (89466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (89486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (89486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (89486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (89496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (89496) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (89506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (89506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (91516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (91536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (91536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (91536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (91546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (91546) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (91556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (91556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (93566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (93586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (93586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (93586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (93596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (93596) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (93606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (93606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (95616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (95636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (95636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (95636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (95646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (95646) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (95656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (95656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (97666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (97686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (97686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (97686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (97696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (97696) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (97706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (97706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (99716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (99736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (99736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (99736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (99746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (99746) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (99756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (99756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (101766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (101786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (101786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (101786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (101796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (101796) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (101806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (101806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (103816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (103836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (103836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (103836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (103846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (103846) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (103856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (103856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (105866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (105886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (105886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (105886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (105896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (105896) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (105906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (105906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (107916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (107936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (107936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (107936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (107946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (107946) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (107956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (107956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (109966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (109986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (109986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (109986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (109996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (109996) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (110006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (110006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (112016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (112036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (112036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (112036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (112046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (112046) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (112056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (112056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (114066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (114086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (114086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (114086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (114096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (114096) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (114106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (114106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (116116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (116136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (116136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (116136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (116146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (116146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (116156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (116156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (118166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (118186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (118186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (118186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (118196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (118196) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (118206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (118206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (120216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (120236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (120236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (120236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (120246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (120246) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (120256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (120256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (122266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (122286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (122286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (122286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (122296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (122296) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (122306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (122306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (124316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (124336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (124336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (124336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (124346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (124346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (124356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (124356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (126366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (126386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (126386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (126386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (126396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (126396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (126406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (126406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (128416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (128436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (128436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (128436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (128446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (128446) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (128456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (128456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (130466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (130486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (130486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (130486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (130496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (130496) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (130506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (130506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (132516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (132536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (132536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (132536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (132546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (132546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (132556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (132556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (134566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (134586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (134586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (134586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (134596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (134596) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (134606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (134606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (136616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (136636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (136636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (136636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (136646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (136646) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (136656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (136656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (138666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (138686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (138686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (138686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (138696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (138696) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (138706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (138706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (140716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (140736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (140736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (140736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (140746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (140746) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (140756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (140756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (142766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (142786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (142786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (142786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (142796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (142796) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (142806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (142806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (144816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (144836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (144836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (144836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (144846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (144846) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (144856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (144856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (146866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (146886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (146886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (146886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (146896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (146896) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (146906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (146906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (148916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (148936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (148936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (148936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (148946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (148946) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (148956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (148956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (150966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (150986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (150986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (150986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (150996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (150996) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (151006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (151006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (153016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (153036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (153036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (153036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (153046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (153046) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (153056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (153056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (155066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (155086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (155086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (155086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (155096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (155096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (155106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (155106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (157116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (157136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (157136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (157136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (157146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (157146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (157156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (157156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (159166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (159186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (159186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (159186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (159196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (159196) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (159206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (159206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (161216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (161236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (161236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (161236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (161246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (161246) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (161256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (161256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (163266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (163286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (163286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (163286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (163296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (163296) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (163306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (163306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (165316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (165336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (165336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (165336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (165346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (165346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (165356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (165356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (167366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (167386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (167386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (167386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (167396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (167396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (167406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (167406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (169416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (169436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (169436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (169436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (169446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (169446) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (169456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (169456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (171466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (171486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (171486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (171486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (171496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (171496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (171506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (171506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (173516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (173536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (173536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (173536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (173546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (173546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (173556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (173556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (175566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (175586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (175586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (175586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (175596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (175596) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (175606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (175606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (177616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (177636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (177636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (177636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (177646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (177646) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (177656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (177656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (179666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (179686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (179686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (179686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (179696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (179696) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (179706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (179706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (181716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (181736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (181736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (181736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (181746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (181746) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (181756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (181756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (183766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (183786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (183786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (183786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (183796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (183796) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (183806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (183806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (185816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (185836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (185836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (185836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (185846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (185846) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (185856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (185856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (187866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (187886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (187886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (187886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (187896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (187896) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (187906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (187906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (189916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (189936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (189936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (189936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (189946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (189946) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (189956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (189956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (191966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (191986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (191986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (191986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (191996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (191996) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (192006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (192006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (194016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (194036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (194036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (194036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (194046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (194046) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (194056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (194056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (196066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (196086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (196086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (196086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (196096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (196096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (196106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (196106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (198116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (198136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (198136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (198136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (198146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (198146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (198156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (198156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (200166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (200186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (200186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (200186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (200196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (200196) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (200206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (200206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (202216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (202236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (202236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (202236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (202246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (202246) DHT11: Độ dài xung phản hồi: 0 us[0m
+[0;32mI (202256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (202256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (204266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (204286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (204286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (204286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (204296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (204296) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (204306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (204306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (206316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (206336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (206336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (206336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (206346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (206346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (206356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (206356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (208366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (208386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (208386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (208386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (208396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (208396) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (208406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (208406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (210416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (210436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (210436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (210436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (210446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (210446) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (210456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (210456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (212466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (212486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (212486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (212486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (212496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (212496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (212506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (212506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (214516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (214536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (214536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (214536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (214546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (214546) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (214556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (214556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (216566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (216586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (216586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (216586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (216596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (216596) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (216606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (216606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (218616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (218636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (218636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (218636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (218646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (218646) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (218656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (218656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (220666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (220686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (220686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (220686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (220696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (220696) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (220706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (220706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (222716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (222736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (222736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (222736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (222746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (222746) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (222756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (222756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (224766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (224786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (224786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (224786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (224796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (224796) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (224806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (224806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (226816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (226836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (226836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (226836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (226846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (226846) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (226856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (226856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (228866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (228886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (228886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (228886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (228896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (228896) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (228906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (228906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (230916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (230936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (230936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (230936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (230946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (230946) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (230956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (230956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (232966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (232986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (232986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (232986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (232996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (232996) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (233006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (233006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (235016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (235036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (235036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (235036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (235046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (235046) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (235056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (235056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (237066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (237086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (237086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (237086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (237096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (237096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (237106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (237106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (239116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (239136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (239136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (239136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (239146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (239146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (239156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (239156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (241166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (241186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (241186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (241186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (241196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (241196) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (241206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (241206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (243216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (243236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (243236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (243236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (243246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (243246) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (243256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (243256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (245266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (245286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (245286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (245286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (245296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (245296) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (245306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (245306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (247316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (247336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (247336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (247336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (247346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (247346) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (247356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (247356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (249366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (249386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (249386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (249386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (249396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (249396) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (249406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (249406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (251416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (251436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (251436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (251436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (251446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (251446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (251456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (251456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (253466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (253486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (253486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (253486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (253496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (253496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (253506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (253506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (255516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (255536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (255536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (255536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (255546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (255546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (255556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (255556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (257566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (257586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (257586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (257586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (257596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (257596) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (257606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (257606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (259616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (259636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (259636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (259636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (259646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (259646) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (259656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (259656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (261666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (261686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (261686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (261686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (261696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (261696) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (261706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (261706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (263716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (263736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (263736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (263736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (263746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (263746) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (263756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (263756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (265766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (265786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (265786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (265786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (265796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (265796) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (265806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (265806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (267816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (267836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (267836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (267836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (267846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (267846) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (267856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (267856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (269866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (269886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (269886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (269886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (269896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (269896) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (269906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (269906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (271916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (271936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (271936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (271936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (271946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (271946) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (271956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (271956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (273966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (273986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (273986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (273986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (273996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (273996) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (274006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (274006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (276016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (276036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (276036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (276036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (276046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (276046) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (276056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (276056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (278066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (278086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (278086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (278086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (278096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (278096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (278106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (278106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (280116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (280136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (280136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (280136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (280146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (280146) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (280156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (280156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (282166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (282186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (282186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (282186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (282196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (282196) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (282206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (282206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (284216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (284236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (284236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (284236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (284246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (284246) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (284256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (284256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (286266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (286286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (286286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (286286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (286296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (286296) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (286306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (286306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (288316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (288336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (288336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (288336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (288346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (288346) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (288356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (288356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (290366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (290386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (290386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (290386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (290396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (290396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (290406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (290406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (292416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (292436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (292436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (292436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (292446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (292446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (292456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (292456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (294466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (294486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (294486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (294486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (294496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (294496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (294506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (294506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (296516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (296536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (296536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (296536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (296546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (296546) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (296556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (296556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (298566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (298586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (298586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (298586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (298596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (298596) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (298606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (298606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (300616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (300636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (300636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (300636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (300646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (300646) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (300656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (300656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (302666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (302686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (302686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (302686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (302696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (302696) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (302706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (302706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (304716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (304736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (304736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (304736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (304746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (304746) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (304756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (304756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (306766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (306786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (306786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (306786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (306796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (306796) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (306806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (306806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (308816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (308836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (308836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (308836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (308846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (308846) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (308856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (308856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (310866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (310886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (310886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (310886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (310896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (310896) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (310906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (310906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (312916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (312936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (312936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (312936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (312946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (312946) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (312956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (312956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (314966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (314986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (314986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (314986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (314996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (314996) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (315006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (315006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (317016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (317036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (317036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (317036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (317046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (317046) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (317056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (317056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (319066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (319086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (319086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (319086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (319096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (319096) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (319106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (319106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (321116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (321136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (321136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (321136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (321146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (321146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (321156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (321156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (323166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (323186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (323186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (323186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (323196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (323196) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (323206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (323206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (325216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (325236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (325236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (325236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (325246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (325246) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (325256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (325256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (327266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (327286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (327286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (327286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (327296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (327296) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (327306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (327306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (329316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (329336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (329336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (329336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (329346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (329346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (329356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (329356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (331366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (331386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (331386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (331386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (331396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (331396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (331406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (331406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (333416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (333436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (333436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (333436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (333446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (333446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (333456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (333456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (335466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (335486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (335486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (335486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (335496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (335496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (335506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (335506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (337516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (337536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (337536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (337536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (337546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (337546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (337556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (337556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (339566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (339586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (339586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (339586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (339596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (339596) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (339606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (339606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (341616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (341636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (341636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (341636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (341646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (341646) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (341656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (341656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (343666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (343686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (343686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (343686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (343696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (343696) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (343706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (343706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (345716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (345736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (345736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (345736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (345746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (345746) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (345756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (345756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (347766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (347786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (347786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (347786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (347796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (347796) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (347806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (347806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (349816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (349836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (349836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (349836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (349846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (349846) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (349856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (349856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (351866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (351886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (351886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (351886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (351896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (351896) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (351906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (351906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (353916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (353936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (353936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (353936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (353946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (353946) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (353956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (353956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (355966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (355986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (355986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (355986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (355996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (355996) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (356006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (356006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (358016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (358036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (358036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (358036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (358046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (358046) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (358056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (358056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (360066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (360086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (360086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (360086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (360096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (360096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (360106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (360106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (362116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (362136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (362136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (362136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (362146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (362146) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (362156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (362156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (364166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (364186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (364186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (364186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (364196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (364196) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (364206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (364206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (366216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (366236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (366236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (366236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (366246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (366246) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (366256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (366256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (368266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (368286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (368286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (368286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (368296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (368296) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (368306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (368306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (370316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (370336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (370336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (370336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (370346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (370346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (370356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (370356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (372366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (372386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (372386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (372386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (372396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (372396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (372406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (372406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (374416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (374436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (374436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (374436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (374446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (374446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (374456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (374456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (376466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (376486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (376486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (376486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (376496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (376496) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (376506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (376506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (378516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (378536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (378536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (378536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (378546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (378546) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (378556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (378556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (380566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (380586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (380586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (380586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (380596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (380596) DHT11: Độ dài xung phản hồi: 10 us[0m
+[0;32mI (380606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (380606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (382616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (382636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (382636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (382636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (382646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (382646) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (382656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (382656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (384666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (384686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (384686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (384686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (384696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (384696) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (384706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (384706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (386716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (386736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (386736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (386736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (386746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (386746) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (386756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (386756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (388766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (388786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (388786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (388786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (388796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (388796) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (388806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (388806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (390816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (390836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (390836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (390836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (390846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (390846) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (390856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (390856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (392866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (392886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (392886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (392886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (392896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (392896) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (392906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (392906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (394916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (394936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (394936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (394936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (394946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (394946) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (394956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (394956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (396966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (396986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (396986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (396986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (396996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (396996) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (397006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (397006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (399016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (399036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (399036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (399036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (399046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (399046) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (399056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (399056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (401066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (401086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (401086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (401086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (401096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (401096) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (401106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (401106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (403116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (403136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (403136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (403136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (403146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (403146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (403156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (403156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (405166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (405186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (405186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (405186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (405196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (405196) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (405206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (405206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (407216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (407236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (407236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (407236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (407246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (407246) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (407256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (407256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (409266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (409286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (409286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (409286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (409296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (409296) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (409306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (409306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (411316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (411336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (411336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (411336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (411346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (411346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (411356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (411356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (413366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (413386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (413386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (413386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (413396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (413396) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (413406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (413406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (415416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (415436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (415436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (415436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (415446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (415446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (415456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (415456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (417466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (417486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (417486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (417486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (417496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (417496) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (417506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (417506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (419516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (419536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (419536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (419536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (419546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (419546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (419556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (419556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (421566) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (421586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (421586) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (421586) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (421596) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (421596) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (421606) DHT11: DHT11 không phản hồi[0m
+[0;32mI (421606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (423616) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (423636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (423636) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (423636) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (423646) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (423646) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (423656) DHT11: DHT11 không phản hồi[0m
+[0;32mI (423656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (425666) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (425686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (425686) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (425686) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (425696) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (425696) DHT11: Độ dài xung phản hồi: 11 us[0m
+[0;32mI (425706) DHT11: DHT11 không phản hồi[0m
+[0;32mI (425706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (427716) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (427736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (427736) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (427736) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (427746) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (427746) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (427756) DHT11: DHT11 không phản hồi[0m
+[0;32mI (427756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (429766) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (429786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (429786) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (429786) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (429796) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (429796) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (429806) DHT11: DHT11 không phản hồi[0m
+[0;32mI (429806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (431816) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (431836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (431836) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (431836) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (431846) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (431846) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (431856) DHT11: DHT11 không phản hồi[0m
+[0;32mI (431856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (433866) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (433886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (433886) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (433886) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (433896) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (433896) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (433906) DHT11: DHT11 không phản hồi[0m
+[0;32mI (433906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (435916) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (435936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (435936) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (435936) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (435946) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (435946) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (435956) DHT11: DHT11 không phản hồi[0m
+[0;32mI (435956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (437966) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (437986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (437986) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (437986) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (437996) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (437996) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (438006) DHT11: DHT11 không phản hồi[0m
+[0;32mI (438006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (440016) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (440036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (440036) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (440036) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (440046) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (440046) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (440056) DHT11: DHT11 không phản hồi[0m
+[0;32mI (440056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (442066) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (442086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (442086) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (442086) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (442096) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (442096) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (442106) DHT11: DHT11 không phản hồi[0m
+[0;32mI (442106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (444116) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (444136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (444136) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (444136) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (444146) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (444146) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (444156) DHT11: DHT11 không phản hồi[0m
+[0;32mI (444156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (446166) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (446186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (446186) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (446186) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (446196) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (446196) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (446206) DHT11: DHT11 không phản hồi[0m
+[0;32mI (446206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (448216) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (448236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (448236) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (448236) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (448246) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (448246) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (448256) DHT11: DHT11 không phản hồi[0m
+[0;32mI (448256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (450266) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (450286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (450286) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (450286) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (450296) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (450296) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (450306) DHT11: DHT11 không phản hồi[0m
+[0;32mI (450306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (452316) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (452336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (452336) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (452336) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (452346) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (452346) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (452356) DHT11: DHT11 không phản hồi[0m
+[0;32mI (452356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (454366) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (454386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (454386) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (454386) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (454396) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (454396) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (454406) DHT11: DHT11 không phản hồi[0m
+[0;32mI (454406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (456416) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (456436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (456436) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (456436) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (456446) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (456446) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (456456) DHT11: DHT11 không phản hồi[0m
+[0;32mI (456456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (458466) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (458486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (458486) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (458486) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (458496) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (458496) DHT11: Độ dài xung phản hồi: 8 us[0m
+[0;32mI (458506) DHT11: DHT11 không phản hồi[0m
+[0;32mI (458506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m
+[0;32mI (460516) DHT11: Bắt Đầu Đọc DHT11 Trên GPIO 26[0m
+[0;32mI (460536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (460536) DHT11: Mức tín hiệu hiện tại của GPIO26: 1[0m
+[0;32mI (460536) DHT11: Mức tín hiệu hiện tại của GPIO26: 0[0m
+[0;32mI (460546) DHT11: DHT11 không phản hồi mức cao[0m
+[0;32mI (460546) DHT11: Độ dài xung phản hồi: 9 us[0m
+[0;32mI (460556) DHT11: DHT11 không phản hồi[0m
+[0;32mI (460556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!
+[0m

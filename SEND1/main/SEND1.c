@@ -29,8 +29,11 @@
 #include "lwip/sys.h" 
 #include "cJSON.h"
 #include "lora.h"
+#include "DHT11.h"
 
 static const char *TAG = "LORA_SEND1";
+
+
 
 // Định nghĩa các chân GPIO
 #define LORA_MISO   19
@@ -40,8 +43,32 @@ static const char *TAG = "LORA_SEND1";
 #define LORA_RST    2
 #define LORA_DIO0   4
 #define BUTTON_PIN  13
-#define LED_PIN     27
-#define NODE_ID     1
+#define LED_PIN     21
+#define NODE_ID "END123456"  // Gán sẵn từ lúc sản xuất
+#define DHT_GPIO 27
+
+void dht_task(void *pvParameter)
+{
+    static dht11_data_t sensor_data;
+
+    while (1)
+    {
+        esp_err_t err = dht11_read(&sensor_data); // Lưu kết quả trả về
+        if (err == ESP_OK)
+        {
+            ESP_LOGI(TAG, "Nhiệt độ: %d°C, Độ ẩm: %d%%RH", sensor_data.temperature, sensor_data.humidity);
+        }
+        else if (err == ESP_FAIL)
+        {
+            ESP_LOGI(TAG, "Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!\n");
+        }
+        else
+        {
+            ESP_LOGI(TAG, "Lỗi đọc DHT11: Mã lỗi không xác định (%d)", err);
+        }
+        vTaskDelay(pdMS_TO_TICKS(4000)); // Đọc lại sau 2 giây
+    }
+}
 
 // Hàm khởi tạo các chân LoRa và nút nhấn
 void lora_init_pins() {
@@ -66,9 +93,13 @@ void lora_init_pins() {
 }
 
 
-
 void app_main(void)
 {
+    //DHT11DHT11
+    dht11_init(DHT_GPIO);
+    xTaskCreate(&dht_task, "dht_task", 4096, NULL, 5, NULL);
+
+    //LORALORA
     lora_init_pins();
     lora_init();
     lora_set_frequency(435E6);
@@ -80,7 +111,7 @@ void app_main(void)
     ESP_LOGI(TAG, "LoRa Sender Đã Khởi Động\n");
 
     //snprintf(packet, sizeof(packet), "ID%d:%d", NODE_ID, button_state);
-
+    /*
     while (1) {
 
         if (gpio_get_level(BUTTON_PIN) == 1) {
@@ -88,8 +119,8 @@ void app_main(void)
 
             if (gpio_get_level(BUTTON_PIN) == 1){
                 const char *message = "ON";
-                char packet[20];
-                snprintf(packet, sizeof(packet), "ID%03d:%s", NODE_ID, message );
+                char packet[30];
+                snprintf(packet, sizeof(packet), "ID%s:%s", NODE_ID, message );
                 lora_send_packet((uint8_t *)packet, strlen(packet));
                 ESP_LOGI(TAG, "Đã gửi tín hiệu: %s", packet);
 
@@ -103,5 +134,6 @@ void app_main(void)
             vTaskDelay(1000 / portTICK_PERIOD_MS);
         }
         vTaskDelay(pdMS_TO_TICKS(10)); // Giảm tải CPU
-    }
+    } 
+    */
 }

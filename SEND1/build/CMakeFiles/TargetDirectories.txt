@@ -810,6 +810,13 @@ C:/ESP IDF/project_esp/SEND1/build/esp-idf/wifi_provisioning/CMakeFiles/list_ins
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/__idf_DHT11.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/edit_cache.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/rebuild_cache.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/list_install_components.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/install.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/install/local.dir
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/CMakeFiles/install/strip.dir
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/send/CMakeFiles/__idf_send.dir
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/send/CMakeFiles/edit_cache.dir
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/send/CMakeFiles/rebuild_cache.dir

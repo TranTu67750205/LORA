@@ -1,0 +1,1555 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4ech ( 46316) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b514 vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d994 vaddr=40080000 size=02684h (  9860) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16b24h ( 92964) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036b4c vaddr=40082684 size=0bd6ch ( 48492) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (205) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) app_init: Application information:[0m
+[0;32mI (217) app_init: Project name:     SEND1[0m
+[0;32mI (221) app_init: App version:      3afba31-dirty[0m
+[0;32mI (227) app_init: Compile time:     Apr  1 2025 15:33:27[0m
+[0;32mI (233) app_init: ELF file SHA256:  d22d081ca...[0m
+[0;32mI (238) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (248) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (253) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (298) spi_flash: detected chip: generic[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (316) DHT11: DHT11 initialized on GPIO 13[0m
+[0;32mI (316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (326) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (2326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (2336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (4336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (4346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (6346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (6356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (8356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (8366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (10366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (10376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (12376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (12386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (14386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (14396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (16396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (16406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (18406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (18416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (20416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (20426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (22426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (22436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (24436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (24446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (26446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (26456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (28456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (28466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (30466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (30476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (32476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (32486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (34486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (34496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (36496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (36506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (38506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (38516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (40516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (40526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (42526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (42536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (44536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (44546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (46546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (46556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (48556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (48566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (50566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (50576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (52576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (52586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (54586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (54596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (56596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (56606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (58606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (58616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (60616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (60626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (62626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (62636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (64636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (64646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (66646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (66656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (68656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (68666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (70666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (70676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (72676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (72686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (74686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (74696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (76696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (76706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (78706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (78716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (80716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (80726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (82726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (82736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (84736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (84746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (86746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (86756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (88756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (88766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (90766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (90776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (92776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (92786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (94786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (94796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (96796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (96806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (98806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (98816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (100816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (100826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (102826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (102836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (104836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (104846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (106846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (106856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (108856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (108866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (110866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (110876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (112876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (112886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (114886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (114896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (116896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (116906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (118906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (118916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (120916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (120926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (122926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (122936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (124936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (124946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (126946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (126956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (128956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (128966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (130966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (130976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (132976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (132986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (134986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (134996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (136996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (137006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (139006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (139016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (141016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (141026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (143026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (143036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (145036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (145046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (147046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (147056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (149056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (149066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (151066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (151076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (153076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (153086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (155086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (155096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (157096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (157106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (159106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (159116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (161116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (161126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (163126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (163136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (165136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (165146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (167146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (167156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (169156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (169166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (171166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (171176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (173176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (173186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (175186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (175196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (177196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (177206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (179206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (179216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (181216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (181226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (183226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (183236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (185236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (185246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (187246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (187256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (189256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (189266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (191266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (191276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (193276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (193286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (195286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (195296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (197296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (197306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (199306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (199316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (201316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (201326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (203326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (203336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (205336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (205346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (207346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (207356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (209356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (209366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (211366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (211376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (213376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (213386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (215386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (215396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (217396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (217406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (219406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (219416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (221416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (221426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (223426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (223436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (225436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (225446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (227446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (227456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (229456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (229466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (231466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (231476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (233476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (233486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (235486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (235496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (237496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (237506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (239506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (239516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (241516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (241526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (243526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (243536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (245536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (245546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (247546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (247556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (249556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (249566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (251566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (251576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (253576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (253586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (255586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (255596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (257596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (257606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (259606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (259616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (261616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (261626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (263626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (263636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (265636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (265646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (267646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (267656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (269656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (269666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (271666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (271676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (273676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (273686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (275686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (275696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (277696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (277706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (279706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (279716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (281716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (281726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (283726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (283736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (285736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (285746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (287746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (287756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (289756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (289766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (291766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (291776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (293776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (293786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (295786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (295796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (297796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (297806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (299806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (299816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (301816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (301826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (303826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (303836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (305836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (305846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (307846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (307856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (309856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (309866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (311866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (311876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (313876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (313886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (315886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (315896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (317896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (317906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (319906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (319916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (321916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (321926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (323926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (323936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (325936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (325946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (327946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (327956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (329956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (329966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (331966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (331976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (333976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (333986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (335986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (335996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (337996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (338006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (340006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (340016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (342016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (342026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (344026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (344036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (346036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (346046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (348046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (348056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (350056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (350066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (352066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (352076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (354076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (354086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (356086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (356096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (358096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (358106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (360106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (360116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (362116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (362126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (364126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (364136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (366136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (366146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (368146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (368156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (370156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (370166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (372166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (372176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (374176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (374186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (376186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (376196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (378196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (378206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (380206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (380216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (382216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (382226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (384226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (384236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (386236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (386246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (388246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (388256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (390256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (390266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (392266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (392276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (394276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (394286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (396286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (396296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (398296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (398306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (400306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (400316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (402316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (402326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (404326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (404336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (406336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (406346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (408346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (408356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (410356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (410366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (412366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (412376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (414376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (414386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (416386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (416396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (418396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (418406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (420406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (420416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (422416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (422426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (424426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (424436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (426436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (426446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (428446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (428456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (430456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (430466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (432466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (432476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (434476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (434486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (436486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (436496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (438496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (438506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (440506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (440516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (442516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (442526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (444526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (444536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (446536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (446546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (448546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (448556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (450556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (450566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (452566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (452576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (454576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (454586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (456586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (456596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (458596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (458606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (460606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (460616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (462616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (462626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (464626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (464636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (466636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (466646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (468646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (468656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (470656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (470666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (472666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (472676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (474676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (474686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (476686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (476696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (478696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (478706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (480706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (480716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (482716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (482726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (484726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (484736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (486736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (486746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (488746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (488756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (490756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (490766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (492766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (492776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (494776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (494786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (496786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (496796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (498796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (498806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (500806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (500816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (502816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (502826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (504826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (504836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (506836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (506846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (508846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (508856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (510856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (510866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (512866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (512876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (514876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (514886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (516886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (516896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (518896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (518906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (520906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (520916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (522916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (522926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (524926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (524936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (526936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (526946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (528946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (528956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (530956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (530966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (532966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (532976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (534976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (534986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (536986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (536996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (538996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (539006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (541006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (541016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (543016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (543026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (545026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (545036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (547036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (547046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (549046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (549056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (551056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (551066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (553066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (553076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (555076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (555086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (557086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (557096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (559096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (559106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (561106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (561116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (563116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (563126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (565126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (565136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (567136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (567146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (569146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (569156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (571156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (571166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (573166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (573176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (575176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (575186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (577186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (577196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (579196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (579206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (581206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (581216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (583216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (583226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (585226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (585236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (587236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (587246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (589246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (589256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (591256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (591266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (593266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (593276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (595276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (595286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (597286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (597296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (599296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (599306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (601306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (601316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (603316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (603326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (605326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (605336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (607336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (607346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (609346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (609356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (611356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (611366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (613366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (613376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (615376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (615386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (617386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (617396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (619396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (619406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (621406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (621416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (623416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (623426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (625426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (625436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (627436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (627446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (629446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (629456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (631456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (631466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (633466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (633476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (635476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (635486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (637486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (637496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (639496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (639506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (641506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (641516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (643516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (643526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (645526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (645536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (647536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (647546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (649546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (649556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (651556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (651566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (653566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (653576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (655576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (655586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (657586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (657596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (659596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (659606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (661606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (661616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (663616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (663626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (665626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (665636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (667636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (667646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (669646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (669656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (671656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (671666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (673666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (673676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (675676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (675686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (677686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (677696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (679696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (679706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (681706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (681716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (683716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (683726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (685726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (685736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (687736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (687746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (689746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (689756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (691756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (691766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (693766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (693776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (695776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (695786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (697786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (697796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (699796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (699806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (701806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (701816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (703816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (703826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (705826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (705836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (707836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (707846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (709846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (709856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (711856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (711866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (713866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (713876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (715876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (715886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (717886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (717896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (719896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (719906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (721906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (721916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (723916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (723926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (725926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (725936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (727936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (727946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (729946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (729956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (731956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (731966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (733966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (733976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (735976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (735986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (737986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (737996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (739996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (740006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (742006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (742016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (744016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (744026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (746026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (746036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (748036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (748046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (750046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (750056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (752056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (752066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (754066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (754076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (756076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (756086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (758086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (758096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (760096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (760106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (762106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (762116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (764116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (764126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (766126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (766136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (768136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (768146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (770146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (770156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (772156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (772166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (774166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (774176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (776176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (776186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (778186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (778196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (780196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (780206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (782206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (782216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (784216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (784226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (786226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (786236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (788236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (788246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (790246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (790256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (792256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (792266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (794266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (794276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (796276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (796286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (798286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (798296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (800296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (800306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (802306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (802316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (804316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (804326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (806326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (806336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (808336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (808346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (810346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (810356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (812356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (812366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (814366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (814376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (816376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (816386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (818386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (818396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (820396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (820406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (822406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (822416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (824416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (824426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (826426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (826436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (828436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (828446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (830446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (830456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (832456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (832466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (834466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (834476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (836476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (836486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (838486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (838496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (840496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (840506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (842506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (842516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (844516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (844526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (846526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (846536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (848536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (848546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (850546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (850556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (852556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (852566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (854566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (854576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (856576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (856586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (858586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (858596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (860596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (860606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (862606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (862616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (864616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (864626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (866626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (866636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (868636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (868646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (870646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (870656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (872656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (872666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (874666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (874676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (876676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (876686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (878686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (878696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (880696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (880706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (882706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (882716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (884716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (884726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (886726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (886736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (888736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (888746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (890746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (890756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (892756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (892766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (894766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (894776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (896776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (896786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (898786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (898796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (900796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (900806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (902806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (902816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (904816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (904826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (906826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (906836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (908836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (908846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (910846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (910856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (912856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (912866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (914866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (914876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (916876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (916886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (918886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (918896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (920896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (920906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (922906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (922916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (924916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (924926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (926926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (926936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (928936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (928946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (930946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (930956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (932956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (932966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (934966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (934976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (936976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (936986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (938986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (938996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (940996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (941006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (943006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (943016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (945016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (945026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (947026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (947036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (949036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (949046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (951046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (951056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (953056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (953066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (955066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (955076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (957076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (957086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (959086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (959096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (961096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (961106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (963106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (963116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (965116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (965126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (967126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (967136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (969136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (969146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (971146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (971156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (973156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (973166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (975166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (975176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (977176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (977186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (979186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (979196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (981196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (981206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (983206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (983216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (985216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (985226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (987226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (987236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (989236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (989246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (991246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (991256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (993256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (993266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (995266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (995276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (997276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (997286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (999286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (999296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1001296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1001306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1003306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1003316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1005316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1005326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1007326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1007336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1009336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1009346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1011346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1011356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1013356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1013366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1015366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1015376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1017376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1017386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1019386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1019396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1021396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1021406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1023406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1023416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1025416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1025426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1027426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1027436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1029436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1029446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1031446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1031456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1033456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1033466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1035466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1035476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1037476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1037486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1039486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1039496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1041496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1041506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1043506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1043516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1045516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1045526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1047526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1047536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1049536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1049546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1051546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1051556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1053556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1053566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1055566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1055576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1057576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1057586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1059586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1059596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1061596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1061606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1063606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1063616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1065616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1065626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1067626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1067636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1069636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1069646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1071646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1071656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1073656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1073666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1075666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1075676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1077676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1077686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1079686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1079696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1081696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1081706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1083706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1083716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1085716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1085726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1087726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1087736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1089736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1089746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1091746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1091756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1093756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1093766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1095766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1095776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1097776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1097786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1099786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1099796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1101796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1101806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1103806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1103816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1105816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1105826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1107826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1107836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1109836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1109846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1111846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1111856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1113856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1113866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1115866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1115876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1117876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1117886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1119886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1119896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1121896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1121906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1123906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1123916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1125916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1125926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1127926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1127936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1129936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1129946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1131946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1131956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1133956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1133966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1135966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1135976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1137976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1137986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1139986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1139996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1141996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1142006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1144006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1144016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1146016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1146026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1148026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1148036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1150036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1150046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1152046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1152056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1154056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1154066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1156066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1156076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1158076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1158086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1160086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1160096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1162096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1162106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1164106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1164116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1166116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1166126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1168126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1168136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1170136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1170146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1172146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1172156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1174156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1174166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1176166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1176176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1178176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1178186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1180186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1180196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1182196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1182206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1184206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1184216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1186216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1186226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1188226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1188236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1190236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1190246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1192246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1192256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1194256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1194266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1196266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1196276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1198276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1198286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1200286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1200296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1202296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1202306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1204306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1204316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1206316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1206326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1208326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1208336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1210336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1210346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1212346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1212356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1214356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1214366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1216366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1216376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1218376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1218386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1220386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1220396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1222396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1222406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1224406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1224416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1226416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1226426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1228426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1228436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1230436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1230446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1232446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1232456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1234456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1234466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1236466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1236476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1238476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1238486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1240486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1240496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1242496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1242506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1244506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1244516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1246516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1246526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1248526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1248536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1250536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1250546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1252546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1252556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1254556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1254566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1256566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1256576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1258576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1258586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1260586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1260596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1262596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1262606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1264606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1264616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1266616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1266626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1268626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1268636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1270636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1270646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1272646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1272656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1274656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1274666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1276666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1276676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1278676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1278686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1280686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1280696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1282696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1282706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1284706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1284716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1286716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1286726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1288726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1288736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1290736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1290746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1292746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1292756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1294756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1294766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1296766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1296776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1298776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1298786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1300786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1300796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1302796) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1302806) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1304806) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1304816) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1306816) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1306826) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1308826) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1308836) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1310836) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1310846) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1312846) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1312856) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1314856) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1314866) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1316866) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1316876) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1318876) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1318886) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1320886) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1320896) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1322896) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1322906) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1324906) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1324916) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1326916) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1326926) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1328926) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1328936) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1330936) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1330946) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1332946) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1332956) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1334956) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1334966) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1336966) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1336976) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1338976) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1338986) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1340986) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1340996) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1342996) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1343006) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1345006) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1345016) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1347016) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1347026) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1349026) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1349036) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1351036) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1351046) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1353046) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1353056) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1355056) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1355066) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1357066) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1357076) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1359076) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1359086) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1361086) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1361096) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1363096) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1363106) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1365106) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1365116) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1367116) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1367126) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1369126) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1369136) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1371136) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1371146) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1373146) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1373156) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1375156) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1375166) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1377166) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1377176) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1379176) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1379186) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1381186) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1381196) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1383196) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1383206) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1385206) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1385216) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1387216) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1387226) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1389226) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1389236) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1391236) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1391246) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1393246) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1393256) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1395256) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1395266) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1397266) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1397276) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1399276) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1399286) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1401286) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1401296) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1403296) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1403306) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1405306) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1405316) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1407316) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1407326) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1409326) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1409336) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1411336) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1411346) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1413346) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1413356) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1415356) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1415366) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1417366) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1417376) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1419376) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1419386) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1421386) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1421396) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1423396) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1423406) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1425406) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1425416) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1427416) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1427426) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1429426) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1429436) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1431436) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1431446) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1433446) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1433456) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1435456) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1435466) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1437466) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1437476) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1439476) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1439486) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1441486) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1441496) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1443496) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1443506) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1445506) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1445516) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1447516) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1447526) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1449526) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1449536) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1451536) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1451546) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1453546) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1453556) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1455556) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1455566) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1457566) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1457576) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1459576) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1459586) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1461586) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1461596) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1463596) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1463606) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1465606) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1465616) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1467616) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1467626) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1469626) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1469636) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1471636) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1471646) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1473646) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1473656) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1475656) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1475666) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1477666) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1477676) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1479676) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1479686) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1481686) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1481696) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1483696) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1483706) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1485706) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1485716) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1487716) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1487726) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1489726) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1489736) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1491736) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1491746) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1493746) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1493756) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1495756) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1495766) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1497766) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1497776) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1499776) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1499786) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m
+[0;32mI (1501786) DHT11: Bắt đầu đọc DHT11 trên GPIO 13[0m
+[0;32mI (1501796) LORA_SEND1: Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi![0m

@@ -79,6 +79,7 @@ C:/ESP IDF/project_esp/SEND1/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/perfmon/libperfmon.a
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/spiffs/libspiffs.a
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+C:/ESP IDF/project_esp/SEND1/build/esp-idf/DHT11/libDHT11.a
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/send/libsend.a
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/lora/liblora.a
 C:/ESP IDF/project_esp/SEND1/build/esp-idf/main/libmain.a
