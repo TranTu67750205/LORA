@@ -23,6 +23,8 @@
 #include <sys/param.h>
 
 // wifi
+#include "esp_adc/adc_oneshot.h"
+#include "driver/adc.h"
 #include "freertos/event_groups.h"
 #include "esp_wifi.h"
 #include "lwip/err.h"
@@ -30,6 +32,8 @@
 #include "cJSON.h"
 #include "lora.h"
 #include "DHT11.h"
+#include "soil_sensor.h"
+#include "UV_sensor.h"
 
 static const char *TAG = "LORA_SEND1";
 
@@ -45,31 +49,46 @@ static const char *TAG = "LORA_SEND1";
 #define BUTTON_PIN  13
 #define LED_PIN     21
 #define NODE_ID "END123456"  // Gán sẵn từ lúc sản xuất
-#define DHT_GPIO 27
+#define DHT_GPIO 26
 
-void dht_task(void *pvParameter)
-{
-    static dht11_data_t sensor_data;
+struct dht11_reading data;
+float uvi = 0.0;
+float moisture = 0.0;
 
-    while (1)
-    {
-        esp_err_t err = dht11_read(&sensor_data); // Lưu kết quả trả về
-        if (err == ESP_OK)
-        {
-            ESP_LOGI(TAG, "Nhiệt độ: %d°C, Độ ẩm: %d%%RH", sensor_data.temperature, sensor_data.humidity);
+
+void dht11_task(void *pvParameter) {
+    DHT11_init(DHT_GPIO);
+    while (1) {
+        struct dht11_reading data = DHT11_read();
+        if (data.status == DHT11_OK) {
+            printf("Temperature: %d°C, Humidity: %d%%\n", data.temperature, data.humidity);
+        } else {
+            printf("Failed to read from DHT11 sensor. Error code: %d\n", data.status);
         }
-        else if (err == ESP_FAIL)
-        {
-            ESP_LOGI(TAG, "Lỗi đọc DHT11: DHT11 không phản hồi hoặc dữ liệu bị lỗi!\n");
-        }
-        else
-        {
-            ESP_LOGI(TAG, "Lỗi đọc DHT11: Mã lỗi không xác định (%d)", err);
-        }
-        vTaskDelay(pdMS_TO_TICKS(4000)); // Đọc lại sau 2 giây
+        vTaskDelay(pdMS_TO_TICKS(2000));  // Đọc dữ liệu mỗi 2 giây
     }
 }
 
+void UV_task (){
+    while (1) {
+        int raw_value = uv_sensor_read_raw();
+        float voltage = uv_sensor_read_voltage();
+        uvi = uv_sensor_get_uvi();
+
+        printf("Raw Value: %d | Voltage: %.2fV | UV Index: %.2f\n", raw_value, voltage, uvi);
+        vTaskDelay(pdMS_TO_TICKS(4000)); // Đọc mỗi 4 giây
+    }
+}
+
+void soil_task (){
+    while (1) {
+        int raw_value = soil_sensor_read_raw();
+        moisture = soil_sensor_read_percentage();
+
+        printf("Raw Value: %d | Moisture: %.2f%%\n", raw_value, moisture);
+        vTaskDelay(pdMS_TO_TICKS(2000)); // Đọc mỗi 2 giây
+    }
+}
 // Hàm khởi tạo các chân LoRa và nút nhấn
 void lora_init_pins() {
     esp_rom_gpio_pad_select_gpio(LORA_CS);
@@ -92,12 +111,23 @@ void lora_init_pins() {
     gpio_set_level(LED_PIN, 1);
 }
 
+void LORA_task (){
+    while (1) {
+        //const char *message = "ON";
+        char packet[120];
+        snprintf(packet, sizeof(packet), "ID%s:TEMP=%d:HUM=%d:SOIL=%.1f:UV=%.2f", NODE_ID, data.temperature, data.humidity, moisture, uvi);
+        ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
+        lora_send_packet((uint8_t *)packet, strlen(packet));
+        ESP_LOGI(TAG, "Đã gửi tín hiệu: %s", packet);
+        vTaskDelay(pdMS_TO_TICKS(6000)); // gửi sau mỗi 5 giây
+    }
+}
 
 void app_main(void)
 {
     //DHT11DHT11
-    dht11_init(DHT_GPIO);
-    xTaskCreate(&dht_task, "dht_task", 4096, NULL, 5, NULL);
+    DHT11_init(DHT_GPIO);
+    xTaskCreate(&dht11_task, "dht11_task", 4096, NULL, 5, NULL);
 
     //LORALORA
     lora_init_pins();
@@ -107,33 +137,15 @@ void app_main(void)
     lora_set_bandwidth(125E3);  // Băng thông
     lora_set_spreading_factor(7);  // Spread Factor
     lora_set_coding_rate(5);  // Coding Rate 4/5
-
+    xTaskCreate(&LORA_task, "LORA_task", 2048, NULL, 6, NULL);
     ESP_LOGI(TAG, "LoRa Sender Đã Khởi Động\n");
 
-    //snprintf(packet, sizeof(packet), "ID%d:%d", NODE_ID, button_state);
-    /*
-    while (1) {
+    //soil_moisture
+    soil_sensor_init();
+    xTaskCreate(&soil_task, "soil_task", 2048, NULL, 5, NULL);
 
-        if (gpio_get_level(BUTTON_PIN) == 1) {
-            vTaskDelay(pdMS_TO_TICKS(50));  // Đợi 50ms để ổn định
+    //UV_sensor
+    uv_sensor_init();
+    xTaskCreate(&UV_task, "UV_task", 2048, NULL, 5, NULL);
 
-            if (gpio_get_level(BUTTON_PIN) == 1){
-                const char *message = "ON";
-                char packet[30];
-                snprintf(packet, sizeof(packet), "ID%s:%s", NODE_ID, message );
-                lora_send_packet((uint8_t *)packet, strlen(packet));
-                ESP_LOGI(TAG, "Đã gửi tín hiệu: %s", packet);
-
-                ESP_LOGI(TAG, "NÚT ĐƯỢC NHẤN\n");
-                vTaskDelay(pdMS_TO_TICKS(1000)); // Chống dội nút nhấn
-            }
-        }
-        else {
-            // Tắt LED
-            ESP_LOGI(TAG, "NÚT CHƯA ĐƯỢC NHẤN\n");
-            vTaskDelay(1000 / portTICK_PERIOD_MS);
-        }
-        vTaskDelay(pdMS_TO_TICKS(10)); // Giảm tải CPU
-    } 
-    */
 }

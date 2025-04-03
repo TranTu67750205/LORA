@@ -1,0 +1,1814 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b840h ( 47168) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b868 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dcf8 vaddr=40080000 size=02320h (  8992) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=179dch ( 96732) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00037a04 vaddr=40082320 size=0c0d0h ( 49360) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) app_init: Application information:[0m
+[0;32mI (218) app_init: Project name:     SEND1[0m
+[0;32mI (223) app_init: App version:      184a1b7-dirty[0m
+[0;32mI (229) app_init: Compile time:     Apr  2 2025 17:33:08[0m
+[0;32mI (235) app_init: ELF file SHA256:  6458eee3a...[0m
+[0;32mI (240) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (245) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (250) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (255) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2D98 len 0002D268 (180 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (1336) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1336) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 784 | Moisture: 80.93%
+[0;32mI (1336) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 2848 | Voltage: 0.73V | UV Index: 6.87
+[0;32mI (1346) main_task: Returned from app_main()[0m
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2012 | Voltage: 0.52V | UV Index: 5.00
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1232 | Moisture: 76.95%
+Raw Value: 391 | Voltage: 0.10V | UV Index: 0.96
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 618 | Moisture: 84.37%
+Raw Value: 1718 | Voltage: 0.43V | UV Index: 4.02
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2469 | Voltage: 0.64V | UV Index: 6.20
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1751 | Moisture: 58.51%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 122 | Voltage: 0.03V | UV Index: 0.33
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 289 | Voltage: 0.07V | UV Index: 0.56
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1597 | Moisture: 69.04%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 84 | Moisture: 96.24%
+Raw Value: 2998 | Voltage: 0.76V | UV Index: 7.17
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1103 | Voltage: 0.29V | UV Index: 2.81
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1171 | Moisture: 71.38%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 14 | Voltage: 0.00V | UV Index: 0.06
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1713 | Moisture: 59.17%
+Raw Value: 1270 | Voltage: 0.31V | UV Index: 2.91
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1959 | Voltage: 0.51V | UV Index: 4.94
+Temperature: 31°C, Humidity: 71%
+Raw Value: 815 | Moisture: 79.78%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 98.05%
+Raw Value: 3184 | Voltage: 0.80V | UV Index: 7.57
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2381 | Moisture: 51.01%
+Raw Value: 371 | Voltage: 0.09V | UV Index: 0.91
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 112 | Voltage: 0.03V | UV Index: 0.20
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1485 | Moisture: 67.11%
+Raw Value: 319 | Voltage: 0.08V | UV Index: 0.73
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2033 | Moisture: 54.02%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 96 | Moisture: 95.38%
+Raw Value: 592 | Voltage: 0.15V | UV Index: 1.37
+Temperature: 31°C, Humidity: 70%
+Raw Value: 33 | Moisture: 97.39%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2896 | Moisture: 35.53%
+Raw Value: 430 | Voltage: 0.11V | UV Index: 1.06
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 294 | Moisture: 90.23%
+Raw Value: 2226 | Voltage: 0.56V | UV Index: 5.25
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1802 | Voltage: 0.47V | UV Index: 4.57
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1998 | Moisture: 54.02%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 27 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1584 | Moisture: 63.25%
+Raw Value: 1190 | Voltage: 0.30V | UV Index: 2.71
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1840 | Voltage: 0.48V | UV Index: 4.65
+Temperature: 31°C, Humidity: 70%
+Raw Value: 896 | Moisture: 77.41%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 99.44%
+Raw Value: 2859 | Voltage: 0.72V | UV Index: 6.77
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 203 | Voltage: 0.05V | UV Index: 0.50
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1462 | Moisture: 66.32%
+Raw Value: 208 | Voltage: 0.05V | UV Index: 0.51
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 976 | Voltage: 0.24V | UV Index: 2.30
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 277 | Voltage: 0.07V | UV Index: 0.67
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1136 | Voltage: 0.28V | UV Index: 2.62
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 270 | Voltage: 0.07V | UV Index: 0.64
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 622 | Voltage: 0.16V | UV Index: 1.46
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 203 | Voltage: 0.05V | UV Index: 0.48
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 661 | Voltage: 0.16V | UV Index: 1.50
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 6.18%
+Raw Value: 241 | Voltage: 0.06V | UV Index: 0.56
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1819 | Moisture: 56.87%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3197 | Voltage: 0.81V | UV Index: 7.73
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2644 | Moisture: 37.51%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 42 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 224 | Moisture: 92.94%
+Raw Value: 2402 | Voltage: 0.61V | UV Index: 5.67
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 400 | Moisture: 94.73%
+Raw Value: 503 | Voltage: 0.13V | UV Index: 1.21
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 316 | Voltage: 0.07V | UV Index: 0.64
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2444 | Voltage: 0.63V | UV Index: 6.11
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1038 | Moisture: 75.24%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3246 | Voltage: 0.82V | UV Index: 7.79
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2535 | Moisture: 42.05%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2906 | Voltage: 0.75V | UV Index: 7.16
+Temperature: 31°C, Humidity: 70%
+Raw Value: 421 | Moisture: 87.91%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 43 | Voltage: 0.01V | UV Index: 0.04
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1079 | Moisture: 78.10%
+Raw Value: 474 | Voltage: 0.12V | UV Index: 1.16
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 194 | Moisture: 92.80%
+Raw Value: 1678 | Voltage: 0.42V | UV Index: 3.91
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 63 | Voltage: 0.02V | UV Index: 0.17
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1809 | Moisture: 63.10%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1873 | Voltage: 0.48V | UV Index: 4.66
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 991 | Moisture: 75.02%
+Raw Value: 768 | Voltage: 0.19V | UV Index: 1.69
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 115 | Voltage: 0.03V | UV Index: 0.28
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2085 | Moisture: 57.02%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1493 | Voltage: 0.39V | UV Index: 3.73
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 214 | Moisture: 93.38%
+Raw Value: 1739 | Voltage: 0.44V | UV Index: 4.06
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2147 | Moisture: 48.08%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 48 | Voltage: 0.01V | UV Index: 0.09
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 177 | Voltage: 0.05V | UV Index: 0.44
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1780 | Moisture: 62.93%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1072 | Voltage: 0.27V | UV Index: 2.67
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2381 | Voltage: 0.61V | UV Index: 5.82
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 21 | Moisture: 97.31%
+Raw Value: 2143 | Voltage: 0.54V | UV Index: 5.11
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 99.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 124 | Moisture: 94.19%
+Raw Value: 2111 | Voltage: 0.53V | UV Index: 4.99
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 98.19%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 98.41%
+Raw Value: 2421 | Voltage: 0.61V | UV Index: 5.82
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2390 | Voltage: 0.61V | UV Index: 5.89
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 579 | Voltage: 0.15V | UV Index: 1.47
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 7.45%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 18 | Voltage: 0.01V | UV Index: 0.07
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 963 | Moisture: 77.34%
+Raw Value: 1163 | Voltage: 0.29V | UV Index: 2.67
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1627 | Voltage: 0.42V | UV Index: 4.08
+Temperature: 31°C, Humidity: 70%
+Raw Value: 3662 | Moisture: 20.71%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1707 | Moisture: 58.56%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 99.68%
+Raw Value: 2625 | Voltage: 0.67V | UV Index: 6.33
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 48 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 70%
+Raw Value: 3857 | Moisture: 6.76%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 98.71%
+Raw Value: 2425 | Voltage: 0.61V | UV Index: 5.83
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2190 | Moisture: 54.14%
+Raw Value: 306 | Voltage: 0.08V | UV Index: 0.76
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 80 | Voltage: 0.02V | UV Index: 0.15
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1440 | Moisture: 65.93%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 118 | Moisture: 94.85%
+Raw Value: 2095 | Voltage: 0.53V | UV Index: 4.95
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2160 | Voltage: 0.56V | UV Index: 5.35
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 991 | Voltage: 0.26V | UV Index: 2.50
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 547 | Voltage: 0.14V | UV Index: 1.37
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 632 | Voltage: 0.16V | UV Index: 1.59
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 831 | Voltage: 0.22V | UV Index: 2.09
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1165 | Voltage: 0.30V | UV Index: 2.92
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1787 | Voltage: 0.46V | UV Index: 4.45
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2295 | Voltage: 0.59V | UV Index: 5.67
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2607 | Voltage: 0.66V | UV Index: 6.32
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 86 | Moisture: 95.75%
+Raw Value: 2064 | Voltage: 0.52V | UV Index: 4.88
+Temperature: 31°C, Humidity: 68%
+Raw Value: 525 | Moisture: 86.76%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 770 | Moisture: 80.10%
+Raw Value: 940 | Voltage: 0.23V | UV Index: 2.12
+Temperature: 31°C, Humidity: 68%
+Raw Value: 3431 | Moisture: 18.02%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 112 | Voltage: 0.03V | UV Index: 0.21
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 39 | Voltage: 0.01V | UV Index: 0.12
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 836 | Moisture: 84.30%
+Raw Value: 439 | Voltage: 0.11V | UV Index: 1.07
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2514 | Voltage: 0.64V | UV Index: 6.15
+Temperature: 31°C, Humidity: 69%
+Raw Value: 64 | Moisture: 96.63%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2096 | Moisture: 48.64%
+Raw Value: 464 | Voltage: 0.11V | UV Index: 0.99
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 135 | Voltage: 0.03V | UV Index: 0.34
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2679 | Voltage: 0.69V | UV Index: 6.59
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 98.36%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2799 | Moisture: 30.79%
+Raw Value: 439 | Voltage: 0.11V | UV Index: 0.94
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 11.62%
+Raw Value: 159 | Voltage: 0.04V | UV Index: 0.40
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2736 | Voltage: 0.70V | UV Index: 6.70
+Temperature: 31°C, Humidity: 68%
+Raw Value: 5 | Moisture: 96.48%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2618 | Moisture: 36.19%
+Raw Value: 547 | Voltage: 0.13V | UV Index: 1.07
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 112 | Voltage: 0.03V | UV Index: 0.28
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2416 | Voltage: 0.62V | UV Index: 6.01
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2182 | Moisture: 45.96%
+Raw Value: 689 | Voltage: 0.17V | UV Index: 1.46
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 5.57%
+Raw Value: 181 | Voltage: 0.05V | UV Index: 0.47
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2782 | Voltage: 0.71V | UV Index: 6.76
+Temperature: 31°C, Humidity: 68%
+Raw Value: 238 | Moisture: 91.28%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 332 | Voltage: 0.08V | UV Index: 0.68
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 123 | Voltage: 0.03V | UV Index: 0.30
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1949 | Voltage: 0.50V | UV Index: 4.85
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 99 | Moisture: 94.95%
+Raw Value: 2224 | Voltage: 0.56V | UV Index: 5.26
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1525 | Moisture: 64.03%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 178 | Voltage: 0.04V | UV Index: 0.35
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2170 | Moisture: 54.07%
+Raw Value: 307 | Voltage: 0.08V | UV Index: 0.75
+Temperature: 31°C, Humidity: 68%
+Raw Value: 80 | Moisture: 99.44%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 624 | Voltage: 0.16V | UV Index: 1.59
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 707 | Voltage: 0.18V | UV Index: 1.78
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 336 | Moisture: 94.92%
+Raw Value: 463 | Voltage: 0.12V | UV Index: 1.12
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2244 | Moisture: 52.82%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 10.38%
+Raw Value: 175 | Voltage: 0.04V | UV Index: 0.45
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 107 | Voltage: 0.02V | UV Index: 0.18
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2231 | Moisture: 45.84%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 550 | Moisture: 85.76%
+Raw Value: 1809 | Voltage: 0.46V | UV Index: 4.25
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2559 | Voltage: 0.66V | UV Index: 6.33
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 23 | Moisture: 100.00%
+Raw Value: 419 | Voltage: 0.11V | UV Index: 1.03
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 5 | Voltage: 0.00V | UV Index: 0.04
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 112 | Voltage: 0.03V | UV Index: 0.20
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2259 | Moisture: 44.74%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 677 | Moisture: 83.27%
+Raw Value: 1659 | Voltage: 0.41V | UV Index: 3.87
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2816 | Voltage: 0.72V | UV Index: 6.81
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1680 | Voltage: 0.44V | UV Index: 4.22
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1378 | Moisture: 73.21%
+Raw Value: 362 | Voltage: 0.09V | UV Index: 0.89
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 313 | Voltage: 0.07V | UV Index: 0.64
+Raw Value: 1049 | Moisture: 74.63%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 98.41%
+Raw Value: 2587 | Voltage: 0.66V | UV Index: 6.19
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1386 | Voltage: 0.36V | UV Index: 3.51
+Temperature: 31°C, Humidity: 68%
+Raw Value: 717 | Moisture: 86.96%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 81 | Voltage: 0.02V | UV Index: 0.22
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 84 | Voltage: 0.02V | UV Index: 0.15
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1788 | Moisture: 57.85%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 106 | Moisture: 94.92%
+Raw Value: 2253 | Voltage: 0.57V | UV Index: 5.34
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1631 | Voltage: 0.42V | UV Index: 4.08
+Temperature: 31°C, Humidity: 68%
+Raw Value: 823 | Moisture: 84.98%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 69 | Voltage: 0.02V | UV Index: 0.17
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2031 | Moisture: 49.50%
+Raw Value: 674 | Voltage: 0.16V | UV Index: 1.42
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 97.90%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2702 | Voltage: 0.69V | UV Index: 6.60
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1680 | Moisture: 65.54%
+Raw Value: 328 | Voltage: 0.08V | UV Index: 0.81
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 850 | Moisture: 80.54%
+Raw Value: 1386 | Voltage: 0.35V | UV Index: 3.22
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2732 | Voltage: 0.70V | UV Index: 6.66
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 561 | Voltage: 0.15V | UV Index: 1.44
+Temperature: 31°C, Humidity: 68%
+Raw Value: 3303 | Moisture: 30.06%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 77 | Voltage: 0.02V | UV Index: 0.21
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2507 | Moisture: 37.05%
+Raw Value: 455 | Voltage: 0.11V | UV Index: 0.98
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1022 | Moisture: 75.38%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 282 | Moisture: 91.55%
+Raw Value: 2022 | Voltage: 0.51V | UV Index: 4.77
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2833 | Voltage: 0.72V | UV Index: 6.83
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2657 | Voltage: 0.68V | UV Index: 6.51
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2686 | Voltage: 0.69V | UV Index: 6.58
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2827 | Voltage: 0.72V | UV Index: 6.77
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 921 | Moisture: 77.70%
+Raw Value: 1172 | Voltage: 0.29V | UV Index: 2.67
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 22 | Voltage: 0.01V | UV Index: 0.05
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1187 | Voltage: 0.31V | UV Index: 3.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 929 | Moisture: 77.19%
+Raw Value: 1155 | Voltage: 0.29V | UV Index: 2.65
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2678 | Moisture: 43.79%
+Raw Value: 237 | Voltage: 0.06V | UV Index: 0.59
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 442 | Moisture: 88.67%
+Raw Value: 1702 | Voltage: 0.43V | UV Index: 3.97
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1464 | Moisture: 71.26%
+Raw Value: 334 | Voltage: 0.09V | UV Index: 0.81
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1378 | Moisture: 66.13%
+Raw Value: 797 | Voltage: 0.19V | UV Index: 1.69
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1200 | Voltage: 0.31V | UV Index: 3.04
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 99.46%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 19 | Voltage: 0.00V | UV Index: 0.01
+Temperature: 31°C, Humidity: 68%
+Raw Value: 3771 | Moisture: 19.44%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2391 | Voltage: 0.62V | UV Index: 5.94
+Temperature: 31°C, Humidity: 68%
+Raw Value: 951 | Moisture: 77.46%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 62 | Moisture: 97.34%
+Raw Value: 2315 | Voltage: 0.59V | UV Index: 5.49
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 801 | Moisture: 84.74%
+Raw Value: 389 | Voltage: 0.10V | UV Index: 0.94
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 3561 | Moisture: 12.80%
+Raw Value: 340 | Voltage: 0.08V | UV Index: 0.70
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1425 | Voltage: 0.37V | UV Index: 3.61
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 167 | Voltage: 0.04V | UV Index: 0.33
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 763 | Voltage: 0.20V | UV Index: 1.95
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 907 | Moisture: 78.51%
+Raw Value: 1324 | Voltage: 0.33V | UV Index: 3.05
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 141 | Voltage: 0.04V | UV Index: 0.36
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2721 | Voltage: 0.69V | UV Index: 6.58
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1090 | Moisture: 74.46%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 42 | Voltage: 0.01V | UV Index: 0.06
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1535 | Voltage: 0.40V | UV Index: 3.86
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 157 | Voltage: 0.03V | UV Index: 0.30
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1202 | Voltage: 0.31V | UV Index: 3.05
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 258 | Voltage: 0.06V | UV Index: 0.53
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1297 | Voltage: 0.34V | UV Index: 3.27
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 267 | Voltage: 0.06V | UV Index: 0.56
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 598 | Voltage: 0.16V | UV Index: 1.53
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 912 | Moisture: 77.58%
+Raw Value: 1371 | Voltage: 0.34V | UV Index: 3.16
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 131 | Voltage: 0.03V | UV Index: 0.33
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 99.78%
+Raw Value: 2985 | Voltage: 0.76V | UV Index: 7.16
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2503 | Moisture: 39.66%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2890 | Voltage: 0.73V | UV Index: 7.00
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1629 | Moisture: 63.35%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 68 | Voltage: 0.02V | UV Index: 0.16
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 99.61%
+Raw Value: 1997 | Voltage: 0.51V | UV Index: 4.77
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4080 | Moisture: 3.83%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 155 | Voltage: 0.04V | UV Index: 0.38
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 336 | Moisture: 90.89%
+Raw Value: 1235 | Voltage: 0.31V | UV Index: 2.85
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1511 | Moisture: 68.86%
+Raw Value: 393 | Voltage: 0.10V | UV Index: 0.95
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1558 | Moisture: 62.08%
+Raw Value: 335 | Voltage: 0.08V | UV Index: 0.66
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 947 | Voltage: 0.24V | UV Index: 2.35
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 64 | Voltage: 0.02V | UV Index: 0.14
+Temperature: 31°C, Humidity: 68%
+Raw Value: 3568 | Moisture: 22.27%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2028 | Voltage: 0.52V | UV Index: 4.94
+Temperature: 31°C, Humidity: 68%
+Raw Value: 2867 | Moisture: 31.28%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 3.27%
+Raw Value: 201 | Voltage: 0.05V | UV Index: 0.48
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1196 | Moisture: 70.16%
+Raw Value: 382 | Voltage: 0.09V | UV Index: 0.75
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1606 | Voltage: 0.41V | UV Index: 3.97
+Temperature: 31°C, Humidity: 68%
+Raw Value: 742 | Moisture: 81.56%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 58 | Voltage: 0.02V | UV Index: 0.16
+Temperature: 31°C, Humidity: 68%
+Raw Value: 339 | Moisture: 94.48%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2060 | Voltage: 0.52V | UV Index: 4.99
+Temperature: 31°C, Humidity: 68%
+Raw Value: 894 | Moisture: 78.22%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 53 | Voltage: 0.01V | UV Index: 0.11
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 638 | Voltage: 0.17V | UV Index: 1.59
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 97.85%
+Raw Value: 1817 | Voltage: 0.46V | UV Index: 4.30
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1001 | Moisture: 76.02%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 2.27%
+Raw Value: 102 | Voltage: 0.02V | UV Index: 0.21
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 128 | Voltage: 0.03V | UV Index: 0.30
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3998 | Moisture: 13.26%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 912 | Moisture: 81.64%
+Raw Value: 447 | Voltage: 0.11V | UV Index: 1.08
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1507 | Voltage: 0.39V | UV Index: 3.74
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2039 | Voltage: 0.52V | UV Index: 4.96
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.83%
+Raw Value: 1968 | Voltage: 0.50V | UV Index: 4.69
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.51%
+Raw Value: 1789 | Voltage: 0.45V | UV Index: 4.24
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.29%
+Raw Value: 1839 | Voltage: 0.46V | UV Index: 4.34
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.00%
+Raw Value: 1978 | Voltage: 0.50V | UV Index: 4.73
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.07%
+Raw Value: 2077 | Voltage: 0.53V | UV Index: 4.99
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.24%
+Raw Value: 1973 | Voltage: 0.50V | UV Index: 4.72
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 154 | Moisture: 93.68%
+Raw Value: 1381 | Voltage: 0.35V | UV Index: 3.22
+Temperature: 31°C, Humidity: 67%
+Raw Value: 758 | Moisture: 81.61%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2064 | Moisture: 50.70%
+Raw Value: 227 | Voltage: 0.06V | UV Index: 0.49
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 55 | Voltage: 0.01V | UV Index: 0.15
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 720 | Moisture: 85.76%
+Raw Value: 445 | Voltage: 0.11V | UV Index: 1.08
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.61%
+Raw Value: 2019 | Voltage: 0.51V | UV Index: 4.82
+Temperature: 31°C, Humidity: 67%
+Raw Value: 807 | Moisture: 80.44%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 79 | Voltage: 0.02V | UV Index: 0.15
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2885 | Moisture: 37.83%
+Raw Value: 292 | Voltage: 0.07V | UV Index: 0.73
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1842 | Voltage: 0.47V | UV Index: 4.51
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 482 | Moisture: 87.03%
+Raw Value: 983 | Voltage: 0.24V | UV Index: 2.24
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4007 | Moisture: 4.74%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 37 | Voltage: 0.01V | UV Index: 0.08
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1703 | Moisture: 64.44%
+Raw Value: 370 | Voltage: 0.10V | UV Index: 0.91
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2026 | Voltage: 0.52V | UV Index: 4.92
+Temperature: 31°C, Humidity: 67%
+Raw Value: 68 | Moisture: 95.68%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1216 | Moisture: 69.91%
+Raw Value: 485 | Voltage: 0.12V | UV Index: 1.03
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 124 | Voltage: 0.03V | UV Index: 0.30
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2559 | Moisture: 45.64%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1214 | Voltage: 0.31V | UV Index: 3.03
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 147 | Moisture: 95.36%
+Raw Value: 1363 | Voltage: 0.34V | UV Index: 3.16
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2909 | Moisture: 30.79%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 71 | Voltage: 0.02V | UV Index: 0.14
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 560 | Voltage: 0.14V | UV Index: 1.42
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 47 | Moisture: 96.21%
+Raw Value: 1663 | Voltage: 0.41V | UV Index: 3.89
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2891 | Moisture: 30.62%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 64 | Voltage: 0.01V | UV Index: 0.15
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2978 | Moisture: 36.63%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1643 | Voltage: 0.42V | UV Index: 4.03
+Temperature: 31°C, Humidity: 67%
+Raw Value: 49 | Moisture: 96.73%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 85 | Voltage: 0.02V | UV Index: 0.17
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1059 | Voltage: 0.27V | UV Index: 2.62
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2657 | Moisture: 35.36%
+Raw Value: 187 | Voltage: 0.04V | UV Index: 0.39
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 688 | Voltage: 0.18V | UV Index: 1.73
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1223 | Moisture: 69.79%
+Raw Value: 459 | Voltage: 0.11V | UV Index: 0.94
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1228 | Moisture: 75.34%
+Raw Value: 413 | Voltage: 0.11V | UV Index: 1.00
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 550 | Moisture: 86.32%
+Raw Value: 971 | Voltage: 0.24V | UV Index: 2.19
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 5.81%
+Raw Value: 209 | Voltage: 0.05V | UV Index: 0.52
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.02%
+Raw Value: 2060 | Voltage: 0.52V | UV Index: 4.99
+Temperature: 31°C, Humidity: 67%
+Raw Value: 719 | Moisture: 82.27%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 64 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2289 | Moisture: 51.26%
+Raw Value: 325 | Voltage: 0.08V | UV Index: 0.78
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1999 | Voltage: 0.51V | UV Index: 4.88
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1083 | Moisture: 72.55%
+Raw Value: 483 | Voltage: 0.12V | UV Index: 1.02
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 171 | Voltage: 0.04V | UV Index: 0.42
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.90%
+Raw Value: 2067 | Voltage: 0.53V | UV Index: 4.99
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1440 | Moisture: 65.01%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 61 | Voltage: 0.02V | UV Index: 0.15
+Temperature: 31°C, Humidity: 67%
+Raw Value: 784 | Moisture: 84.42%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2079 | Voltage: 0.53V | UV Index: 5.04
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1823 | Moisture: 55.82%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 85 | Voltage: 0.02V | UV Index: 0.22
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2039 | Voltage: 0.52V | UV Index: 4.98
+Temperature: 31°C, Humidity: 67%
+Raw Value: 544 | Moisture: 85.37%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 63 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 691 | Voltage: 0.18V | UV Index: 1.73
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 539 | Moisture: 85.98%
+Raw Value: 1031 | Voltage: 0.25V | UV Index: 2.32
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 184 | Voltage: 0.05V | UV Index: 0.45
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.63%
+Raw Value: 2029 | Voltage: 0.52V | UV Index: 4.88
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1266 | Moisture: 68.89%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 41 | Voltage: 0.01V | UV Index: 0.09
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3529 | Moisture: 23.20%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1535 | Voltage: 0.40V | UV Index: 3.79
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.34%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2720 | Moisture: 34.75%
+Raw Value: 195 | Voltage: 0.05V | UV Index: 0.40
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1664 | Moisture: 65.40%
+Raw Value: 421 | Voltage: 0.11V | UV Index: 1.02
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.05%
+Raw Value: 1671 | Voltage: 0.42V | UV Index: 3.90
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3565 | Moisture: 16.43%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 67 | Voltage: 0.02V | UV Index: 0.17
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2587 | Moisture: 45.15%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1646 | Voltage: 0.42V | UV Index: 4.04
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.02%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1901 | Moisture: 53.55%
+Raw Value: 256 | Voltage: 0.06V | UV Index: 0.55
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3304 | Moisture: 27.96%
+Raw Value: 250 | Voltage: 0.06V | UV Index: 0.63
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2073 | Voltage: 0.53V | UV Index: 5.03
+Temperature: 31°C, Humidity: 67%
+Raw Value: 719 | Moisture: 82.52%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 35 | Voltage: 0.01V | UV Index: 0.08
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 976 | Voltage: 0.25V | UV Index: 2.41
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2370 | Moisture: 42.20%
+Raw Value: 229 | Voltage: 0.06V | UV Index: 0.49
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 891 | Voltage: 0.23V | UV Index: 2.21
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3898 | Moisture: 7.30%
+Raw Value: 105 | Voltage: 0.03V | UV Index: 0.21
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1370 | Voltage: 0.35V | UV Index: 3.39
+Temperature: 31°C, Humidity: 67%
+Raw Value: 235 | Moisture: 92.84%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 64 | Voltage: 0.02V | UV Index: 0.14
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 2.39%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1727 | Voltage: 0.44V | UV Index: 4.25
+Temperature: 31°C, Humidity: 67%
+Raw Value: 576 | Moisture: 85.54%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 41 | Voltage: 0.01V | UV Index: 0.07
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3899 | Moisture: 16.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1584 | Voltage: 0.41V | UV Index: 3.91
+Temperature: 31°C, Humidity: 67%
+Raw Value: 139 | Moisture: 94.87%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 86 | Voltage: 0.02V | UV Index: 0.18
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 586 | Voltage: 0.15V | UV Index: 1.46
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 304 | Moisture: 90.55%
+Raw Value: 1115 | Voltage: 0.27V | UV Index: 2.54
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 76 | Voltage: 0.02V | UV Index: 0.19
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3105 | Moisture: 33.11%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1162 | Voltage: 0.30V | UV Index: 2.91
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 310 | Moisture: 91.09%
+Raw Value: 1331 | Voltage: 0.33V | UV Index: 3.09
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3280 | Moisture: 22.47%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 24 | Voltage: 0.01V | UV Index: 0.05
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1171 | Moisture: 76.43%
+Raw Value: 418 | Voltage: 0.11V | UV Index: 1.00
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2187 | Voltage: 0.56V | UV Index: 5.31
+Temperature: 31°C, Humidity: 67%
+Raw Value: 217 | Moisture: 91.82%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1516 | Moisture: 64.47%
+Raw Value: 528 | Voltage: 0.13V | UV Index: 1.13
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 49 | Voltage: 0.01V | UV Index: 0.13
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 592 | Voltage: 0.15V | UV Index: 1.50
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 98.44%
+Raw Value: 2027 | Voltage: 0.51V | UV Index: 4.83
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1168 | Moisture: 73.77%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 41 | Voltage: 0.01V | UV Index: 0.09
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1277 | Moisture: 74.04%
+Raw Value: 433 | Voltage: 0.11V | UV Index: 1.04
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 97.39%
+Raw Value: 1914 | Voltage: 0.48V | UV Index: 4.53
+Temperature: 31°C, Humidity: 71%
+Raw Value: 2480 | Moisture: 39.83%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 22 | Voltage: 0.00V | UV Index: 0.05
+Temperature: 31°C, Humidity: 71%
+Raw Value: 2996 | Moisture: 35.90%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1679 | Voltage: 0.43V | UV Index: 4.12
+Temperature: 31°C, Humidity: 71%
+Raw Value: 79 | Moisture: 94.92%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 101 | Voltage: 0.02V | UV Index: 0.21
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 714 | Voltage: 0.18V | UV Index: 1.77
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 949 | Moisture: 76.80%
+Raw Value: 816 | Voltage: 0.20V | UV Index: 1.82
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 2947 | Moisture: 36.53%
+Raw Value: 268 | Voltage: 0.07V | UV Index: 0.66
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 100 | Moisture: 95.31%
+Raw Value: 1790 | Voltage: 0.45V | UV Index: 4.24
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 87 | Voltage: 0.02V | UV Index: 0.21
+Temperature: 31°C, Humidity: 71%
+Raw Value: 351 | Moisture: 93.09%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2163 | Voltage: 0.55V | UV Index: 5.27
+Temperature: 31°C, Humidity: 71%
+Raw Value: 972 | Moisture: 77.09%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 34 | Voltage: 0.01V | UV Index: 0.06
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 9.28%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1535 | Voltage: 0.40V | UV Index: 3.82
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 3840 | Moisture: 7.40%
+Raw Value: 141 | Voltage: 0.03V | UV Index: 0.29
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 733 | Voltage: 0.19V | UV Index: 1.85
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 1591 | Moisture: 61.17%
+Raw Value: 413 | Voltage: 0.10V | UV Index: 0.84
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 37 | Moisture: 100.00%
+Raw Value: 621 | Voltage: 0.16V | UV Index: 1.55
+Temperature: 31°C, Humidity: 70%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 2128 | Moisture: 48.89%
+Raw Value: 272 | Voltage: 0.06V | UV Index: 0.56
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 967 | Voltage: 0.25V | UV Index: 2.39
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 99.61%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 59 | Voltage: 0.01V | UV Index: 0.11
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 3.76%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1954 | Voltage: 0.50V | UV Index: 4.81
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1183 | Moisture: 72.19%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 53 | Voltage: 0.01V | UV Index: 0.15
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 465 | Moisture: 87.81%
+Raw Value: 1417 | Voltage: 0.36V | UV Index: 3.28
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 757 | Voltage: 0.20V | UV Index: 1.89
+Temperature: 31°C, Humidity: 73%
+Raw Value: 231 | Moisture: 92.14%
+Temperature: 31°C, Humidity: 73%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 10 | Voltage: 0.00V | UV Index: 0.01
+Temperature: 31°C, Humidity: 72%
+Raw Value: 1376 | Moisture: 73.19%
+Temperature: 31°C, Humidity: 72%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2207 | Voltage: 0.56V | UV Index: 5.37
+Temperature: 31°C, Humidity: 71%
+Raw Value: 1226 | Moisture: 71.38%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 7 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 4.32%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1363 | Voltage: 0.35V | UV Index: 3.41
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 898 | Moisture: 77.80%
+Raw Value: 880 | Voltage: 0.22V | UV Index: 1.98
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 136 | Voltage: 0.03V | UV Index: 0.34
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2427 | Voltage: 0.62V | UV Index: 5.91
+Temperature: 31°C, Humidity: 71%
+Raw Value: 800 | Moisture: 81.10%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 18 | Voltage: 0.00V | UV Index: 0.03
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 794 | Voltage: 0.21V | UV Index: 2.00
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 688 | Moisture: 83.86%
+Raw Value: 1253 | Voltage: 0.31V | UV Index: 2.90
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 83 | Voltage: 0.02V | UV Index: 0.20
+Temperature: 31°C, Humidity: 71%
+Raw Value: 763 | Moisture: 84.91%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2139 | Voltage: 0.55V | UV Index: 5.28
+Temperature: 31°C, Humidity: 71%
+Raw Value: 32 | Moisture: 96.48%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 2288 | Moisture: 43.91%
+Raw Value: 393 | Voltage: 0.09V | UV Index: 0.77
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 3295 | Moisture: 28.03%
+Raw Value: 263 | Voltage: 0.07V | UV Index: 0.64
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 0 | Moisture: 99.88%
+Raw Value: 2475 | Voltage: 0.63V | UV Index: 5.99
+Raw Value: 1084 | Moisture: 74.60%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 2335 | Moisture: 52.72%
+Raw Value: 193 | Voltage: 0.05V | UV Index: 0.50
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 99.98%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 33 | Voltage: 0.01V | UV Index: 0.04
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 635 | Moisture: 82.91%
+Raw Value: 923 | Voltage: 0.23V | UV Index: 2.06
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2833 | Voltage: 0.72V | UV Index: 6.87
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 773 | Voltage: 0.20V | UV Index: 1.99
+Temperature: 31°C, Humidity: 68%
+Raw Value: 521 | Moisture: 86.32%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 119 | Voltage: 0.03V | UV Index: 0.28
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 34 | Voltage: 0.01V | UV Index: 0.07
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 484 | Moisture: 86.64%
+Raw Value: 990 | Voltage: 0.24V | UV Index: 2.23
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 99.56%
+Raw Value: 2559 | Voltage: 0.65V | UV Index: 6.22
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1355 | Voltage: 0.35V | UV Index: 3.41
+Temperature: 31°C, Humidity: 68%
+Raw Value: 1154 | Moisture: 73.21%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 3491 | Moisture: 24.42%
+Raw Value: 225 | Voltage: 0.06V | UV Index: 0.56
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.36%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 41 | Voltage: 0.01V | UV Index: 0.09
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 474 | Moisture: 87.84%
+Raw Value: 1136 | Voltage: 0.28V | UV Index: 2.57
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2559 | Voltage: 0.66V | UV Index: 6.23
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 554 | Moisture: 90.67%
+Raw Value: 467 | Voltage: 0.12V | UV Index: 1.16
+Temperature: 31°C, Humidity: 68%
+Raw Value: 161 | Moisture: 93.60%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 139 | Voltage: 0.03V | UV Index: 0.30
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 27 | Voltage: 0.00V | UV Index: 0.04
+Temperature: 31°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 398 | Moisture: 88.55%
+Raw Value: 1261 | Voltage: 0.31V | UV Index: 2.89
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2846 | Voltage: 0.72V | UV Index: 6.85
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1553 | Voltage: 0.40V | UV Index: 3.90
+Temperature: 31°C, Humidity: 69%
+Raw Value: 1557 | Moisture: 60.24%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 2390 | Moisture: 50.04%
+Raw Value: 318 | Voltage: 0.08V | UV Index: 0.77
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 31°C, Humidity: 69%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 69%

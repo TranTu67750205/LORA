@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "dht11.h": "c",
+        "soil_sensor.h": "c",
+        "esp_log.h": "c",
+        "adc_oneshot.h": "c"
+    }
+}

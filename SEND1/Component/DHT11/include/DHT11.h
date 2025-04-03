@@ -1,16 +1,7 @@
-#ifndef DHT11_H
-#define DHT11_H
+#ifndef DHT11_H_
+#define DHT11_H_
 
-#include <stdint.h>
-#include "esp_err.h"
-
-// Cấu trúc lưu dữ liệu cảm biến
-typedef struct
-{
-    int temperature;
-    int humidity;
-} dht11_data_t;
-
+#include "driver/gpio.h"
 
 enum dht11_status {
     DHT11_CRC_ERROR = -2,
@@ -18,9 +9,14 @@ enum dht11_status {
     DHT11_OK
 };
 
-void dht11_init(int gpio_num);
+struct dht11_reading {
+    int status;
+    int temperature;
+    int humidity;
+};
 
-// Đọc dữ liệu từ DHT11
-esp_err_t dht11_read(dht11_data_t *data);
+void DHT11_init(gpio_num_t);
 
-#endif // DHT11_H
+struct dht11_reading DHT11_read();
+
+#endif
