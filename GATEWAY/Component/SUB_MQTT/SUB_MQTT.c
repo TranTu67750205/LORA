@@ -47,6 +47,11 @@ void mqtt_app_start(void)
     */
     esp_mqtt_client_config_t mqtt_cfg = {
     .broker = {
+        .address.uri = "mqtt://192.168.1.8:1883",
+        .address.port = 1883,  // IP máy tính chạy Mosquitto
+    },
+    /*
+    .broker = {
         .address = {
             .hostname = "mqtt.thingsboard.cloud",    // Set hostname only
             .port = 1883,                         // Default MQTT port
@@ -56,6 +61,8 @@ void mqtt_app_start(void)
             .use_global_ca_store = false,
         },
     },
+    */
+    /*
     .credentials = {
         .username = "esp32",
         .client_id = "3fd463f0-bd4d-11ef-ae0e-b51a7d74c077",
@@ -64,6 +71,8 @@ void mqtt_app_start(void)
             .password = "67750205Tat@",
         },
     },
+    */
+    
     .session = {
         .keepalive = 120,
         .disable_clean_session = false,

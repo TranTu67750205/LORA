@@ -48,6 +48,7 @@ static const char *TAG = "LORA_receive";
 #define LORA_RST    2
 #define LED_PIN     33
 
+esp_mqtt_client_handle_t client;
 
 //esp_rom_gpio_pad_select_gpio(LED_PIN);
 //gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
@@ -155,5 +156,7 @@ void app_main(void)
     esp_log_level_set("outbox", ESP_LOG_VERBOSE);
 
     mqtt_app_start();
+
+    esp_mqtt_client_publish(client, "test/topic", "hello from esp32", 0, 1, 0);
 
 }
