@@ -1,0 +1,176 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bb30h ( 47920) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bb58 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dfe8 vaddr=40080000 size=02030h (  8240) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1af08h (110344) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003af30 vaddr=40082030 size=0c3c0h ( 50112) load[0m
+[0;32mI (200) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (200) boot: Disabling RNG early entropy source...[0m
+[0;32mI (212) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) app_init: Application information:[0m
+[0;32mI (224) app_init: Project name:     SEND1[0m
+[0;32mI (228) app_init: App version:      184a1b7-dirty[0m
+[0;32mI (234) app_init: Compile time:     Apr  2 2025 17:33:08[0m
+[0;32mI (240) app_init: ELF file SHA256:  a57aa0e75...[0m
+[0;32mI (245) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (255) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (260) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (265) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFB2DB0 len 0002D250 (180 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (308) spi_flash: flash io: dio[0m
+[0;33mW (312) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (1341) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (1341) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1341) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 38 | Moisture: 100.00%
+[0;32mI (1351) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 173 | Voltage: 0.04V | UV Index: 0.47
+[0;32mI (1351) main_task: Returned from app_main()[0m
+[0;32mI (1441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 163 | Voltage: 0.04V | UV Index: 0.39
+Raw Value: 0 | Moisture: 97.68%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1040 | Moisture: 75.16%
+[0;32mI (7441) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (7541) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=75.2:UV=0.39[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1746 | Voltage: 0.45V | UV Index: 4.38
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1222 | Voltage: 0.30V | UV Index: 2.78
+Raw Value: 116 | Moisture: 97.95%
+[0;32mI (13541) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (13641) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=97.9:UV=2.78[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 128 | Voltage: 0.03V | UV Index: 0.29
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (19641) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (19741) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=0.0:UV=0.29[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2117 | Voltage: 0.53V | UV Index: 4.95
+Raw Value: 1399 | Moisture: 73.26%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 378 | Voltage: 0.10V | UV Index: 0.96
+Raw Value: 1270 | Moisture: 69.13%
+[0;32mI (25741) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (25841) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=69.1:UV=0.96[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 122 | Voltage: 0.02V | UV Index: 0.21
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 32 | Moisture: 99.10%
+[0;32mI (31841) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (31941) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=99.1:UV=0.21[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 2463 | Voltage: 0.64V | UV Index: 6.15
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 1501 | Moisture: 71.23%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (37941) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (38041) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=100.0:UV=0.00[0m
+Temperature: 32°C, Humidity: 67%
+Raw Value: 1163 | Moisture: 71.99%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 2843 | Voltage: 0.73V | UV Index: 6.93
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 767 | Moisture: 85.54%
+[0;32mI (44041) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (44141) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=85.5:UV=6.93[0m
+Temperature: 32°C, Humidity: 67%
+Raw Value: 34 | Voltage: 0.00V | UV Index: 0.02
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 358 | Moisture: 89.50%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 2112 | Voltage: 0.54V | UV Index: 5.27
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (50141) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (50241) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=0.0:UV=5.27[0m
+Temperature: 32°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 51 | Voltage: 0.01V | UV Index: 0.11
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 0 | Moisture: 98.58%
+[0;32mI (56241) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (56341) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=98.6:UV=0.11[0m
+Temperature: 32°C, Humidity: 67%
+Raw Value: 685 | Voltage: 0.18V | UV Index: 1.70
+Raw Value: 3855 | Moisture: 9.26%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 689 | Voltage: 0.17V | UV Index: 1.51
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (62341) LORA_SEND1: Temperature: 0°C, Humidity: 0%
+[0m
+[0;32mI (62441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=100.0:UV=1.51[0m
+Temperature: 32°C, Humidity: 67%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 32°C, Humidity: 67%
+Raw Value: 632 | Voltage: 0.17V | UV Index: 1.59
+Raw Value: 3664 | Moisture: 12.09%

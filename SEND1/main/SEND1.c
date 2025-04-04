@@ -52,6 +52,7 @@ static const char *TAG = "LORA_SEND1";
 #define DHT_GPIO 26
 
 struct dht11_reading data;
+SemaphoreHandle_t data_mutex;  // 🔒 mutex bảo vệ biến `data`
 float uvi = 0.0;
 float moisture = 0.0;
 
@@ -59,11 +60,16 @@ float moisture = 0.0;
 void dht11_task(void *pvParameter) {
     DHT11_init(DHT_GPIO);
     while (1) {
-        struct dht11_reading data = DHT11_read();
-        if (data.status == DHT11_OK) {
+        struct dht11_reading local_data = DHT11_read();
+        if (local_data.status == DHT11_OK) {
+            if (xSemaphoreTake(data_mutex, portMAX_DELAY)) {
+                data = local_data;  // ✅ ghi giá trị vào biến toàn cục
+                xSemaphoreGive(data_mutex);
+            }
+
             printf("Temperature: %d°C, Humidity: %d%%\n", data.temperature, data.humidity);
         } else {
-            printf("Failed to read from DHT11 sensor. Error code: %d\n", data.status);
+            printf("Failed to read from DHT11 sensor. Error code: %d\n", local_data.status);
         }
         vTaskDelay(pdMS_TO_TICKS(2000));  // Đọc dữ liệu mỗi 2 giây
     }
@@ -114,9 +120,16 @@ void lora_init_pins() {
 void LORA_task (){
     while (1) {
         //const char *message = "ON";
+        struct dht11_reading local_data;
+
+        if (xSemaphoreTake(data_mutex, portMAX_DELAY)) {
+            local_data = data;  // ✅ đọc bản sao dữ liệu
+            xSemaphoreGive(data_mutex);
+        }
         char packet[120];
-        snprintf(packet, sizeof(packet), "ID%s:TEMP=%d:HUM=%d:SOIL=%.1f:UV=%.2f", NODE_ID, data.temperature, data.humidity, moisture, uvi);
         ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
+        snprintf(packet, sizeof(packet), "ID%s:TEMP=%d:HUM=%d:SOIL=%.1f:UV=%.2f", NODE_ID, local_data.temperature, local_data.humidity, moisture, uvi);
+        //ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
         lora_send_packet((uint8_t *)packet, strlen(packet));
         ESP_LOGI(TAG, "Đã gửi tín hiệu: %s", packet);
         vTaskDelay(pdMS_TO_TICKS(6000)); // gửi sau mỗi 5 giây
@@ -137,6 +150,7 @@ void app_main(void)
     lora_set_bandwidth(125E3);  // Băng thông
     lora_set_spreading_factor(7);  // Spread Factor
     lora_set_coding_rate(5);  // Coding Rate 4/5
+    data_mutex = xSemaphoreCreateMutex();  // 🔒 khởi tạo mutex
     xTaskCreate(&LORA_task, "LORA_task", 2048, NULL, 6, NULL);
     ESP_LOGI(TAG, "LoRa Sender Đã Khởi Động\n");
 
