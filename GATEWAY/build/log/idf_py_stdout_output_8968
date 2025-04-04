@@ -1,0 +1,24 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\GATEWAY\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/GATEWAY/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GATEWAY.c.obj
+C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c: In function 'app_main':
+C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:92:13: warning: unused variable 'packetSize' [-Wunused-variable]
+   92 |         int packetSize = lora_received();
+      |             ^~~~~~~~~~
+In file included from C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:36:
+C:/ESP IDF/project_esp/GATEWAY/Component/wifi_config/include/wifi_config.h: At top level:
+C:/ESP IDF/project_esp/GATEWAY/Component/wifi_config/include/wifi_config.h:38:20: warning: 'TAG_wifi' defined but not used [-Wunused-variable]
+   38 | static const char *TAG_wifi = "WiFi";
+      |                    ^~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable GATEWAY.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/GATEWAY/build/GATEWAY.bin
+[7/7] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\GATEWAY\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/GATEWAY/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/GATEWAY/build/GATEWAY.bin""
+GATEWAY.bin binary size 0x3b390 bytes. Smallest app partition is 0x100000 bytes. 0xc4c70 bytes (77%) free.

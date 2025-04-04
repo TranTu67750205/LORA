@@ -1,0 +1,994 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b504h ( 46340) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b52c vaddr=3ffb0000 size=02478h (  9336) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001d9ac vaddr=40080000 size=0266ch (  9836) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1f594h (128404) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003f5bc vaddr=4008266c size=0bd98h ( 48536) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (229) app_init: Project name:     GATEWAY[0m
+[0;32mI (234) app_init: App version:      3afba31-dirty[0m
+[0;32mI (239) app_init: Compile time:     Mar 30 2025 14:12:44[0m
+[0;32mI (245) app_init: ELF file SHA256:  311f1806e...[0m
+[0;32mI (250) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (256) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (260) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (265) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2D78 len 0002D288 (180 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008E404 len 00011BFC (70 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;32mI (318) main_task: Started on CPU0[0m
+[0;32mI (328) main_task: Calling app_main()[0m
+LoRa Receiver Đã Khởi Động
+[0;32mI (338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (1838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (3338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (4838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (6338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (7838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (9338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ����?�?
+[0m
+[0;32mI (10838) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (11838) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (12838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (14338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (15338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (16338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (17838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (19338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (20838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (22338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (23838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (25338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (26838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (28338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (29838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (31338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (32838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (34338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (35838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (37338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (38838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (40338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (41838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (43338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (44838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (46338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (47838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (49338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (50838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (52338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (53838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (55338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (56338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (57338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (58338) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+Gói tin không hợp lệ: IDEND123456:ON
+[0;32mI (59338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (60838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (62338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (63838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (65338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (66838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (68338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (69838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (71338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (72838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (74338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (75838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (77338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (78838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (80338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (81838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (83338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (84838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (86338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (87838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (89338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (90838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (92338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (93838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (95338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (96838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (98338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (99838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (101338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (102838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (104338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (105838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (107338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (108838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (110338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (111838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (113338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (114838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (116338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (117838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (119338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (120838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (122338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (123838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (125338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (126838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (128338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (129838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (131338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (132838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (134338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (135838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (137338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (138838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (140338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (141838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (143338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (144838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (146338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (147838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (149338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (150838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (152338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (153838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (155338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (156838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (158338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (159838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (161338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (162838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (164338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (165838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (167338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (168838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (170338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (171838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (173338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (174838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (176338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (177838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (179338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (180838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (182338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (183838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (185338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (186838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (188338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (189838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (191338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (192838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (194338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (195838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (197338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (198838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (200338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (201838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (203338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (204838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (206338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (207838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (209338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (210838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (212338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (213838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (215338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (216838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (218338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (219838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (221338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (222838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (224338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (225838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (227338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (228838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (230338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (231838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (233338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (234838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (236338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (237838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (239338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (240838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (242338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (243838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (245338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (246838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (248338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (249838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (251338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (252838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (254338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (255838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (257338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (258838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (260338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (261838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (263338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (264838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (266338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (267838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (269338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (270838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (272338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (273838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (275338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (276838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (278338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (279838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (281338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (282838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (284338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (285838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (287338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (288838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (290338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (291838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (293338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (294838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (296338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (297838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (299338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (300838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (302338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (303838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (305338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (306838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (308338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (309838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (311338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (312838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (314338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (315838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (317338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (318838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (320338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (321838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (323338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (324838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (326338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (327838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (329338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (330838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (332338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (333838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (335338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (336838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (338338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (339838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (341338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (342838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (344338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (345838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (347338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (348838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (350338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (351838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (353338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (354838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (356338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (357838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (359338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (360838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (362338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (363838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (365338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (366838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (368338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (369838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (371338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (372838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (374338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (375838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (377338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (378838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (380338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (381838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (383338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (384838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (386338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (387838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (389338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (390838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (392338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (393838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (395338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (396838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (398338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (399838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (401338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (402838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (404338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (405838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (407338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (408838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (410338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (411838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (413338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (414838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (416338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (417838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (419338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (420838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (422338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (423838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (425338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (426838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (428338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (429838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (431338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (432838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (434338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (435838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (437338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (438838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (440338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (441838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (443338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (444838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (446338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (447838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (449338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (450838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (452338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (453838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (455338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (456838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (458338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (459838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (461338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (462838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (464338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (465838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (467338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (468838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (470338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (471838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (473338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (474838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (476338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (477838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (479338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (480838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (482338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (483838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (485338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (486838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (488338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (489838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (491338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (492838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (494338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (495838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (497338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (498838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (500338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (501838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (503338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (504838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (506338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (507838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (509338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (510838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (512338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (513838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (515338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (516838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (518338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (519838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (521338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (522838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (524338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (525838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (527338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (528838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (530338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (531838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (533338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (534838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (536338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (537838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (539338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (540838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (542338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (543838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (545338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (546838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (548338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (549838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (551338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (552838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (554338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (555838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (557338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (558838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (560338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (561838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (563338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (564838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (566338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (567838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (569338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (570838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (572338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (573838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (575338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (576838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (578338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (579838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (581338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (582838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (584338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (585838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (587338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (588838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (590338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (591838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (593338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (594838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (596338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (597838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (599338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (600838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (602338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (603838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (605338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (606838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (608338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (609838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (611338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (612838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (614338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (615838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (617338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (618838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (620338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (621838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (623338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (624838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (626338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (627838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (629338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (630838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (632338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (633838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (635338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (636838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (638338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (639838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (641338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (642838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (644338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (645838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (647338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (648838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (650338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (651838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (653338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (654838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (656338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (657838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (659338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (660838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (662338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (663838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (665338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (666838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (668338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (669838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (671338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (672838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (674338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (675838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (677338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (678838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (680338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (681838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (683338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (684838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (686338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (687838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (689338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (690838) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
+[0;32mI (692338) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:ON
+[0m
