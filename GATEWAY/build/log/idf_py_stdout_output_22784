@@ -1,0 +1,991 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2136ch (136044) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00031394 vaddr=3ffb0000 size=0402ch ( 16428) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=000353c8 vaddr=40080000 size=0ac50h ( 44112) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8bb1ch (572188) map[0m
+[0;32mI (372) esp_image: segment 4: paddr=000cbb44 vaddr=4008ac50 size=0ddech ( 56812) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (427) app_init: Application information:[0m
+[0;32mI (430) app_init: Project name:     GATEWAY[0m
+[0;32mI (435) app_init: App version:      bc26d78-dirty[0m
+[0;32mI (440) app_init: Compile time:     Apr  5 2025 00:54:37[0m
+[0;32mI (446) app_init: ELF file SHA256:  8534de38c...[0m
+[0;32mI (451) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (457) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (461) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (479) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB8298 len 00027D68 (159 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40098A3C len 000075C4 (29 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;32mI (519) main_task: Started on CPU0[0m
+[0;32mI (529) main_task: Calling app_main()[0m
+[0;32mI (539) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+LoRa Receiver Đã Khởi Động
+I (569) wifi:wifi driver task: 3ffc14a4, prio:23, stack:6656, core=0
+I (569) wifi:wifi firmware version: ccaebfa
+I (569) wifi:wifi certification version: v7.0
+I (569) wifi:config NVS flash: enabled
+I (569) wifi:config nano formating: disabled
+I (579) wifi:Init data frame dynamic rx buffer num: 32
+I (579) wifi:Init static rx mgmt buffer num: 5
+I (589) wifi:Init management short buffer num: 32
+I (589) wifi:Init dynamic tx buffer num: 32
+I (589) wifi:Init static rx buffer size: 1600
+I (599) wifi:Init static rx buffer num: 10
+I (599) wifi:Init dynamic rx buffer num: 32
+[0;32mI (609) wifi_init: rx ba win: 6[0m
+[0;32mI (609) wifi_init: accept mbox: 6[0m
+[0;32mI (609) wifi_init: tcpip mbox: 32[0m
+[0;32mI (619) wifi_init: udp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp mbox: 6[0m
+[0;32mI (619) wifi_init: tcp tx win: 5760[0m
+[0;32mI (629) wifi_init: tcp rx win: 5760[0m
+[0;32mI (629) wifi_init: tcp mss: 1440[0m
+[0;32mI (639) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (639) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (669) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (669) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (749) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+I (759) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (759) wifi:enable tsf
+[0;32mI (1879) main_task: Returned from app_main()[0m
+I (1889) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (1889) wifi:state: init -> auth (0xb0)
+I (1919) wifi:state: auth -> assoc (0x0)
+I (1959) wifi:state: assoc -> run (0x10)
+[0;32mI (2039) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+I (2069) wifi:connected with VNPT_Hanh, aid = 5, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (2069) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (2089) wifi:pm start, type: 1
+
+I (2089) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2139) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3099) esp_netif_handlers: sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3099) WiFi: Got IP: 192.168.1.9[0m
+[0;32mI (3539) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (5039) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (6539) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (6539) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.3[0m
+[0;32mI (7549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (9049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (10549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (12049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (13549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (13549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (14549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (16049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (17549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (19049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (19049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (20049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (21549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (23049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (24549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (24549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (25549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (27049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (28549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (30049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (31549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (31549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (32549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (34049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (35549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (37049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (37049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (38049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (39549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (41049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (42549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (44049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (44049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (45049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (46549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (48049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (49549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (49549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.5[0m
+[0;32mI (50549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (52049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (53549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (55049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (55049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (56049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (57549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (59049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (60549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (62049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (62049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (63049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (64549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (66049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (67549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (67549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (68549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (70049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (71549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (73049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (74549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (74549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (75549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (77049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (78549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (80049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (80049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (81049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (82549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (84049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (85549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (85549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (86549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (88049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (89549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (91049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (92549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (92549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (93549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (95049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (96549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (98049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (98049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (99049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (100549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (102049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (103549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (105049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (105049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (106049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (107549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (109049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (110549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (110549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (111549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (113049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (114549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (116049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (116049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (117049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (118549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (120049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (121549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (123049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (123049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (124049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (125549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (127049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (128549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (128549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (129549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (131049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (132549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (134049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (135549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (135549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (136549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (138049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (139549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (141049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (141049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (142049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (143549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (145049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (146549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (146549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (147549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (149049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (150549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (152049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (153549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (153549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (154549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (156049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (157549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (159049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (159049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (160049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (161549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (163049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (164549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (166049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (166049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (167049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (168549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (170049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (171549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (171549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (172549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (174049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (175549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (177049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (177049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (178049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (179549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (181049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (182549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (184049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (184049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (185049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (186549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (188049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (189549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (189549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (190549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (192049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (193549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (195049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (196549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (196549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (197549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (199049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (200549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (202049) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (202049) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (203049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (204549) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (206049) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (207549) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (207549) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (208559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (210059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (211559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (213059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (214559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (214559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (215559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (217059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (218559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (220059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.27
+[0m
+[0;32mI (220059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.3[0m
+[0;32mI (221059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.27
+[0m
+[0;32mI (222559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.27
+[0m
+[0;32mI (224059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.27
+[0m
+[0;32mI (225559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.27
+[0m
+[0;32mI (227059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (227059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (228059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (229559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (231059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (232559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (232559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (233559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (235059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (236559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (238059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (238059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (239059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (240559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (242059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (243559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (245059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (245059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (246059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (247559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (249059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (250559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=1.98
+[0m
+[0;32mI (250559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.0[0m
+[0;32mI (251559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=1.98
+[0m
+[0;32mI (253059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=1.98
+[0m
+[0;32mI (254559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=1.98
+[0m
+[0;32mI (256059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=1.98
+[0m
+[0;32mI (257559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (257559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (258559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (260059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (261559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (263059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (263059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (264059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (265559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (267059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (268559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (268559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (269559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (271059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (272559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (274059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (275559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (275559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.3[0m
+[0;32mI (276559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (278059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (279559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (281059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (281059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.3[0m
+[0;32mI (282059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (283559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (285059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (286559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.28
+[0m
+[0;32mI (288059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (288059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (289059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (290559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (292059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (293559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (293559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (294559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (296059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (297559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (299059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (299059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (300059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (301559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (303059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (304559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (306059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (306059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (307059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (308559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (310059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (311559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (311559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (312559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (314059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (315559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (317059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (318559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (318559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (319559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (321059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (322559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (324059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (324059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (325059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (326559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (328059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (329559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (329559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (330559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (332059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (333559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (335059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (336559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (336559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (337559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (339059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (340559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (342059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (342059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (343059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (344559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (346059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (347559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (349059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (349059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (350059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (351559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (353059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (354559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (354559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (355559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (357059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (358559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (360059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (360059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (361059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (362559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (364059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (365559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (367059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (367059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (368059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (369559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (371059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (372559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (372559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (373559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (375059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (376559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (378059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.18
+[0m
+[0;32mI (379559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (379559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (380559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (382059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (383559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (385059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (385059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (386059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (387559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (389059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (390559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (390559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (391559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (393059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (394559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (396059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (397559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (397559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (398559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (400059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (401559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (403059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (403059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (404059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (405559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (407059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (408559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (410059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (410059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (411059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (412559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (414059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (415559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (415559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (416559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (418059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (419559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (421059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (421059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (422059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (423559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (425059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (426559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (428059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (428059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (429059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (430559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (432059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.19
+[0m
+[0;32mI (433559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (433559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (434559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (436059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (437559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (439059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (440559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (440559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (441559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (443059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (444559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (446059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (446059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (447059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (448559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (450059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (451559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (451559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.5[0m
+[0;32mI (452559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (454059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (455559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (457059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (458559) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (458559) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (459559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (461059) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (462559) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (464059) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (464059) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (465069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (466569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (468069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (469569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (469569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (470569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (472069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (473569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (475069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (476569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (476569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (477569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (479069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (480569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.20
+[0m
+[0;32mI (482069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (482069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (483069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (484569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (486069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (487569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (489069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (489069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (490069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (491569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (493069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (494569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.17
+[0m
+[0;32mI (494569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (495569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.17
+[0m
+[0;32mI (497069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.17
+[0m
+[0;32mI (498569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.17
+[0m
+[0;32mI (500069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (500069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (501069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (502569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (504069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (505569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (507069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (507069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (508069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (509569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (511069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (512569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (512569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (513569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (515069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (516569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (518069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (519569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (519569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (520569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (522069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (523569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.21
+[0m
+[0;32mI (525069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (525069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (526069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (527569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (529069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (530569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (530569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (531569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (533069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (534569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (536069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (537569) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (537569) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (538569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (540069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (541569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.22
+[0m
+[0;32mI (543069) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (543069) LORA_receive: Node ID: END123456, Temp: 30.0, Hum: 71.0, Soil: 0.0, UV: 2.2[0m
+[0;32mI (544069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (545569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (547069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (548569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (550069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (551569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (553069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (554569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (556069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (557569) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
+[0;32mI (559069) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=30:HUM=71:SOIL=0.0:UV=2.23
+[0m
