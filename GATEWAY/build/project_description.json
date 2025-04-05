@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "GATEWAY",
-    "project_version":    "500d48e-dirty",
+    "project_version":    "c78eca7-dirty",
     "project_path":       "C:/ESP IDF/project_esp/GATEWAY",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/ESP IDF/project_esp/GATEWAY/build",
@@ -1240,7 +1240,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/ESP IDF/project_esp/GATEWAY/build/esp-idf/mqtt/libmqtt.a",
-            "sources": [ "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
+            "sources": [ "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt_client.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/mqtt5_client.c" ],
             "include_dirs": [ "C:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/include" ]
         },
         "newlib": {

@@ -49,20 +49,27 @@ static const char *TAG = "LORA_receive";
 #define LED_PIN     33
 
 esp_mqtt_client_handle_t client;
-
+uint8_t buf[128];
 //esp_rom_gpio_pad_select_gpio(LED_PIN);
 //gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
 //vTaskDelay(500 / portTICK_PERIOD_MS);
 //ESP_LOGI(TAG, "turn ON LED");
 //gpio_set_level(LED_PIN, 1);
 
-//WIFI TASK
+//MQTT task
+
+void mqtt_task (){
+    while(1){
+        esp_mqtt_client_publish(client, "test/topic", (const char *)buf, 0, 1, 0);
+        vTaskDelay(pdMS_TO_TICKS(4000)); // Giảm tốc độ nhận
+    }
+
+}
 
 
 //LORA TASK
 void lora_task (){
     while (1) {
-        uint8_t buf[128];
         //emset(buf, 0, 129);
         int packetSize = lora_received();
         int len = lora_receive_packet(buf, sizeof(buf));
@@ -156,7 +163,6 @@ void app_main(void)
     esp_log_level_set("outbox", ESP_LOG_VERBOSE);
 
     mqtt_app_start();
-
-    esp_mqtt_client_publish(client, "test/topic", "hello from esp32", 0, 1, 0);
+    xTaskCreate(&mqtt_task, "mqtt_task", 4096, NULL, 2, NULL);
 
 }

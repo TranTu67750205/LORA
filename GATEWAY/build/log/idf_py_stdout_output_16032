@@ -1,0 +1,510 @@
+e�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2771ch (161564) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037744 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003b798 vaddr=40080000 size=04880h ( 18560) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a77c4h (686020) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000e77ec vaddr=40084880 size=14300h ( 82688) load[0m
+[0;32mI (454) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      c78eca7-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  5 2025 06:58:54[0m
+[0;32mI (494) app_init: ELF file SHA256:  41abd4637...[0m
+[0;32mI (499) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (509) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (514) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8898 len 00027768 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40098B80 len 00007480 (29 KiB): IRAM[0m
+[0;32mI (559) spi_flash: detected chip: generic[0m
+[0;32mI (562) spi_flash: flash io: dio[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+LoRa Receiver Đã Khởi Động
+I (627) wifi:wifi driver task: 3ffc1bec, prio:23, stack:6656, core=0
+I (637) wifi:wifi firmware version: ccaebfa
+I (637) wifi:wifi certification version: v7.0
+I (637) wifi:config NVS flash: enabled
+I (637) wifi:config nano formating: disabled
+I (637) wifi:Init data frame dynamic rx buffer num: 32
+I (647) wifi:Init static rx mgmt buffer num: 5
+I (647) wifi:Init management short buffer num: 32
+I (657) wifi:Init dynamic tx buffer num: 32
+I (657) wifi:Init static rx buffer size: 1600
+I (657) wifi:Init static rx buffer num: 10
+I (667) wifi:Init dynamic rx buffer num: 32
+[0;32mI (667) wifi_init: rx ba win: 6[0m
+[0;32mI (677) wifi_init: accept mbox: 6[0m
+[0;32mI (677) wifi_init: tcpip mbox: 32[0m
+[0;32mI (677) wifi_init: udp mbox: 6[0m
+[0;32mI (687) wifi_init: tcp mbox: 6[0m
+[0;32mI (687) wifi_init: tcp tx win: 5760[0m
+[0;32mI (697) wifi_init: tcp rx win: 5760[0m
+[0;32mI (697) wifi_init: tcp mss: 1440[0m
+[0;32mI (697) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (707) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (717) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (797) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (797) wifi:enable tsf
+I (817) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (827) wifi:state: init -> auth (0xb0)
+I (847) wifi:state: auth -> assoc (0x0)
+I (907) wifi:state: assoc -> run (0x10)
+I (1007) wifi:connected with VNPT_Hanh, aid = 5, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (1007) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (1017) wifi:pm start, type: 1
+
+I (1017) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1077) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1807) mqtts_example: [APP] Free memory: 224664 bytes[0m
+[0;32mI (1807) mqtts_example: Other event id:7[0m
+[0;31mE (1807) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1807) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1817) mqtt_client: Error transport connect[0m
+[0;32mI (1817) mqtts_example: Other event id:0[0m
+[0;32mI (1827) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1827) main_task: Returned from app_main()[0m
+[0;32mI (2027) esp_netif_handlers: sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2027) WiFi: Got IP: 192.168.1.9[0m
+[0;32mI (2087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (3587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (5087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (6587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (8087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (9587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (11087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (12587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (14087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (15587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (16827) mqtts_example: Other event id:7[0m
+I (17057) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:4, winSize:64
+[0;32mI (17087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (18587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (20087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (21587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (23087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (24587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (26087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (26837) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (26837) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (26837) mqtt_client: Error transport connect[0m
+[0;32mI (26837) mqtts_example: Other event id:0[0m
+[0;32mI (26847) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (29087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (30587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (32087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (33587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (35087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (36587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (38087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (39587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (41087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (41847) mqtts_example: Other event id:7[0m
+[0;32mI (42587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (44087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (45587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (47087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (48587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (50087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (51587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (51857) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (51857) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (51857) mqtt_client: Error transport connect[0m
+[0;32mI (51857) mqtts_example: Other event id:0[0m
+[0;32mI (51867) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (53087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (54587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (56087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (57587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (59087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (60587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (62087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (63587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (65087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (66587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (66867) mqtts_example: Other event id:7[0m
+[0;32mI (68087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (69587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (71087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (72587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (74087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (75587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (76877) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (76877) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (76877) mqtt_client: Error transport connect[0m
+[0;32mI (76877) mqtts_example: Other event id:0[0m
+[0;32mI (76887) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (77087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (78587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (80087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (81587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (83087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (84587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (86087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (87587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (89087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (90587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (91887) mqtts_example: Other event id:7[0m
+[0;32mI (92087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (93587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (95087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (96587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (98087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (99587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (101087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (101897) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (101897) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (101897) mqtt_client: Error transport connect[0m
+[0;32mI (101897) mqtts_example: Other event id:0[0m
+[0;32mI (101907) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (102587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (104087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (105587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (107087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (108587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (110087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (111587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (113087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (114587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (116087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (116907) mqtts_example: Other event id:7[0m
+[0;32mI (117587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (119087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (120587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (122087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (123587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (125087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (126587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (126917) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (126917) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (126917) mqtt_client: Error transport connect[0m
+[0;32mI (126917) mqtts_example: Other event id:0[0m
+[0;32mI (126927) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (128087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (129587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (131087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (132587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (134087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (135587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (137087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (138587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (140087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (141587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (141927) mqtts_example: Other event id:7[0m
+[0;32mI (143087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (144587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (146087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (147587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (149087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (150587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (151937) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (151937) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (151937) mqtt_client: Error transport connect[0m
+[0;32mI (151937) mqtts_example: Other event id:0[0m
+[0;32mI (151947) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (152087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (153587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (155087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (156587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (158087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (159587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (161087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (162587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (164087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (165587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (166947) mqtts_example: Other event id:7[0m
+[0;32mI (167087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (168587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (170087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (171587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (173087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (174587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (176087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (176957) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (176957) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (176957) mqtt_client: Error transport connect[0m
+[0;32mI (176957) mqtts_example: Other event id:0[0m
+[0;32mI (176967) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (177587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (179087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (180587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (182087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (183587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (185087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (186587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (188087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (189587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (191087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (191967) mqtts_example: Other event id:7[0m
+[0;32mI (192587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (194087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (195587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (197087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (198587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (200087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (201587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (201977) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (201977) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (201977) mqtt_client: Error transport connect[0m
+[0;32mI (201977) mqtts_example: Other event id:0[0m
+[0;32mI (201987) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (203087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (204587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (206087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (207587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (209087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (210587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (212087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (213587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (215087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (216587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (216987) mqtts_example: Other event id:7[0m
+[0;32mI (218087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (219587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (221087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (222587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (224087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (225587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (226997) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (226997) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (226997) mqtt_client: Error transport connect[0m
+[0;32mI (226997) mqtts_example: Other event id:0[0m
+[0;32mI (227007) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (227087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (228587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (230087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (231587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (233087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (234587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (236087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (237587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (239087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (240587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (242007) mqtts_example: Other event id:7[0m
+[0;32mI (242087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (243587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (245087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (246587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (248087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (249587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (251087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (252017) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (252017) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (252017) mqtt_client: Error transport connect[0m
+[0;32mI (252017) mqtts_example: Other event id:0[0m
+[0;32mI (252027) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (252587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (254087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (255587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (257087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (258587) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (260087) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m

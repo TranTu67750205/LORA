@@ -1,0 +1,1521 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=274fch (161020) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037524 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b578 vaddr=40080000 size=04aa0h ( 19104) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6e5ch (683612) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000e6e84 vaddr=40084aa0 size=140e0h ( 82144) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu start user code[0m
+[0;32mI (474) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (474) app_init: Application information:[0m
+[0;32mI (477) app_init: Project name:     GATEWAY[0m
+[0;32mI (482) app_init: App version:      c78eca7-dirty[0m
+[0;32mI (487) app_init: Compile time:     Apr  5 2025 16:41:40[0m
+[0;32mI (493) app_init: ELF file SHA256:  81eff3b80...[0m
+[0;32mI (498) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (504) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (508) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (513) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8898 len 00027768 (157 KiB): DRAM[0m
+[0;32mI (538) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40098B80 len 00007480 (29 KiB): IRAM[0m
+[0;32mI (558) spi_flash: detected chip: generic[0m
+[0;32mI (561) spi_flash: flash io: dio[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+LoRa Receiver Đã Khởi Động
+I (626) wifi:wifi driver task: 3ffc1bec, prio:23, stack:6656, core=0
+I (636) wifi:wifi firmware version: ccaebfa
+I (636) wifi:wifi certification version: v7.0
+I (636) wifi:config NVS flash: enabled
+I (636) wifi:config nano formating: disabled
+I (636) wifi:Init data frame dynamic rx buffer num: 32
+I (646) wifi:Init static rx mgmt buffer num: 5
+I (646) wifi:Init management short buffer num: 32
+I (656) wifi:Init dynamic tx buffer num: 32
+I (656) wifi:Init static rx buffer size: 1600
+I (666) wifi:Init static rx buffer num: 10
+I (666) wifi:Init dynamic rx buffer num: 32
+[0;32mI (666) wifi_init: rx ba win: 6[0m
+[0;32mI (676) wifi_init: accept mbox: 6[0m
+[0;32mI (676) wifi_init: tcpip mbox: 32[0m
+[0;32mI (676) wifi_init: udp mbox: 6[0m
+[0;32mI (686) wifi_init: tcp mbox: 6[0m
+[0;32mI (686) wifi_init: tcp tx win: 5760[0m
+[0;32mI (696) wifi_init: tcp rx win: 5760[0m
+[0;32mI (696) wifi_init: tcp mss: 1440[0m
+[0;32mI (696) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (706) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (716) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (796) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (806) wifi:enable tsf
+I (826) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (826) wifi:state: init -> auth (0xb0)
+I (846) wifi:state: auth -> assoc (0x0)
+I (906) wifi:state: assoc -> run (0x10)
+I (1026) wifi:connected with VNPT_Hanh, aid = 6, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (1026) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (1026) wifi:pm start, type: 1
+
+I (1026) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1046) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1806) mqtts_example: [APP] Free memory: 224664 bytes[0m
+[0;32mI (1806) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1806) mqtts_example: Other event id:7[0m
+[0;31mE (1806) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1816) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1826) mqtt_client: Error transport connect[0m
+[0;32mI (1826) mqtts_example: Other event id:0[0m
+[0;32mI (1836) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1836) main_task: Returned from app_main()[0m
+[0;32mI (2036) esp_netif_handlers: sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2036) WiFi: Got IP: 192.168.1.9[0m
+[0;32mI (2086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (3586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (5086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (6586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (8086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (9586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (11086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (12586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (14086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (15586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (16836) mqtts_example: Other event id:7[0m
+I (17026) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:4, winSize:64
+[0;32mI (17086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (18586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (20086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (21586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (23086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (24586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (26086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (26846) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (26846) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (26846) mqtt_client: Error transport connect[0m
+[0;32mI (26846) mqtts_example: Other event id:0[0m
+[0;32mI (26856) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (29086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (30586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (32086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (33586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (35086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (36586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (38086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (39586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (41086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (41856) mqtts_example: Other event id:7[0m
+[0;32mI (42586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (44086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (45586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (47086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (48586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (50086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (51586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (51866) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (51866) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (51866) mqtt_client: Error transport connect[0m
+[0;32mI (51866) mqtts_example: Other event id:0[0m
+[0;32mI (51876) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (53086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (54586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (56086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (57586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (59086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (60586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (62086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (63586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (65086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (66586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (66876) mqtts_example: Other event id:7[0m
+[0;32mI (68086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (69586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (71086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (72586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (74086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (75586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (76886) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (76886) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (76886) mqtt_client: Error transport connect[0m
+[0;32mI (76886) mqtts_example: Other event id:0[0m
+[0;32mI (76896) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (77086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (78586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (80086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (81586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (83086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (84586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (86086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (87586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (89086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (90586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (91896) mqtts_example: Other event id:7[0m
+[0;32mI (92086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (93586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (95086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (96586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (98086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (99586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (101086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (101906) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (101906) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (101906) mqtt_client: Error transport connect[0m
+[0;32mI (101906) mqtts_example: Other event id:0[0m
+[0;32mI (101916) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (102586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (104086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (105586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (107086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (108586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (110086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (111586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (113086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (114586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (116086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (116916) mqtts_example: Other event id:7[0m
+[0;32mI (117586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (119086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (120586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (122086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (123586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (125086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (126586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (126926) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (126926) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (126926) mqtt_client: Error transport connect[0m
+[0;32mI (126926) mqtts_example: Other event id:0[0m
+[0;32mI (126936) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (128086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (129586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (131086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (132586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (134086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (135586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (137086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (138586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (140086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (141586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (141936) mqtts_example: Other event id:7[0m
+[0;32mI (143086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (144586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (146086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (147586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (149086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (150586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (151946) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (151946) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (151946) mqtt_client: Error transport connect[0m
+[0;32mI (151946) mqtts_example: Other event id:0[0m
+[0;32mI (151956) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (152086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (153586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (155086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (156586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (158086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (159586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (161086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (162586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (164086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (165586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (166956) mqtts_example: Other event id:7[0m
+[0;32mI (167086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (168586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (170086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (171586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (173086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (174586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (176086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (176966) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (176966) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (176966) mqtt_client: Error transport connect[0m
+[0;32mI (176966) mqtts_example: Other event id:0[0m
+[0;32mI (176976) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (177586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (179086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (180586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (182086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (183586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (185086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (186586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (188086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (189586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (191086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (191976) mqtts_example: Other event id:7[0m
+[0;32mI (192586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (194086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (195586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (197086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (198586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (200086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (201586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (201986) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (201986) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (201986) mqtt_client: Error transport connect[0m
+[0;32mI (201986) mqtts_example: Other event id:0[0m
+[0;32mI (201996) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (203086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (204586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (206086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (207586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (209086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (210586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (212086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (213586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (215086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (216586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (216996) mqtts_example: Other event id:7[0m
+[0;32mI (218086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (219586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (221086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (222586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (224086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (225586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (227006) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (227006) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (227006) mqtt_client: Error transport connect[0m
+[0;32mI (227006) mqtts_example: Other event id:0[0m
+[0;32mI (227016) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (227086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (228586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (230086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (231586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (233086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (234586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (236086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (237586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (239086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (240586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (242016) mqtts_example: Other event id:7[0m
+[0;32mI (242086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (243586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (245086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (246586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (248086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (249586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (251086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;31mE (252026) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (252026) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (252026) mqtt_client: Error transport connect[0m
+[0;32mI (252026) mqtts_example: Other event id:0[0m
+[0;32mI (252036) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (252586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (254086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (255586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (257086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (258586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (260086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (261586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (263086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (264586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (266086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (267036) mqtts_example: Other event id:7[0m
+[0;32mI (267056) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (267056) mqtts_example: sent subscribe successful, msg_id=21100[0m
+[0;32mI (267066) mqtts_example: Other event id:3[0m
+[0;32mI (267586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (269086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (270586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (272086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (273586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (275086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (276586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (278086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (279586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (281086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (282586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (284086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (285586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (287086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (288586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (290086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (291586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (293086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (294586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (296086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (297586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (299086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (300586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (302086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (303586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (305086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (306586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (308086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (309586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (311086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (312586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (314086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (315586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (317086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (318586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (320086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (321586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (323086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (324586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (326086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (327586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (329086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (330586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (332086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (333586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (335086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (336586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (338086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (339586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (341086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (342586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (344086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (345586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (347086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (348586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (350086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (351586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (353086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (354586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (356086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (357586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (359086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (360586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (362086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (363586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (365086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (366586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (368086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (369586) LORA_receive: NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+Gói tin không hợp lệ: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0;32mI (370606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (372106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (373606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (375106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (375626) mqtts_example: Other event id:6[0m
+[0;32mI (376606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (378106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (379606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (381106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (382606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (384106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (385606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (387106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (388606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (390106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (391606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (393106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (394606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (396106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (397606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (399106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (400606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (402106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (403606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (405106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (406606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (408106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (409606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (411106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (412606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (414106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (415606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (417106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (418606) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+[0;32mI (420106) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 7'g�N�~?$D�Ѵcj�(
+!��U��x�W������m���H%����.�l��U1_i�W/��&`A0{g�,�G�@/e����9�l�sh咥�?�<��cl�u�Gs�b8�U����G �e�lV
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=274fch (161020) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037524 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b578 vaddr=40080000 size=04aa0h ( 19104) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6e5ch (683612) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000e6e84 vaddr=40084aa0 size=140e0h ( 82144) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu start user code[0m
+[0;32mI (474) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (474) app_init: Application information:[0m
+[0;32mI (477) app_init: Project name:     GATEWAY[0m
+[0;32mI (482) app_init: App version:      c78eca7-dirty[0m
+[0;32mI (487) app_init: Compile time:     Apr  5 2025 16:41:40[0m
+[0;32mI (493) app_init: ELF file SHA256:  81eff3b80...[0m
+[0;32mI (498) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (504) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (508) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (513) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8898 len 00027768 (157 KiB): DRAM[0m
+[0;32mI (538) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40098B80 len 00007480 (29 KiB): IRAM[0m
+[0;32mI (558) spi_flash: detected chip: generic[0m
+[0;32mI (561) spi_flash: flash io: dio[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+[0;32mI (586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+LoRa Receiver Đã Khởi Động
+I (626) wifi:wifi driver task: 3ffc1bec, prio:23, stack:6656, core=0
+I (636) wifi:wifi firmware version: ccaebfa
+I (636) wifi:wifi certification version: v7.0
+I (636) wifi:config NVS flash: enabled
+I (636) wifi:config nano formating: disabled
+I (636) wifi:Init data frame dynamic rx buffer num: 32
+I (646) wifi:Init static rx mgmt buffer num: 5
+I (646) wifi:Init management short buffer num: 32
+I (656) wifi:Init dynamic tx buffer num: 32
+I (656) wifi:Init static rx buffer size: 1600
+I (666) wifi:Init static rx buffer num: 10
+I (666) wifi:Init dynamic rx buffer num: 32
+[0;32mI (666) wifi_init: rx ba win: 6[0m
+[0;32mI (676) wifi_init: accept mbox: 6[0m
+[0;32mI (676) wifi_init: tcpip mbox: 32[0m
+[0;32mI (676) wifi_init: udp mbox: 6[0m
+[0;32mI (686) wifi_init: tcp mbox: 6[0m
+[0;32mI (686) wifi_init: tcp tx win: 5760[0m
+[0;32mI (696) wifi_init: tcp rx win: 5760[0m
+[0;32mI (696) wifi_init: tcp mss: 1440[0m
+[0;32mI (696) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (706) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (716) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (806) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (806) wifi:enable tsf
+I (826) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1, snd_ch_cfg:0x0
+I (826) wifi:state: init -> auth (0xb0)
+I (856) wifi:state: auth -> assoc (0x0)
+I (926) wifi:state: assoc -> run (0x10)
+I (1026) wifi:connected with VNPT_Hanh, aid = 8, channel 8, BW20, bssid = 4c:12:e8:76:17:60
+I (1026) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (1036) wifi:pm start, type: 1
+
+I (1036) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1096) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1806) mqtts_example: [APP] Free memory: 224664 bytes[0m
+[0;32mI (1806) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1806) mqtts_example: Other event id:7[0m
+[0;31mE (1806) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1816) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1826) mqtt_client: Error transport connect[0m
+[0;32mI (1826) mqtts_example: Other event id:0[0m
+[0;32mI (1836) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1836) main_task: Returned from app_main()[0m
+[0;32mI (2046) esp_netif_handlers: sta ip: 192.168.1.9, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2046) WiFi: Got IP: 192.168.1.9[0m
+[0;32mI (2086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+I (3166) wifi:<ba-add>idx:0 (ifx:0, 4c:12:e8:76:17:60), tid:0, ssn:4, winSize:64
+[0;32mI (3586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (5086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (6586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (8086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (9586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (11086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (12586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (14086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (15586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (16836) mqtts_example: Other event id:7[0m
+[0;32mI (16856) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (16856) mqtts_example: sent subscribe successful, msg_id=59810[0m
+[0;32mI (16876) mqtts_example: Other event id:3[0m
+[0;32mI (16896) mqtts_example: Other event id:5[0m
+[0;32mI (17086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (18586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (20086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (21586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (23086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (24586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (26086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (27586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (29086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (30586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (32086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (33586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (35086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (36586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (38086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (39586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (41086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (42586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (44086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (45586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (47086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (48586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (50086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (51586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (53086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (54586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (56086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (57586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (59086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (60586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (62086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (63586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (65086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (66586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (68086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (69586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (71086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (72586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (74086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (75586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (77086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (78586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (80086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (81586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (83086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (84586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (86086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (87586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (89086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (90586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (92086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (93586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (95086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (96586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (98086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (99586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (101086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (102586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (104086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (105586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (107086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (108586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (110086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (111586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (113086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (114586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (116086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (117586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (119086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (120586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (122086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (123586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (125086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (126586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (128086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (129586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (131086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (132586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (134086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (135586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (137086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (138586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (140086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (141586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (143086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (144586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (146086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (147586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (149086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (150586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (152086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (153586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (155086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (156586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (158086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (159586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (161086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (162586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (164086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (165586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (167086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (168586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (170086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (171586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (173086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (174586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (176086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (177586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (179086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (180586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (182086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (183586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (185086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (186586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (188086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (189586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (191086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (192586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (194086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (195586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (197086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (198586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (200086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (201586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (203086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (204586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (206086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (207586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (209086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (210586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (212086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (213586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (215086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (216586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (218086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (219586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (221086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (222586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (224086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (225586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (227086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (228586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (230086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (231586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (233086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (234586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (236086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (237586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (239086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (240586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (242086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (243586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (245086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (246586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (248086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (249586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (251086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (252586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (254086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (255586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (257086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (258586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (260086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (261586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (263086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (264586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (266086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (267586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (269086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (270586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (272086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (273586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (275086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (276586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (278086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (279586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (281086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (282586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (284086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (285586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (287086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (288586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (290086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (291586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (293086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (294586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (296086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (297586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (299086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (300586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (302086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (303586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (305086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (306586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (308086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (309586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (311086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (312586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (314086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (315586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (317086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (318586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (320086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (321586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (323086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (324586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (326086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (327586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (329086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (330586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (332086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (333586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (335086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (336586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (338086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (339586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (341086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (342586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (344086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (345586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (347086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (348586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (350086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (351586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (353086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (354586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (356086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (357586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (359086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (360586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (362086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (363586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (365086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (366586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (368086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (369586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (371086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (372586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (374086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (375586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (377086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (378586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (380086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (381586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (383086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (384586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (386086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (387586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (389086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (390586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (392086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (393586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (395086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (396586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (398086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (399586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (401086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (402586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (404086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (405586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (407086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (408586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (410086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (411586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (413086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (414586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (416086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (417586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (419086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (420586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (422086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (423586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (425086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (426586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (428086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (429586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (431086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (432586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (434086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (435586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (437086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (438586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (440086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (441586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (443086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (444586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (446086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (447586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (449086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (450586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (452086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (453586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (455086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (456586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (458086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (459586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (461086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (462586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (464086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (465586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (467086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (468586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (470086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (471586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (473086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (474586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (476086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (477586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (479086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (480586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (482086) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
+[0;32mI (483586) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: �������������������������������������������������1@,�@0
+[0m
