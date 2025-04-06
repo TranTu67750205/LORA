@@ -50,6 +50,9 @@ static const char *TAG = "LORA_receive";
 
 esp_mqtt_client_handle_t client;
 uint8_t buf[128];
+char node_id [10];
+char led_state[10];
+float soil, uv, temp, hum;
 //esp_rom_gpio_pad_select_gpio(LED_PIN);
 //gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
 //vTaskDelay(500 / portTICK_PERIOD_MS);
@@ -60,7 +63,11 @@ uint8_t buf[128];
 
 void mqtt_task (){
     while(1){
-        esp_mqtt_client_publish(client, "test/topic", (const char *)buf, 0, 1, 0);
+        // Gửi dữ liệu lên MQTT server
+        char mqtt_payload[200];
+        snprintf(mqtt_payload, sizeof(mqtt_payload),
+        "{\"id\":\"%s\",\"temp\":%.1f,\"hum\":%.1f,\"soil\":%.1f,\"uv\":%.1f}", node_id, temp, hum, soil, uv);
+        esp_mqtt_client_publish(client, "sensor/data", (const char *)mqtt_payload, 0, 1, 0);
         vTaskDelay(pdMS_TO_TICKS(4000)); // Giảm tốc độ nhận
     }
 
@@ -77,9 +84,6 @@ void lora_task (){
             buf[len] = '\0';
             ESP_LOGI(TAG, "NHẬN ĐƯỢC GÓI TIN: %s\n", buf);
             // Tách ID và trạng thái từ gói tin
-            char node_id [10];
-            char led_state[10];
-            float soil, uv, temp, hum;;
             if (sscanf((char *)buf, "ID%[^:]:TEMP=%f:HUM=%f:SOIL=%f:UV=%f", node_id, &temp, &hum, &soil, &uv) == 5) {
                 ESP_LOGI(TAG, "Node ID: %s, Temp: %.1f, Hum: %.1f, Soil: %.1f, UV: %.1f", node_id, temp, hum, soil, uv);
    
