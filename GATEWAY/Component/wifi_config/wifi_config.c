@@ -39,8 +39,8 @@ void task_wifi_init(){
 
     wifi_config_t sta_cfg = {
         .sta = {
-            .ssid = "VNPT_Hanh",                    // 9999     Galaxy A05s 6247      VNPT_Hanh
-            .password = "01298649287",                       // quangduc9999         67750205tat        01298649287       
+            .ssid = "9999",                    // 9999     Galaxy A05s 6247      VNPT_Hanh
+            .password = "quangduc9999",                       // quangduc9999         67750205tat        01298649287       
             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
         }
     };

@@ -38,7 +38,7 @@ void mqtt_app_start(void)
     esp_mqtt_client_config_t mqtt_cfg = {
         .broker = {
             .address = {
-                .uri = "mqtt://192.168.1.8:1883",                 // Cổng mặc định không mã hóa
+                .uri = "mqtt://192.168.1.139:1883",                 // Cổng mặc định không mã hóa
             }
         },
         .session = {

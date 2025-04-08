@@ -1,0 +1,700 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2737ch (160636) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000373a4 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b3f8 vaddr=40080000 size=04c20h ( 19488) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a65ech (681452) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6614 vaddr=40084c20 size=13f60h ( 81760) load[0m
+[0;32mI (452) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (473) cpu_start: Pro cpu start user code[0m
+[0;32mI (473) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (473) app_init: Application information:[0m
+[0;32mI (476) app_init: Project name:     GATEWAY[0m
+[0;32mI (481) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (486) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (492) app_init: ELF file SHA256:  c5c3da094...[0m
+[0;32mI (497) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (503) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (508) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (512) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40098B80 len 00007480 (29 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (560) spi_flash: flash io: dio[0m
+[0;32mI (565) main_task: Started on CPU0[0m
+[0;32mI (575) main_task: Calling app_main()[0m
+[0;32mI (585) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (615) wifi:wifi driver task: 3ffc1d10, prio:23, stack:6656, core=0
+I (625) wifi:wifi firmware version: ccaebfa
+I (625) wifi:wifi certification version: v7.0
+I (625) wifi:config NVS flash: enabled
+I (625) wifi:config nano formating: disabled
+I (625) wifi:Init data frame dynamic rx buffer num: 32
+I (635) wifi:Init static rx mgmt buffer num: 5
+I (635) wifi:Init management short buffer num: 32
+I (645) wifi:Init dynamic tx buffer num: 32
+I (645) wifi:Init static rx buffer size: 1600
+I (655) wifi:Init static rx buffer num: 10
+I (655) wifi:Init dynamic rx buffer num: 32
+[0;32mI (655) wifi_init: rx ba win: 6[0m
+[0;32mI (665) wifi_init: accept mbox: 6[0m
+[0;32mI (665) wifi_init: tcpip mbox: 32[0m
+[0;32mI (665) wifi_init: udp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp mbox: 6[0m
+[0;32mI (675) wifi_init: tcp tx win: 5760[0m
+[0;32mI (685) wifi_init: tcp rx win: 5760[0m
+[0;32mI (685) wifi_init: tcp mss: 1440[0m
+[0;32mI (685) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (695) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (725) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (815) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (815) wifi:enable tsf
+I (835) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (835) wifi:state: init -> auth (0xb0)
+I (875) wifi:state: auth -> assoc (0x0)
+I (915) wifi:state: assoc -> run (0x10)
+I (955) wifi:connected with 9999, aid = 1, channel 6, BW20, bssid = 00:c8:96:7e:b6:21
+I (955) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (965) wifi:pm start, type: 1
+
+I (965) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (985) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (995) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:7e:b6:21), tid:7, ssn:0, winSize:64
+[0;32mI (1815) mqtts_example: [APP] Free memory: 224304 bytes[0m
+[0;32mI (1815) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1815) mqtts_example: Other event id:7[0m
+[0;31mE (1815) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1825) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1835) mqtt_client: Error transport connect[0m
+[0;32mI (1835) mqtts_example: Other event id:0[0m
+[0;32mI (1845) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1845) main_task: Returned from app_main()[0m
+[0;32mI (1965) esp_netif_handlers: sta ip: 192.168.1.157, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1965) WiFi: Got IP: 192.168.1.157[0m
+[0;32mI (2085) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (3585) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (5085) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+I (6115) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:7e:b6:21), tid:6, ssn:2, winSize:64
+[0;32mI (6585) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.86
+[0m
+[0;32mI (6585) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 98.7, UV: 0.9[0m
+[0;32mI (7595) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.86
+[0m
+[0;32mI (9095) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.86
+[0m
+[0;32mI (10595) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.86
+[0m
+[0;32mI (12095) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.07
+[0m
+[0;32mI (12095) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 95.7, UV: 1.1[0m
+[0;32mI (13105) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.07
+[0m
+[0;32mI (14605) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.07
+[0m
+[0;32mI (16105) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.07
+[0m
+[0;32mI (16845) mqtts_example: Other event id:7[0m
+[0;32mI (17605) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=88.9:UV=1.28
+[0m
+[0;32mI (17605) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 88.9, UV: 1.3[0m
+[0;32mI (18615) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=88.9:UV=1.28
+[0m
+[0;32mI (20115) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=88.9:UV=1.28
+[0m
+[0;32mI (21615) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=88.9:UV=1.28
+[0m
+[0;32mI (23115) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=88.9:UV=1.28
+[0m
+[0;32mI (24615) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.6:UV=1.09
+[0m
+[0;32mI (24615) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 97.6, UV: 1.1[0m
+[0;32mI (25625) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.6:UV=1.09
+[0m
+[0;31mE (26855) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (26855) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (26855) mqtt_client: Error transport connect[0m
+[0;32mI (26855) mqtts_example: Other event id:0[0m
+[0;32mI (26865) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27125) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.6:UV=1.09
+[0m
+[0;32mI (28625) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.6:UV=1.09
+[0m
+[0;32mI (30125) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=90.8:UV=0.72
+[0m
+[0;32mI (30125) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 90.8, UV: 0.7[0m
+[0;32mI (31135) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=90.8:UV=0.72
+[0m
+[0;32mI (32635) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=90.8:UV=0.72
+[0m
+[0;32mI (34135) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=90.8:UV=0.72
+[0m
+[0;32mI (35635) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=90.8:UV=0.72
+[0m
+[0;32mI (37135) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.2:UV=0.81
+[0m
+[0;32mI (37135) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 92.2, UV: 0.8[0m
+[0;32mI (38145) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.2:UV=0.81
+[0m
+[0;32mI (39645) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.2:UV=0.81
+[0m
+[0;32mI (41145) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.2:UV=0.81
+[0m
+[0;32mI (41865) mqtts_example: Other event id:7[0m
+[0;32mI (42645) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=77.7:UV=0.88
+[0m
+[0;32mI (42645) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 77.7, UV: 0.9[0m
+[0;32mI (43655) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=77.7:UV=0.88
+[0m
+[0;32mI (45155) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=77.7:UV=0.88
+[0m
+[0;32mI (46655) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=77.7:UV=0.88
+[0m
+[0;32mI (48155) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.5:UV=0.91
+[0m
+[0;32mI (48155) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 93.5, UV: 0.9[0m
+[0;32mI (49165) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.5:UV=0.91
+[0m
+[0;32mI (50665) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.5:UV=0.91
+[0m
+[0;31mE (51875) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (51875) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (51875) mqtt_client: Error transport connect[0m
+[0;32mI (51875) mqtts_example: Other event id:0[0m
+[0;32mI (51885) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (52165) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.5:UV=0.91
+[0m
+[0;32mI (53665) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.5:UV=0.91
+[0m
+[0;32mI (55165) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.4:UV=0.97
+[0m
+[0;32mI (55165) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 91.4, UV: 1.0[0m
+[0;32mI (56175) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.4:UV=0.97
+[0m
+[0;32mI (57675) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.4:UV=0.97
+[0m
+[0;32mI (59175) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.4:UV=0.97
+[0m
+[0;32mI (60675) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.0:UV=0.76
+[0m
+[0;32mI (60675) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 92.0, UV: 0.8[0m
+[0;32mI (61685) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.0:UV=0.76
+[0m
+[0;32mI (63185) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.0:UV=0.76
+[0m
+[0;32mI (64685) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.0:UV=0.76
+[0m
+[0;32mI (66185) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=92.0:UV=0.76
+[0m
+[0;32mI (66885) mqtts_example: Other event id:7[0m
+[0;32mI (67685) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.1:UV=0.93
+[0m
+[0;32mI (67685) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 91.1, UV: 0.9[0m
+[0;32mI (68695) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.1:UV=0.93
+[0m
+[0;32mI (70195) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.1:UV=0.93
+[0m
+[0;32mI (71695) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=91.1:UV=0.93
+[0m
+[0;32mI (73195) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=1.15
+[0m
+[0;32mI (73195) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 98.4, UV: 1.1[0m
+[0;32mI (74205) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=1.15
+[0m
+[0;32mI (75705) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=1.15
+[0m
+[0;31mE (76895) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (76895) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (76895) mqtt_client: Error transport connect[0m
+[0;32mI (76895) mqtts_example: Other event id:0[0m
+[0;32mI (76905) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (77205) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=1.15
+[0m
+[0;32mI (78705) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=0.90
+[0m
+[0;32mI (78705) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 98.4, UV: 0.9[0m
+[0;32mI (79715) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=0.90
+[0m
+[0;32mI (81215) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=0.90
+[0m
+[0;32mI (82715) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=0.90
+[0m
+[0;32mI (84215) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.4:UV=0.90
+[0m
+[0;32mI (85715) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=82.8:UV=0.91
+[0m
+[0;32mI (85715) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 82.8, UV: 0.9[0m
+[0;32mI (86725) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=82.8:UV=0.91
+[0m
+[0;32mI (88225) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=82.8:UV=0.91
+[0m
+[0;32mI (89725) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=82.8:UV=0.91
+[0m
+[0;32mI (91225) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.2:UV=0.94
+[0m
+[0;32mI (91225) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 95.2, UV: 0.9[0m
+[0;32mI (91905) mqtts_example: Other event id:7[0m
+[0;32mI (92235) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.2:UV=0.94
+[0m
+[0;32mI (93735) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.2:UV=0.94
+[0m
+[0;32mI (95235) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.2:UV=0.94
+[0m
+[0;32mI (96735) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.8:UV=0.93
+[0m
+[0;32mI (96735) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 97.8, UV: 0.9[0m
+[0;32mI (97745) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.8:UV=0.93
+[0m
+[0;32mI (99245) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.8:UV=0.93
+[0m
+[0;32mI (100745) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.8:UV=0.93
+[0m
+[0;31mE (101915) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (101915) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (101915) mqtt_client: Error transport connect[0m
+[0;32mI (101915) mqtts_example: Other event id:0[0m
+[0;32mI (101925) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (102245) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.8:UV=0.93
+[0m
+[0;32mI (103745) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.7:UV=0.96
+[0m
+[0;32mI (103745) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 97.7, UV: 1.0[0m
+[0;32mI (104755) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.7:UV=0.96
+[0m
+[0;32mI (106255) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.7:UV=0.96
+[0m
+[0;32mI (107755) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.7:UV=0.96
+[0m
+[0;32mI (109255) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.3:UV=0.87
+[0m
+[0;32mI (109255) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 97.3, UV: 0.9[0m
+[0;32mI (110265) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.3:UV=0.87
+[0m
+[0;32mI (111765) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.3:UV=0.87
+[0m
+[0;32mI (113265) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.3:UV=0.87
+[0m
+[0;32mI (114765) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=97.3:UV=0.87
+[0m
+[0;32mI (116265) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=0.94
+[0m
+[0;32mI (116265) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 94.3, UV: 0.9[0m
+[0;32mI (116925) mqtts_example: Other event id:7[0m
+[0;32mI (117275) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=0.94
+[0m
+[0;32mI (118775) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=0.94
+[0m
+[0;32mI (120275) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=0.94
+[0m
+[0;32mI (121775) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.8:UV=0.84
+[0m
+[0;32mI (121775) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 93.8, UV: 0.8[0m
+[0;32mI (122785) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.8:UV=0.84
+[0m
+[0;32mI (124285) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.8:UV=0.84
+[0m
+[0;32mI (125785) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=93.8:UV=0.84
+[0m
+[0;31mE (126935) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (126935) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (126935) mqtt_client: Error transport connect[0m
+[0;32mI (126935) mqtts_example: Other event id:0[0m
+[0;32mI (126945) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (127285) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.95
+[0m
+[0;32mI (127285) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 98.7, UV: 0.9[0m
+[0;32mI (128295) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.95
+[0m
+[0;32mI (129795) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.95
+[0m
+[0;32mI (131295) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.95
+[0m
+[0;32mI (132795) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=98.7:UV=0.95
+[0m
+[0;32mI (134295) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=76.8:UV=0.99
+[0m
+[0;32mI (134295) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 76.8, UV: 1.0[0m
+[0;32mI (135305) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=76.8:UV=0.99
+[0m
+[0;32mI (136805) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=76.8:UV=0.99
+[0m
+[0;32mI (138305) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=76.8:UV=0.99
+[0m
+[0;32mI (139805) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=1.03
+[0m
+[0;32mI (139805) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 94.3, UV: 1.0[0m
+[0;32mI (140815) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=1.03
+[0m
+[0;32mI (141945) mqtts_example: Other event id:7[0m
+[0;32mI (142315) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=1.03
+[0m
+[0;32mI (143815) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=1.03
+[0m
+[0;32mI (145315) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.3:UV=1.03
+[0m
+[0;32mI (146815) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=90.8:UV=0.89
+[0m
+[0;32mI (146815) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 90.8, UV: 0.9[0m
+[0;32mI (147825) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=90.8:UV=0.89
+[0m
+[0;32mI (149325) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=90.8:UV=0.89
+[0m
+[0;32mI (150825) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=90.8:UV=0.89
+[0m
+[0;31mE (151955) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (151955) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (151955) mqtt_client: Error transport connect[0m
+[0;32mI (151955) mqtts_example: Other event id:0[0m
+[0;32mI (151965) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (152325) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.4:UV=0.98
+[0m
+[0;32mI (152325) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 94.4, UV: 1.0[0m
+[0;32mI (153335) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.4:UV=0.98
+[0m
+[0;32mI (154835) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.4:UV=0.98
+[0m
+[0;32mI (156335) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=94.4:UV=0.98
+[0m
+[0;32mI (157835) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.04
+[0m
+[0;32mI (157835) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 68.0, Soil: 95.7, UV: 1.0[0m
+[0;32mI (158845) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.04
+[0m
+[0;32mI (160345) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.04
+[0m
+[0;32mI (161845) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.04
+[0m
+[0;32mI (163345) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=68:SOIL=95.7:UV=1.04
+[0m
+[0;32mI (164845) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=1.07
+[0m
+[0;32mI (164845) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.5, UV: 1.1[0m
+[0;32mI (165855) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=1.07
+[0m
+[0;32mI (166965) mqtts_example: Other event id:7[0m
+[0;32mI (167355) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=1.07
+[0m
+[0;32mI (168855) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=1.07
+[0m
+[0;32mI (170355) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.1:UV=0.98
+[0m
+[0;32mI (170355) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.1, UV: 1.0[0m
+[0;32mI (171365) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.1:UV=0.98
+[0m
+[0;32mI (172865) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.1:UV=0.98
+[0m
+[0;32mI (174365) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.1:UV=0.98
+[0m
+[0;32mI (175865) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.1:UV=0.98
+[0m
+[0;31mE (176975) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (176975) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (176975) mqtt_client: Error transport connect[0m
+[0;32mI (176975) mqtts_example: Other event id:0[0m
+[0;32mI (176985) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (177365) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.6:UV=0.95
+[0m
+[0;32mI (177365) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.6, UV: 0.9[0m
+[0;32mI (178375) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.6:UV=0.95
+[0m
+[0;32mI (179875) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.6:UV=0.95
+[0m
+[0;32mI (181375) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.6:UV=0.95
+[0m
+[0;32mI (182875) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=1.01
+[0m
+[0;32mI (182875) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.1, UV: 1.0[0m
+[0;32mI (183885) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=1.01
+[0m
+[0;32mI (185385) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=1.01
+[0m
+[0;32mI (186885) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=1.01
+[0m
+[0;32mI (188385) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.94
+[0m
+[0;32mI (188385) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.6, UV: 0.9[0m
+[0;32mI (189395) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.94
+[0m
+[0;32mI (190895) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.94
+[0m
+[0;32mI (191985) mqtts_example: Other event id:7[0m
+[0;32mI (192395) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.94
+[0m
+[0;32mI (193895) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.94
+[0m
+[0;32mI (195395) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=93.8:UV=0.87
+[0m
+[0;32mI (195395) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 93.8, UV: 0.9[0m
+[0;32mI (196405) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=93.8:UV=0.87
+[0m
+[0;32mI (197905) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=93.8:UV=0.87
+[0m
+[0;32mI (199405) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=93.8:UV=0.87
+[0m
+[0;32mI (200905) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.82
+[0m
+[0;32mI (200905) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.6, UV: 0.8[0m
+[0;32mI (201915) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.82
+[0m
+[0;31mE (201995) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (201995) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (201995) mqtt_client: Error transport connect[0m
+[0;32mI (201995) mqtts_example: Other event id:0[0m
+[0;32mI (202005) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (203415) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.82
+[0m
+[0;32mI (204915) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.82
+[0m
+[0;32mI (206415) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.82
+[0m
+[0;32mI (207915) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.6:UV=1.12
+[0m
+[0;32mI (207915) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 99.6, UV: 1.1[0m
+[0;32mI (208925) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.6:UV=1.12
+[0m
+[0;32mI (210425) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.6:UV=1.12
+[0m
+[0;32mI (211925) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.6:UV=1.12
+[0m
+[0;32mI (213425) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.2:UV=1.16
+[0m
+[0;32mI (213425) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 99.2, UV: 1.2[0m
+[0;32mI (214435) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.2:UV=1.16
+[0m
+[0;32mI (215935) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.2:UV=1.16
+[0m
+[0;32mI (217005) mqtts_example: Other event id:7[0m
+[0;32mI (217435) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=99.2:UV=1.16
+[0m
+[0;32mI (218935) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.2:UV=0.74
+[0m
+[0;32mI (218935) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.2, UV: 0.7[0m
+[0;32mI (219945) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.2:UV=0.74
+[0m
+[0;32mI (221445) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.2:UV=0.74
+[0m
+[0;32mI (222945) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.2:UV=0.74
+[0m
+[0;32mI (224445) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.2:UV=0.74
+[0m
+[0;32mI (225945) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=76.3:UV=0.81
+[0m
+[0;32mI (225945) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 76.3, UV: 0.8[0m
+[0;32mI (226955) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=76.3:UV=0.81
+[0m
+[0;31mE (227015) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (227015) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (227015) mqtt_client: Error transport connect[0m
+[0;32mI (227015) mqtts_example: Other event id:0[0m
+[0;32mI (227025) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (228455) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=76.3:UV=0.81
+[0m
+[0;32mI (229955) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=76.3:UV=0.81
+[0m
+[0;32mI (231455) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.7:UV=1.28
+[0m
+[0;32mI (231455) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 97.7, UV: 1.3[0m
+[0;32mI (232465) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.7:UV=1.28
+[0m
+[0;32mI (233965) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.7:UV=1.28
+[0m
+[0;32mI (235465) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.7:UV=1.28
+[0m
+[0;32mI (236965) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.7:UV=1.28
+[0m
+[0;32mI (238465) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.3:UV=0.86
+[0m
+[0;32mI (238465) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.3, UV: 0.9[0m
+[0;32mI (239475) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.3:UV=0.86
+[0m
+[0;32mI (240975) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.3:UV=0.86
+[0m
+[0;32mI (242025) mqtts_example: Other event id:7[0m
+[0;32mI (242475) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.3:UV=0.86
+[0m
+[0;32mI (243975) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.4:UV=0.90
+[0m
+[0;32mI (243975) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.4, UV: 0.9[0m
+[0;32mI (244985) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.4:UV=0.90
+[0m
+[0;32mI (246485) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.4:UV=0.90
+[0m
+[0;32mI (247985) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.4:UV=0.90
+[0m
+[0;32mI (249485) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.93
+[0m
+[0;32mI (249485) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.6, UV: 0.9[0m
+[0;32mI (250495) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.93
+[0m
+[0;32mI (251995) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.93
+[0m
+[0;31mE (252035) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (252035) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (252035) mqtt_client: Error transport connect[0m
+[0;32mI (252035) mqtts_example: Other event id:0[0m
+[0;32mI (252045) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (253495) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.93
+[0m
+[0;32mI (254995) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.6:UV=0.93
+[0m
+[0;32mI (256495) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.3:UV=0.84
+[0m
+[0;32mI (256495) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 86.3, UV: 0.8[0m
+[0;32mI (257505) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.3:UV=0.84
+[0m
+[0;32mI (259005) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.3:UV=0.84
+[0m
+[0;32mI (260505) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.3:UV=0.84
+[0m
+[0;32mI (262005) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.7:UV=1.16
+[0m
+[0;32mI (262005) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 98.7, UV: 1.2[0m
+[0;32mI (263015) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.7:UV=1.16
+[0m
+[0;32mI (264515) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.7:UV=1.16
+[0m
+[0;32mI (266015) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.7:UV=1.16
+[0m
+[0;32mI (267045) mqtts_example: Other event id:7[0m
+[0;32mI (267515) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.99
+[0m
+[0;32mI (267515) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.9, UV: 1.0[0m
+[0;32mI (268525) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.99
+[0m
+[0;32mI (270025) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.99
+[0m
+[0;32mI (271525) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.99
+[0m
+[0;32mI (273025) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.99
+[0m
+[0;32mI (274525) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=0.94
+[0m
+[0;32mI (274525) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 97.5, UV: 0.9[0m
+[0;32mI (275535) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=0.94
+[0m
+[0;32mI (277035) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=0.94
+[0m
+[0;31mE (277055) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (277055) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (277055) mqtt_client: Error transport connect[0m
+[0;32mI (277055) mqtts_example: Other event id:0[0m
+[0;32mI (277065) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (278535) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=0.94
+[0m
+[0;32mI (280035) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=0.90
+[0m
+[0;32mI (280035) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.9, UV: 0.9[0m
+[0;32mI (281045) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=0.90
+[0m
+[0;32mI (282545) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=0.90
+[0m
+[0;32mI (284045) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=0.90
+[0m
+[0;32mI (285545) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=0.90
+[0m
+[0;32mI (287045) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.0:UV=0.91
+[0m
+[0;32mI (287045) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 98.0, UV: 0.9[0m
+[0;32mI (288055) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.0:UV=0.91
+[0m
+[0;32mI (289555) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.0:UV=0.91
+[0m
+[0;32mI (291055) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=98.0:UV=0.91
+[0m
+[0;32mI (292065) mqtts_example: Other event id:7[0m
+[0;32mI (292555) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.89
+[0m
+[0;32mI (292555) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.5, UV: 0.9[0m
+[0;32mI (293565) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.89
+[0m
+[0;32mI (295065) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.89
+[0m
+[0;32mI (296565) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.89
+[0m
+[0;32mI (298065) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.8:UV=0.90
+[0m
+[0;32mI (298065) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.8, UV: 0.9[0m
+[0;32mI (299075) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.8:UV=0.90
+[0m
+[0;32mI (300575) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.8:UV=0.90
+[0m
+[0;31mE (302075) esp-tls: [sock=54] select() timeout[0m
+[0;32mI (302075) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.8:UV=0.90
+[0m
+[0;31mE (302075) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (302085) mqtt_client: Error transport connect[0m
+[0;32mI (302085) mqtts_example: Other event id:0[0m
+[0;32mI (302095) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (303585) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.8:UV=0.90
+[0m
+[0;32mI (305085) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.5:UV=1.14
+[0m
+[0;32mI (305085) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.5, UV: 1.1[0m
+[0;32mI (306095) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.5:UV=1.14
+[0m
+[0;32mI (307595) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.5:UV=1.14
+[0m
+[0;32mI (309095) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.5:UV=1.14
+[0m
+[0;32mI (310595) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=91.1:UV=1.12
+[0m
+[0;32mI (310595) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 91.1, UV: 1.1[0m
+[0;32mI (311605) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=91.1:UV=1.12
+[0m
+[0;32mI (313105) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=91.1:UV=1.12
+[0m
+[0;32mI (314605) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=91.1:UV=1.12
+[0m
+[0;32mI (316105) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=91.1:UV=1.12
+[0m
+[0;32mI (317095) mqtts_example: Other event id:7[0m
+[0;32mI (317605) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=84.0:UV=0.81
+[0m
+[0;32mI (317605) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 84.0, UV: 0.8[0m
+[0;32mI (318615) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=84.0:UV=0.81
+[0m
+[0;32mI (320115) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=84.0:UV=0.81
+[0m
+[0;32mI (321615) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=84.0:UV=0.81
+[0m
+[0;32mI (323115) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=69.9:UV=0.61
+[0m
+[0;32mI (323115) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 69.9, UV: 0.6[0m
+[0;32mI (324125) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=69.9:UV=0.61
+[0m
+[0;32mI (325625) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=69.9:UV=0.61
+[0m

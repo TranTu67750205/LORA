@@ -1,0 +1,79 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081bc2: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008adc9: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400933fd: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x4008abe5: xRingbufferReceive at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/ringbuf.c:1104 (discriminator 1)
+0x400d8221: mqtt_task at C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:77
+0x4008b8d5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

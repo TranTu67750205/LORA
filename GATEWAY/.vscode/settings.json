@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "esp_partition.h": "c",
+        "esp_event.h": "c",
+        "esp_wifi.h": "c"
+    }
+}
