@@ -1,0 +1,882 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bb30h ( 47920) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bb58 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dfe8 vaddr=40080000 size=02030h (  8240) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1afa8h (110504) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003afd0 vaddr=40082030 size=0c3c0h ( 50112) load[0m
+[0;32mI (200) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (212) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) app_init: Application information:[0m
+[0;32mI (224) app_init: Project name:     SEND1[0m
+[0;32mI (228) app_init: App version:      b46a941-dirty[0m
+[0;32mI (234) app_init: Compile time:     Apr  4 2025 21:30:24[0m
+[0;32mI (240) app_init: ELF file SHA256:  426494d19...[0m
+[0;32mI (245) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (255) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (260) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (265) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFB2DB0 len 0002D250 (180 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 4008E3F0 len 00011C10 (71 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (308) spi_flash: flash io: dio[0m
+[0;33mW (312) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (1341) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1341) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1341) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (1341) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 366 | Voltage: 0.09V | UV Index: 0.87
+[0;32mI (1351) main_task: Returned from app_main()[0m
+[0;32mI (1441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+Temperature: 32°C, Humidity: 64%
+Raw Value: 878 | Moisture: 78.53%
+Temperature: 32°C, Humidity: 64%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2475 | Voltage: 0.63V | UV Index: 6.02
+Temperature: 32°C, Humidity: 64%
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (7441) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (7541) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=100.0:UV=6.02[0m
+Temperature: 32°C, Humidity: 64%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 98 | Voltage: 0.03V | UV Index: 0.26
+Temperature: 32°C, Humidity: 64%
+Raw Value: 3344 | Moisture: 20.46%
+Temperature: 32°C, Humidity: 64%
+Raw Value: 16 | Moisture: 98.88%
+Raw Value: 2269 | Voltage: 0.58V | UV Index: 5.44
+[0;32mI (13541) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (13641) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=98.9:UV=5.44[0m
+Temperature: 32°C, Humidity: 64%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 32°C, Humidity: 64%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 211 | Voltage: 0.06V | UV Index: 0.53
+Temperature: 32°C, Humidity: 64%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (19641) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (19741) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=0.0:UV=0.53[0m
+Temperature: 32°C, Humidity: 64%
+Raw Value: 438 | Moisture: 88.28%
+Raw Value: 1254 | Voltage: 0.31V | UV Index: 2.89
+Temperature: 32°C, Humidity: 64%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 32°C, Humidity: 64%
+Raw Value: 26 | Moisture: 97.17%
+Raw Value: 405 | Voltage: 0.10V | UV Index: 0.99
+[0;32mI (25741) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (25841) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=97.2:UV=0.99[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 80 | Voltage: 0.02V | UV Index: 0.17
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 3130 | Moisture: 26.96%
+[0;32mI (31841) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (31941) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=27.0:UV=0.17[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 642 | Moisture: 84.25%
+Raw Value: 999 | Voltage: 0.25V | UV Index: 2.24
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 97.63%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1830 | Voltage: 0.47V | UV Index: 4.47
+[0;32mI (37941) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (38041) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=100.0:UV=4.47[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 978 | Voltage: 0.25V | UV Index: 2.39
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (44041) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (44141) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=100.0:UV=2.39[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 554 | Moisture: 89.30%
+Raw Value: 494 | Voltage: 0.12V | UV Index: 1.19
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 1425 | Moisture: 70.33%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 1584 | Moisture: 67.57%
+Raw Value: 414 | Voltage: 0.11V | UV Index: 1.03
+[0;32mI (50141) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (50241) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=67.6:UV=1.03[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 656 | Voltage: 0.16V | UV Index: 1.51
+Failed to read from DHT11 sensor. Error code: -2
+Raw Value: 3178 | Moisture: 26.15%
+[0;32mI (56241) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (56341) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=26.2:UV=1.51[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 1040 | Moisture: 75.63%
+Raw Value: 594 | Voltage: 0.15V | UV Index: 1.37
+Temperature: 31°C, Humidity: 71%
+Raw Value: 266 | Moisture: 92.58%
+Temperature: 31°C, Humidity: 75%
+Raw Value: 675 | Moisture: 83.44%
+Raw Value: 457 | Voltage: 0.12V | UV Index: 1.07
+[0;32mI (62341) LORA_SEND1: Temperature: 31°C, Humidity: 75%[0m
+[0;32mI (62441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=31:HUM=75:SOIL=83.4:UV=1.07[0m
+Temperature: 31°C, Humidity: 78%
+Raw Value: 1063 | Moisture: 75.82%
+Temperature: 31°C, Humidity: 80%
+Raw Value: 711 | Moisture: 83.57%
+Raw Value: 304 | Voltage: 0.08V | UV Index: 0.71
+Temperature: 31°C, Humidity: 83%
+Raw Value: 918 | Moisture: 79.37%
+[0;32mI (68441) LORA_SEND1: Temperature: 31°C, Humidity: 83%[0m
+[0;32mI (68541) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=31:HUM=83:SOIL=79.4:UV=0.71[0m
+Temperature: 31°C, Humidity: 86%
+Raw Value: 535 | Moisture: 87.89%
+Raw Value: 551 | Voltage: 0.14V | UV Index: 1.29
+Temperature: 31°C, Humidity: 87%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 31°C, Humidity: 88%
+Raw Value: 0 | Moisture: 98.93%
+Raw Value: 2705 | Voltage: 0.69V | UV Index: 6.52
+[0;32mI (74541) LORA_SEND1: Temperature: 31°C, Humidity: 88%[0m
+[0;32mI (74641) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=31:HUM=88:SOIL=98.9:UV=6.52[0m
+Temperature: 31°C, Humidity: 88%
+Raw Value: 2240 | Moisture: 50.01%
+Temperature: 31°C, Humidity: 87%
+Raw Value: 28 | Moisture: 98.05%
+Raw Value: 527 | Voltage: 0.13V | UV Index: 1.21
+Temperature: 31°C, Humidity: 85%
+Raw Value: 1435 | Moisture: 68.23%
+[0;32mI (80641) LORA_SEND1: Temperature: 31°C, Humidity: 85%[0m
+[0;32mI (80741) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=31:HUM=85:SOIL=68.2:UV=1.21[0m
+Temperature: 32°C, Humidity: 98%
+Raw Value: 1109 | Moisture: 76.39%
+Raw Value: 473 | Voltage: 0.12V | UV Index: 1.08
+Temperature: 32°C, Humidity: 98%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 33°C, Humidity: 98%
+Raw Value: 1666 | Moisture: 62.52%
+Raw Value: 368 | Voltage: 0.09V | UV Index: 0.89
+[0;32mI (86741) LORA_SEND1: Temperature: 33°C, Humidity: 98%[0m
+[0;32mI (86841) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=33:HUM=98:SOIL=62.5:UV=0.89[0m
+Temperature: 33°C, Humidity: 98%
+Raw Value: 103 | Moisture: 95.07%
+Temperature: 34°C, Humidity: 98%
+Raw Value: 1890 | Moisture: 54.97%
+Raw Value: 585 | Voltage: 0.14V | UV Index: 1.24
+Temperature: 34°C, Humidity: 98%
+Raw Value: 0 | Moisture: 99.56%
+[0;32mI (92841) LORA_SEND1: Temperature: 34°C, Humidity: 98%[0m
+[0;32mI (92941) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=98:SOIL=99.6:UV=1.24[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2608 | Voltage: 0.67V | UV Index: 6.37
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 2815 | Moisture: 32.75%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 198 | Voltage: 0.05V | UV Index: 0.47
+[0;32mI (98941) LORA_SEND1: Temperature: 34°C, Humidity: 98%[0m
+[0;32mI (99041) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=98:SOIL=0.0:UV=0.47[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 0 | Moisture: 100.00%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 590 | Moisture: 85.47%
+Raw Value: 1309 | Voltage: 0.33V | UV Index: 2.98
+Raw Value: 4095 | Moisture: 0.00%
+Failed to read from DHT11 sensor. Error code: -1
+[0;32mI (105041) LORA_SEND1: Temperature: 34°C, Humidity: 98%[0m
+[0;32mI (105141) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=98:SOIL=0.0:UV=2.98[0m
+Raw Value: 1367 | Moisture: 73.38%
+Raw Value: 427 | Voltage: 0.11V | UV Index: 1.02
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 1158 | Moisture: 73.99%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 426 | Moisture: 88.67%
+Raw Value: 256 | Voltage: 0.06V | UV Index: 0.56
+Failed to read from DHT11 sensor. Error code: -1
+[0;32mI (111141) LORA_SEND1: Temperature: 34°C, Humidity: 98%[0m
+[0;32mI (111241) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=98:SOIL=88.7:UV=0.56[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 0°C, Humidity: 0%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 870 | Voltage: 0.22V | UV Index: 2.14
+Temperature: 31°C, Humidity: 65%
+Raw Value: 42 | Moisture: 97.70%
+Temperature: 32°C, Humidity: 64%
+[0;32mI (117241) LORA_SEND1: Temperature: 32°C, Humidity: 64%[0m
+[0;32mI (117341) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=64:SOIL=97.7:UV=2.14[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 95 | Voltage: 0.02V | UV Index: 0.22
+Temperature: 32°C, Humidity: 65%
+Raw Value: 3133 | Moisture: 32.33%
+Temperature: 32°C, Humidity: 65%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1730 | Voltage: 0.44V | UV Index: 4.22
+Temperature: 32°C, Humidity: 65%
+[0;32mI (123341) LORA_SEND1: Temperature: 32°C, Humidity: 65%[0m
+Raw Value: 1850 | Moisture: 59.37%
+[0;32mI (123441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=32:HUM=65:SOIL=100.0:UV=4.22[0m
+Temperature: 32°C, Humidity: 66%
+Raw Value: 960 | Moisture: 78.24%
+Raw Value: 465 | Voltage: 0.12V | UV Index: 1.12
+Temperature: 32°C, Humidity: 68%
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 33°C, Humidity: 79%
+Raw Value: 1159 | Moisture: 73.02%
+Raw Value: 1083 | Voltage: 0.27V | UV Index: 2.51
+[0;32mI (129441) LORA_SEND1: Temperature: 33°C, Humidity: 79%[0m
+[0;32mI (129541) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=33:HUM=79:SOIL=73.0:UV=2.51[0m
+Temperature: 33°C, Humidity: 80%
+Raw Value: 3415 | Moisture: 21.44%
+Temperature: 33°C, Humidity: 80%
+Raw Value: 501 | Moisture: 88.01%
+Raw Value: 484 | Voltage: 0.12V | UV Index: 1.16
+Temperature: 33°C, Humidity: 83%
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (135541) LORA_SEND1: Temperature: 33°C, Humidity: 83%[0m
+[0;32mI (135641) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=33:HUM=83:SOIL=100.0:UV=1.16[0m
+Temperature: 33°C, Humidity: 84%
+Raw Value: 914 | Moisture: 78.88%
+Raw Value: 1023 | Voltage: 0.26V | UV Index: 2.42
+Temperature: 33°C, Humidity: 83%
+Raw Value: 2896 | Moisture: 34.43%
+Temperature: 33°C, Humidity: 84%
+Raw Value: 4003 | Moisture: 8.01%
+Raw Value: 128 | Voltage: 0.03V | UV Index: 0.31
+[0;32mI (141641) LORA_SEND1: Temperature: 33°C, Humidity: 84%[0m
+Temperature: 34°C, Humidity: 85%
+[0;32mI (141741) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=33:HUM=84:SOIL=8.0:UV=0.31[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 34°C, Humidity: 86%
+Raw Value: 91 | Moisture: 97.29%
+Raw Value: 433 | Voltage: 0.11V | UV Index: 1.08
+Temperature: 34°C, Humidity: 86%
+Raw Value: 415 | Moisture: 89.38%
+[0;32mI (147741) LORA_SEND1: Temperature: 34°C, Humidity: 86%[0m
+Temperature: 34°C, Humidity: 86%
+[0;32mI (147841) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=86:SOIL=89.4:UV=1.08[0m
+Raw Value: 816 | Moisture: 81.03%
+Raw Value: 310 | Voltage: 0.08V | UV Index: 0.72
+Temperature: 34°C, Humidity: 87%
+Raw Value: 1474 | Moisture: 66.45%
+Temperature: 34°C, Humidity: 87%
+Raw Value: 960 | Moisture: 78.39%
+Raw Value: 410 | Voltage: 0.10V | UV Index: 0.97
+[0;32mI (153841) LORA_SEND1: Temperature: 34°C, Humidity: 87%[0m
+Failed to read from DHT11 sensor. Error code: -1
+[0;32mI (153941) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=87:SOIL=78.4:UV=0.97[0m
+Raw Value: 97 | Moisture: 96.12%
+Temperature: 34°C, Humidity: 87%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 529 | Voltage: 0.13V | UV Index: 1.25
+Temperature: 35°C, Humidity: 87%
+Raw Value: 337 | Moisture: 90.31%
+Temperature: 34°C, Humidity: 88%
+[0;32mI (159941) LORA_SEND1: Temperature: 34°C, Humidity: 88%[0m
+[0;32mI (160041) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=88:SOIL=90.3:UV=1.25[0m
+Raw Value: 369 | Moisture: 90.79%
+Raw Value: 675 | Voltage: 0.17V | UV Index: 1.59
+Temperature: 35°C, Humidity: 88%
+Raw Value: 589 | Moisture: 85.71%
+Temperature: 35°C, Humidity: 88%
+Raw Value: 1514 | Moisture: 65.35%
+Raw Value: 493 | Voltage: 0.12V | UV Index: 1.09
+Temperature: 35°C, Humidity: 88%
+[0;32mI (166041) LORA_SEND1: Temperature: 35°C, Humidity: 88%[0m
+[0;32mI (166141) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=35:HUM=88:SOIL=65.3:UV=1.09[0m
+Raw Value: 926 | Moisture: 79.29%
+Temperature: 34°C, Humidity: 88%
+Raw Value: 2239 | Moisture: 47.81%
+Raw Value: 17 | Voltage: 0.00V | UV Index: 0.00
+Temperature: 35°C, Humidity: 88%
+Raw Value: 3134 | Moisture: 28.86%
+Temperature: 35°C, Humidity: 88%
+[0;32mI (172141) LORA_SEND1: Temperature: 35°C, Humidity: 88%[0m
+[0;32mI (172241) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=35:HUM=88:SOIL=28.9:UV=0.00[0m
+Raw Value: 2826 | Moisture: 34.58%
+Raw Value: 83 | Voltage: 0.02V | UV Index: 0.21
+Temperature: 35°C, Humidity: 89%
+Raw Value: 3840 | Moisture: 12.01%
+Temperature: 35°C, Humidity: 89%
+Raw Value: 3853 | Moisture: 8.94%
+Raw Value: 160 | Voltage: 0.04V | UV Index: 0.34
+Temperature: 35°C, Humidity: 89%
+[0;32mI (178241) LORA_SEND1: Temperature: 35°C, Humidity: 89%[0m
+[0;32mI (178341) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=35:HUM=89:SOIL=8.9:UV=0.34[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 35°C, Humidity: 89%
+Raw Value: 2814 | Moisture: 32.48%
+Raw Value: 208 | Voltage: 0.05V | UV Index: 0.45
+Temperature: 35°C, Humidity: 89%
+Raw Value: 2912 | Moisture: 31.99%
+Temperature: 35°C, Humidity: 88%
+[0;32mI (184341) LORA_SEND1: Temperature: 35°C, Humidity: 88%[0m
+[0;32mI (184441) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=35:HUM=88:SOIL=32.0:UV=0.45[0m
+Raw Value: 3694 | Moisture: 12.04%
+Raw Value: 683 | Voltage: 0.17V | UV Index: 1.56
+Temperature: 34°C, Humidity: 89%
+Raw Value: 4095 | Moisture: 0.00%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 1037 | Moisture: 76.56%
+Raw Value: 688 | Voltage: 0.17V | UV Index: 1.49
+Failed to read from DHT11 sensor. Error code: -1
+[0;32mI (190441) LORA_SEND1: Temperature: 34°C, Humidity: 89%[0m
+[0;32mI (190541) LORA_SEND1: Đã gửi tín hiệu: IDEND123456:TEMP=34:HUM=89:SOIL=76.6:UV=1.49[0m
+Raw Value: 839 | Moisture: 79.90%
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 727 | Moisture: 81.03%
+Raw Value: 1149 | Voltage: 0.29V | UV Index: 2.60
+Failed to read from DHT11 sensor. Error code: -1
+[0;32mI (1798) mqtts_example: [APP] Free memory: 225300 bytes[0m
+[0;32mI (1798) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1798) mqtts_example: Other event id:7[0m
+[0;31mE (1798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1808) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1818) mqtt_client: Error transport connect[0m
+[0;32mI (1818) mqtts_example: Other event id:0[0m
+[0;32mI (1828) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+
+assert failed: xRingbufferReceive ringbuf.c:1104 (pxRingbuffer && pxItemSize)
+
+
+Backtrace: 0x40081bc2:0x3ffcaef0 0x4008adc9:0x3ffcaf10 0x400933fd:0x3ffcaf30 0x4008abe5:0x3ffcb050 0x400d8221:0x3ffcb090 0x4008b8d5:0x3ffcb0c0
+
+
+
+
+ELF file SHA256: c29c5e833
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279c4h (162244) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000379ec vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003ba40 vaddr=40080000 size=045d8h ( 17880) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6748h (681800) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6770 vaddr=400845d8 size=1504ch ( 86092) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (494) app_init: ELF file SHA256:  c29c5e833...[0m
+[0;32mI (500) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (510) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (515) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
+[0;32mI (560) spi_flash: detected chip: generic[0m
+[0;32mI (563) spi_flash: flash io: dio[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (588) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (618) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: ccaebfa
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formating: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (798) wifi:enable tsf
+[0;32mI (1798) mqtts_example: [APP] Free memory: 225300 bytes[0m
+[0;32mI (1798) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1798) mqtts_example: Other event id:7[0m
+[0;31mE (1798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1808) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1818) mqtt_client: Error transport connect[0m
+[0;32mI (1818) mqtts_example: Other event id:0[0m
+[0;32mI (1828) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+
+assert failed: xRingbufferReceive ringbuf.c:1104 (pxRingbuffer && pxItemSize)
+
+
+Backtrace: 0x40081bc2:0x3ffcaef0 0x4008adc9:0x3ffcaf10 0x400933fd:0x3ffcaf30 0x4008abe5:0x3ffcb050 0x400d8221:0x3ffcb090 0x4008b8d5:0x3ffcb0c0
+
+
+
+
+ELF file SHA256: c29c5e833
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279c4h (162244) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000379ec vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003ba40 vaddr=40080000 size=045d8h ( 17880) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6748h (681800) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6770 vaddr=400845d8 size=1504ch ( 86092) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (494) app_init: ELF file SHA256:  c29c5e833...[0m
+[0;32mI (500) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (510) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (515) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
+[0;32mI (560) spi_flash: detected chip: generic[0m
+[0;32mI (563) spi_flash: flash io: dio[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (588) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (618) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: ccaebfa
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formating: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (798) wifi:enable tsf
+[0;32mI (1798) mqtts_example: [APP] Free memory: 225300 bytes[0m
+[0;32mI (1798) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1798) mqtts_example: Other event id:7[0m
+[0;31mE (1798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1808) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1818) mqtt_client: Error transport connect[0m
+[0;32mI (1818) mqtts_example: Other event id:0[0m
+[0;32mI (1828) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+
+assert failed: xRingbufferReceive ringbuf.c:1104 (pxRingbuffer && pxItemSize)
+
+
+Backtrace: 0x40081bc2:0x3ffcaef0 0x4008adc9:0x3ffcaf10 0x400933fd:0x3ffcaf30 0x4008abe5:0x3ffcb050 0x400d8221:0x3ffcb090 0x4008b8d5:0x3ffcb0c0
+
+
+
+
+ELF file SHA256: c29c5e833
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279c4h (162244) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000379ec vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003ba40 vaddr=40080000 size=045d8h ( 17880) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6748h (681800) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6770 vaddr=400845d8 size=1504ch ( 86092) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (494) app_init: ELF file SHA256:  c29c5e833...[0m
+[0;32mI (500) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (510) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (515) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
+[0;32mI (560) spi_flash: detected chip: generic[0m
+[0;32mI (563) spi_flash: flash io: dio[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (588) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (618) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: ccaebfa
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formating: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (788) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (798) wifi:enable tsf
+[0;32mI (1798) mqtts_example: [APP] Free memory: 225300 bytes[0m
+[0;32mI (1798) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1798) mqtts_example: Other event id:7[0m
+[0;31mE (1798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1808) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1818) mqtt_client: Error transport connect[0m
+[0;32mI (1818) mqtts_example: Other event id:0[0m
+[0;32mI (1828) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+
+assert failed: xRingbufferReceive ringbuf.c:1104 (pxRingbuffer && pxItemSize)
+
+
+Backtrace: 0x40081bc2:0x3ffcaef0 0x4008adc9:0x3ffcaf10 0x400933fd:0x3ffcaf30 0x4008abe5:0x3ffcb050 0x400d8221:0x3ffcb090 0x4008b8d5:0x3ffcb0c0
+
+
+
+
+ELF file SHA256: c29c5e833
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279c4h (162244) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000379ec vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003ba40 vaddr=40080000 size=045d8h ( 17880) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6748h (681800) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6770 vaddr=400845d8 size=1504ch ( 86092) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (494) app_init: ELF file SHA256:  c29c5e833...[0m
+[0;32mI (500) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (510) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (515) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
+[0;32mI (560) spi_flash: detected chip: generic[0m
+[0;32mI (563) spi_flash: flash io: dio[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (588) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (618) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: ccaebfa
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formating: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (798) wifi:enable tsf
+[0;32mI (1798) mqtts_example: [APP] Free memory: 225300 bytes[0m
+[0;32mI (1798) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
+[0;32mI (1798) mqtts_example: Other event id:7[0m
+[0;31mE (1798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1808) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1818) mqtt_client: Error transport connect[0m
+[0;32mI (1818) mqtts_example: Other event id:0[0m
+[0;32mI (1828) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+
+assert failed: xRingbufferReceive ringbuf.c:1104 (pxRingbuffer && pxItemSize)
+
+
+Backtrace: 0x40081bc2:0x3ffcaef0 0x4008adc9:0x3ffcaf10 0x400933fd:0x3ffcaf30 0x4008abe5:0x3ffcb050 0x400d8221:0x3ffcb090 0x4008b8d5:0x3ffcb0c0
+
+
+
+
+ELF file SHA256: c29c5e833
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2025 14:12:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279c4h (162244) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000379ec vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003ba40 vaddr=40080000 size=045d8h ( 17880) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6748h (681800) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000e6770 vaddr=400845d8 size=1504ch ( 86092) load[0m
+[0;32mI (455) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (455) boot: Disabling RNG early entropy source...[0m
+[0;32mI (467) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) app_init: Application information:[0m
+[0;32mI (478) app_init: Project name:     GATEWAY[0m
+[0;32mI (483) app_init: App version:      eb4d542-dirty[0m
+[0;32mI (488) app_init: Compile time:     Apr  7 2025 02:53:50[0m
+[0;32mI (494) app_init: ELF file SHA256:  c29c5e833...[0m
+[0;32mI (500) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (505) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (510) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (515) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (520) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (527) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
+[0;32mI (560) spi_flash: detected chip: generic[0m
+[0;32mI (563) spi_flash: flash io: dio[0m
+[0;32mI (568) main_task: Started on CPU0[0m
+[0;32mI (578) main_task: Calling app_main()[0m
+[0;32mI (588) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+LoRa Receiver Đã Khởi Động
+I (618) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (628) wifi:wifi firmware version: ccaebfa
+I (628) wifi:wifi certification version: v7.0
+I (628) wifi:config NVS flash: enabled
+I (628) wifi:config nano formating: disabled
+I (628) wifi:Init data frame dynamic rx buffer num: 32
+I (638) wifi:Init static rx mgmt buffer num: 5
+I (638) wifi:Init management short buffer num: 32
+I (648) wifi:Init dynamic tx buffer num: 32
+I (648) wifi:Init static rx buffer size: 1600
+I (658) wifi:Init static rx buffer num: 10
+I (658) wifi:Init dynamic rx buffer num: 32
+[0;32mI (658) wifi_init: rx ba win: 6[0m
+[0;32mI (668) wifi_init: accept mbox: 6[0m
+[0;32mI (668) wifi_init: tcpip mbox: 32[0m
+[0;32mI (668) wifi_init: udp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp mbox: 6[0m
+[0;32mI (678) wifi_init: tcp tx win: 5760[0m
+[0;32mI (688) wifi_init: tcp rx win: 5760[0m
+[0;32mI (688) wifi_init: tcp mss: 1440[0m
+[0;32mI (688) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (698) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (708) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (798) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (798) wifi:enable tsf

@@ -1,0 +1,70 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x40081bc2: esp_backtrace_print_from_frame at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/arch/xtensa/debug_helpers.c:85 (discriminator 1)
+0x4008adc9: spi_ll_set_command_bitlen at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/spi_ll.h:884
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:105
+0x4008abe5: spi_hal_setup_device at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:35
+0x400d8221: esp_mmu_map at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/esp_mmu_map.c:462
+0x4008b8d5: block_merge_prev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:471
+ (inlined by) tlsf_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1203
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40081bc2: esp_backtrace_print_from_frame at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/arch/xtensa/debug_helpers.c:85 (discriminator 1)
+0x4008adc9: spi_ll_set_command_bitlen at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/spi_ll.h:884
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:105
+0x4008abe5: spi_hal_setup_device at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:35
+0x400d8221: esp_mmu_map at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/esp_mmu_map.c:462
+0x4008b8d5: block_merge_prev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:471
+ (inlined by) tlsf_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1203
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40081bc2: esp_backtrace_print_from_frame at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/arch/xtensa/debug_helpers.c:85 (discriminator 1)
+0x4008adc9: spi_ll_set_command_bitlen at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/spi_ll.h:884
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:105
+0x4008abe5: spi_hal_setup_device at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:35
+0x400d8221: esp_mmu_map at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/esp_mmu_map.c:462
+0x4008b8d5: block_merge_prev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:471
+ (inlined by) tlsf_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1203
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40081bc2: esp_backtrace_print_from_frame at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/arch/xtensa/debug_helpers.c:85 (discriminator 1)
+0x4008adc9: spi_ll_set_command_bitlen at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/spi_ll.h:884
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:105
+0x4008abe5: spi_hal_setup_device at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:35
+0x400d8221: esp_mmu_map at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/esp_mmu_map.c:462
+0x4008b8d5: block_merge_prev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:471
+ (inlined by) tlsf_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1203
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40081bc2: esp_backtrace_print_from_frame at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/arch/xtensa/debug_helpers.c:85 (discriminator 1)
+0x4008adc9: spi_ll_set_command_bitlen at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include/hal/spi_ll.h:884
+ (inlined by) spi_hal_setup_trans at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:105
+0x4008abe5: spi_hal_setup_device at C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/spi_hal_iram.c:35
+0x400d8221: esp_mmu_map at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm/esp_mmu_map.c:462
+0x4008b8d5: block_merge_prev at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:471
+ (inlined by) tlsf_free at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/tlsf/tlsf.c:1203
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is adf6710242e6437b903675e044055dd977c48b2b10acbdaed9449fcdee7911e3[0m
+[0m

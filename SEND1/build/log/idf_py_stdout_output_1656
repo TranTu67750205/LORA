@@ -1,57 +1,102 @@
-[1/12] Performing build step for 'bootloader'
+[1/10] Performing build step for 'bootloader'
 [1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\SEND1\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/SEND1/build/bootloader/bootloader.bin""
 Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
-[2/10] Building C object esp-idf/DHT11/CMakeFiles/__idf_DHT11.dir/DHT11.c.obj
-[3/10] Linking C static library esp-idf\DHT11\libDHT11.a
-[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/SEND1.c.obj
-[5/10] Linking C static library esp-idf\main\libmain.a
-[6/10] Generating ld/sections.ld
-[7/10] Linking CXX executable SEND1.elf
-[8/10] Generating binary image from built executable
-esptool.py v4.8.dev5
-Creating esp32 image...
-Merged 2 ELF sections
-Successfully created esp32 image.
-Generated C:/ESP IDF/project_esp/SEND1/build/SEND1.bin
-[9/10] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\SEND1\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/SEND1/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/SEND1/build/SEND1.bin""
-SEND1.bin binary size 0x32940 bytes. Smallest app partition is 0x100000 bytes. 0xcd6c0 bytes (80%) free.
-[9/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/ESP IDF/project_esp/SEND1/build" -P C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_pyesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 SEND1.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.8.dev5
-Serial port COM4
-Connecting....
-Chip is ESP32-D0WD-V3 (revision v3.1)
-Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
-Crystal is 40MHz
-MAC: f0:24:f9:59:9a:40
-Uploading stub...
-Running stub...
-Stub running...
-Changing baud rate to 460800
-Changed.
-Configuring flash size...
-Flash will be erased from 0x00001000 to 0x00007fff...
-Flash will be erased from 0x00010000 to 0x00042fff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-SHA digest in image updated
-Compressed 26752 bytes to 16360...
-Writing at 0x00001000... (100 %)
-Wrote 26752 bytes (16360 compressed) at 0x00001000 in 0.7 seconds (effective 290.7 kbit/s)...
-Hash of data verified.
-Compressed 207168 bytes to 110687...
-Writing at 0x00010000... (14 %)
-Writing at 0x0001ceb8... (28 %)
-Writing at 0x00022f01... (42 %)
-Writing at 0x00028de4... (57 %)
-Writing at 0x0002f96e... (71 %)
-Writing at 0x00037bb2... (85 %)
-Writing at 0x0003dc31... (100 %)
-Wrote 207168 bytes (110687 compressed) at 0x00010000 in 2.7 seconds (effective 615.5 kbit/s)...
-Hash of data verified.
-Compressed 3072 bytes to 103...
-Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 499.0 kbit/s)...
-Hash of data verified.
-
-Leaving...
-Hard resetting via RTS pin...
-/run_serial_tool.cmake"
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/SEND1.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/SEND1.c.obj 
+ccache C:\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I"C:/ESP IDF/project_esp/SEND1/build/config" -I"C:/ESP IDF/project_esp/SEND1/main" -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/config/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/include/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/dma/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/ldo/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/. -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/include/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32 -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa/deprecated_include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/port/esp32xx/include/sys -I"C:/ESP IDF/project_esp/SEND1/Component/UV_sensor/include" -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/touch_sensor/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_spi/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ana_cmpr/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2s/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdspi/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdio/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_dac/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_rmt/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_tsens/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdm/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2c/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ledc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_parlio/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/deprecated/include -I"C:/ESP IDF/project_esp/SEND1/Component/DHT11/include" -I"C:/ESP IDF/project_esp/SEND1/Component/soil_sensor/include" -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/wifi_apps/nan_app/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/include/local -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_phy/esp32/include -IC:/Espressif/frameworks/esp-idf-v5.3.1/components/json/cJSON -I"C:/ESP IDF/project_esp/SEND1/Component/lora/include" -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap "-fmacro-prefix-map=C:/ESP IDF/project_esp/SEND1=." -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.3.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/SEND1.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\SEND1.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/SEND1.c.obj -c "C:/ESP IDF/project_esp/SEND1/main/SEND1.c"
+In file included from C:/ESP IDF/project_esp/SEND1/main/SEND1.c:27:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:57:15: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   57 |     float uvi = 0.0;
+      |               ^
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/esp_additions/include/freertos/idf_additions.h:22,
+                 from C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from C:/ESP IDF/project_esp/SEND1/main/SEND1.c:3:
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c: In function 'dht11_task':
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:70:43: error: 'SharedData' has no member named 'mutex'
+   70 |             if (xSemaphoreTake(shared_data.mutex, portMAX_DELAY)) {
+      |                                           ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:76: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                            ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:72:43: error: 'SharedData' has no member named 'mutex'
+   72 |                 xSemaphoreGive(shared_data.mutex);
+      |                                           ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:80: note: in definition of macro 'xSemaphoreGive'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:75:59: error: 'data' undeclared (first use in this function)
+   75 |             printf("Temperature: %d°C, Humidity: %d%%\n", data.temperature, data.humidity);
+      |                                                           ^~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:75:59: note: each undeclared identifier is reported only once for each function it appears in
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c: In function 'UV_task':
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:88:39: error: 'SharedData' has no member named 'mutex'
+   88 |         if (xSemaphoreTake(shared_data.mutex, portMAX_DELAY)) {
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:76: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                            ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:89:24: error: 'SharedData' has no member named 'uvi'
+   89 |             shared_data.uvi = uvi_local;
+      |                        ^
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:90:39: error: 'SharedData' has no member named 'mutex'
+   90 |             xSemaphoreGive(shared_data.mutex);
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:80: note: in definition of macro 'xSemaphoreGive'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c: In function 'soil_task':
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:101:39: error: 'SharedData' has no member named 'mutex'
+  101 |         if (xSemaphoreTake(shared_data.mutex, portMAX_DELAY)) {
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:76: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                            ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:102:24: error: 'SharedData' has no member named 'moisture'
+  102 |             shared_data.moisture = moisture_local;
+      |                        ^
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:103:39: error: 'SharedData' has no member named 'mutex'
+  103 |             xSemaphoreGive(shared_data.mutex);
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:80: note: in definition of macro 'xSemaphoreGive'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c: In function 'LORA_task':
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:117:39: error: 'SharedData' has no member named 'mutex'
+  117 |         if (xSemaphoreTake(shared_data.mutex, portMAX_DELAY)) {
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:76: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                            ^~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:119:36: error: 'SharedData' has no member named 'uvi'
+  119 |             local_uvi = shared_data.uvi;
+      |                                    ^
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:120:41: error: 'SharedData' has no member named 'moisture'
+  120 |             local_moisture = shared_data.moisture;
+      |                                         ^
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:121:39: error: 'SharedData' has no member named 'mutex'
+  121 |             xSemaphoreGive(shared_data.mutex);
+      |                                       ^
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:428:80: note: in definition of macro 'xSemaphoreGive'
+  428 | #define xSemaphoreGive( xSemaphore )    xQueueGenericSend( ( QueueHandle_t ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )
+      |                                                                                ^~~~~~~~~~
+In file included from C:/ESP IDF/project_esp/SEND1/main/SEND1.c:6:
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:124:59: error: 'data' undeclared (first use in this function)
+  124 |         ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
+      |                                                           ^~~~
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:124:9: note: in expansion of macro 'ESP_LOGI'
+  124 |         ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
+      |         ^~~~~~~~
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c: In function 'app_main':
+C:/ESP IDF/project_esp/SEND1/main/SEND1.c:171:16: error: 'SharedData' has no member named 'mutex'
+  171 |     shared_data.mutex = xSemaphoreCreateMutex();
+      |                ^
+ninja: build stopped: subcommand failed.
