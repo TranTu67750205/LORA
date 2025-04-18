@@ -40,7 +40,7 @@
 
 static const char *TAG = "LORA_receive";
 RingbufHandle_t mqttRingBuffer;
-
+RingbufHandle_t mqttidbuffer;
 // Định nghĩa các chân GPIO
 #define LORA_MISO   19
 #define LORA_MOSI   23
@@ -51,6 +51,8 @@ RingbufHandle_t mqttRingBuffer;
 
 esp_mqtt_client_handle_t client;
 uint8_t buf[128];
+char id_packet[128];
+char sensor_packet[128];
 char node_id [10];
 char led_state[10];
 float soil, uv, temp, hum;
@@ -61,17 +63,30 @@ float soil, uv, temp, hum;
 //ESP_LOGI(TAG, "turn ON LED");
 //gpio_set_level(LED_PIN, 1);
 
-//MQTT task
+//mqtt_ID_task 
+void mqtt_ID_task () {
+    while(1) {
+        vTaskDelay(pdMS_TO_TICKS(2000));
+        size_t item_size;
+        char *mqtt_ID_payload = (char *)xRingbufferReceive(mqttidbuffer, &item_size, portMAX_DELAY);
+    
+        if (mqtt_ID_payload != NULL) {  
+            // Gửi lên MQTT
+            esp_mqtt_client_publish(client, "ID/data", mqtt_ID_payload, 0, 1, 0);
+            printf("item recieve : %s\n ",mqtt_ID_payload );
+            // Trả lại vùng nhớ cho ring buffer (giải phóng)
+            vRingbufferReturnItem(mqttidbuffer, mqtt_ID_payload);
+        }
+        else {
+            //Failed to receive item
+            printf("Failed to receive item\n");
+        }
+    }
+}
 
+//MQTT task
 void mqtt_task (){
     while(1){
-        // Gửi dữ liệu lên MQTT server
-        //char mqtt_payload[200];
-
-        //snprintf(mqtt_payload, sizeof(mqtt_payload),
-        //"{\"id\":\"%s\",\"temp\":%.1f,\"hum\":%.1f,\"soil\":%.1f,\"uv\":%.1f}", node_id, temp, hum, soil, uv);
-        //esp_mqtt_client_publish(client, "sensor/data", mqtt_payload, 0, 1, 0);
-            //Receive an item from no-split ring buffer
         vTaskDelay(pdMS_TO_TICKS(2000));
         size_t item_size;
         char *mqtt_payload = (char *)xRingbufferReceive(mqttRingBuffer, &item_size, portMAX_DELAY);
@@ -87,19 +102,6 @@ void mqtt_task (){
             //Failed to receive item
             printf("Failed to receive item\n");
         }
-        //esp_mqtt_client_publish(client, "sensor/data", mqtt_payload_global, 0, 1, 0);
-
-
-
-        //vTaskDelay(pdMS_TO_TICKS(4000));
-        /*
-        size_t item_size;
-        char *mqtt_payload = (char *)xRingbufferReceive(mqttRingBuffer, &item_size, pdMS_TO_TICKS(1000));
-        if (mqtt_payload != NULL) {
-            esp_mqtt_client_publish(client, "sensor/data", mqtt_payload, 0, 1, 0);
-            vRingbufferReturnItem(mqttRingBuffer, mqtt_payload); // Trả lại bộ nhớ
-        }
-        vTaskDelay(pdMS_TO_TICKS(4000)); // Giảm tốc độ nhận*/
     }
 
 }
@@ -116,7 +118,7 @@ void lora_task (){
             ESP_LOGI(TAG, "NHẬN ĐƯỢC GÓI TIN: %s\n", buf);
             // Tách ID và trạng thái từ gói tin
             if (sscanf((char *)buf, "ID%[^:]:TEMP=%f:HUM=%f:SOIL=%f:UV=%f", node_id, &temp, &hum, &soil, &uv) == 5) {
-                ESP_LOGI(TAG, "Node ID: %s, Temp: %.1f, Hum: %.1f, Soil: %.1f, UV: %.1f", node_id, temp, hum, soil, uv);
+                //ESP_LOGI(TAG, "Node ID: %s, Temp: %.1f, Hum: %.1f, Soil: %.1f, UV: %.1f", node_id, temp, hum, soil, uv);
                 snprintf(mqtt_payload_global, sizeof(mqtt_payload_global),
                 "{\"id\":\"%s\",\"temp\":%.1f,\"hum\":%.1f,\"soil\":%.1f,\"uv\":%.1f}", node_id, temp, hum, soil, uv);
                 
@@ -125,11 +127,21 @@ void lora_task (){
                 if (res != pdTRUE) {
                     ESP_LOGW(TAG, "Ring buffer đầy, không thể gửi dữ liệu!");
                 }
-                
-            } 
+            }
+            else if (strstr((char *)buf, "\"type\": \"id\"")) {
+                // Đây là gói JSON
+                strcpy(id_packet, (char *)buf);
+                ESP_LOGI(TAG, "NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : %s\n", id_packet);
+                // Gửi chuỗi JSON vào ring buffe
+                UBaseType_t res = xRingbufferSend(mqttidbuffer, id_packet , strlen(id_packet) + 1, pdMS_TO_TICKS(1000));
+                if (res != pdTRUE) {
+                    ESP_LOGW(TAG, "Ring buffer đầy, không thể gửi dữ liệu!");
+                }
+            }
             else {
                 printf("Gói tin không hợp lệ: %s\n", buf);
             }
+            
 
             // Xóa gói tin cũ để nhận gói mới
             lora_receive();
@@ -172,7 +184,7 @@ void app_main(void)
     lora_set_spreading_factor(7);  // Spread Factor
     lora_set_coding_rate(5); // Coding Rate 4/5
     lora_receive();  
-    xTaskCreate(&lora_task, "lora_task", 4096, NULL, 3, NULL);
+    xTaskCreate(&lora_task, "lora_task", 4096, NULL, 2, NULL);
     printf("LoRa Receiver Đã Khởi Động\n");
 
     //task wifi 
@@ -196,11 +208,14 @@ void app_main(void)
     esp_log_level_set("outbox", ESP_LOG_VERBOSE);
 
     mqtt_app_start();
-    xTaskCreate(&mqtt_task, "mqtt_task", 4096, NULL, 1, NULL);
+    xTaskCreate(&mqtt_task, "mqtt_task", 6144, NULL, 3, NULL);
 
+    //mqtt_ID_task
+    xTaskCreate(&mqtt_ID_task, "mqtt_ID_task", 4096, NULL, 1, NULL);
 
     //ringbuffer
     mqttRingBuffer = xRingbufferCreate(10 * 128, RINGBUF_TYPE_NOSPLIT);
+    mqttidbuffer = xRingbufferCreate(10 * 128, RINGBUF_TYPE_NOSPLIT);
     /*
         if (mqttRingBuffer == NULL) {
         ESP_LOGE(TAG, "Failed to create ring buffer");

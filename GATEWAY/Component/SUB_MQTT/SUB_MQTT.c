@@ -38,7 +38,7 @@ void mqtt_app_start(void)
     esp_mqtt_client_config_t mqtt_cfg = {
         .broker = {
             .address = {
-                .uri = "mqtt://192.168.1.139:1883",                 // Cổng mặc định không mã hóa
+                .uri = "mqtt://192.168.1.10:1883",                 // Cổng mặc định không mã hóa
             }
         },
         .session = {
@@ -63,7 +63,7 @@ void mqtt_app_start(void)
     };
 
     ESP_LOGI(TAG_mqttsub, "[APP] Free memory: %" PRIu32 " bytes", esp_get_free_heap_size());
-    ESP_LOGI(TAG_mqttsub, "Connecting to MQTT broker at 192.168.1.8:1883...");
+    //ESP_LOGI(TAG_mqttsub, "Connecting to MQTT broker at 192.168.1.8:1883...");
 
     client = esp_mqtt_client_init(&mqtt_cfg);
     if (client == NULL) {

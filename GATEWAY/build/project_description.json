@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "GATEWAY",
-    "project_version":    "eb4d542-dirty",
+    "project_version":    "c1bfb76-dirty",
     "project_path":       "C:/ESP IDF/project_esp/GATEWAY",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/ESP IDF/project_esp/GATEWAY/build",
