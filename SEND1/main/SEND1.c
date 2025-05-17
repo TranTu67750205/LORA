@@ -35,10 +35,16 @@
 #include "soil_sensor.h"
 #include "UV_sensor.h"
 #include <stdbool.h>
+#include "freertos/ringbuf.h"       
+#include "freertos/idf_additions.h"
+
+//void lora_message(char *buf);
+
+
 static const char *TAG = "LORA_SEND1";
 
-
-
+RingbufHandle_t sensor_data_buffer;
+uint8_t buf[128];
 // Định nghĩa các chân GPIO
 #define LORA_MISO   19
 #define LORA_MOSI   23
@@ -46,9 +52,9 @@ static const char *TAG = "LORA_SEND1";
 #define LORA_CS     5
 #define LORA_RST    2
 #define LORA_DIO0   4
-#define BUTTON_PIN  13
+#define PUMP_PIN    13
 #define LED_PIN     21
-#define NODE_ID "END123457"  // Gán sẵn từ lúc sản xuất
+    #define NODE_ID "END123458"  // Gán sẵn từ lúc sản xuất
 #define DHT_GPIO 26
 
 SemaphoreHandle_t lora_mutex;
@@ -63,24 +69,68 @@ typedef struct {
 SharedData shared_data;  // Khai báo dùng chung
 
 #define MAX_BROADCAST 10
-#define BROADCAST_INTERVAL_MS 10000  // 30s giữa mỗi lần gửi
+#define BROADCAST_INTERVAL_MS 5000  // 30s giữa mỗi lần gửi
 #define LORA_ACK_BUFFER_SIZE 128
 
 static const char *TAG_ID = "LORA_ID_TASK";
 static bool isVerified = false;
 static int broadcastCount = 0;
 
-void send_lora_packet(const char *data) {
+void recieve_lora_pump() {
+    while(1){
+        int len = -1;
+        if (xSemaphoreTake(lora_mutex, portMAX_DELAY) == pdTRUE) {
+        len = lora_receive_packet(buf, sizeof(buf));
+        lora_receive();
+        xSemaphoreGive(lora_mutex);
+        } else {
+        ESP_LOGW(TAG, "Không lấy được mutex SPI để nhận LoRa");
+        }
+
+        if (len >0){
+            buf[len] = '\0';
+            if (strstr((char *)buf, NODE_ID)) {
+                char recv_id[16];
+                char pump_cmd[8];
+
+            if (sscanf((char *)buf, "id:%15[^,],pump:%7s", recv_id, pump_cmd) == 2) {
+                printf("Matched ID: %s, Pump CMD: %s\n", recv_id, pump_cmd);
+
+                if (strcmp(pump_cmd, "on") == 0) {
+                    gpio_set_level(PUMP_PIN, 1);
+                } else if (strcmp(pump_cmd, "off") == 0) {
+                    gpio_set_level(PUMP_PIN, 0);
+                }
+            }
+        } else {
+            printf("Not my message: %s\n", buf);
+        }
+        } else {
+            ESP_LOGI(TAG, "CHƯA NHẬN ĐƯỢC GÓI TIN: %s\n", buf);
+        }
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
+
+void send_lora_packet() {
+    vTaskDelay(pdMS_TO_TICKS(1000));
     // Hàm này bạn thay bằng lora_send(data, strlen(data)) theo thư viện bạn đang dùng
-    if (data != NULL && lora_mutex != NULL) {
-        if (xSemaphoreTake(lora_mutex, portMAX_DELAY)){
-            lora_send_packet((uint8_t *)data, strlen(data));
-            printf("Gửi LoRa: %s\n", data);
-            xSemaphoreGive(lora_mutex);
+    char *data;
+    size_t item_size;
+    while (1){
+        data = (char *)xRingbufferReceive(sensor_data_buffer, &item_size, portMAX_DELAY);
+        if (data != NULL && lora_mutex != NULL) {
+            if (xSemaphoreTake(lora_mutex, portMAX_DELAY)){
+                lora_send_packet((uint8_t *)data, strlen(data));
+                printf("item recieve : %s\n ",data );
+                xSemaphoreGive(lora_mutex);
+            }
+            else {
+                printf("Không thể gửi: không chiếm được mutex\n");
+            }
+            vRingbufferReturnItem(sensor_data_buffer, data);
         }
-        else {
-            printf("Không thể gửi: không chiếm được mutex\n");
-        }
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
@@ -95,29 +145,15 @@ void lora_id_task(void *param) {
         if (!isVerified && broadcastCount < MAX_BROADCAST) {
             char idPacket[64];
             snprintf(idPacket, sizeof(idPacket), "{\"type\": \"id\", \"id\": \"%s\"}", NODE_ID);
-            send_lora_packet(idPacket);
+            //gửi vào ringbuffer 
+            if (xRingbufferSend(sensor_data_buffer, idPacket, strlen(idPacket) + 1, portMAX_DELAY) != pdTRUE) {
+            ESP_LOGI("RINGBUF", "Gửi ID vào ringbuffer thất bại");
+            }
+            printf("item recieve : %s\n ",idPacket );
+            //send_lora_packet(idPacket);
             broadcastCount++;
     
             ESP_LOGI(TAG_ID, "Đã gửi %d/%d gói ID", broadcastCount, MAX_BROADCAST);
-    
-            // Chờ nhận ACK
-            uint8_t rx_data[LORA_ACK_BUFFER_SIZE];
-            memset(rx_data, 0, sizeof(rx_data));
-            // TODO: Thay bằng hàm lora_receive() tương ứng với thư viện LoRa bạn dùng
-            lora_receive_packet(rx_data, sizeof(rx_data));
-            // Giả lập gói nhận:
-            // strcpy(rx_data, "{\"type\": \"ack\", \"id\": \"END123456\"}");
-            // Xóa gói tin cũ để nhận gói mới
-            lora_receive();
-            // Kiểm tra ACK
-            if (check_ack((const char *)rx_data)) {
-                isVerified = true;
-                ESP_LOGI(TAG, "Nhận ACK từ server, gửi ACK_RECEIVED");
-                char ackResp[64];
-                snprintf(ackResp, sizeof(ackResp), "{\"type\": \"ack_received\", \"id\": \"%s\"}", NODE_ID);
-                send_lora_packet(ackResp);
-                break;
-            }
         }
         else if (!isVerified && broadcastCount >= MAX_BROADCAST) {
             ESP_LOGW(TAG_ID, "Hết số lần gửi, không được xác minh.");
@@ -195,7 +231,12 @@ void LORA_task (){
         ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", local_data.temperature, local_data.humidity);
         snprintf(packet, sizeof(packet), "ID%s:TEMP=%d:HUM=%d:SOIL=%.1f:UV=%.2f", NODE_ID, local_data.temperature, local_data.humidity, local_moisture, local_uvi);
         //ESP_LOGI(TAG,"Temperature: %d°C, Humidity: %d%%", data.temperature, data.humidity);
-        send_lora_packet(packet);
+        // Gửi vào Ringbuffer
+        if (xRingbufferSend(sensor_data_buffer, packet, strlen(packet) + 1, portMAX_DELAY) != pdTRUE) {
+            ESP_LOGI("RINGBUF", "Gửi vào ringbuffer thất bại");
+        }
+        printf("item recieve : %s\n ",packet);
+        //send_lora_packet(packet);
         ESP_LOGI(TAG, "Đã gửi tín hiệu: %s", packet);
         vTaskDelay(pdMS_TO_TICKS(6000)); // gửi sau mỗi 5 giây
     }
@@ -214,9 +255,8 @@ void lora_init_pins() {
     esp_rom_gpio_pad_select_gpio(LORA_DIO0);
     gpio_set_direction(LORA_DIO0, GPIO_MODE_INPUT);
 
-    esp_rom_gpio_pad_select_gpio(BUTTON_PIN);
-    gpio_set_direction(BUTTON_PIN, GPIO_MODE_INPUT);
-    gpio_set_pull_mode(BUTTON_PIN, GPIO_PULLDOWN_ONLY);
+    esp_rom_gpio_pad_select_gpio(PUMP_PIN);
+    gpio_set_direction(PUMP_PIN, GPIO_MODE_OUTPUT);
 
     esp_rom_gpio_pad_select_gpio(LED_PIN);
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
@@ -226,6 +266,8 @@ void lora_init_pins() {
 
 void app_main(void)
 {
+    // khởi tạo ringbuffer 
+    sensor_data_buffer = xRingbufferCreate(15* 128, RINGBUF_TYPE_NOSPLIT);
     //DHT11DHT11
     DHT11_init(DHT_GPIO);
     xTaskCreate(&dht11_task, "dht11_task", 4096, NULL, 5, NULL);
@@ -240,7 +282,7 @@ void app_main(void)
     lora_set_coding_rate(5);  // Coding Rate 4/5
    // Khởi tạo mutex
     shared_data.mutex = xSemaphoreCreateMutex();
-    xTaskCreate(&LORA_task, "LORA_task", 2048, NULL, 6, NULL);
+    xTaskCreate(&LORA_task, "LORA_task", 4096, NULL, 6, NULL);
     ESP_LOGI(TAG, "LoRa Sender Đã Khởi Động\n");
 
     //soil_moisture
@@ -254,4 +296,13 @@ void app_main(void)
     //lora_id_task
     lora_mutex = xSemaphoreCreateMutex();
     xTaskCreate(&lora_id_task, "lora_id_task", 4096, NULL, 5, NULL);
+
+    xTaskCreate(&recieve_lora_pump, "recieve_lora_pump", 4096, NULL, 5, NULL);
+
+    xTaskCreate(&send_lora_packet, "send_lora_packet", 4096, NULL, 5, NULL);
+
+
+    
+
+
 }

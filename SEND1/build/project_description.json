@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "SEND1",
-    "project_version":    "72dc5a8-dirty",
+    "project_version":    "913f865-dirty",
     "project_path":       "C:/ESP IDF/project_esp/SEND1",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/ESP IDF/project_esp/SEND1/build",

@@ -1,0 +1,1602 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bcf8h ( 48376) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bd20 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001e1b0 vaddr=40080000 size=01e68h (  7784) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b264h (111204) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003b28c vaddr=40081e68 size=0c6b4h ( 50868) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) app_init: Application information:[0m
+[0;32mI (225) app_init: Project name:     SEND1[0m
+[0;32mI (229) app_init: App version:      c1bfb76-dirty[0m
+[0;32mI (235) app_init: Compile time:     Apr 13 2025 08:38:27[0m
+[0;32mI (241) app_init: ELF file SHA256:  9fd600af2...[0m
+[0;32mI (246) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (251) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (256) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (261) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2DC0 len 0002D240 (180 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008E51C len 00011AE4 (70 KiB): IRAM[0m
+[0;32mI (306) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (322) main_task: Started on CPU0[0m
+[0;32mI (332) main_task: Calling app_main()[0m
+[0;32mI (1342) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1342) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1352) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1352) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 1483 | Voltage: 0.36V | UV Index: 3.27
+[0;32mI (1362) main_task: Returned from app_main()[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (1462) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 562 | Voltage: 0.13V | UV Index: 1.20
+Temperature: 30°C, Humidity: 71%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (6542) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+[0;32mI (7342) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.20
+[0;32mI (7442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.20[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1095 | Voltage: 0.27V | UV Index: 2.58
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (11622) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3985 | Voltage: 0.96V | UV Index: 8.81
+[0;32mI (13442) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=8.81
+[0;32mI (13542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=8.81[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (16702) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 915 | Voltage: 0.22V | UV Index: 1.99
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (19542) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.99
+[0;32mI (19642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.99[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 641 | Voltage: 0.15V | UV Index: 1.42
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (21782) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1738 | Voltage: 0.45V | UV Index: 4.32
+[0;32mI (25642) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=4.32
+[0;32mI (25742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=4.32[0m
+Temperature: 30°C, Humidity: 71%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (26862) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3739 | Voltage: 0.91V | UV Index: 8.35
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (31742) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=8.35
+[0;32mI (31842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=8.35[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (31942) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 591 | Voltage: 0.14V | UV Index: 1.22
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (37022) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 752 | Voltage: 0.18V | UV Index: 1.72
+[0;32mI (37842) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.72
+[0;32mI (37942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.72[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2922 | Voltage: 0.75V | UV Index: 7.13
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (42102) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (43942) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=7.13
+[0;32mI (44042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=7.13[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3047 | Voltage: 0.76V | UV Index: 7.08
+Temperature: 30°C, Humidity: 71%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (47182) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 590 | Voltage: 0.14V | UV Index: 1.23
+[0;32mI (50042) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.23
+[0;32mI (50142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.23[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;33mW (52182) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 674 | Voltage: 0.16V | UV Index: 1.50
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (56142) LORA_SEND1: Temperature: 30°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.50
+[0;32mI (56242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=71:SOIL=0.0:UV=1.50[0m
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2367 | Voltage: 0.61V | UV Index: 5.89
+Temperature: 30°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3461 | Voltage: 0.85V | UV Index: 7.91
+[0;32mI (62242) LORA_SEND1: Temperature: 31°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=7.91
+[0;32mI (62342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=7.91[0m
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 834 | Voltage: 0.20V | UV Index: 1.76
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (68342) LORA_SEND1: Temperature: 31°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=1.76
+[0;32mI (68442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=1.76[0m
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 511 | Voltage: 0.12V | UV Index: 1.10
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 752 | Voltage: 0.18V | UV Index: 1.71
+[0;32mI (74442) LORA_SEND1: Temperature: 31°C, Humidity: 71%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=1.71
+[0;32mI (74542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=71:SOIL=0.0:UV=1.71[0m
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 71%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2335 | Voltage: 0.60V | UV Index: 5.84
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (80542) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=5.84
+[0;32mI (80642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=5.84[0m
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3824 | Voltage: 0.92V | UV Index: 8.46
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 906 | Voltage: 0.22V | UV Index: 1.93
+[0;32mI (86642) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=1.93
+[0;32mI (86742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=1.93[0m
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 524 | Voltage: 0.12V | UV Index: 1.12
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (92742) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=1.12
+[0;32mI (92842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=1.12[0m
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 819 | Voltage: 0.20V | UV Index: 1.89
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1378 | Voltage: 0.35V | UV Index: 3.40
+[0;32mI (98842) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=3.40
+[0;32mI (98942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=3.40[0m
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2697 | Voltage: 0.69V | UV Index: 6.66
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+[0;32mI (104942) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=6.66
+[0;32mI (105042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=6.66[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3583 | Voltage: 0.89V | UV Index: 8.40
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4095 | Voltage: 1.03V | UV Index: 9.37
+Temperature: 31°C, Humidity: 70%
+[0;32mI (111042) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=9.37
+[0;32mI (111142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=9.37[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3760 | Voltage: 0.91V | UV Index: 8.38
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+[0;32mI (117142) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=8.38
+[0;32mI (117242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=8.38[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (117322) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2751 | Voltage: 0.69V | UV Index: 6.37
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1983 | Voltage: 0.49V | UV Index: 4.55
+Temperature: 31°C, Humidity: 70%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (122402) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+[0;32mI (123242) LORA_SEND1: Temperature: 31°C, Humidity: 70%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=4.55
+[0;32mI (123342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=70:SOIL=0.0:UV=4.55[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 70%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1523 | Voltage: 0.37V | UV Index: 3.39
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (127482) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Temperature: 31°C, Humidity: 69%
+[0;32mI (129342) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1287 | Voltage: 0.31V | UV Index: 2.79
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.39
+[0;32mI (129442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.39[0m
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (132562) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1514 | Voltage: 0.37V | UV Index: 3.37
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (135442) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.37
+[0;32mI (135542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.37[0m
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1698 | Voltage: 0.42V | UV Index: 3.84
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (137642) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2557 | Voltage: 0.64V | UV Index: 5.97
+[0;32mI (141542) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=5.97
+[0;32mI (141642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=5.97[0m
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (142722) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4009 | Voltage: 0.97V | UV Index: 8.89
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (147642) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.89
+[0;32mI (147742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.89[0m
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (147822) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2403 | Voltage: 0.62V | UV Index: 5.97
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (152902) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 789 | Voltage: 0.19V | UV Index: 1.81
+[0;32mI (153742) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.81
+[0;32mI (153842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.81[0m
+Failed to read from DHT11 sensor. Error code: -1
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 528 | Voltage: 0.12V | UV Index: 1.11
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (157982) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (159842) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.11
+[0;32mI (159942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.11[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2551 | Voltage: 0.64V | UV Index: 5.96
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (163062) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3477 | Voltage: 0.87V | UV Index: 8.21
+[0;32mI (165942) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Temperature: 31°C, Humidity: 69%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.21
+[0;32mI (166042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.21[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+[0;33mW (168062) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1456 | Voltage: 0.37V | UV Index: 3.57
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+[0;32mI (172042) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.57
+[0;32mI (172142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=3.57[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1039 | Voltage: 0.26V | UV Index: 2.44
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 861 | Voltage: 0.21V | UV Index: 2.00
+Temperature: 31°C, Humidity: 69%
+[0;32mI (178142) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=2.00
+[0;32mI (178242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=2.00[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 845 | Voltage: 0.21V | UV Index: 1.94
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+[0;32mI (184242) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.94
+[0;32mI (184342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.94[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1143 | Voltage: 0.29V | UV Index: 2.72
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2603 | Voltage: 0.67V | UV Index: 6.45
+Temperature: 31°C, Humidity: 69%
+[0;32mI (190342) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=6.45
+[0;32mI (190442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=6.45[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4081 | Voltage: 0.98V | UV Index: 8.85
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+[0;32mI (196442) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.85
+[0;32mI (196542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=8.85[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 969 | Voltage: 0.23V | UV Index: 2.05
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 551 | Voltage: 0.13V | UV Index: 1.21
+Temperature: 31°C, Humidity: 69%
+[0;32mI (202542) LORA_SEND1: Temperature: 31°C, Humidity: 69%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.21
+[0;32mI (202642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=69:SOIL=0.0:UV=1.21[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1117 | Voltage: 0.28V | UV Index: 2.64
+Temperature: 31°C, Humidity: 69%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (208642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.64
+[0;32mI (208742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.64[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3556 | Voltage: 0.89V | UV Index: 8.33
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3061 | Voltage: 0.76V | UV Index: 7.07
+Temperature: 31°C, Humidity: 68%
+[0;32mI (214742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.07
+[0;32mI (214842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.07[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 953 | Voltage: 0.23V | UV Index: 2.03
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (220842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.03
+[0;32mI (220942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.03[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 490 | Voltage: 0.12V | UV Index: 1.03
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 607 | Voltage: 0.15V | UV Index: 1.34
+Temperature: 31°C, Humidity: 68%
+[0;32mI (226942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.34
+[0;32mI (227042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.34[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 725 | Voltage: 0.18V | UV Index: 1.64
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (233042) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.64
+[0;32mI (233142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.64[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (233222) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1058 | Voltage: 0.26V | UV Index: 2.49
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1649 | Voltage: 0.42V | UV Index: 4.08
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (238302) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+[0;32mI (239142) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.08
+[0;32mI (239242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.08[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2756 | Voltage: 0.71V | UV Index: 6.77
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (243382) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+[0;32mI (245242) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.77
+[0;32mI (245342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.77[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4037 | Voltage: 0.98V | UV Index: 9.02
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (248462) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3875 | Voltage: 0.93V | UV Index: 8.55
+Temperature: 31°C, Humidity: 68%
+[0;32mI (251342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.55
+[0;32mI (251442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.55[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2821 | Voltage: 0.70V | UV Index: 6.56
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (253542) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1851 | Voltage: 0.46V | UV Index: 4.25
+[0;32mI (257442) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.25
+[0;32mI (257542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.25[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (258622) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1351 | Voltage: 0.33V | UV Index: 2.96
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (263542) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.96
+[0;32mI (263642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.96[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (263722) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1114 | Voltage: 0.27V | UV Index: 2.36
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (268802) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1254 | Voltage: 0.30V | UV Index: 2.72
+[0;32mI (269642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.72
+[0;32mI (269742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.72[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1568 | Voltage: 0.38V | UV Index: 3.53
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (273882) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (275742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.53
+[0;32mI (275842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.53[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2226 | Voltage: 0.56V | UV Index: 5.17
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (278962) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3159 | Voltage: 0.79V | UV Index: 7.31
+[0;32mI (281842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.31
+[0;32mI (281942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.31[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;33mW (283962) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4028 | Voltage: 0.97V | UV Index: 8.96
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (287942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.96
+[0;32mI (288042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.96[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2271 | Voltage: 0.58V | UV Index: 5.67
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 741 | Voltage: 0.18V | UV Index: 1.68
+[0;32mI (294042) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.68
+[0;32mI (294142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.68[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 634 | Voltage: 0.15V | UV Index: 1.33
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (300142) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.33
+[0;32mI (300242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.33[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3984 | Voltage: 0.96V | UV Index: 8.85
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 821 | Voltage: 0.20V | UV Index: 1.89
+[0;32mI (306242) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.89
+[0;32mI (306342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.89[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1136 | Voltage: 0.27V | UV Index: 2.45
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (312342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.45
+[0;32mI (312442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.45[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2853 | Voltage: 0.73V | UV Index: 6.98
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 548 | Voltage: 0.13V | UV Index: 1.16
+Temperature: 31°C, Humidity: 68%
+[0;32mI (318442) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.16
+[0;32mI (318542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.16[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3857 | Voltage: 0.93V | UV Index: 8.52
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (324542) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.52
+[0;32mI (324642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.52[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 737 | Voltage: 0.18V | UV Index: 1.67
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1865 | Voltage: 0.46V | UV Index: 4.25
+Temperature: 31°C, Humidity: 68%
+[0;32mI (330642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.25
+[0;32mI (330742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.25[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1424 | Voltage: 0.36V | UV Index: 3.52
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (336742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52
+[0;32mI (336842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 691 | Voltage: 0.16V | UV Index: 1.49
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2177 | Voltage: 0.56V | UV Index: 5.45
+Temperature: 31°C, Humidity: 68%
+[0;32mI (342842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=5.45
+[0;32mI (342942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=5.45[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 655 | Voltage: 0.15V | UV Index: 1.36
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (348942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.36
+[0;32mI (349042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.36[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (349122) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2096 | Voltage: 0.54V | UV Index: 5.22
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 821 | Voltage: 0.20V | UV Index: 1.75
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (354202) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+[0;32mI (355042) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.75
+[0;32mI (355142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.75[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1436 | Voltage: 0.37V | UV Index: 3.54
+Temperature: 31°C, Humidity: 67%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (359282) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+[0;32mI (361142) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=3.54
+[0;32mI (361242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=3.54[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1018 | Voltage: 0.24V | UV Index: 2.18
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (364362) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1822 | Voltage: 0.47V | UV Index: 4.52
+Temperature: 31°C, Humidity: 67%
+[0;32mI (367242) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=4.52
+[0;32mI (367342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=4.52[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 526 | Voltage: 0.12V | UV Index: 1.10
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (369442) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (373342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3990 | Voltage: 0.97V | UV Index: 8.89
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.10
+[0;32mI (373442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.10[0m
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (374522) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 903 | Voltage: 0.23V | UV Index: 2.10
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (379442) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.10
+[0;32mI (379542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.10[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (379622) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 550 | Voltage: 0.13V | UV Index: 1.14
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (384702) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3283 | Voltage: 0.81V | UV Index: 7.58
+[0;32mI (385542) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.58
+[0;32mI (385642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.58[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1683 | Voltage: 0.43V | UV Index: 4.18
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (389782) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (391642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.18
+[0;32mI (391742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.18[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 557 | Voltage: 0.13V | UV Index: 1.20
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (394862) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1959 | Voltage: 0.49V | UV Index: 4.49
+[0;32mI (397742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.49
+[0;32mI (397842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=4.49[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;33mW (399862) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3438 | Voltage: 0.86V | UV Index: 8.13
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (403842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.13
+[0;32mI (403942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.13[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 813 | Voltage: 0.20V | UV Index: 1.86
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 528 | Voltage: 0.12V | UV Index: 1.10
+[0;32mI (409942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.10
+[0;32mI (410042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.10[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1581 | Voltage: 0.39V | UV Index: 3.52
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (416042) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52
+[0;32mI (416142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3383 | Voltage: 0.84V | UV Index: 7.78
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3669 | Voltage: 0.90V | UV Index: 8.47
+[0;32mI (422142) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.47
+[0;32mI (422242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.47[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2608 | Voltage: 0.67V | UV Index: 6.40
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (428242) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.40
+[0;32mI (428342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.40[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2224 | Voltage: 0.57V | UV Index: 5.54
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2128 | Voltage: 0.55V | UV Index: 5.32
+[0;32mI (434342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=5.32
+[0;32mI (434442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=5.32[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2432 | Voltage: 0.63V | UV Index: 6.03
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (440442) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.03
+[0;32mI (440542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.03[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3152 | Voltage: 0.80V | UV Index: 7.62
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 4095 | Voltage: 1.01V | UV Index: 9.22
+[0;32mI (446542) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=9.22
+[0;32mI (446642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=9.22[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3026 | Voltage: 0.75V | UV Index: 7.04
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (452642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.04
+[0;32mI (452742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.04[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1391 | Voltage: 0.34V | UV Index: 3.04
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 510 | Voltage: 0.12V | UV Index: 1.07
+[0;32mI (458742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.07
+[0;32mI (458842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.07[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 593 | Voltage: 0.14V | UV Index: 1.30
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (464842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.30
+[0;32mI (464942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.30[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (465022) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1130 | Voltage: 0.28V | UV Index: 2.69
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3526 | Voltage: 0.88V | UV Index: 8.28
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (470102) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+[0;32mI (470942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.28
+[0;32mI (471042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.28[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2643 | Voltage: 0.66V | UV Index: 6.16
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (475182) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (477042) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.16
+[0;32mI (477142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.16[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 576 | Voltage: 0.13V | UV Index: 1.18
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (480262) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 592 | Voltage: 0.14V | UV Index: 1.28
+Temperature: 31°C, Humidity: 68%
+[0;32mI (483142) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.28
+[0;32mI (483242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.28[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (485342) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 929 | Voltage: 0.23V | UV Index: 2.17
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+[0;32mI (489242) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.17
+[0;32mI (489342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.17[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1634 | Voltage: 0.42V | UV Index: 4.03
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (490422) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2774 | Voltage: 0.71V | UV Index: 6.79
+Temperature: 31°C, Humidity: 68%
+[0;32mI (495342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.79
+[0;32mI (495442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=6.79[0m
+
+***ERROR*** A stack overflow in task LORA_task has been detected.
+
+
+Backtrace: 0x400818ea:0x3ffb6630 0x400864cd:0x3ffb6650 0x40087322:0x3ffb6670 0x40088387:0x3ffb66f0 0x4008742c:0x3ffb6710 0x400873de:0x3f40adbe |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 9fd600af2
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bcf8h ( 48376) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001bd20 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001e1b0 vaddr=40080000 size=01e68h (  7784) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1b264h (111204) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003b28c vaddr=40081e68 size=0c6b4h ( 50868) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) app_init: Application information:[0m
+[0;32mI (224) app_init: Project name:     SEND1[0m
+[0;32mI (229) app_init: App version:      c1bfb76-dirty[0m
+[0;32mI (234) app_init: Compile time:     Apr 13 2025 08:38:27[0m
+[0;32mI (240) app_init: ELF file SHA256:  9fd600af2...[0m
+[0;32mI (246) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (251) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (256) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (261) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2DC0 len 0002D240 (180 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008E51C len 00011AE4 (70 KiB): IRAM[0m
+[0;32mI (306) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (322) main_task: Started on CPU0[0m
+[0;32mI (332) main_task: Calling app_main()[0m
+[0;32mI (1342) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1342) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1352) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1352) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 2659 | Voltage: 0.67V | UV Index: 6.19
+[0;32mI (1362) main_task: Returned from app_main()[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (1462) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3953 | Voltage: 0.96V | UV Index: 8.82
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (6542) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+[0;32mI (7342) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.82
+[0;32mI (7442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.82[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3726 | Voltage: 0.91V | UV Index: 8.52
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (11622) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2895 | Voltage: 0.74V | UV Index: 7.08
+[0;32mI (13442) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.08
+[0;32mI (13542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.08[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (16702) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1424 | Voltage: 0.37V | UV Index: 3.52
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (19542) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52
+[0;32mI (19642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=3.52[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 740 | Voltage: 0.18V | UV Index: 1.68
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (21782) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 551 | Voltage: 0.13V | UV Index: 1.18
+[0;32mI (25642) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.18
+[0;32mI (25742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.18[0m
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (26862) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 639 | Voltage: 0.15V | UV Index: 1.34
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (31742) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.34
+[0;32mI (31842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=1.34[0m
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (31942) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1951 | Voltage: 0.48V | UV Index: 4.48
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (37022) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3248 | Voltage: 0.81V | UV Index: 7.51
+[0;32mI (37842) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.51
+[0;32mI (37942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=7.51[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 3984 | Voltage: 0.96V | UV Index: 8.87
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (42102) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (43942) LORA_SEND1: Temperature: 31°C, Humidity: 68%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.87
+[0;32mI (44042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=8.87[0m
+Temperature: 31°C, Humidity: 68%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2954 | Voltage: 0.75V | UV Index: 7.21
+Temperature: 31°C, Humidity: 67%
+Gửi LoRa: {"type": "id", "id": "END123458"}
+[0;32mI (47182) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1735 | Voltage: 0.45V | UV Index: 4.30
+[0;32mI (50042) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=4.30
+[0;32mI (50142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=4.30[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;33mW (52182) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1136 | Voltage: 0.29V | UV Index: 2.70
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (56142) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.70
+[0;32mI (56242) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.70[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 848 | Voltage: 0.21V | UV Index: 1.96
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 667 | Voltage: 0.16V | UV Index: 1.49
+[0;32mI (62242) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.49
+[0;32mI (62342) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.49[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 597 | Voltage: 0.14V | UV Index: 1.29
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (68342) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.29
+[0;32mI (68442) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.29[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 551 | Voltage: 0.13V | UV Index: 1.18
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 530 | Voltage: 0.12V | UV Index: 1.14
+[0;32mI (74442) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.14
+[0;32mI (74542) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.14[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 501 | Voltage: 0.12V | UV Index: 1.06
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (80542) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.06
+[0;32mI (80642) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.06[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 500 | Voltage: 0.12V | UV Index: 1.07
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 511 | Voltage: 0.12V | UV Index: 1.07
+[0;32mI (86642) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.07
+[0;32mI (86742) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.07[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 509 | Voltage: 0.12V | UV Index: 1.08
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (92742) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.08
+[0;32mI (92842) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.08[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 592 | Voltage: 0.14V | UV Index: 1.29
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 917 | Voltage: 0.23V | UV Index: 2.14
+[0;32mI (98842) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.14
+[0;32mI (98942) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.14[0m
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2781 | Voltage: 0.71V | UV Index: 6.81
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+[0;32mI (104942) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=6.81
+[0;32mI (105042) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=6.81[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 2720 | Voltage: 0.68V | UV Index: 6.34
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 550 | Voltage: 0.13V | UV Index: 1.16
+Temperature: 31°C, Humidity: 67%
+[0;32mI (111042) LORA_SEND1: Temperature: 31°C, Humidity: 67%[0m
+Gửi LoRa: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.16
+[0;32mI (111142) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=1.16[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 31°C, Humidity: 67%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 1234 | Voltage: 0.31V | UV Index: 2.92
+Temperature: 31°C, Humidity: 67%
+[0;32mI (1799) mqtts_example: [APP] Free memory: 225032 bytes[0m
+[0;32mI (1799) mqtts_example: Other event id:7[0m
+[0;31mE (1799) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1799) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1809) mqtt_client: Error transport connect[0m
+[0;32mI (1809) mqtts_example: Other event id:0[0m
+[0;32mI (1819) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1819) main_task: Returned from app_main()[0m
+[0;32mI (2089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (3209) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (3589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (5089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (5629) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (6589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (8049) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (8089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (9589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (10459) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (11089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (12589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (12879) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (14089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (15289) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (15589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (16819) mqtts_example: Other event id:7[0m
+[0;31mE (16819) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (16819) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (16819) mqtt_client: Error transport connect[0m
+[0;32mI (16829) mqtts_example: Other event id:0[0m
+[0;32mI (16829) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (17089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (17709) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (18589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (20089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (20089) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (20119) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (21089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (22539) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (22589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (24089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (24949) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (25589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.75
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":68.0,"soil":0.0,"uv":2.8}
+ [0;32mI (26589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.75
+[0m
+[0;32mI (26839) mqtts_example: Other event id:7[0m
+[0;31mE (26839) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (26839) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (26839) mqtt_client: Error transport connect[0m
+[0;32mI (26849) mqtts_example: Other event id:0[0m
+[0;32mI (26849) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (27369) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (28089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.75
+[0m
+[0;32mI (29589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (29589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (29779) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (30589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (32089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.65
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":68.0,"soil":0.0,"uv":2.7}
+ [0;32mI (32199) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (33089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.65
+[0m
+[0;32mI (34589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (34589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (34609) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (35589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (36859) mqtts_example: Other event id:7[0m
+[0;31mE (36859) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (36859) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (36859) mqtt_client: Error transport connect[0m
+[0;32mI (36869) mqtts_example: Other event id:0[0m
+[0;32mI (36869) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (37029) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (37089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (38589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.65
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":68.0,"soil":0.0,"uv":2.7}
+ [0;32mI (39439) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (39589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (39589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (40589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (41859) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (42089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (43589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=68:SOIL=0.0:UV=2.66
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":68.0,"soil":0.0,"uv":2.7}
+ [0;32mI (44269) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (44589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (44589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (45589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (46689) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (46879) mqtts_example: Other event id:7[0m
+[0;31mE (46879) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (46879) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (46879) mqtt_client: Error transport connect[0m
+[0;32mI (46889) mqtts_example: Other event id:0[0m
+[0;32mI (46889) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (47089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (48589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (49099) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (50089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (50089) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (51089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (51519) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (52589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (53929) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (54089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (55589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (55589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (56349) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (56589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (56899) mqtts_example: Other event id:7[0m
+[0;31mE (56899) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56899) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56899) mqtt_client: Error transport connect[0m
+[0;32mI (56909) mqtts_example: Other event id:0[0m
+[0;32mI (56909) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (58089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (58769) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (59589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (61089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (61089) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (61179) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (62089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.52
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.5}
+ [0;32mI (63089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (63599) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (64589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.52
+[0m
+[0;32mI (66009) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (66089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (66089) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (66919) mqtts_example: Other event id:7[0m
+[0;31mE (66919) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (66919) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (66919) mqtt_client: Error transport connect[0m
+[0;32mI (66929) mqtts_example: Other event id:0[0m
+[0;32mI (66929) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (67089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (68429) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (68589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.68
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.7}
+ [0;32mI (69589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.68
+[0m
+[0;32mI (70839) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (71089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.68
+[0m
+[0;32mI (72589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.68
+[0m
+[0;32mI (73259) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (74089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.50
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.5}
+ [0;32mI (75089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.50
+[0m
+[0;32mI (75669) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (76589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.50
+[0m
+[0;32mI (76939) mqtts_example: Other event id:7[0m
+[0;31mE (76939) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (76939) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (76939) mqtt_client: Error transport connect[0m
+[0;32mI (76949) mqtts_example: Other event id:0[0m
+[0;32mI (76949) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (78089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.50
+[0m
+[0;32mI (78089) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (79589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.50
+[0m
+[0;32mI (80499) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (81089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.65
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.7}
+ [0;32mI (82089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.65
+[0m
+[0;32mI (82919) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (83589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.65
+[0m
+[0;32mI (85089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.65
+[0m
+[0;32mI (85329) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (86589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.5}
+ [0;32mI (86959) mqtts_example: Other event id:7[0m
+[0;31mE (86959) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (86959) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (86959) mqtt_client: Error transport connect[0m
+[0;32mI (86969) mqtts_example: Other event id:0[0m
+[0;32mI (86969) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (87589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (87749) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (89089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (90159) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (90589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (92089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (92579) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (93589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.63
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.6}
+ [0;32mI (94589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.63
+[0m
+[0;32mI (94999) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (96089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.63
+[0m
+[0;32mI (96979) mqtts_example: Other event id:7[0m
+[0;31mE (96979) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (96979) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (96979) mqtt_client: Error transport connect[0m
+[0;32mI (96989) mqtts_example: Other event id:0[0m
+[0;32mI (96989) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (97409) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (97589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.63
+[0m
+[0;32mI (99089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+receive item: {"id":"END123458","temp":31.0,"hum":67.0,"soil":0.0,"uv":2.5}
+ [0;32mI (99829) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (100089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (101589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=31:HUM=67:SOIL=0.0:UV=2.54
+[0m
+[0;32mI (102239) WiFi: Disconnected. Reconnecting...[0m
+[0;32mI (103089) LORA_receive: CHƯA NHẬN Đ

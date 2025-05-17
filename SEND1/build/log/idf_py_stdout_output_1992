@@ -1,0 +1,970 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 568 | Moisture: 83.98%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 3659 | Voltage: 0.97V | UV Index: 9.28
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 33°C, Humidity: 58%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 336 | Voltage: 0.09V | UV Index: 0.89
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba700 0x40086f71:0x3ffba720 0x4008d899:0x3ffba740 0x400879f7:0x3ffba7b0
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 213 | Moisture: 92.19%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 3745 | Voltage: 0.92V | UV Index: 8.60
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 2068 | Moisture: 59.15%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 112 | Voltage: 0.03V | UV Index: 0.26
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 1504 | Voltage: 0.37V | UV Index: 3.40
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba7c0 0x40086f71:0x3ffba7e0 0x4008d899:0x3ffba800 0x400879f7:0x3ffba870
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 991 | Voltage: 0.25V | UV Index: 2.43
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba700 0x40086f71:0x3ffba720 0x4008d899:0x3ffba740 0x400879f7:0x3ffba7b0
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 274 | Moisture: 91.38%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 3601 | Voltage: 0.89V | UV Index: 8.29
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 258 | Voltage: 0.07V | UV Index: 0.70
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba880 0x40086f71:0x3ffba8a0 0x4008d899:0x3ffba8c0 0x400879f7:0x3ffba930
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 74%
+[0;31mE (2383) FreeRTOS: FreeRTOS Task "recieve_lora_pu" should not return, Aborting now![0m
+
+abort() was called at PC 0x400879f7 on core 0
+
+
+Backtrace: 0x400819a6:0x3ffba700 0x40086f71:0x3ffba720 0x4008d899:0x3ffba740 0x400879f7:0x3ffba7b0
+
+
+
+
+ELF file SHA256: 729724858
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5d0h ( 50640) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c5f8 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001ea88 vaddr=40080000 size=01590h (  5520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20b9ch (134044) map[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040bc4 vaddr=40081590 size=0da44h ( 55876) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      6b49596-dirty[0m
+[0;32mI (245) app_init: Compile time:     May 17 2025 15:33:54[0m
+[0;32mI (251) app_init: ELF file SHA256:  729724858...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+[0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 91 | Moisture: 94.90%
+[0;32mI (1363) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 3814 | Voltage: 0.94V | UV Index: 8.76
+[0;32mI (1373) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1383) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1383) main_task: Returned from app_main()[0m

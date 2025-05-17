@@ -1,0 +1,1326 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 18 2025 15:34:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c630h ( 50736) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001c658 vaddr=3ffb0000 size=02488h (  9352) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001eae8 vaddr=40080000 size=01530h (  5424) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=20d1ch (134428) map[0m
+[0;32mI (183) esp_image: segment 4: paddr=00040d44 vaddr=40081530 size=0daa4h ( 55972) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (236) app_init: Project name:     SEND1[0m
+[0;32mI (240) app_init: App version:      913f865-dirty[0m
+[0;32mI (246) app_init: Compile time:     May 18 2025 01:03:55[0m
+[0;32mI (252) app_init: ELF file SHA256:  d601b6955...[0m
+[0;32mI (257) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008EFD4 len 0001102C (68 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (1353) LORA_SEND1: Temperature: 0°C, Humidity: 0%[0m
+item recieve : IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00
+ [0;32mI (1353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00[0m
+[0;32mI (1353) LORA_SEND1: LoRa Sender Đã Khởi Động
+[0m
+[0;32mI (1363) SOIL_SENSOR: Soil sensor initialized.[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (1373) UV_SENSOR: UV sensor initialized.[0m
+Raw Value: 227 | Voltage: 0.06V | UV Index: 0.59
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (1383) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+[0;32mI (1393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+[0;32mI (1393) main_task: Returned from app_main()[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (2393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+item recieve : IDEND123458:TEMP=0:HUM=0:SOIL=0.0:UV=0.00
+ Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (3393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ Temperature: 30°C, Humidity: 79%
+[0;32mI (4393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+Raw Value: 439 | Moisture: 87.89%
+Raw Value: 3187 | Voltage: 0.81V | UV Index: 7.53
+[0;32mI (5393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (6393) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+Failed to read from DHT11 sensor. Error code: -1
+Not my message: {"type": "id", "id": "END123457"}
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (7353) LORA_SEND1: Temperature: 30°C, Humidity: 79%[0m
+item recieve : IDEND123458:TEMP=30:HUM=79:SOIL=87.9:UV=7.53
+ [0;32mI (7353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=79:SOIL=87.9:UV=7.53[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (7393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+item recieve : IDEND123458:TEMP=30:HUM=79:SOIL=87.9:UV=7.53
+ [0;32mI (8393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 95 | Voltage: 0.03V | UV Index: 0.27
+Matched ID: END123458, Pump CMD: on
+Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4049 | Moisture: 6.98%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (11393) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+Matched ID: END123458, Pump CMD: on
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (12393) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:on
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (13353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=7.0:UV=0.27
+ [0;32mI (13353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=7.0:UV=0.27[0m
+Raw Value: 0 | Moisture: 98.83%
+Raw Value: 3888 | Voltage: 0.97V | UV Index: 9.44
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=7.0:UV=0.27
+ [0;32mI (13453) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:on
+[0m
+[0;32mI (14453) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:on
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 866 | Moisture: 85.81%
+Matched ID: END123458, Pump CMD: off
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (16393) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (16473) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:off
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Matched ID: END123458, Pump CMD: off
+Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 80%
+[0;32mI (19353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+ [0;32mI (19353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00[0m
+Raw Value: 418 | Moisture: 88.45%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+ Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 80%
+Raw Value: 49 | Moisture: 100.00%
+Raw Value: 1232 | Voltage: 0.32V | UV Index: 3.05
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (21393) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (21473) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:on
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=3.40
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (23473) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=3.40
+[0m
+[0;32mI (24473) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=3.40
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (25353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=3.05
+ [0;32mI (25353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=3.05[0m
+Raw Value: 1487 | Moisture: 65.42%
+Raw Value: 1401 | Voltage: 0.34V | UV Index: 3.10
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=3.05
+ item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (26393) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (26533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=80:SOIL=0
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Matched ID: END123458, Pump CMD: off
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.56
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 192 | Voltage: 0.05V | UV Index: 0.47
+[0;32mI (29533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.56
+[0m
+Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 81%
+[0;32mI (31353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.47
+ [0;32mI (31353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.47[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (31393) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.47
+ item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (32533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: .47END123458,pump:on
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 112 | Moisture: 95.43%
+Raw Value: 3828 | Voltage: 0.97V | UV Index: 9.43
+[0;32mI (33533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: .47END123458,pump:on
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=78.0:UV=8.36
+Temperature: 30°C, Humidity: 80%
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (35533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=78.0:UV=8.36
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (36393) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (36533) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=78.0:UV=8.36
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (37353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=9.43
+ [0;32mI (37353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=9.43[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=9.43
+ [0;32mI (37573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=78.0:UV=8.36
+[0m
+Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 80%
+Raw Value: 1889 | Moisture: 55.43%
+Not my message: {"type": "id", "id": "END123457"}
+Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 80%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3490 | Voltage: 0.88V | UV Index: 8.43
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (41393) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (41573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:off
+[0m
+[0;32mI (42573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:off
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (43353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=8.43
+ [0;32mI (43353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=8.43[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=100.0:UV=8.43
+ [0;32mI (43573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123458,pump:off
+[0m
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (45573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (46393) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (46573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 490 | Moisture: 88.33%
+Not my message: {"type": "id", "id": "END123456"}
+[0;32mI (48573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (49353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=88.3:UV=0.00
+ [0;32mI (49353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=88.3:UV=0.00[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2607 | Voltage: 0.68V | UV Index: 6.58
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=88.3:UV=0.00
+ [0;32mI (49573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (50573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+[0;33mW (51393) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Not my message: {"type": "id", "id": "END123456"}
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=42.6:UV=1.98
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (53573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=42.6:UV=1.98
+[0m
+[0;32mI (54573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=42.6:UV=1.98
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (55353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+ [0;32mI (55353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00[0m
+Raw Value: 882 | Moisture: 78.19%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+ Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3981 | Voltage: 0.98V | UV Index: 9.24
+Matched ID: END123458, Pump CMD: on
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.30
+Temperature: 30°C, Humidity: 80%
+Raw Value: 1949 | Moisture: 60.22%
+[0;32mI (59573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.30
+[0m
+[0;32mI (60573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.30
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (61353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=60.2:UV=9.24
+ [0;32mI (61353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=60.2:UV=9.24[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=60.2:UV=9.24
+ [0;32mI (62573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=80:SOIL=6
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 3167 | Moisture: 26.47%
+Not my message: id:END123456,pump:on
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=5.18
+Temperature: 30°C, Humidity: 81%
+Raw Value: 93 | Moisture: 95.97%
+Raw Value: 3825 | Voltage: 0.97V | UV Index: 9.33
+Not my message: id:END123456,pump:on
+[0;32mI (66573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123456,pump:on
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (67353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=96.0:UV=9.33
+ [0;32mI (67353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=96.0:UV=9.33[0m
+Raw Value: 0 | Moisture: 100.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=96.0:UV=9.33
+ [0;32mI (67573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123456,pump:on
+[0m
+[0;32mI (68573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123456,pump:on
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 163 | Voltage: 0.04V | UV Index: 0.42
+Not my message: id:END123457,pump:on
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=68.4:UV=0.00
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: id:END123457,pump:on
+Not my message: id:END123457,pump:on
+Temperature: 30°C, Humidity: 81%
+[0;32mI (73353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.42
+ [0;32mI (73353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.42[0m
+Raw Value: 365 | Moisture: 90.33%
+Raw Value: 3515 | Voltage: 0.91V | UV Index: 8.65
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.42
+ [0;32mI (73573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+[0;32mI (74573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (75573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 53 | Voltage: 0.02V | UV Index: 0.16
+Not my message: id:END123456,pump:off
+Not my message: id:END123456,pump:off
+Temperature: 30°C, Humidity: 80%
+[0;32mI (79353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.16
+ [0;32mI (79353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.16[0m
+Raw Value: 2832 | Moisture: 33.36%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=0.0:UV=0.16
+ Not my message: UM=80:SOIL=0.0:UV=0.1
+Not my message: id:END123457,pump:off
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3728 | Voltage: 0.93V | UV Index: 8.82
+Not my message: id:END123457,pump:off
+[0;32mI (82573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:off
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: id:END123457,pump:off
+[0;32mI (84573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:off
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (85353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=8.82
+ [0;32mI (85353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=8.82[0m
+Raw Value: 2224 | Moisture: 47.67%
+Raw Value: 1313 | Voltage: 0.33V | UV Index: 2.99
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=8.82
+ [0;32mI (85573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:off
+[0m
+Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Matched ID: END123458, Pump CMD: off
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (89573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+[0m
+[0;32mI (90573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (91353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (91353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00[0m
+Raw Value: 432 | Moisture: 87.94%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (91573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+[0m
+[0;32mI (92573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 212 | Moisture: 97.97%
+Raw Value: 1066 | Voltage: 0.27V | UV Index: 2.62
+[0;32mI (93573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.20
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (95573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+[0m
+[0;32mI (96573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (97353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.62
+ [0;32mI (97353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.62[0m
+Raw Value: 535 | Moisture: 86.62%
+Raw Value: 2977 | Voltage: 0.74V | UV Index: 6.79
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.62
+ [0;32mI (97573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+[0m
+[0;32mI (98573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (99573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=2.04
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 181 | Voltage: 0.05V | UV Index: 0.45
+[0;32mI (101573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+[0;32mI (102573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+[0;32mI (103353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.45
+ [0;32mI (103353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.45[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.45
+ [0;32mI (103573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+[0;32mI (104573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+Raw Value: 272 | Moisture: 93.14%
+Raw Value: 3525 | Voltage: 0.90V | UV Index: 8.58
+Temperature: 30°C, Humidity: 81%
+[0;32mI (105573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 30°C, Humidity: 81%
+[0;32mI (107573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+[0m
+[0;32mI (108573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+[0m
+[0;32mI (109353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.58
+ [0;32mI (109353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.58[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 226 | Voltage: 0.06V | UV Index: 0.55
+Temperature: 30°C, Humidity: 81%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.58
+ [0;32mI (109573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+[0m
+[0;32mI (110573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 81%
+[0;32mI (111573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=6.60
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+Raw Value: 2607 | Moisture: 38.05%
+Raw Value: 688 | Voltage: 0.17V | UV Index: 1.48
+Temperature: 30°C, Humidity: 81%
+[0;32mI (113573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+[0m
+[0;32mI (114573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+[0m
+[0;32mI (115353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=38.0:UV=1.48
+ [0;32mI (115353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=38.0:UV=1.48[0m
+Raw Value: 376 | Moisture: 91.04%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=38.0:UV=1.48
+ Temperature: 30°C, Humidity: 81%
+[0;32mI (115573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (116393) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (116573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 4025 | Voltage: 1.02V | UV Index: 9.95
+Temperature: 30°C, Humidity: 81%
+[0;32mI (117573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.40
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.52
+Raw Value: 0 | Moisture: 100.00%
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123457"}
+[0;32mI (120573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (121353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.95
+ [0;32mI (121353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.95[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 213 | Voltage: 0.05V | UV Index: 0.53
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (121393) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.95
+ Temperature: 30°C, Humidity: 81%
+[0;32mI (121573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (122573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 81%
+[0;32mI (123573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.35
+Raw Value: 3083 | Moisture: 27.35%
+Raw Value: 497 | Voltage: 0.12V | UV Index: 1.05
+Failed to read from DHT11 sensor. Error code: -1
+Not my message: {"type": "id", "id": "END123457"}
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (126393) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (126573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (127353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=27.4:UV=1.05
+ [0;32mI (127353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=27.4:UV=1.05[0m
+Raw Value: 397 | Moisture: 89.84%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=27.4:UV=1.05
+ [0;32mI (127573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (128573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3553 | Voltage: 0.90V | UV Index: 8.66
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.46
+Raw Value: 1861 | Moisture: 62.03%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (131393) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (131573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.46
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (132573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.46
+[0m
+[0;32mI (133353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=62.0:UV=8.66
+ [0;32mI (133353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=62.0:UV=8.66[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=62.0:UV=8.66
+ [0;32mI (133573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.46
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123457"}
+Raw Value: 2096 | Moisture: 51.28%
+[0;32mI (135573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (136393) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (136573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 4031 | Voltage: 1.00V | UV Index: 9.58
+[0;32mI (137573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (138573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (139353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.58
+ [0;32mI (139353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.58[0m
+Raw Value: 1385 | Moisture: 73.28%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=9.58
+ [0;32mI (139573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (140573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (141393) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (141573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=4.20
+Raw Value: 1265 | Moisture: 70.13%
+[0;32mI (143573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=4.20
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123457"}
+[0;32mI (145353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=70.1:UV=0.00
+ [0;32mI (145353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=70.1:UV=0.00[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 3738 | Voltage: 0.93V | UV Index: 8.85
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=70.1:UV=0.00
+ [0;32mI (145573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (146393) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (146573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (147573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=85.6:UV=6.08
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (150573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (151353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (151353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00[0m
+Raw Value: 765 | Moisture: 80.85%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (151393) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (151573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (152573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 2991 | Voltage: 0.77V | UV Index: 7.52
+[0;32mI (153573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.64
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (156393) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (156573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (157353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=7.52
+ [0;32mI (157353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=7.52[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=7.52
+ [0;32mI (157573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (158573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Raw Value: 305 | Moisture: 91.55%
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.53
+Raw Value: 111 | Moisture: 99.05%
+Raw Value: 1184 | Voltage: 0.31V | UV Index: 2.95
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (161393) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (161573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.53
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (162573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.53
+[0m
+[0;32mI (163353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=99.0:UV=2.95
+ [0;32mI (163353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=99.0:UV=2.95[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=99.0:UV=2.95
+ [0;32mI (163573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.53
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123457"}
+Raw Value: 1072 | Moisture: 73.82%
+Raw Value: 2139 | Voltage: 0.53V | UV Index: 4.87
+[0;32mI (165573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;33mW (166393) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=25.8:UV=8.36
+Raw Value: 0 | Moisture: 100.00%
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (168573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (169353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.87
+ [0;32mI (169353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.87[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.87
+ [0;32mI (169573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (170573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 769 | Moisture: 81.64%
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.65
+Raw Value: 1012 | Moisture: 80.95%
+Raw Value: 760 | Voltage: 0.19V | UV Index: 1.85
+[0;32mI (173573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.65
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (174573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.65
+[0m
+[0;32mI (175353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=81.0:UV=1.85
+ [0;32mI (175353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=81.0:UV=1.85[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=81.0:UV=1.85
+ [0;32mI (175573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.65
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123456"}
+Raw Value: 14 | Moisture: 97.97%
+Raw Value: 3890 | Voltage: 0.97V | UV Index: 9.42
+[0;32mI (177573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=4.20
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (179573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=4.20
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (180573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=4.20
+[0m
+[0;32mI (181353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=9.42
+ [0;32mI (181353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=9.42[0m
+Raw Value: 3344 | Moisture: 20.73%
+Raw Value: 561 | Voltage: 0.13V | UV Index: 1.16
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=9.42
+ Temperature: 30°C, Humidity: 81%
+[0;32mI (182573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=81:SOIL=0
+[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (183573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=81:SOIL=0
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 208 | Voltage: 0.05V | UV Index: 0.52
+[0;32mI (185573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.00
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123456"}
+[0;32mI (187353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.52
+ [0;32mI (187353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.52[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.52
+ [0;32mI (187573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (188573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 83 | Moisture: 97.26%
+Raw Value: 3903 | Voltage: 0.97V | UV Index: 9.41
+[0;32mI (189573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.93
+Raw Value: 3746 | Moisture: 21.83%
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (192573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (193353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=21.8:UV=9.41
+ [0;32mI (193353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=21.8:UV=9.41[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=21.8:UV=9.41
+ [0;32mI (193573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (194573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 294 | Moisture: 91.97%
+[0;32mI (195573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.17
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1696 | Voltage: 0.45V | UV Index: 4.47
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (198573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (199353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.47
+ [0;32mI (199353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.47[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=4.47
+ [0;32mI (199573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (200573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+Raw Value: 2069 | Moisture: 52.72%
+[0;32mI (203573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (204573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+[0m
+[0;32mI (205353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=52.7:UV=0.00
+ [0;32mI (205353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=52.7:UV=0.00[0m
+Raw Value: 89 | Moisture: 96.68%
+Raw Value: 3905 | Voltage: 0.98V | UV Index: 9.46
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=52.7:UV=0.00
+ [0;32mI (205573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (206573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+[0m
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (207573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=8.52
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 81 | Voltage: 0.02V | UV Index: 0.21
+[0;32mI (209573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (210573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+[0m
+[0;32mI (211353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.21
+ [0;32mI (211353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.21[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.21
+ [0;32mI (211573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (212573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+[0m
+Raw Value: 256 | Moisture: 93.11%
+Raw Value: 3666 | Voltage: 0.93V | UV Index: 8.93
+[0;32mI (213573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=87.3:UV=6.19
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+Raw Value: 0 | Moisture: 100.00%
+[0;32mI (215573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (216573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+[0m
+[0;32mI (217353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.93
+ [0;32mI (217353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.93[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 64 | Voltage: 0.02V | UV Index: 0.17
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=100.0:UV=8.93
+ [0;32mI (217573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (218573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+[0m
+Raw Value: 3780 | Moisture: 12.50%
+[0;32mI (219573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=1.25
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+Raw Value: 98 | Moisture: 96.78%
+Raw Value: 3914 | Voltage: 0.98V | UV Index: 9.46
+[0;32mI (221573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (222573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+[0m
+[0;32mI (223353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=96.8:UV=9.46
+ [0;32mI (223353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=96.8:UV=9.46[0m
+Raw Value: 2031 | Moisture: 58.61%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=96.8:UV=9.46
+ [0;32mI (223573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (224573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+[0;32mI (225573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=3.5:UV=0.84
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+Temperature: 30°C, Humidity: 81%
+Raw Value: 528 | Moisture: 87.96%
+[0;32mI (227573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+[0m
+[0;32mI (228573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (229353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=88.0:UV=0.00
+ [0;32mI (229353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=88.0:UV=0.00[0m
+Raw Value: 20 | Moisture: 100.00%
+Raw Value: 1394 | Voltage: 0.36V | UV Index: 3.44
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=88.0:UV=0.00
+ [0;32mI (229573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+[0m
+[0;32mI (230573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (231393) LORA_ID_TASK: Đã gửi 1/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (231573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.95
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=6.49
+Temperature: 30°C, Humidity: 81%
+Raw Value: 2237 | Moisture: 47.72%
+Raw Value: 1456 | Voltage: 0.36V | UV Index: 3.34
+[0;32mI (233573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=6.49
+[0m
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (235353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=47.7:UV=3.34
+ [0;32mI (235353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=47.7:UV=3.34[0m
+Raw Value: 0 | Moisture: 100.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=47.7:UV=3.34
+ [0;32mI (235573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (236393) LORA_ID_TASK: Đã gửi 2/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (236573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 197 | Voltage: 0.05V | UV Index: 0.48
+[0;32mI (237573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=1.86
+Temperature: 30°C, Humidity: 80%
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: {"type": "id", "id": "END123457"}
+[0;32mI (240573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (241353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.48
+ [0;32mI (241353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.48[0m
+Raw Value: 77 | Moisture: 97.17%
+Raw Value: 3907 | Voltage: 0.98V | UV Index: 9.50
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (241393) LORA_ID_TASK: Đã gửi 3/10 gói ID[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.48
+ [0;32mI (241573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (242573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 1639 | Moisture: 69.11%
+[0;32mI (243573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=99.2:UV=8.38
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 0 | Voltage: 0.00V | UV Index: 0.00
+Not my message: {"type": "id", "id": "END123457"}
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (246393) LORA_ID_TASK: Đã gửi 4/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (246573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (247353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (247353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00[0m
+Raw Value: 251 | Moisture: 92.55%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.00
+ [0;32mI (247573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+[0;32mI (248573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 213 | Moisture: 98.07%
+Raw Value: 1011 | Voltage: 0.26V | UV Index: 2.51
+Not my message: {"type": "id", "id": "END123457"}
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=98.9:UV=0.00
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (251393) LORA_ID_TASK: Đã gửi 5/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (251573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=98.9:UV=0.00
+[0m
+[0;32mI (252573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=98.9:UV=0.00
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (253353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.51
+ [0;32mI (253353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.51[0m
+Raw Value: 1458 | Moisture: 65.05%
+Raw Value: 1338 | Voltage: 0.33V | UV Index: 3.01
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=2.51
+ [0;32mI (253573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=98.9:UV=0.00
+[0m
+[0;32mI (254573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=98.9:UV=0.00
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Not my message: id:END123457,pump:on
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (256393) LORA_ID_TASK: Đã gửi 6/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (256573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 336 | Moisture: 94.90%
+Raw Value: 987 | Voltage: 0.25V | UV Index: 2.42
+[0;32mI (257573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+[0;32mI (258573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (259353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=94.9:UV=2.42
+ [0;32mI (259353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=94.9:UV=2.42[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=94.9:UV=2.42
+ [0;32mI (259573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:on
+[0m
+Not my message: id:END123457,pump:off
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 86 | Voltage: 0.02V | UV Index: 0.22
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (261393) LORA_ID_TASK: Đã gửi 7/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (261573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123457,pump:off
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=4.51
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: id:END123456,pump:on
+Not my message: {"type": "id", "id": "END123457"}
+Temperature: 30°C, Humidity: 81%
+[0;32mI (265353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.22
+ [0;32mI (265353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.22[0m
+Raw Value: 4095 | Moisture: 0.00%
+Raw Value: 48 | Voltage: 0.02V | UV Index: 0.14
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.22
+ Not my message: HUM=81:SOIL=0.0:UV=0
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (266393) LORA_ID_TASK: Đã gửi 8/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (266573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: HUM=81:SOIL=0.0:UV=0
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (267573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: HUM=81:SOIL=0.0:UV=0
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=70.3:UV=1.49
+Temperature: 30°C, Humidity: 81%
+Raw Value: 3488 | Moisture: 25.05%
+Raw Value: 528 | Voltage: 0.14V | UV Index: 1.30
+Not my message: {"type": "id", "id": "END123457"}
+Not my message: id:END123456,pump:off
+Temperature: 30°C, Humidity: 81%
+[0;32mI (271353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=25.1:UV=1.30
+ [0;32mI (271353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=25.1:UV=1.30[0m
+Raw Value: 0 | Moisture: 100.00%
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (271393) LORA_ID_TASK: Đã gửi 9/10 gói ID[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=25.1:UV=1.30
+ Not my message: id:END123456,pump:off
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (272573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: id:END123456,pump:off
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 98.88%
+Raw Value: 4003 | Voltage: 0.98V | UV Index: 9.44
+Matched ID: END123458, Pump CMD: on
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=6.67
+Temperature: 30°C, Humidity: 81%
+Raw Value: 470 | Moisture: 86.84%
+Not my message: {"type": "id", "id": "END123457"}
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (276393) LORA_ID_TASK: Đã gửi 10/10 gói ID[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (276573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123457"}
+[0m
+Temperature: 30°C, Humidity: 81%
+[0;32mI (277353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=86.8:UV=9.44
+ [0;32mI (277353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=86.8:UV=9.44[0m
+Raw Value: 4042 | Moisture: 6.08%
+Raw Value: 325 | Voltage: 0.08V | UV Index: 0.64
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=86.8:UV=9.44
+ Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Matched ID: END123458, Pump CMD: off
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.30
+Temperature: 30°C, Humidity: 80%
+Raw Value: 2105 | Moisture: 56.12%
+Raw Value: 692 | Voltage: 0.18V | UV Index: 1.69
+[0;33mW (281393) LORA_ID_TASK: Hết số lần gửi, không được xác minh.[0m
+Matched ID: END123458, Pump CMD: on
+Matched ID: END123458, Pump CMD: on
+Temperature: 30°C, Humidity: 81%
+[0;32mI (283353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=56.1:UV=1.69
+ [0;32mI (283353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=56.1:UV=1.69[0m
+Raw Value: 0 | Moisture: 100.00%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=56.1:UV=1.69
+ [0;32mI (284573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 656 | Moisture: 82.15%
+Raw Value: 2559 | Voltage: 0.64V | UV Index: 5.89
+[0;32mI (285573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=91.8:UV=8.20
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+Not my message: {"type": "id", "id": "END123456"}
+Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 81%
+[0;32mI (289353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=5.89
+ [0;32mI (289353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=5.89[0m
+Raw Value: 4095 | Moisture: 1.95%
+Raw Value: 293 | Voltage: 0.07V | UV Index: 0.75
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=5.89
+ Not my message: UM=81:SOIL=0.0:UV=5.8
+Matched ID: END123458, Pump CMD: off
+Temperature: 30°C, Humidity: 81%
+Raw Value: 0 | Moisture: 100.00%
+Not my message: {"type": "id", "id": "END123456"}
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.43
+Temperature: 30°C, Humidity: 81%
+Raw Value: 1648 | Moisture: 60.76%
+Raw Value: 1254 | Voltage: 0.31V | UV Index: 2.83
+[0;32mI (293573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.43
+[0m
+[0;32mI (294573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.43
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (295353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=60.8:UV=2.83
+ [0;32mI (295353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=60.8:UV=2.83[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=60.8:UV=2.83
+ [0;32mI (295573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=7.43
+[0m
+Not my message: {"type": "id", "id": "END123456"}
+Temperature: 30°C, Humidity: 80%
+Raw Value: 209 | Moisture: 98.05%
+Raw Value: 944 | Voltage: 0.24V | UV Index: 2.32
+[0;32mI (297573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=0.00
+Temperature: 30°C, Humidity: 80%
+Raw Value: 0 | Moisture: 99.61%
+[0;32mI (299573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=0.00
+[0m
+[0;32mI (300573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=100.0:UV=0.00
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (301353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=99.6:UV=2.32
+ [0;32mI (301353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=99.6:UV=2.32[0m
+Raw Value: 3335 | Moisture: 22.61%
+Raw Value: 247 | Voltage: 0.06V | UV Index: 0.48
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=99.6:UV=2.32
+ [0;32mI (302573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=80:SOIL=9
+[0m
+Temperature: 30°C, Humidity: 81%
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (303573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=30:HUM=80:SOIL=9
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.25
+Temperature: 30°C, Humidity: 81%
+Raw Value: 128 | Moisture: 99.73%
+Raw Value: 1160 | Voltage: 0.30V | UV Index: 2.88
+[0;32mI (305573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=80:SOIL=0.0:UV=0.25
+[0m
+Not my message: {"type": "id", "id": "END123456"}
+[0;32mI (307353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=99.7:UV=2.88
+ [0;32mI (307353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=99.7:UV=2.88[0m
+Raw Value: 0 | Moisture: 98.88%
+Temperature: 30°C, Humidity: 80%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=99.7:UV=2.88
+ [0;32mI (307573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (308573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 3115 | Moisture: 25.96%
+Raw Value: 329 | Voltage: 0.08V | UV Index: 0.65
+Temperature: 30°C, Humidity: 80%
+[0;32mI (309573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=79:SOIL=39.4:UV=8.55
+Raw Value: 4095 | Moisture: 0.00%
+Temperature: 30°C, Humidity: 81%
+Not my message: {"type": "id", "id": "END123456"}
+[0;32mI (312573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (313353) LORA_SEND1: Temperature: 30°C, Humidity: 81%[0m
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.65
+ [0;32mI (313353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.65[0m
+Raw Value: 78 | Moisture: 100.00%
+Raw Value: 1035 | Voltage: 0.27V | UV Index: 2.56
+Temperature: 30°C, Humidity: 80%
+item recieve : IDEND123458:TEMP=30:HUM=81:SOIL=0.0:UV=0.65
+ [0;32mI (313573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (314573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 42 | Moisture: 96.61%
+Temperature: 30°C, Humidity: 81%
+[0;32mI (315573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=8.55
+Raw Value: 3824 | Moisture: 10.13%
+Raw Value: 144 | Voltage: 0.03V | UV Index: 0.24
+Temperature: 30°C, Humidity: 80%
+Not my message: {"type": "id", "id": "END123456"}
+[0;32mI (318573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (319353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=10.1:UV=0.24
+ [0;32mI (319353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=10.1:UV=0.24[0m
+Raw Value: 4095 | Moisture: 0.00%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=10.1:UV=0.24
+ Temperature: 30°C, Humidity: 80%
+[0;32mI (319573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+[0;32mI (320573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Raw Value: 0 | Moisture: 100.00%
+Raw Value: 1402 | Voltage: 0.36V | UV Index: 3.56
+Temperature: 30°C, Humidity: 80%
+[0;32mI (321573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123456"}
+[0m
+Not my message: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+Raw Value: 183 | Moisture: 94.02%
+Temperature: 30°C, Humidity: 80%
+[0;32mI (323573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+[0m
+[0;32mI (324573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+[0m
+[0;32mI (325353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=94.0:UV=3.56
+ [0;32mI (325353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=94.0:UV=3.56[0m
+Raw Value: 3554 | Moisture: 17.00%
+Raw Value: 232 | Voltage: 0.05V | UV Index: 0.42
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=94.0:UV=3.56
+ Temperature: 30°C, Humidity: 80%
+[0;32mI (325573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+[0m
+[0;32mI (326573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+[0m
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (327573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=100.0:UV=0.22
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+Raw Value: 766 | Moisture: 86.03%
+Raw Value: 699 | Voltage: 0.18V | UV Index: 1.70
+[0;32mI (329573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (330573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+[0m
+[0;32mI (331353) LORA_SEND1: Temperature: 30°C, Humidity: 80%[0m
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=86.0:UV=1.70
+ [0;32mI (331353) LORA_SEND1: Đã gửi tín hiệu: IDEND123458:TEMP=30:HUM=80:SOIL=86.0:UV=1.70[0m
+Raw Value: 0 | Moisture: 100.00%
+item recieve : IDEND123458:TEMP=30:HUM=80:SOIL=86.0:UV=1.70
+ [0;32mI (331573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+[0m
+Temperature: 30°C, Humidity: 80%
+[0;32mI (332573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+[0m
+Raw Value: 496 | Moisture: 87.11%
+Raw Value: 2954 | Voltage: 0.73V | UV Index: 6.72
+[0;32mI (333573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=0.0:UV=0.02
+[0m
+Temperature: 30°C, Humidity: 81%
+Not my message: IDEND123457:TEMP=30:HUM=79:SOIL=99.6:UV=6.15
+Raw Value: 4095 | Moisture: 0.00%
+[0;32mI (335573) LORA_SEND1: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123457:TEMP=30:HUM=79:SOIL=99.6:UV=6.15
+[0m
+Temperature: 30°C, Humidity: 81%
