@@ -1,0 +1,99 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\GATEWAY\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/ESP IDF/project_esp/GATEWAY/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GATEWAY.c.obj
+C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c: In function 'lora_task':
+C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:152:13: warning: unused variable 'packetSize' [-Wunused-variable]
+  152 |         int packetSize = lora_received();
+      |             ^~~~~~~~~~
+In file included from C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:37:
+C:/ESP IDF/project_esp/GATEWAY/Component/SUB_MQTT/include/SUB_MQTT.h: At top level:
+C:/ESP IDF/project_esp/GATEWAY/Component/SUB_MQTT/include/SUB_MQTT.h:18:20: warning: 'TAG_mqttsub' defined but not used [-Wunused-variable]
+   18 | static const char *TAG_mqttsub = "mqtts_example";
+      |                    ^~~~~~~~~~~
+In file included from C:/ESP IDF/project_esp/GATEWAY/main/GATEWAY.c:36:
+C:/ESP IDF/project_esp/GATEWAY/Component/wifi_config/include/wifi_config.h:38:20: warning: 'TAG_wifi' defined but not used [-Wunused-variable]
+   38 | static const char *TAG_wifi = "WiFi";
+      |                    ^~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable GATEWAY.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP IDF/project_esp/GATEWAY/build/GATEWAY.bin
+[7/8] cmd.exe /C "cd /D "C:\ESP IDF\project_esp\GATEWAY\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/ESP IDF/project_esp/GATEWAY/build/partition_table/partition-table.bin" "C:/ESP IDF/project_esp/GATEWAY/build/GATEWAY.bin""
+GATEWAY.bin binary size 0xec4a0 bytes. Smallest app partition is 0x100000 bytes. 0x13b60 bytes (8%) free.
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reesptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 GATEWAY.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM3
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e8:6b:ea:d4:6d:24
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fcfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16359 compressed) at 0x00001000 in 0.8 seconds (effective 285.1 kbit/s)...
+Hash of data verified.
+Compressed 967840 bytes to 607030...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e47d... (5 %)
+Writing at 0x00027f82... (7 %)
+Writing at 0x0002cdcc... (10 %)
+Writing at 0x00034901... (13 %)
+Writing at 0x0003e7d8... (15 %)
+Writing at 0x000443c9... (18 %)
+Writing at 0x0004a009... (21 %)
+Writing at 0x0005014a... (23 %)
+Writing at 0x00055eb7... (26 %)
+Writing at 0x0005bc96... (28 %)
+Writing at 0x000617d5... (31 %)
+Writing at 0x00067cd9... (34 %)
+Writing at 0x0006dbfb... (36 %)
+Writing at 0x00073998... (39 %)
+Writing at 0x0007954e... (42 %)
+Writing at 0x0007e728... (44 %)
+Writing at 0x00083c66... (47 %)
+Writing at 0x0008908d... (50 %)
+Writing at 0x0008e54d... (52 %)
+Writing at 0x00093b4a... (55 %)
+Writing at 0x000992fb... (57 %)
+Writing at 0x0009f200... (60 %)
+Writing at 0x000a4cb9... (63 %)
+Writing at 0x000aa970... (65 %)
+Writing at 0x000b0530... (68 %)
+Writing at 0x000b5f58... (71 %)
+Writing at 0x000bb95b... (73 %)
+Writing at 0x000c175d... (76 %)
+Writing at 0x000c72ee... (78 %)
+Writing at 0x000cd258... (81 %)
+Writing at 0x000d78fe... (84 %)
+Writing at 0x000df1a8... (86 %)
+Writing at 0x000e513b... (89 %)
+Writing at 0x000eac97... (92 %)
+Writing at 0x000f0b40... (94 %)
+Writing at 0x000f68a6... (97 %)
+Writing at 0x000fc006... (100 %)
+Wrote 967840 bytes (607030 compressed) at 0x00010000 in 13.9 seconds (effective 558.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 521.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+set;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/ESP IDF/project_esp/GATEWAY/build" -P C:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

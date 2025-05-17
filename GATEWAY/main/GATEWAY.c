@@ -41,6 +41,10 @@
 static const char *TAG = "LORA_receive";
 RingbufHandle_t mqttRingBuffer;
 RingbufHandle_t mqttidbuffer;
+RingbufHandle_t pump_data_buffer;
+
+SemaphoreHandle_t SPI_mutex;
+
 // Định nghĩa các chân GPIO
 #define LORA_MISO   19
 #define LORA_MOSI   23
@@ -62,6 +66,46 @@ float soil, uv, temp, hum;
 //vTaskDelay(500 / portTICK_PERIOD_MS);
 //ESP_LOGI(TAG, "turn ON LED");
 //gpio_set_level(LED_PIN, 1);
+
+
+//mqtt_sub_pump task
+void mqtt_sub_pump () {
+    while (1) {
+        size_t item_size;
+        char *payload = (char *)xRingbufferReceive(pump_data_buffer, &item_size, portMAX_DELAY);
+
+        if (payload != NULL) {
+            // Dữ liệu nhận được dạng chuỗi JSON: {"id":"END123456","pump":"on"}
+            // Bạn muốn tái cấu trúc thành: id:END123456,pump:on
+
+            char id[32], pump[8];
+            if (sscanf(payload, "{\"id\":\"%31[^\"]\",\"pump\":\"%7[^\"]\"}", id, pump) == 2) {
+                char structured_msg[64];
+                snprintf(structured_msg, sizeof(structured_msg), "id:%s,pump:%s", id, pump);
+                ESP_LOGI("PUMP_HANDLER", "Reconstructed: %s", structured_msg);
+
+                // Gửi xuống EndNode qua LoRa 
+                // Gửi 10 lần cách nhau 100ms
+                for (int i = 0; i < 10; i++) {
+                    if (xSemaphoreTake(SPI_mutex, portMAX_DELAY) == pdTRUE) {
+                        lora_send_packet((uint8_t *)structured_msg, strlen(structured_msg));
+                        xSemaphoreGive(SPI_mutex);
+                        ESP_LOGI("PUMP_HANDLER", "Sent LoRa %d/10: %s", i + 1, structured_msg);
+                    } else {
+                        ESP_LOGW("PUMP_HANDLER", "Không lấy được mutex SPI để gửi LoRa");
+                    }
+                    vTaskDelay(pdMS_TO_TICKS(100)); // Delay 100ms
+                }
+
+            } else {
+                ESP_LOGW("PUMP_HANDLER", "Failed to parse payload: %s", payload);
+            }
+
+            vRingbufferReturnItem(pump_data_buffer, payload);
+        }
+    }
+}
+
 
 //mqtt_ID_task 
 void mqtt_ID_task () {
@@ -111,8 +155,15 @@ void mqtt_task (){
 void lora_task (){
     while (1) {
         char mqtt_payload_global[100];
-        int packetSize = lora_received();
-        int len = lora_receive_packet(buf, sizeof(buf));
+        //int packetSize = lora_received();
+        int len = -1;
+        if (xSemaphoreTake(SPI_mutex, portMAX_DELAY) == pdTRUE) {
+            len = lora_receive_packet(buf, sizeof(buf));
+            lora_receive();
+            xSemaphoreGive(SPI_mutex);
+        } else {
+            ESP_LOGW(TAG, "Không lấy được mutex SPI để nhận LoRa");
+        }
         if (len > 0) {
             buf[len] = '\0';
             ESP_LOGI(TAG, "NHẬN ĐƯỢC GÓI TIN: %s\n", buf);
@@ -144,7 +195,7 @@ void lora_task (){
             
 
             // Xóa gói tin cũ để nhận gói mới
-            lora_receive();
+            //lora_receive();
 
             vTaskDelay(pdMS_TO_TICKS(500)); // Giảm tốc độ nhận
         }
@@ -152,7 +203,7 @@ void lora_task (){
             ESP_LOGI(TAG, "CHƯA NHẬN ĐƯỢC GÓI TIN: %s\n", buf);
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
-        vTaskDelay(pdMS_TO_TICKS(500)); // Giảm tải CPU
+        //vTaskDelay(pdMS_TO_TICKS(500)); // Giảm tải CPU
     }
 }
 
@@ -175,6 +226,7 @@ void lora_init_pins() {
 
 void app_main(void)
 {
+    SPI_mutex = xSemaphoreCreateMutex();
     //loralora
     lora_init_pins();
     lora_init();
@@ -213,9 +265,15 @@ void app_main(void)
     //mqtt_ID_task
     xTaskCreate(&mqtt_ID_task, "mqtt_ID_task", 4096, NULL, 1, NULL);
 
+    //mqtt_sub_pump 
+    xTaskCreate(&mqtt_sub_pump, "mqtt_sub_pump", 4096, NULL, 1, NULL);
+
     //ringbuffer
     mqttRingBuffer = xRingbufferCreate(10 * 128, RINGBUF_TYPE_NOSPLIT);
     mqttidbuffer = xRingbufferCreate(10 * 128, RINGBUF_TYPE_NOSPLIT);
+    pump_data_buffer = xRingbufferCreate(10 * 128, RINGBUF_TYPE_NOSPLIT);
+
+
     /*
         if (mqttRingBuffer == NULL) {
         ESP_LOGE(TAG, "Failed to create ring buffer");

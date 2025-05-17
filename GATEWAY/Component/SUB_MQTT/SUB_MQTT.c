@@ -18,9 +18,18 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
     switch ((esp_mqtt_event_id_t)event_id) {
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG_mqttsub, "MQTT_EVENT_CONNECTED");
-        msg_id = esp_mqtt_client_subscribe(client, "v1/devices/me/telemetry", 0);
-        ESP_LOGI(TAG_mqttsub, "sent subscribe successful, msg_id=%d", msg_id);
+        msg_id = esp_mqtt_client_subscribe(client, "pump/data", 0);
+        ESP_LOGI(TAG_mqttsub, "Subscribed to pump/data, msg_id=%d", msg_id);
 
+        break;
+    case MQTT_EVENT_DATA:
+    if (strncmp(event->topic, "pump/data", event->topic_len) == 0) {
+        // Sao chép nội dung tin nhắn nhận được
+        char *payload = strndup(event->data, event->data_len);
+        if (payload) {
+            xRingbufferSend(pump_data_buffer, payload, strlen(payload)+1, portMAX_DELAY);
+        }
+    }
         break;
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG_mqttsub, "MQTT_EVENT_DISCONNECTED");
@@ -38,7 +47,7 @@ void mqtt_app_start(void)
     esp_mqtt_client_config_t mqtt_cfg = {
         .broker = {
             .address = {
-                .uri = "mqtt://192.168.1.10:1883",                 // Cổng mặc định không mã hóa
+                .uri = "mqtt://192.168.1.2:1883",                 // Cổng mặc định không mã hóa   .1.139    .93.18   .1.2
             }
         },
         .session = {

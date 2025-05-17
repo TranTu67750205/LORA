@@ -10,7 +10,10 @@
 #include <sys/param.h>
 #include "esp_log.h"
 #include "sdkconfig.h"
+#include "freertos/ringbuf.h"       
+#include "freertos/idf_additions.h"
 //#include "uart_sub.h"
+extern RingbufHandle_t pump_data_buffer;
 
 static const char *TAG_mqttsub = "mqtts_example";
 

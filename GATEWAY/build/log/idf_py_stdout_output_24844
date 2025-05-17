@@ -1,4 +1,4 @@
-ets Jul 29 2019 12:21:46
+���x�x��xB�ʂJets Jul 29 2019 12:21:46
 
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 configsip: 0, SPIWP:0xee
@@ -24,11 +24,11 @@ entry 0x40080640
 [0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
 [0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
 [0;32mI (92) boot: End of partition table[0m
-[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27b44h (162628) map[0m
-[0;32mI (161) esp_image: segment 1: paddr=00037b6c vaddr=3ffb0000 size=0404ch ( 16460) load[0m
-[0;32mI (167) esp_image: segment 2: paddr=0003bbc0 vaddr=40080000 size=04458h ( 17496) load[0m
-[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6ee8h (683752) map[0m
-[0;32mI (409) esp_image: segment 4: paddr=000e6f10 vaddr=40084458 size=151cch ( 86476) load[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27b24h (162596) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00037b4c vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=0003bba0 vaddr=40080000 size=04478h ( 17528) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a6f84h (683908) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=000e6fac vaddr=40084478 size=151ach ( 86444) load[0m
 [0;32mI (456) boot: Loaded app from partition at offset 0x10000[0m
 [0;32mI (456) boot: Disabling RNG early entropy source...[0m
 [0;32mI (468) cpu_start: Multicore app[0m
@@ -36,16 +36,16 @@ entry 0x40080640
 [0;32mI (476) cpu_start: cpu freq: 160000000 Hz[0m
 [0;32mI (476) app_init: Application information:[0m
 [0;32mI (479) app_init: Project name:     GATEWAY[0m
-[0;32mI (484) app_init: App version:      eb4d542-dirty[0m
-[0;32mI (490) app_init: Compile time:     Apr  7 2025 02:53:50[0m
-[0;32mI (496) app_init: ELF file SHA256:  5f4245759...[0m
+[0;32mI (484) app_init: App version:      6b49596-dirty[0m
+[0;32mI (490) app_init: Compile time:     Apr 21 2025 11:33:00[0m
+[0;32mI (496) app_init: ELF file SHA256:  09eb83460...[0m
 [0;32mI (501) app_init: ESP-IDF:          v5.3.1-dirty[0m
 [0;32mI (506) efuse_init: Min chip rev:     v0.0[0m
 [0;32mI (511) efuse_init: Max chip rev:     v3.99 [0m
 [0;32mI (516) efuse_init: Chip rev:         v3.1[0m
 [0;32mI (521) heap_init: Initializing. RAM available for dynamic allocation:[0m
 [0;32mI (528) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
-[0;32mI (534) heap_init: At 3FFB8938 len 000276C8 (157 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFB89C0 len 00027640 (157 KiB): DRAM[0m
 [0;32mI (540) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
 [0;32mI (546) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
 [0;32mI (553) heap_init: At 40099624 len 000069DC (26 KiB): IRAM[0m
@@ -56,7 +56,7 @@ entry 0x40080640
 [0;32mI (589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
 [0m
 LoRa Receiver Đã Khởi Động
-I (619) wifi:wifi driver task: 3ffc1c8c, prio:23, stack:6656, core=0
+I (619) wifi:wifi driver task: 3ffc1d98, prio:23, stack:6656, core=0
 I (629) wifi:wifi firmware version: ccaebfa
 I (629) wifi:wifi certification version: v7.0
 I (629) wifi:config NVS flash: enabled
@@ -71,257 +71,805 @@ I (659) wifi:Init dynamic rx buffer num: 32
 [0;32mI (659) wifi_init: rx ba win: 6[0m
 [0;32mI (669) wifi_init: accept mbox: 6[0m
 [0;32mI (669) wifi_init: tcpip mbox: 32[0m
-[0;32mI (669) wifi_init: udp mbox: 6[0m
+[0;32mI (679) wifi_init: udp mbox: 6[0m
 [0;32mI (679) wifi_init: tcp mbox: 6[0m
 [0;32mI (679) wifi_init: tcp tx win: 5760[0m
 [0;32mI (689) wifi_init: tcp rx win: 5760[0m
 [0;32mI (689) wifi_init: tcp mss: 1440[0m
-[0;32mI (689) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (699) wifi_init: WiFi IRAM OP enabled[0m
 [0;32mI (699) wifi_init: WiFi RX IRAM OP enabled[0m
-[0;32mI (709) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
-I (789) wifi:mode : sta (e8:6b:ea:d4:6d:24)
-I (789) wifi:enable tsf
-[0;32mI (1799) mqtts_example: [APP] Free memory: 225300 bytes[0m
-[0;32mI (1799) mqtts_example: Connecting to MQTT broker at 192.168.1.8:1883...[0m
-[0;32mI (1799) mqtts_example: Other event id:7[0m
-[0;31mE (1799) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (1809) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (1819) mqtt_client: Error transport connect[0m
-[0;32mI (1819) mqtts_example: Other event id:0[0m
-[0;32mI (1829) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (1829) main_task: Returned from app_main()[0m
-[0;32mI (2089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: 
+[0;32mI (729) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (819) wifi:mode : sta (e8:6b:ea:d4:6d:24)
+I (819) wifi:enable tsf
+I (1559) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (1559) wifi:state: init -> auth (0xb0)
+I (1569) wifi:state: auth -> assoc (0x0)
+I (1579) wifi:state: assoc -> run (0x10)
+I (1599) wifi:connected with Galaxy A05s 6247, aid = 2, channel 6, BW20, bssid = 2e:94:d7:57:2c:81
+I (1599) wifi:security: WPA2-PSK, phy: bgn, rssi: -15
+I (1629) wifi:pm start, type: 1
+
+I (1629) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1629) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (1629) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1819) mqtts_example: [APP] Free memory: 224240 bytes[0m
+[0;32mI (1819) mqtts_example: Other event id:7[0m
+[0;31mE (1819) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1819) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1829) mqtt_client: Error transport connect[0m
+[0;32mI (1829) mqtts_example: Other event id:0[0m
+[0;32mI (1839) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (1839) main_task: Returned from app_main()[0m
+[0;32mI (2089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (3209) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (3589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=1.07
+[0;32mI (2089) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (3589) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 100.0, UV: 1.1[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":100.0,"uv":1.1}[0;32mI (4599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=1.07
+[0;32mI (2639) esp_netif_handlers: sta ip: 192.168.2.162, mask: 255.255.255.0, gw: 192.168.2.197[0m
+[0;32mI (2639) WiFi: Got IP: 192.168.2.162[0m
+[0;32mI (3089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (5629) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (6099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=1.07
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (4589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (7599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=1.07
+[0;32mI (6089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (8049) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (9099) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.95
+[0;32mI (7589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (9099) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.9, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":94.9,"uv":0.9}[0;32mI (10109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.95
+[0;32mI (7589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (10459) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (11609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.95
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (8589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (12879) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (13109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.95
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (9589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (14609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.95
+[0;32mI (11089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (15289) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (16109) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.7:UV=0.86
+[0;32mI (12589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (16109) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 92.7, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":92.7,"uv":0.9}[0;32mI (16829) mqtts_example: Other event id:7[0m
-[0;31mE (16829) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (16829) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (16839) mqtt_client: Error transport connect[0m
-[0;32mI (16839) mqtts_example: Other event id:0[0m
-[0;32mI (16849) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (17119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.7:UV=0.86
+[0;32mI (12589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (17709) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (18619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.7:UV=0.86
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (13589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (20119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.7:UV=0.86
+[0;32mI (15089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.38
 [0m
-[0;32mI (20119) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (21619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.0:UV=0.96
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (16089) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.38
 [0m
-[0;32mI (21619) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 95.0, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":95.0,"uv":1.0}[0;32mI (22539) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (22629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.0:UV=0.96
+[0;32mI (16839) mqtts_example: Other event id:7[0m
+I (16899) wifi:<ba-add>idx:0 (ifx:0, 2e:94:d7:57:2c:81), tid:0, ssn:4, winSize:64
+[0;32mI (16919) mqtts_example: MQTT_EVENT_CONNECTED[0m
+[0;32mI (16919) mqtts_example: sent subscribe successful, msg_id=11487[0m
+[0;32mI (16929) mqtts_example: Other event id:3[0m
+[0;32mI (16949) mqtts_example: Other event id:5[0m
+[0;32mI (16959) mqtts_example: Other event id:5[0m
+[0;32mI (16979) mqtts_example: Other event id:5[0m
+[0;32mI (16989) mqtts_example: Other event id:5[0m
+[0;32mI (17009) mqtts_example: Other event id:5[0m
+[0;32mI (17589) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (24129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.0:UV=0.96
+[0;32mI (17589) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (24959) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (25629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.0:UV=0.96
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (17909) mqtts_example: Other event id:5[0m
+[0;32mI (18589) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (27129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=95.0:UV=0.96
+[0;32mI (20089) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.38
 [0m
-[0;32mI (27369) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (28629) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.94
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (20369) mqtts_example: Other event id:5[0m
+[0;32mI (21099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.38
 [0m
-[0;32mI (28629) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.9, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":94.9,"uv":0.9}[0;32mI (29639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.94
+[0;32mI (22599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (29789) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (31139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.94
+[0;32mI (22599) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (31849) mqtts_example: Other event id:7[0m
-[0;31mE (31849) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (31849) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (31849) mqtt_client: Error transport connect[0m
-[0;32mI (31859) mqtts_example: Other event id:0[0m
-[0;32mI (31859) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (32199) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (32639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.9:UV=0.94
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (22649) mqtts_example: Other event id:5[0m
+[0;32mI (23599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (34139) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.82
+[0;32mI (25099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (34139) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.5, UV: 0.8[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":96.5,"uv":0.8}[0;32mI (34619) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (35149) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.82
+[0;32mI (26599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.32
 [0m
-[0;32mI (36649) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.82
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.3}
+ [0;32mI (26919) mqtts_example: Other event id:5[0m
+[0;32mI (27599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (37039) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (38149) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.82
+[0;32mI (27599) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (39449) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (39649) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.3:UV=0.85
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (27939) mqtts_example: Other event id:5[0m
+[0;32mI (28599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (39649) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 92.3, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":92.3,"uv":0.9}[0;32mI (40659) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.3:UV=0.85
+[0;32mI (30099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (41869) mqtts_example: Other event id:7[0m
-[0;32mI (41869) WiFi: Disconnected. Reconnecting...[0m
-[0;31mE (41869) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (41869) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (41879) mqtt_client: Error transport connect[0m
-[0;32mI (41879) mqtts_example: Other event id:0[0m
-[0;32mI (41889) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (42159) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.3:UV=0.85
+[0;32mI (31599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (43659) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.3:UV=0.85
+[0;32mI (33099) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (44279) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (45159) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.3:UV=0.85
+[0;32mI (33099) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (46659) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.98
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (33119) mqtts_example: Other event id:5[0m
+[0;32mI (34099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (46659) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 100.0, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":100.0,"uv":1.0}[0;32mI (46699) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (47669) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.98
+[0;32mI (35599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (49119) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (49169) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.98
+[0;32mI (37099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (50669) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.98
+[0;32mI (38599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.33
 [0m
-[0;32mI (51529) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (52169) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=1.01
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.3}
+ [0;32mI (38609) mqtts_example: Other event id:5[0m
+[0;32mI (39599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.33
 [0m
-[0;32mI (52169) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.9, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":96.9,"uv":1.0}[0;32mI (53179) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=1.01
+[0;32mI (41099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.33
 [0m
-[0;32mI (53949) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (54679) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=1.01
+[0;32mI (42599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (56179) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=1.01
+[0;32mI (42599) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (56359) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (56889) mqtts_example: Other event id:7[0m
-[0;31mE (56889) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (56889) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (56889) mqtt_client: Error transport connect[0m
-[0;32mI (56899) mqtts_example: Other event id:0[0m
-[0;32mI (56899) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (57679) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.9:UV=1.01
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (42619) mqtts_example: Other event id:5[0m
+[0;32mI (43599) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (58779) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (59179) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.96
+[0;32mI (45099) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.33
 [0m
-[0;32mI (59179) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 100.0, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":100.0,"uv":1.0}[0;32mI (60189) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.96
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.3}
+ [0;32mI (45349) mqtts_example: Other event id:5[0m
+[0;32mI (46099) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.33
 [0m
-[0;32mI (61199) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (61689) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.96
+[0;32mI (47599) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (63189) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=100.0:UV=0.96
+[0;32mI (47599) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (63609) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (64689) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.8:UV=0.92
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (47809) mqtts_example: Other event id:5[0m
+[0;32mI (48609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (64689) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 94.8, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":94.8,"uv":0.9}[0;32mI (65699) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.8:UV=0.92
+[0;32mI (50109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
 [0m
-[0;32mI (66029) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (66909) mqtts_example: Other event id:7[0m
-[0;31mE (66909) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (66909) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (66909) mqtt_client: Error transport connect[0m
-[0;32mI (66919) mqtts_example: Other event id:0[0m
-[0;32mI (66919) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (67199) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.8:UV=0.92
+[0;32mI (51609) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (68439) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (68699) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=94.8:UV=0.92
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (51909) mqtts_example: Other event id:5[0m
+[0;32mI (52609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (70199) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.4:UV=0.99
+[0;32mI (54109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (70199) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 86.4, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":86.4,"uv":1.0}[0;32mI (70859) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (71209) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.4:UV=0.99
+[0;32mI (55609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.39
 [0m
-[0;32mI (72709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.4:UV=0.99
+[0;32mI (57109) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (73279) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (74209) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.4:UV=0.99
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (57159) mqtts_example: Other event id:5[0m
+[0;32mI (58109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (75689) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (75709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=86.4:UV=0.99
+[0;32mI (59609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (76929) mqtts_example: Other event id:7[0m
-[0;31mE (76929) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (76929) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (76929) mqtt_client: Error transport connect[0m
-[0;32mI (76939) mqtts_example: Other event id:0[0m
-[0;32mI (76939) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (77209) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=1.02
+[0;32mI (61109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (77209) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 97.5, UV: 1.0[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":97.5,"uv":1.0}[0;32mI (78109) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (78219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=1.02
+[0;32mI (62609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (79719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=1.02
+[0;32mI (64109) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (80519) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (81219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=97.5:UV=1.02
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (64399) mqtts_example: Other event id:5[0m
+[0;32mI (65109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (82719) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=0.64
+[0;32mI (66609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (82719) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.1, UV: 0.6[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":96.1,"uv":0.6}[0;32mI (82939) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (83729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=0.64
+[0;32mI (68109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (85229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=0.64
+[0;32mI (69609) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (85359) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (86729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=0.64
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (69619) mqtts_example: Other event id:5[0m
+[0;32mI (70609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (86949) mqtts_example: Other event id:7[0m
-[0;31mE (86949) esp-tls: [sock=54] connect() error: Host is unreachable[0m
-[0;31mE (86949) transport_base: Failed to open a new connection: 32772[0m
-[0;31mE (86949) mqtt_client: Error transport connect[0m
-[0;32mI (86959) mqtts_example: Other event id:0[0m
-[0;32mI (86959) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (87769) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (88229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.1:UV=0.64
+[0;32mI (72109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (89729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.92
+[0;32mI (73609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (89729) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 96.5, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":96.5,"uv":0.9}[0;32mI (90189) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (90739) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.92
+[0;32mI (75109) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (92239) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.92
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (75149) mqtts_example: Other event id:5[0m
+[0;32mI (76109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (92599) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (93739) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=96.5:UV=0.92
+[0;32mI (77609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (95019) WiFi: Disconnected. Reconnecting...[0m
-[0;32mI (95239) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.9:UV=0.91
+[0;32mI (79109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
-[0;32mI (95239) LORA_receive: Node ID: END123456, Temp: 31.0, Hum: 69.0, Soil: 92.9, UV: 0.9[0m
-receive item: ̀{"id":"END123456","temp":31.0,"hum":69.0,"soil":92.9,"uv":0.9}[0;32mI (96249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123456:TEMP=31:HUM=69:SOIL=92.9:UV=0.91
+[0;32mI (80609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
 [0m
+[0;32mI (82109) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (82419) mqtts_example: Other event id:5[0m
+[0;32mI (83109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (84609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (86109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (87609) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (87639) mqtts_example: Other event id:5[0m
+[0;32mI (88609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (90109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (91609) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (93109) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (94609) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (94619) mqtts_example: Other event id:5[0m
+[0;32mI (95619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (97119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (98619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (100119) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (100149) mqtts_example: Other event id:5[0m
+[0;32mI (101119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (102619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (104119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (105619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (105969) mqtts_example: Other event id:5[0m
+[0;32mI (106619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (108119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (109619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (111119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (112619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (112939) mqtts_example: Other event id:5[0m
+[0;32mI (113619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (115119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (116619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (118119) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (118119) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (118459) mqtts_example: Other event id:5[0m
+[0;32mI (119119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (120619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (122119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (123619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (123619) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (123689) mqtts_example: Other event id:5[0m
+[0;32mI (124619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (125019) mqtts_example: Other event id:5[0m
+[0;32mI (125619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (127119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (128619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (128619) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (128689) mqtts_example: Other event id:5[0m
+[0;32mI (129619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (131119) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (131139) mqtts_example: Other event id:5[0m
+[0;32mI (132119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (133619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (133619) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (133829) mqtts_example: Other event id:5[0m
+[0;32mI (134619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (136119) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (136179) mqtts_example: Other event id:5[0m
+[0;32mI (137119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (138619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (138619) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (138939) mqtts_example: Other event id:5[0m
+[0;32mI (139619) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (141119) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (142619) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (142839) mqtts_example: Other event id:5[0m
+[0;32mI (143629) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (143629) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (144059) mqtts_example: Other event id:5[0m
+[0;32mI (144629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (146129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (147629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (149129) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (149129) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (149179) mqtts_example: Other event id:5[0m
+[0;32mI (150129) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (150129) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (151129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (151429) mqtts_example: Other event id:5[0m
+[0;32mI (152629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (154129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (155629) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (155629) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (155739) mqtts_example: Other event id:5[0m
+[0;32mI (156629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (158129) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (159629) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (161129) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (161129) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (161149) mqtts_example: Other event id:5[0m
+[0;32mI (162129) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (162139) mqtts_example: Other event id:5[0m
+[0;32mI (163139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (164639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (166139) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (166139) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (166159) mqtts_example: Other event id:5[0m
+[0;32mI (167139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (168639) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (168669) mqtts_example: Other event id:5[0m
+[0;32mI (169639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (171139) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (171139) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (171199) mqtts_example: Other event id:5[0m
+[0;32mI (172139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (173639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (175139) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (175139) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (175189) mqtts_example: Other event id:5[0m
+[0;32mI (176139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (177639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (179139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (180639) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (180639) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (180659) mqtts_example: Other event id:5[0m
+[0;32mI (181639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (183139) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (184639) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (186139) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (186149) mqtts_example: Other event id:5[0m
+[0;32mI (187149) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (188649) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (190149) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (191649) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (191649) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (191669) mqtts_example: Other event id:5[0m
+[0;32mI (192649) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (192809) mqtts_example: Other event id:5[0m
+[0;32mI (193659) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (195159) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.38
+[0m
+[0;32mI (196659) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (196659) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (196679) mqtts_example: Other event id:5[0m
+[0;32mI (197659) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (199159) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (199169) mqtts_example: Other event id:5[0m
+[0;32mI (200159) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (201659) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (203159) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (204659) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (204689) mqtts_example: Other event id:5[0m
+[0;32mI (205669) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (207169) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (208669) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (210169) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (211669) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (212049) mqtts_example: Other event id:5[0m
+[0;32mI (212679) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (214179) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (215679) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (217179) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (217379) mqtts_example: Other event id:5[0m
+[0;32mI (218189) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (219689) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (221189) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (222689) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (224189) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (224549) mqtts_example: Other event id:5[0m
+[0;32mI (225199) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (226699) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (228199) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (229699) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (229869) mqtts_example: Other event id:5[0m
+[0;32mI (230709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (232209) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (233709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (235209) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (235229) mqtts_example: Other event id:5[0m
+[0;32mI (236209) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (237709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (239209) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (240709) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (242209) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (242249) mqtts_example: Other event id:5[0m
+[0;32mI (243219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (244719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (246219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (247719) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.40
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (247779) mqtts_example: Other event id:5[0m
+[0;32mI (248719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.40
+[0m
+[0;32mI (250219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.40
+[0m
+[0;32mI (251719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.40
+[0m
+[0;32mI (253219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.48
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.5}
+ [0;32mI (253629) mqtts_example: Other event id:5[0m
+[0;32mI (254219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.48
+[0m
+[0;32mI (255719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.48
+[0m
+[0;32mI (257219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.48
+[0m
+[0;32mI (258719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.48
+[0m
+[0;32mI (260219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (260239) mqtts_example: Other event id:5[0m
+[0;32mI (261219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (262719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (264219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (265719) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (265719) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (266119) mqtts_example: Other event id:5[0m
+[0;32mI (266719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (268219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (269719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (271219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (271219) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (271459) mqtts_example: Other event id:5[0m
+[0;32mI (272219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":51.0,"soil":0.0,"uv":2.4}
+ [0;32mI (272269) mqtts_example: Other event id:5[0m
+[0;32mI (273219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (274719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=51:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (276219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (276219) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (276239) mqtts_example: Other event id:5[0m
+[0;32mI (277219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (278719) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (278819) mqtts_example: Other event id:5[0m
+[0;32mI (279719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (281219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (281219) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (281239) mqtts_example: Other event id:5[0m
+[0;32mI (282219) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (283719) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (285219) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.32
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.3}
+ [0;32mI (285599) mqtts_example: Other event id:5[0m
+[0;32mI (286229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (286229) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (286299) mqtts_example: Other event id:5[0m
+[0;32mI (287229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (288729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (290229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.33
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.3}
+ [0;32mI (290289) mqtts_example: Other event id:5[0m
+[0;32mI (291229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (291229) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (291249) mqtts_example: Other event id:5[0m
+[0;32mI (292229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (293729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (295229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (296729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (296729) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (296749) mqtts_example: Other event id:5[0m
+[0;32mI (297729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (299229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (300729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (302229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (302249) mqtts_example: Other event id:5[0m
+[0;32mI (303229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (304729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (306229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (306229) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (306299) mqtts_example: Other event id:5[0m
+[0;32mI (307229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (308729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (308769) mqtts_example: Other event id:5[0m
+[0;32mI (309729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (311229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (312729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (312729) LORA_receive: NHẬN ĐƯỢC GÓI TIN XÁC MINH ID : {"type": "id", "id": "END123458"}
+[0m
+item recieve : {"type": "id", "id": "END123458"}
+ [0;32mI (312759) mqtts_example: Other event id:5[0m
+[0;32mI (313729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: {"type": "id", "id": "END123458"}
+[0m
+[0;32mI (315229) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (315269) mqtts_example: Other event id:5[0m
+[0;32mI (316229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (317729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (319229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (320729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (320799) mqtts_example: Other event id:5[0m
+[0;32mI (321729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (323229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (324729) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (326229) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (327729) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (327769) mqtts_example: Other event id:5[0m
+[0;32mI (328739) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (330239) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (331739) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (333239) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (333299) mqtts_example: Other event id:5[0m
+[0;32mI (334249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (335749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (337249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (338749) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (338769) mqtts_example: Other event id:5[0m
+[0;32mI (339749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (341249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (342749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (344249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (345749) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (345779) mqtts_example: Other event id:5[0m
+[0;32mI (346749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (348249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.36
+[0m
+[0;32mI (349749) LORA_receive: NHẬN ĐƯỢC GÓI TIN: ]H�x0��`0��K���Ĺ�чqY(�	s	�o
+[0m
+Gói tin không hợp lệ: ]H�x0��`0��K���Ĺ�чqY(�	s	�o
+[0;32mI (350749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: ]H�x0��`0��K���Ĺ�чqY(�	s	�o
+[0m
+[0;32mI (352249) LORA_receive: NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+receive item: {"id":"END123458","temp":35.0,"hum":50.0,"soil":0.0,"uv":2.4}
+ [0;32mI (352549) mqtts_example: Other event id:5[0m
+[0;32mI (353249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (354749) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (356249) LORA_receive: CHƯA NHẬN ĐƯỢC GÓI TIN: IDEND123458:TEMP=35:HUM=50:SOIL=0.0:UV=2.37
+[0m
+[0;32mI (357749) LORA_r
